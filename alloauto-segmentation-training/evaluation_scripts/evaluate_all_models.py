@@ -291,7 +291,8 @@ class EvaluationConfig:
 
     # Model paths
     binary_model_path: str = './alloauto-presentation/web/model'
-    mbert_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/mbert_cased_baseline_standard_weighted_ner_23_10/final_model'
+    mbert_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/mbert_cased_baseline_standard_weighted_ner_24_10_params_alto/final_model'
+    # mbert_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/mbert_cased_baseline_standard_weighted_ner_23_10/final_model'
     xlmr_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/xlm_roberta_baseline_standard_weighted_ner_24_10_params_alto/final_model'
     # xlmr_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/xlm_roberta_baseline_standard_weighted_ner_23_10/final_model'
     # alto_model_path: str = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_allow_non_switch_test_train_and_fixed_loss_7_10_no_same_seqnence_simpler_loss/final_model'
@@ -305,7 +306,7 @@ class EvaluationConfig:
 
     cino_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/cino_base_v2_baseline_standard_weighted_ner_24_10_params_alto/final_model'
     # cino_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/cino_base_v2_baseline_standard_weighted_ner_23_10/final_model'
-    tibetan_roberta_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/mbert_cased_baseline_standard_weighted_ner_24_10_params_alto/final_model'
+    # tibetan_roberta_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/mbert_cased_baseline_standard_weighted_ner_24_10_params_alto/final_model'
     # tibetan_roberta_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/tibetan_roberta_baseline_standard_weighted_ner_23_10/final_model'
     tibetan_roberta_model_path: str = './alloauto-segmentation-training/benchmark_models_standard/tibetan_roberta_baseline_standard_weighted_ner_24_10_params_alto/final_model'
 

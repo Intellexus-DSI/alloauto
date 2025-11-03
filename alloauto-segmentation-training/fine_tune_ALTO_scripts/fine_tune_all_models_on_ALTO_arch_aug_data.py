@@ -49,20 +49,21 @@ ssl._create_default_https_context = ssl._create_unverified_context
 # Dictionary mapping model names to saved directory names
 MODELS_TO_TRAIN = {
     # 'hfl/cino-base-v2': 'cino_base_v2_ALTO_arch_23_10',
-    'bert-base-multilingual-cased': 'mbert_cased_ALTO_arch_23_10',
+    # 'bert-base-multilingual-cased': 'mbert_cased_ALTO_arch_23_10',
     # 'xlm-roberta-base': 'xlm_roberta_base_ALTO_arch_23_10',
     # 'sangjeedondrub/tibetan-roberta-base': 'tibetan_roberta_ALTO_arch_23_10',
     # 'OMRIDRORI/mbert-tibetan-continual-wylie-final': 'mbert_tibetan_wylie_ALTO_arch_23_10',
+    'OMRIDRORI/mbert-tibetan-continual-wylie-final': 'mbert_tibetan_wylie_ALTO_arch_24_10',
 
 }
 
 # Directories
 DATA_DIR = 'dataset/preprocessed_augmented'  # Your augmented data
 # for ALTO fine tune and save:
-# OUTPUT_BASE_DIR = './alloauto-segmentation-training/fine_tuned_ALTO_models'
+OUTPUT_BASE_DIR = './alloauto-segmentation-training/fine_tuned_ALTO_models'
 
 # for Benchmarks fine tune and save:
-OUTPUT_BASE_DIR = './alloauto-segmentation-training/benchmark_models_ALTO_architecture'
+# OUTPUT_BASE_DIR = './alloauto-segmentation-training/benchmark_models_ALTO_architecture'
 
 # ============================================================================
 # YOUR EXACT DATASET CLASS
@@ -401,7 +402,10 @@ def train_single_model(model_name: str, output_dir: str):
             fp16=torch.cuda.is_available(),
             report_to=[],
             gradient_accumulation_steps=1,
-            label_smoothing_factor=0.0
+            label_smoothing_factor=0.0,
+            push_to_hub=True,  # Enable pushing to HF
+            hub_model_id="levshechter/tibetan-CS-detector_mbert-tibetan-continual-wylie_MUL_SEG_RUNI",  # Your HF repo
+
         )
 
         # Initialize YOUR EXACT trainer
