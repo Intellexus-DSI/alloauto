@@ -507,7 +507,7 @@ def train_alto_4class_additive():
     print("=" * 80)
 
     model_name = 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
-    output_dir = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_4class_additive_loss'
+    output_dir = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_4class_additive_loss_11_10'
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
@@ -571,6 +571,8 @@ def train_alto_4class_additive():
         save_total_limit=1,
         fp16=torch.cuda.is_available(),
         report_to=[],
+        push_to_hub=True,  # Enable pushing to HF
+        hub_model_id="levshechter/tibetan-CS-detector_mbert-tibetan-continual-wylie_MUL_loss_SAH",  # Your HF repo
     )
 
     # Create trainer with additive loss

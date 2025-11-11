@@ -27,7 +27,7 @@ from torch.utils.data import Dataset
 from datasets import load_metric
 
 # Environment setup
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Change GPU if needed
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # Change GPU if needed
 
 print(f"Number of GPUs available: {torch.cuda.device_count()}")
 print(f"Using device: {'cuda' if torch.cuda.is_available() else 'cpu'}")
@@ -283,14 +283,14 @@ def show_predictions(model, tokenizer, test_csv, num_examples=3, device='cuda'):
 # ============================================================================
 
 def train_simple_classifier(
-        train_csv='train_segments_clean.csv',
-        val_csv='val_segments.csv',
-        test_csv='test_segments.csv',
+        train_csv='dataset/preprocessed_augmented/train_segments_with_more_auto_allo.csv',
+        val_csv='dataset/preprocessed_augmented/val_segments_more_auto_allo.csv',
+        test_csv='dataset/preprocessed_augmented/test_segments_original.csv',
         model_name='bert-base-multilingual-cased',
         output_dir='./simple_tibetan_cs_model',
-        num_epochs=15,
-        batch_size=4,
-        learning_rate=1e-5,
+        num_epochs=10,  # Was 15
+        batch_size=8,  # Was 4
+        learning_rate=2e-5,  # Was 1e-5
 ):
     """
     Train a simple 4-class token classifier.
@@ -344,20 +344,25 @@ def train_simple_classifier(
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
-        eval_strategy="epoch",
-        save_strategy="epoch",
+        eval_strategy="steps",  # ✅
+        eval_steps=30,  # ✅
+        save_strategy="steps",  # ✅
+        save_steps=60,  # ✅
         learning_rate=learning_rate,
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
         num_train_epochs=num_epochs,
-        weight_decay=0.1,
-        logging_steps=50,
+        weight_decay=0.01,  # ✅
+        logging_steps=20,  # ✅
         load_best_model_at_end=True,
-        metric_for_best_model='macro_f1',
+        metric_for_best_model='switch_f1',  # ✅
         greater_is_better=True,
+        warmup_steps=100,  # ✅
         save_total_limit=2,
         fp16=torch.cuda.is_available(),
         report_to=[],
+        gradient_accumulation_steps=1,  # ✅
+        label_smoothing_factor=0.0,  # ✅
     )
 
     # Trainer
@@ -367,9 +372,8 @@ def train_simple_classifier(
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
         data_collator=data_collator,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,  # ✅ Use processing_class (not tokenizer)
         compute_metrics=compute_metrics,
-        callbacks=[EarlyStoppingCallback(early_stopping_patience=3)]
     )
 
     # Train
@@ -423,15 +427,31 @@ def train_simple_classifier(
 
 if __name__ == "__main__":
     # Train with default settings
+    # trainer, model, tokenizer, results = train_simple_classifier(
+    #     train_csv='train_segments_clean.csv',
+    #     val_csv='val_segments.csv',
+    #     test_csv='test_segments.csv',
+    #     # model_name='bert-base-multilingual-cased',  # or 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
+    #     model_name='OMRIDRORI/mbert-tibetan-continual-wylie-final',  # or 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
+    #     output_dir='./alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_simple_loss_4_class_NER_11_10',
+    #     # output_dir='./alloauto-segmentation-training/benchmark_models/simple_mBert_vanilla_benchmark_4_class_NER',
+    #     num_epochs=15,
+    #     batch_size=4,
+    #     learning_rate=1e-5,
+    #
+    # )
     trainer, model, tokenizer, results = train_simple_classifier(
-        train_csv='train_segments_clean.csv',
-        val_csv='val_segments.csv',
-        test_csv='test_segments.csv',
-        model_name='bert-base-multilingual-cased',  # or 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
-        output_dir='./alloauto-segmentation-training/benchmark_models/simple_mBert_vanilla_benchmark_4_class_NER',
-        num_epochs=15,
-        batch_size=4,
-        learning_rate=1e-5,
+        train_csv='dataset/preprocessed_augmented/train_segments_with_more_auto_allo.csv',
+        val_csv='dataset/preprocessed_augmented/val_segments_more_auto_allo.csv',
+        test_csv='dataset/preprocessed_augmented/test_segments_original.csv',
+        # model_name='bert-base-multilingual-cased',  # or 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
+        model_name='bert-base-multilingual-cased',
+        # or 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
+        output_dir='./alloauto-segmentation-training/benchmark_models_standard/simple_mBert_vanilla_benchmark_4_class_NER_23_10_no_early',
+        # output_dir='./alloauto-segmentation-training/benchmark_models/simple_mBert_vanilla_benchmark_4_class_NER',
+        num_epochs=10,
+        batch_size=8,
+        learning_rate=2e-5,
 
     )
 

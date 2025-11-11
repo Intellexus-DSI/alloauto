@@ -180,21 +180,22 @@ def train_xlmroberta_baseline():
     print("=" * 80)
 
     # Check for data files
-    if os.path.exists('train_segments_stratified.csv'):
+    if os.path.exists('train_segments_clean.csv'):
         print("\n✓ Found stratified splits")
-        TRAIN_FILE = 'train_segments_stratified.csv'
-        VAL_FILE = 'val_segments_stratified.csv'
-        TEST_FILE = 'test_segments_stratified.csv'
-    elif os.path.exists('train_segments.csv'):
-        print("\n✓ Found regular splits")
-        TRAIN_FILE = 'train_segments.csv'
+        TRAIN_FILE = 'train_segments_clean.csv'
         VAL_FILE = 'val_segments.csv'
         TEST_FILE = 'test_segments.csv'
+    # elif os.path.exists('train_segments.csv'):
+    #     print("\n✓ Found regular splits")
+    #     TRAIN_FILE = 'train_segments.csv'
+    #     VAL_FILE = 'val_segments.csv'
+    #     TEST_FILE = 'test_segments.csv'
     else:
         print("\n❌ ERROR: No data splits found!")
         return None, None, None
 
-    OUTPUT_DIR = './alloauto-segmentation-training/benchmark_models/xlmroberta_baseline_model'
+    OUTPUT_DIR = './alloauto-segmentation-training/benchmark_models/xlmroberta_baseline_model_clean_train'
+    # OUTPUT_DIR = './alloauto-segmentation-training/benchmark_models/xlmroberta_baseline_model'
 
     # Load XLM-RoBERTa
     model_name = 'xlm-roberta-base'

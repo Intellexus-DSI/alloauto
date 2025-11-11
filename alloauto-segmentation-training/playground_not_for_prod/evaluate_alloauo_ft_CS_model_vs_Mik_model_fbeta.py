@@ -11,7 +11,13 @@ import pandas as pd
 import re
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from sklearn.metrics import fbeta_score, precision_score, recall_score, f1_score
+import os
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+print(f"Number of GPUs available: {torch.cuda.device_count()}")
+for i in range(torch.cuda.device_count()):
+    print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
 
 def process_binary_model_sentence_level(tokens, tokenizer, session):
     """
@@ -544,8 +550,8 @@ def unified_evaluation():
 
     # Load Fine-tuned Model
     print("Loading Fine-tuned Model...")
-    model_id = "levshechter/tibetan-CS-detector_mbert-tibetan-continual-wylie_all_data_no_labels_no_partial"
-    # model_id = "levshechter/tibetan-CS-detector_mbert-tibetan-continual-wylie_all_data"
+    model_id = "./tibetan_code_switching_constrained_model_wylie-final_all_data_no_labels_no_prtial_v2_2_10/final_model"
+    # model_id = "levshechter/tibetan-CS-detector_mbert-tibetan-continual-wylie_all_data_no_labels_no_partial"
     ft_tokenizer = AutoTokenizer.from_pretrained(model_id)
     ft_model = AutoModelForTokenClassification.from_pretrained(model_id)
     ft_model.eval()

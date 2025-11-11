@@ -57,11 +57,13 @@ MODELS_TO_TRAIN = {
 
 }
 
+
 # Directories
 DATA_DIR = 'dataset/preprocessed_augmented'  # Your augmented data
 # for ALTO fine tune and save:
 OUTPUT_BASE_DIR = './alloauto-segmentation-training/fine_tuned_ALTO_models'
 
+#TODO -> if want to fine tune other backbones -> unmask this :
 # for Benchmarks fine tune and save:
 # OUTPUT_BASE_DIR = './alloauto-segmentation-training/benchmark_models_ALTO_architecture'
 

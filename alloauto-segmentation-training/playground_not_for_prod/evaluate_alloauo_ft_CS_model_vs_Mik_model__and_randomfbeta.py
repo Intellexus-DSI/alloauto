@@ -607,7 +607,9 @@ def unified_evaluation():
         print("Please re-run preprocessing to remove tags.")
         return None, None, None  # Now returns 3 values
 
-    TEST_FILE = './dataset/annotated-data/test_segments.csv'
+    TEST_FILE = './test_segments.csv'  # UPDATE THIS
+
+    # TEST_FILE = './dataset/annotated-data/test_segments.csv'
     TOLERANCE = 5
 
     print(f"Loading test data from: {TEST_FILE}")
@@ -646,12 +648,14 @@ def unified_evaluation():
     from fine_tune_CS_4_classes_clean_no_allo_auto_labels_CRF import BERTWithCRFWrapper
 
     crf_tokenizer = AutoTokenizer.from_pretrained('./alloauto-segmentation-training/fine_tuned_ALTO_models/crf_enhanced_model')
-    crf_model = BERTWithCRFWrapper.from_pretrained('./alloauto-segmentation-training/fine_tuned_ALTO_models/crf_enhanced_model')
+    crf_model = BERTWithCRFWrapper.from_pretrained('./alloauto-segmentation-training/fine_tuned_ALTO_models/crf_for_ALTO_allow_non_switch_test_train_and_fixed_loss_6_10')
+    # crf_model = BERTWithCRFWrapper.from_pretrained('./alloauto-segmentation-training/fine_tuned_ALTO_models/crf_enhanced_model')
     crf_model.eval()
 
     # Load Fine-tuned Model
     print("Loading Fine-tuned Model...")
-    model_id = "./tibetan_code_switching_constrained_model_wylie-final_all_data_no_labels_no_prtial_v2_2_10/final_model"
+    model_id = "./alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_allow_non_switch_test_train_and_fixed_loss_6_10/final_model"
+    # model_id = "./tibetan_code_switching_constrained_model_wylie-final_all_data_no_labels_no_prtial_v2_2_10/final_model"
     ft_tokenizer = AutoTokenizer.from_pretrained(model_id)
     ft_model = AutoModelForTokenClassification.from_pretrained(model_id)
     ft_model.eval()
@@ -731,7 +735,33 @@ def unified_evaluation():
 
         print(f"{display:<30} {r:<16.3f} {b:<16.3f} {m:<16.3f} {x:<16.3f} {a:<16.3f} {c:<16.3f}")
 
-    return random_metrics, binary_metrics, mbert_metrics, xlmr_metrics, alto_metrics, crf_metrics  # 6 models
+    random_metrics = evaluate_switch_detection_with_proximity(all_true_labels, random_all_pred, TOLERANCE)
+    binary_metrics = evaluate_switch_detection_with_proximity(all_true_labels, binary_all_pred, TOLERANCE)
+    mbert_metrics = evaluate_switch_detection_with_proximity(all_true_labels, mbert_all_pred, TOLERANCE)
+    xlmr_metrics = evaluate_switch_detection_with_proximity(all_true_labels, xlmr_all_pred, TOLERANCE)
+    alto_metrics = evaluate_switch_detection_with_proximity(all_true_labels, finetuned_all_pred, TOLERANCE)
+    crf_metrics = evaluate_switch_detection_with_proximity(all_true_labels, crf_all_pred, TOLERANCE)
+
+    # Print overall comparison (existing code)
+    print(f"\n{'=' * 180}")
+    print("6-MODEL COMPARISON")
+    # ... existing printing code ...
+
+    # NEW: Analyze by segment type
+    model_predictions_dict = {
+        'Random': random_all_pred,
+        'Binary': binary_all_pred,
+        'mBERT': mbert_all_pred,
+        'XLM-R': xlmr_all_pred,
+        'ALTO': finetuned_all_pred,
+        'CRF': crf_all_pred
+    }
+
+    segment_type_results = analyze_performance_by_segment_type(
+        test_df, all_true_labels, model_predictions_dict, TOLERANCE
+    )
+
+    return random_metrics, binary_metrics, mbert_metrics, xlmr_metrics, alto_metrics, crf_metrics, segment_type_results
 
 def unified_evaluation_old():
     """Main evaluation function on complete test set"""
@@ -745,8 +775,8 @@ def unified_evaluation_old():
         print("Please re-run preprocessing to remove tags.")
         return None, None
     # Configuration
-    # TEST_FILE = './test_segments.csv'
-    TEST_FILE = './dataset/annotated-data/test_segments.csv'
+    TEST_FILE = './test_segments.csv'
+    # TEST_FILE = './dataset/annotated-data/test_segments.csv'
     TOLERANCE = 5
 
     print(f"Loading test data from: {TEST_FILE}")
@@ -1790,7 +1820,9 @@ def create_detailed_segment_analysis_csv(output_file='segment_analysis_detailed.
     print("CREATING DETAILED SEGMENT ANALYSIS CSV")
     print("=" * 80)
 
-    TEST_FILE = './dataset/annotated-data/test_segments.csv'
+    TEST_FILE = './test_segments.csv'  # UPDATE THIS
+
+    # TEST_FILE = './dataset/annotated-data/test_segments.csv'
     test_df = pd.read_csv(TEST_FILE)
 
     # Calculate average switches for random model
@@ -2119,9 +2151,560 @@ def print_fbeta_comparison_six_models(random_metrics, binary_metrics, mbert_metr
                      alto_metrics[key] if x[0] == 'ALTO' else
                      crf_metrics[key])
     print(f"{best_model[0]} (F-beta(2): {best_model[1]:.3f})")
+
+
+def analyze_performance_by_segment_type(test_df, all_true_labels, model_predictions_dict, tolerance=5):
+    """
+    Analyze model performance separately for segments WITH and WITHOUT switches
+
+    Args:
+        test_df: Test dataframe with 'has_switch' column
+        all_true_labels: All true labels (flattened) - MUST match order of test_df
+        model_predictions_dict: Dict of {model_name: predictions_list}
+        tolerance: Proximity tolerance for matching
+
+    Returns:
+        Dictionary with metrics by segment type
+    """
+    print("\n" + "=" * 100)
+    print("PERFORMANCE BY SEGMENT TYPE (WITH/WITHOUT SWITCHES)")
+    print("=" * 100)
+
+    # Check if has_switch column exists
+    if 'has_switch' not in test_df.columns:
+        print("⚠️ 'has_switch' column not found in test data. Computing from labels...")
+        test_df['has_switch'] = test_df['labels'].apply(
+            lambda x: any(int(l) in [2, 3] for l in x.split(','))
+        )
+
+    # Count segments by type
+    segments_with_switches = test_df[test_df['has_switch'] == True]
+    segments_without_switches = test_df[test_df['has_switch'] == False]
+
+    print(f"\nSegment distribution:")
+    print(
+        f"  WITH switches: {len(segments_with_switches)} segments ({len(segments_with_switches) / len(test_df) * 100:.1f}%)")
+    print(
+        f"  WITHOUT switches: {len(segments_without_switches)} segments ({len(segments_without_switches) / len(test_df) * 100:.1f}%)")
+
+    # Build indices mapping - track where each segment's tokens start/end in flattened arrays
+    segment_boundaries = []
+    current_position = 0
+
+    for idx, row in test_df.iterrows():
+        num_tokens = len(row['labels'].split(','))
+        segment_boundaries.append({
+            'start': current_position,
+            'end': current_position + num_tokens,
+            'has_switch': row['has_switch'],
+            'num_tokens': num_tokens
+        })
+        current_position += num_tokens
+
+    # Extract labels and predictions by segment type
+    def extract_by_segment_type(flat_array, has_switch_value):
+        """Extract elements from flattened array for segments of given type"""
+        result = []
+        for i, boundary in enumerate(segment_boundaries):
+            if boundary['has_switch'] == has_switch_value:
+                result.extend(flat_array[boundary['start']:boundary['end']])
+        return result
+
+    # Get true labels by segment type
+    true_with_switches = extract_by_segment_type(all_true_labels, True)
+    true_without_switches = extract_by_segment_type(all_true_labels, False)
+
+    print(f"\nToken distribution:")
+    print(f"  Tokens in segments WITH switches: {len(true_with_switches)}")
+    print(f"  Tokens in segments WITHOUT switches: {len(true_without_switches)}")
+
+    # Verify alignment
+    total_extracted = len(true_with_switches) + len(true_without_switches)
+    if total_extracted != len(all_true_labels):
+        print(f"⚠️ WARNING: Alignment issue detected!")
+        print(f"  Expected: {len(all_true_labels)} tokens")
+        print(f"  Got: {total_extracted} tokens")
+
+    # Calculate metrics for each model on both segment types
+    results = {}
+
+    for model_name, all_preds in model_predictions_dict.items():
+        # Verify prediction length matches
+        if len(all_preds) != len(all_true_labels):
+            print(f"⚠️ WARNING: {model_name} predictions length mismatch!")
+            print(f"  True labels: {len(all_true_labels)}, Predictions: {len(all_preds)}")
+            # Truncate to match
+            all_preds = all_preds[:len(all_true_labels)]
+
+        # Get predictions by segment type
+        preds_with_switches = extract_by_segment_type(all_preds, True)
+        preds_without_switches = extract_by_segment_type(all_preds, False)
+
+        # Verify lengths match
+        if len(preds_with_switches) != len(true_with_switches):
+            print(
+                f"⚠️ Length mismatch for {model_name} (with switches): {len(preds_with_switches)} vs {len(true_with_switches)}")
+            min_len = min(len(preds_with_switches), len(true_with_switches))
+            preds_with_switches = preds_with_switches[:min_len]
+            true_with_switches_eval = true_with_switches[:min_len]
+        else:
+            true_with_switches_eval = true_with_switches
+
+        if len(preds_without_switches) != len(true_without_switches):
+            print(
+                f"⚠️ Length mismatch for {model_name} (without switches): {len(preds_without_switches)} vs {len(true_without_switches)}")
+            min_len = min(len(preds_without_switches), len(true_without_switches))
+            preds_without_switches = preds_without_switches[:min_len]
+            true_without_switches_eval = true_without_switches[:min_len]
+        else:
+            true_without_switches_eval = true_without_switches
+
+        # Evaluate on segments WITH switches
+        if len(true_with_switches_eval) > 0:
+            metrics_with = evaluate_switch_detection_with_proximity(
+                true_with_switches_eval, preds_with_switches, tolerance
+            )
+        else:
+            metrics_with = None
+
+        # Evaluate on segments WITHOUT switches
+        if len(true_without_switches_eval) > 0:
+            true_arr = np.array(true_without_switches_eval)
+            pred_arr = np.array(preds_without_switches)
+
+            # Count false switches (model predicts switch when there shouldn't be any)
+            false_switches = np.sum((pred_arr == 2) | (pred_arr == 3))
+            total_tokens = len(true_without_switches_eval)
+
+            # Mode accuracy (0,2 -> auto mode, 1,3 -> allo mode)
+            true_modes = (true_arr % 2)  # 0,2->0 (auto), 1,3->1 (allo)
+            pred_modes = (pred_arr % 2)
+
+            mode_accuracy = (true_modes == pred_modes).mean()
+            false_switch_rate = false_switches / total_tokens if total_tokens > 0 else 0
+
+            metrics_without = {
+                'total_tokens': total_tokens,
+                'false_switches': int(false_switches),
+                'false_switch_rate': false_switch_rate,
+                'mode_accuracy': mode_accuracy
+            }
+        else:
+            metrics_without = None
+
+        results[model_name] = {
+            'with_switches': metrics_with,
+            'without_switches': metrics_without
+        }
+
+    # Print results
+    print("\n" + "=" * 100)
+    print("SEGMENTS WITH SWITCHES (Switch Detection Performance)")
+    print("=" * 100)
+    print(f"{'Model':<15} {'F-beta(2)':<12} {'Precision':<12} {'Recall':<12} {'True SW':<10} {'Pred SW':<10}")
+    print("-" * 100)
+
+    for model_name in model_predictions_dict.keys():
+        metrics = results[model_name]['with_switches']
+        if metrics:
+            print(f"{model_name:<15} "
+                  f"{metrics['proximity_fbeta2']:<12.3f} "
+                  f"{metrics['proximity_precision']:<12.3f} "
+                  f"{metrics['proximity_recall']:<12.3f} "
+                  f"{metrics['true_switches']:<10} "
+                  f"{metrics['pred_switches']:<10}")
+
+    print("\n" + "=" * 100)
+    print("SEGMENTS WITHOUT SWITCHES (False Positive Control)")
+    print("=" * 100)
+    print(f"{'Model':<15} {'Mode Accuracy':<15} {'False Switches':<15} {'False SW Rate':<15} {'Total Tokens':<15}")
+    print("-" * 100)
+
+    for model_name in model_predictions_dict.keys():
+        metrics = results[model_name]['without_switches']
+        if metrics:
+            print(f"{model_name:<15} "
+                  f"{metrics['mode_accuracy']:<15.3f} "
+                  f"{metrics['false_switches']:<15} "
+                  f"{metrics['false_switch_rate']:<15.4f} "
+                  f"{metrics['total_tokens']:<15}")
+
+    # Summary insights
+    print("\n" + "=" * 100)
+    print("KEY INSIGHTS")
+    print("=" * 100)
+
+    # Find best models
+    with_switch_models = [(name, results[name]['with_switches'])
+                          for name in model_predictions_dict.keys()
+                          if results[name]['with_switches']]
+
+    without_switch_models = [(name, results[name]['without_switches'])
+                             for name in model_predictions_dict.keys()
+                             if results[name]['without_switches']]
+
+    if with_switch_models:
+        best_fbeta_model = max(with_switch_models, key=lambda x: x[1]['proximity_fbeta2'])
+        print(
+            f"\nBest at detecting switches: {best_fbeta_model[0]} (F-beta(2): {best_fbeta_model[1]['proximity_fbeta2']:.3f})")
+
+    if without_switch_models:
+        best_mode_acc_model = max(without_switch_models, key=lambda x: x[1]['mode_accuracy'])
+        lowest_false_sw_model = min(without_switch_models, key=lambda x: x[1]['false_switch_rate'])
+
+        print(
+            f"Best mode accuracy (non-switching): {best_mode_acc_model[0]} ({best_mode_acc_model[1]['mode_accuracy']:.3f})")
+        print(
+            f"Lowest false switch rate: {lowest_false_sw_model[0]} ({lowest_false_sw_model[1]['false_switch_rate']:.4f})")
+
+        # Check if any model has problematically high false switch rate
+        for name, metrics in without_switch_models:
+            if metrics['false_switch_rate'] > 0.05:  # More than 5% false switches
+                print(f"  ⚠️ {name} has high false switch rate: {metrics['false_switch_rate']:.1%}")
+
+    return results
+def analyze_performance_by_segment_type_old(test_df, all_true_labels, model_predictions_dict, tolerance=5):
+    """
+    Analyze model performance separately for segments WITH and WITHOUT switches
+
+    Args:
+        test_df: Test dataframe with 'has_switch' column
+        all_true_labels: All true labels (flattened)
+        model_predictions_dict: Dict of {model_name: predictions_list}
+        tolerance: Proximity tolerance for matching
+
+    Returns:
+        Dictionary with metrics by segment type
+    """
+    print("\n" + "=" * 100)
+    print("PERFORMANCE BY SEGMENT TYPE (WITH/WITHOUT SWITCHES)")
+    print("=" * 100)
+
+    # Check if has_switch column exists
+    if 'has_switch' not in test_df.columns:
+        print("⚠️ 'has_switch' column not found in test data. Computing from labels...")
+        test_df['has_switch'] = test_df['labels'].apply(
+            lambda x: any(int(l) in [2, 3] for l in x.split(','))
+        )
+
+    # Split segments by type
+    segments_with_switches = test_df[test_df['has_switch'] == True].index.tolist()
+    segments_without_switches = test_df[test_df['has_switch'] == False].index.tolist()
+
+    print(f"\nSegment distribution:")
+    print(
+        f"  WITH switches: {len(segments_with_switches)} segments ({len(segments_with_switches) / len(test_df) * 100:.1f}%)")
+    print(
+        f"  WITHOUT switches: {len(segments_without_switches)} segments ({len(segments_without_switches) / len(test_df) * 100:.1f}%)")
+
+    # Collect labels by segment type
+    def get_labels_for_segments(segment_indices):
+        """Extract labels for specific segments"""
+        labels_list = []
+        current_position = 0
+
+        for idx in range(len(test_df)):
+            row = test_df.iloc[idx]
+            segment_labels = [int(l) for l in row['labels'].split(',')]
+
+            if idx in segment_indices:
+                labels_list.extend(segment_labels)
+
+            current_position += len(segment_labels)
+
+        return labels_list
+
+    # Get predictions by segment type
+    def get_predictions_for_segments(all_predictions, segment_indices):
+        """Extract predictions for specific segments"""
+        preds_list = []
+        current_position = 0
+
+        for idx in range(len(test_df)):
+            row = test_df.iloc[idx]
+            num_tokens = len(row['labels'].split(','))
+
+            if idx in segment_indices:
+                segment_preds = all_predictions[current_position:current_position + num_tokens]
+                preds_list.extend(segment_preds)
+
+            current_position += num_tokens
+
+        return preds_list
+
+    # Get true labels by segment type
+    true_with_switches = get_labels_for_segments(segments_with_switches)
+    true_without_switches = get_labels_for_segments(segments_without_switches)
+
+    print(f"\nToken distribution:")
+    print(f"  Tokens in segments WITH switches: {len(true_with_switches)}")
+    print(f"  Tokens in segments WITHOUT switches: {len(true_without_switches)}")
+
+    # Calculate metrics for each model on both segment types
+    results = {}
+
+    for model_name, all_preds in model_predictions_dict.items():
+        # Get predictions by segment type
+        preds_with_switches = get_predictions_for_segments(all_preds, segments_with_switches)
+        preds_without_switches = get_predictions_for_segments(all_preds, segments_without_switches)
+
+        # Evaluate on segments WITH switches
+        if len(true_with_switches) > 0:
+            metrics_with = evaluate_switch_detection_with_proximity(
+                true_with_switches, preds_with_switches, tolerance
+            )
+        else:
+            metrics_with = None
+
+        # Evaluate on segments WITHOUT switches (different metrics needed)
+        if len(true_without_switches) > 0:
+            # For non-switching segments, we care about:
+            # 1. Not predicting false switches
+            # 2. Correct mode (auto vs allo)
+
+            true_arr = np.array(true_without_switches)
+            pred_arr = np.array(preds_without_switches)
+
+            # Count false switches (model predicts switch when there shouldn't be any)
+            false_switches = np.sum((pred_arr == 2) | (pred_arr == 3))
+            total_tokens = len(true_without_switches)
+
+            # Mode accuracy (ignoring switch labels)
+            # Map: 0,2 -> 0 (auto), 1,3 -> 1 (allo)
+            true_modes = (true_arr >= 1).astype(int)  # 0/2->0 (auto), 1/3->1 (allo)
+            pred_modes = (pred_arr >= 1).astype(int)
+
+            mode_accuracy = (true_modes == pred_modes).mean()
+            false_switch_rate = false_switches / total_tokens if total_tokens > 0 else 0
+
+            metrics_without = {
+                'total_tokens': total_tokens,
+                'false_switches': false_switches,
+                'false_switch_rate': false_switch_rate,
+                'mode_accuracy': mode_accuracy
+            }
+        else:
+            metrics_without = None
+
+        results[model_name] = {
+            'with_switches': metrics_with,
+            'without_switches': metrics_without
+        }
+
+    # Print results
+    print("\n" + "=" * 100)
+    print("SEGMENTS WITH SWITCHES")
+    print("=" * 100)
+    print(f"{'Model':<15} {'F-beta(2)':<12} {'Precision':<12} {'Recall':<12} {'True SW':<10} {'Pred SW':<10}")
+    print("-" * 100)
+
+    for model_name in model_predictions_dict.keys():
+        metrics = results[model_name]['with_switches']
+        if metrics:
+            print(f"{model_name:<15} "
+                  f"{metrics['proximity_fbeta2']:<12.3f} "
+                  f"{metrics['proximity_precision']:<12.3f} "
+                  f"{metrics['proximity_recall']:<12.3f} "
+                  f"{metrics['true_switches']:<10} "
+                  f"{metrics['pred_switches']:<10}")
+
+    print("\n" + "=" * 100)
+    print("SEGMENTS WITHOUT SWITCHES")
+    print("=" * 100)
+    print(f"{'Model':<15} {'Mode Accuracy':<15} {'False Switches':<15} {'False SW Rate':<15}")
+    print("-" * 100)
+
+    for model_name in model_predictions_dict.keys():
+        metrics = results[model_name]['without_switches']
+        if metrics:
+            print(f"{model_name:<15} "
+                  f"{metrics['mode_accuracy']:<15.3f} "
+                  f"{metrics['false_switches']:<15} "
+                  f"{metrics['false_switch_rate']:<15.3f}")
+
+    # Summary insights
+    print("\n" + "=" * 100)
+    print("KEY INSIGHTS")
+    print("=" * 100)
+
+    # Find best model for each category
+    best_fbeta_model = max(
+        [(name, results[name]['with_switches']['proximity_fbeta2'])
+         for name in model_predictions_dict.keys() if results[name]['with_switches']],
+        key=lambda x: x[1]
+    )
+
+    best_mode_acc_model = max(
+        [(name, results[name]['without_switches']['mode_accuracy'])
+         for name in model_predictions_dict.keys() if results[name]['without_switches']],
+        key=lambda x: x[1]
+    )
+
+    lowest_false_sw_model = min(
+        [(name, results[name]['without_switches']['false_switch_rate'])
+         for name in model_predictions_dict.keys() if results[name]['without_switches']],
+        key=lambda x: x[1]
+    )
+
+    print(f"\nBest at detecting switches: {best_fbeta_model[0]} (F-beta(2): {best_fbeta_model[1]:.3f})")
+    print(f"Best mode accuracy (non-switching): {best_mode_acc_model[0]} ({best_mode_acc_model[1]:.3f})")
+    print(f"Lowest false switch rate: {lowest_false_sw_model[0]} ({lowest_false_sw_model[1]:.3f})")
+
+    return results
+
+
+def print_six_model_comparison_by_segment_type(segment_type_results, model_names):
+    """
+    Print comprehensive comparison showing WITH/WITHOUT switch performance side-by-side
+
+    Args:
+        segment_type_results: Results from analyze_performance_by_segment_type()
+        model_names: List of model names in order (e.g., ['Random', 'Binary', 'mBERT', 'XLM-R', 'ALTO', 'CRF'])
+    """
+    print("\n" + "=" * 180)
+    print("SIX-WAY MODEL COMPARISON BY SEGMENT TYPE (5-token tolerance)")
+    print("=" * 180)
+
+    # Part 1: Segments WITH switches
+    print("\n" + "─" * 180)
+    print("SEGMENTS WITH SWITCHES (Switch Detection Performance)")
+    print("─" * 180)
+    print(
+        f"{'Model':<15} {'F-beta(2)':<12} {'Precision':<12} {'Recall':<12} {'F1':<12} {'True SW':<10} {'Pred SW':<10} {'Matched':<10}")
+    print("-" * 180)
+
+    with_switch_scores = []
+    for model_name in model_names:
+        metrics = segment_type_results[model_name]['with_switches']
+        if metrics:
+            print(f"{model_name:<15} "
+                  f"{metrics['proximity_fbeta2']:<12.3f} "
+                  f"{metrics['proximity_precision']:<12.3f} "
+                  f"{metrics['proximity_recall']:<12.3f} "
+                  f"{metrics['proximity_f1']:<12.3f} "
+                  f"{metrics['true_switches']:<10} "
+                  f"{metrics['pred_switches']:<10} "
+                  f"{metrics['total_matches']:<10}")
+            with_switch_scores.append((model_name, metrics['proximity_fbeta2']))
+        else:
+            print(f"{model_name:<15} {'N/A':<12}")
+
+    # Mark the best
+    if with_switch_scores:
+        best_model, best_score = max(with_switch_scores, key=lambda x: x[1])
+        print(f"\n★ Best performer: {best_model} (F-beta(2): {best_score:.3f})")
+
+    # Part 2: Segments WITHOUT switches
+    print("\n" + "─" * 180)
+    print("SEGMENTS WITHOUT SWITCHES (False Positive Control & Mode Accuracy)")
+    print("─" * 180)
+    print(
+        f"{'Model':<15} {'Mode Acc':<12} {'False SW':<12} {'False SW Rate':<15} {'Total Tokens':<15} {'Interpretation'}")
+    print("-" * 180)
+
+    mode_acc_scores = []
+    false_sw_scores = []
+
+    for model_name in model_names:
+        metrics = segment_type_results[model_name]['without_switches']
+        if metrics:
+            # Interpretation
+            if metrics['false_switch_rate'] < 0.01:
+                interp = "Excellent control"
+            elif metrics['false_switch_rate'] < 0.03:
+                interp = "Good control"
+            elif metrics['false_switch_rate'] < 0.05:
+                interp = "Fair control"
+            else:
+                interp = "⚠️ High false positives"
+
+            print(f"{model_name:<15} "
+                  f"{metrics['mode_accuracy']:<12.3f} "
+                  f"{metrics['false_switches']:<12} "
+                  f"{metrics['false_switch_rate']:<15.4f} "
+                  f"{metrics['total_tokens']:<15} "
+                  f"{interp}")
+
+            mode_acc_scores.append((model_name, metrics['mode_accuracy']))
+            false_sw_scores.append((model_name, metrics['false_switch_rate']))
+        else:
+            print(f"{model_name:<15} {'N/A':<12}")
+
+    # Mark the best
+    if mode_acc_scores:
+        best_mode_model, best_mode_acc = max(mode_acc_scores, key=lambda x: x[1])
+        best_control_model, best_control = min(false_sw_scores, key=lambda x: x[1])
+
+        print(f"\n★ Best mode accuracy: {best_mode_model} ({best_mode_acc:.3f})")
+        print(f"★ Best false positive control: {best_control_model} (rate: {best_control:.4f})")
+
+    # Part 3: Overall assessment
+    print("\n" + "=" * 180)
+    print("OVERALL ASSESSMENT")
+    print("=" * 180)
+
+    # Calculate a composite score: high switch detection + low false positives + high mode accuracy
+    print(f"\n{'Model':<15} {'Switch F-beta(2)':<18} {'Mode Accuracy':<18} {'False SW Rate':<18} {'Overall Quality'}")
+    print("-" * 180)
+
+    for model_name in model_names:
+        with_metrics = segment_type_results[model_name]['with_switches']
+        without_metrics = segment_type_results[model_name]['without_switches']
+
+        if with_metrics and without_metrics:
+            # Composite quality score
+            switch_score = with_metrics['proximity_fbeta2']
+            mode_score = without_metrics['mode_accuracy']
+            fp_penalty = without_metrics['false_switch_rate']
+
+            # Quality rating: good at switches + accurate on modes - false positives
+            quality = (switch_score + mode_score) / 2 - fp_penalty * 2
+
+            quality_label = ""
+            if quality >= 0.85:
+                quality_label = "★★★ Excellent"
+            elif quality >= 0.75:
+                quality_label = "★★ Very Good"
+            elif quality >= 0.65:
+                quality_label = "★ Good"
+            else:
+                quality_label = "Needs improvement"
+
+            print(f"{model_name:<15} "
+                  f"{switch_score:<18.3f} "
+                  f"{mode_score:<18.3f} "
+                  f"{fp_penalty:<18.4f} "
+                  f"{quality_label}")
+
+    # Key insights
+    print("\n" + "=" * 180)
+    print("KEY INSIGHTS")
+    print("=" * 180)
+
+    # Compare models
+    if len(model_names) >= 2:
+        # Find models that are good at switches but have high FP
+        for model_name in model_names:
+            with_m = segment_type_results[model_name]['with_switches']
+            without_m = segment_type_results[model_name]['without_switches']
+
+            if with_m and without_m:
+                if with_m['proximity_fbeta2'] > 0.7 and without_m['false_switch_rate'] > 0.05:
+                    print(f"\n⚠️ {model_name}: Good at finding switches but produces many false positives")
+                elif with_m['proximity_fbeta2'] < 0.5 and without_m['false_switch_rate'] < 0.02:
+                    print(f"\n⚠️ {model_name}: Conservative (few false positives) but misses many real switches")
+                elif with_m['proximity_fbeta2'] > 0.7 and without_m['false_switch_rate'] < 0.02:
+                    print(f"\n✓ {model_name}: Well-balanced (good detection + low false positives)")
+
+    print("\n" + "=" * 180)
+# Update unified_evaluation() to call this analysis
 if __name__ == "__main__":
     # Returns 5 models now
-    random_metrics, binary_metrics, mbert_metrics, xlmr_metrics, alto_metrics, crf_metrics = unified_evaluation()
+    random_metrics, binary_metrics, mbert_metrics, xlmr_metrics, alto_metrics, crf_metrics, segment_type_results = unified_evaluation()
+    print_six_model_comparison_by_segment_type(
+        segment_type_results,
+        ['Random', 'Binary', 'mBERT', 'XLM-R', 'ALTO', 'CRF']
+    )
 
     if random_metrics is not None:
         print("\n" + "=" * 160)
@@ -2134,7 +2717,8 @@ if __name__ == "__main__":
                                           xlmr_metrics, alto_metrics, crf_metrics)
         # Show detailed segment comparisons
         print("\n\nLoading models for detailed segment comparisons...")
-        TEST_FILE = './dataset/annotated-data/test_segments.csv'
+        TEST_FILE = './test_segments.csv'
+        # TEST_FILE = './dataset/annotated-data/test_segments.csv'
         test_df = pd.read_csv(TEST_FILE)
 
         # Calculate average switches

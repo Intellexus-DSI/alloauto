@@ -39,7 +39,8 @@ from torch.utils.data import Dataset
 MODELS_TO_TRAIN = [
     {  # ALTO additive 3-class
         'model_name': 'OMRIDRORI/mbert-tibetan-continual-wylie-final',
-        'output_dir': './alloauto-segmentation-training/benchmark_models_ALTO_architecture/ALTO_additive_seg_loss_3class_24_10'
+        'output_dir': './alloauto-segmentation-training/benchmark_models_ALTO_architecture/ALTO_additive_seg_loss_3class_24_10_no_constraint'
+        # 'output_dir': './alloauto-segmentation-training/benchmark_models_ALTO_architecture/ALTO_additive_seg_loss_3class_24_10'
     },
     # {   # CINO
     #     'model_name': 'hfl/cino-base-v2',
@@ -660,7 +661,8 @@ def train_alto_3class_additive(model_name, output_dir):
         segmentation_reward=1.0,
         proximity_reward=2.0,
         far_penalty=1.5,
-        apply_constraints=True
+        apply_constraints=False
+        # apply_constraints=True
     )
 
     trainer.add_callback(EarlyStoppingCallback(early_stopping_patience=5))

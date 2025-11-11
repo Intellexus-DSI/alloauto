@@ -1,504 +1,3 @@
-# """
-# BERT + CRF model with logical constraints
-# Enforces transition rules at inference time through CRF layer
-# """
-#
-# import torch
-# import torch.nn as nn
-# from torchcrf import CRF
-# from transformers import (
-#     AutoModel,
-#     AutoTokenizer,
-#     TrainingArguments,
-#     Trainer,
-#     DataCollatorForTokenClassification
-# )
-# from torch.utils.data import Dataset
-# import pandas as pd
-# import numpy as np
-# import os
-#
-# os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-#
-# print(f"Number of GPUs available: {torch.cuda.device_count()}")
-# for i in range(torch.cuda.device_count()):
-#     print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
-#
-#
-# class BertCrfForTokenClassification(nn.Module):
-#     """
-#     BERT encoder + CRF layer with impossible transitions blocked
-#
-#     Transition rules enforced:
-#     - No consecutive switches (2→2, 2→3, 3→2, 3→3)
-#     - After Switch→Auto (2), must be in Auto mode (0) or switch out (3)
-#     - After Switch→Allo (3), must be in Allo mode (1) or switch out (2)
-#     - Mode consistency: Auto (0) can't go to Allo (1) without switch
-#     - Mode consistency: Allo (1) can't go to Auto (0) without switch
-#     """
-#
-#     def __init__(self, model_name, num_labels=4):
-#         super().__init__()
-#         self.num_labels = num_labels
-#         self.model_name = model_name  # Store for saving
-#
-#         # BERT encoder
-#         self.bert = AutoModel.from_pretrained(model_name)
-#         for param in self.bert.parameters():
-#             param.requires_grad = True  # Ensure unfrozen
-#         self.dropout = nn.Dropout(0.1)
-#
-#         # Emission layer
-#         self.classifier = nn.Linear(self.bert.config.hidden_size, num_labels)
-#
-#         # CRF layer
-#         self.crf = CRF(num_labels, batch_first=True)
-#
-#         # Apply hard constraints
-#         self._init_transition_constraints()
-#
-#     def save_pretrained(self, save_directory):
-#         """Save model to directory"""
-#         import os
-#         os.makedirs(save_directory, exist_ok=True)
-#
-#         # Save model state
-#         model_path = os.path.join(save_directory, 'pytorch_model.bin')
-#         torch.save({
-#             'model_state_dict': self.state_dict(),
-#             'model_name': self.model_name,
-#             'num_labels': self.num_labels
-#         }, model_path)
-#
-#         # Save config
-#         config_path = os.path.join(save_directory, 'config.json')
-#         import json
-#         config = {
-#             'model_type': 'bert_crf',
-#             'model_name': self.model_name,
-#             'num_labels': self.num_labels,
-#             'hidden_size': self.bert.config.hidden_size
-#         }
-#         with open(config_path, 'w') as f:
-#             json.dump(config, f, indent=2)
-#
-#         print(f"Model saved to {save_directory}")
-#
-#     @classmethod
-#     def from_pretrained(cls, load_directory):
-#         """Load model from directory"""
-#         import os
-#
-#         model_path = os.path.join(load_directory, 'pytorch_model.bin')
-#         checkpoint = torch.load(model_path, map_location='cpu')
-#
-#         # Create model
-#         model = cls(
-#             model_name=checkpoint['model_name'],
-#             num_labels=checkpoint['num_labels']
-#         )
-#
-#         # Load state
-#         model.load_state_dict(checkpoint['model_state_dict'])
-#
-#         print(f"Model loaded from {load_directory}")
-#         return model
-#
-#     def _init_transition_constraints(self):
-#         """Initialize with stronger priors based on expected patterns"""
-#         with torch.no_grad():
-#             # Start with better initial values
-#             IMPOSSIBLE = -10000.0
-#             LIKELY = 2.0  # Encourage likely transitions
-#             UNLIKELY = -2.0  # Discourage unlikely ones
-#             NEUTRAL = 0.0
-#
-#             # Initialize all to neutral
-#             self.crf.transitions.data.fill_(NEUTRAL)
-#
-#             # Block impossible transitions
-#             self.crf.transitions.data[2, 2] = IMPOSSIBLE
-#             self.crf.transitions.data[2, 3] = IMPOSSIBLE
-#             self.crf.transitions.data[3, 2] = IMPOSSIBLE
-#             self.crf.transitions.data[3, 3] = IMPOSSIBLE
-#             self.crf.transitions.data[2, 1] = IMPOSSIBLE
-#             self.crf.transitions.data[3, 0] = IMPOSSIBLE
-#             self.crf.transitions.data[0, 1] = IMPOSSIBLE
-#             self.crf.transitions.data[0, 2] = IMPOSSIBLE
-#             self.crf.transitions.data[1, 0] = IMPOSSIBLE
-#             self.crf.transitions.data[1, 3] = IMPOSSIBLE
-#
-#             # Encourage likely transitions
-#             self.crf.transitions.data[0, 0] = LIKELY  # Auto stays Auto
-#             self.crf.transitions.data[1, 1] = LIKELY  # Allo stays Allo
-#             self.crf.transitions.data[2, 0] = LIKELY  # After switch to Auto, stay Auto
-#             self.crf.transitions.data[3, 1] = LIKELY  # After switch to Allo, stay Allo
-#
-#             # Discourage (but don't block) switches - make them learnable
-#             self.crf.transitions.data[0, 3] = UNLIKELY  # Auto to switch→Allo
-#             self.crf.transitions.data[1, 2] = UNLIKELY  # Allo to switch→Auto
-#
-#             print("\n" + "=" * 80)
-#             print("CRF INITIALIZED WITH STRONGER PRIORS")
-#             print("=" * 80)
-#     def forward(self, input_ids, attention_mask, labels=None):
-#         """Forward pass with CRF"""
-#         # Get BERT embeddings
-#         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
-#         sequence_output = outputs.last_hidden_state
-#         sequence_output = self.dropout(sequence_output)
-#
-#         # Get emission scores
-#         emissions = self.classifier(sequence_output)
-#
-#         if labels is not None:
-#             # Create mask for CRF
-#             mask = (labels != -100).bool()
-#
-#             # FIX: CRF requires first timestep to be valid (not padding)
-#             # Ensure at least the first position is True
-#             mask[:, 0] = True
-#
-#             # Prepare labels for CRF
-#             labels_for_crf = labels.clone()
-#             labels_for_crf[labels_for_crf == -100] = 0  # Replace -100 with 0
-#
-#             # CRF loss (negative log-likelihood)
-#             loss = -self.crf(emissions, labels_for_crf, mask=mask, reduction='mean')
-#
-#             return {'loss': loss, 'logits': emissions}
-#         else:
-#             # Inference: Viterbi decoding
-#             mask = attention_mask.bool()
-#             mask[:, 0] = True  # Ensure first position is valid
-#
-#             predictions = self.crf.decode(emissions, mask=mask)
-#             return {'logits': emissions, 'predictions': predictions}
-#
-# class CodeSwitchingDataset4Class(Dataset):
-#     """Same dataset class as main training"""
-#
-#     def __init__(self, csv_file, tokenizer, max_length=512):
-#         self.data = pd.read_csv(csv_file)
-#         self.tokenizer = tokenizer
-#         self.max_length = max_length
-#
-#     def __len__(self):
-#         return len(self.data)
-#
-#     def __getitem__(self, idx):
-#         row = self.data.iloc[idx]
-#         tokens = row['tokens'].split()
-#         labels = list(map(int, row['labels'].split(',')))
-#
-#         encoding = self.tokenizer(
-#             tokens,
-#             is_split_into_words=True,
-#             padding='max_length',
-#             truncation=True,
-#             max_length=self.max_length
-#         )
-#
-#         # Align labels
-#         word_ids = encoding.word_ids()
-#         aligned_labels = []
-#         previous_word_idx = None
-#
-#         for word_idx in word_ids:
-#             if word_idx is None:
-#                 aligned_labels.append(-100)
-#             elif word_idx != previous_word_idx:
-#                 aligned_labels.append(labels[word_idx] if word_idx < len(labels) else -100)
-#             else:
-#                 aligned_labels.append(-100)
-#             previous_word_idx = word_idx
-#
-#         return {
-#             'input_ids': torch.tensor(encoding['input_ids']),
-#             'attention_mask': torch.tensor(encoding['attention_mask']),
-#             'labels': torch.tensor(aligned_labels)
-#         }
-#
-#
-# class CRFTrainer(Trainer):
-#     """Trainer that handles CRF forward pass correctly"""
-#
-#     def __init__(self, *args, **kwargs):
-#         if 'tokenizer' in kwargs and 'processing_class' not in kwargs:
-#             kwargs['processing_class'] = kwargs.get('tokenizer')
-#         super().__init__(*args, **kwargs)
-#
-#     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
-#         """CRF model returns loss directly"""
-#         outputs = model(**inputs)
-#         loss = outputs['loss']
-#         return (loss, outputs) if return_outputs else loss
-#
-#     def prediction_step(self, model, inputs, prediction_loss_only, ignore_keys=None):
-#         """Use Viterbi decoding for predictions"""
-#         inputs = self._prepare_inputs(inputs)
-#         labels = inputs.pop('labels')
-#
-#         with torch.no_grad():
-#             # Get loss
-#             outputs_with_loss = model(**inputs, labels=labels)
-#             loss = outputs_with_loss['loss']
-#
-#             # Get Viterbi predictions
-#             outputs = model(**inputs)
-#             viterbi_predictions = outputs['predictions']  # List of variable-length sequences
-#
-#             # Convert to fixed-length tensor matching labels shape
-#             batch_size, seq_len = labels.shape
-#             pred_tensor = torch.full(
-#                 (batch_size, seq_len),
-#                 fill_value=-100,
-#                 dtype=torch.long,
-#                 device=labels.device
-#             )
-#
-#             # Fill in predictions from Viterbi, aligning with non-padded positions
-#             for i, pred_seq in enumerate(viterbi_predictions):
-#                 # Find valid (non-padded) positions
-#                 valid_mask = labels[i] != -100
-#                 valid_positions = torch.where(valid_mask)[0]
-#
-#                 # Fill predictions up to the length we have
-#                 pred_len = min(len(pred_seq), len(valid_positions))
-#                 pred_tensor[i, valid_positions[:pred_len]] = torch.tensor(
-#                     pred_seq[:pred_len],
-#                     device=labels.device
-#                 )
-#
-#             # Get logits
-#             logits = outputs_with_loss['logits']
-#
-#         return (loss, pred_tensor, labels)
-#
-#
-# def evaluate_with_proximity(true_labels, pred_labels, tolerance=5):
-#     """Evaluate with 5-token proximity tolerance"""
-#     true_labels = np.array(true_labels)
-#     pred_labels = np.array(pred_labels)
-#
-#     true_auto = np.where(true_labels == 2)[0]
-#     true_allo = np.where(true_labels == 3)[0]
-#     pred_auto = np.where(pred_labels == 2)[0]
-#     pred_allo = np.where(pred_labels == 3)[0]
-#
-#     matched_true = set()
-#
-#     # Match with tolerance
-#     for pred_pos in pred_auto:
-#         if len(true_auto) > 0:
-#             distances = np.abs(true_auto - pred_pos)
-#             min_dist = np.min(distances)
-#             closest_true = true_auto[np.argmin(distances)]
-#             if closest_true not in matched_true and min_dist <= tolerance:
-#                 matched_true.add(closest_true)
-#
-#     for pred_pos in pred_allo:
-#         if len(true_allo) > 0:
-#             distances = np.abs(true_allo - pred_pos)
-#             min_dist = np.min(distances)
-#             closest_true = true_allo[np.argmin(distances)]
-#             if closest_true not in matched_true and min_dist <= tolerance:
-#                 matched_true.add(closest_true)
-#
-#     total_true = len(true_auto) + len(true_allo)
-#     total_pred = len(pred_auto) + len(pred_allo)
-#     total_matched = len(matched_true)
-#
-#     precision = total_matched / total_pred if total_pred > 0 else 0
-#     recall = total_matched / total_true if total_true > 0 else 0
-#     f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-#
-#     beta = 2
-#     fbeta2 = ((1 + beta ** 2) * precision * recall /
-#               (beta ** 2 * precision + recall)) if (precision + recall) > 0 else 0
-#
-#     return {
-#         'precision': precision,
-#         'recall': recall,
-#         'f1': f1,
-#         'fbeta2': fbeta2,
-#         'true_switches': total_true,
-#         'pred_switches': total_pred
-#     }
-#
-#
-# def compute_metrics(eval_pred):
-#     predictions, labels = eval_pred
-#
-#     # Now both have same shape: (batch_size, seq_len)
-#     # Flatten everything
-#     predictions = predictions.flatten()
-#     labels = labels.flatten()
-#
-#     # Remove padding
-#     mask = labels != -100
-#     predictions = predictions[mask]
-#     labels = labels[mask]
-#
-#     # Accuracy
-#     accuracy = (predictions == labels).mean()
-#
-#     # Proximity metrics
-#     prox = evaluate_with_proximity(labels, predictions, tolerance=5)
-#
-#     return {
-#         'accuracy': float(accuracy),
-#         'precision': float(prox['precision']),
-#         'recall': float(prox['recall']),
-#         'f1': float(prox['f1']),
-#         'fbeta2': float(prox['fbeta2']),
-#         'true_switches': prox['true_switches'],
-#         'pred_switches': prox['pred_switches']
-#     }
-#
-# def train_crf_model():
-#     print("=" * 80)
-#     print("TRAINING BERT + CRF MODEL")
-#     print("Using EXACT SAME data splits as main ALTO model")
-#     print("=" * 80)
-#
-#     # Use the SAME files as your main training
-#     if os.path.exists('train_segments_stratified.csv'):
-#         print("\n✓ Found stratified splits")
-#         TRAIN_FILE = 'train_segments_stratified.csv'
-#         VAL_FILE = 'val_segments_stratified.csv'
-#         TEST_FILE = 'test_segments_stratified.csv'
-#     elif os.path.exists('train_segments.csv'):
-#         print("\n✓ Found regular splits")
-#         TRAIN_FILE = 'train_segments.csv'
-#         VAL_FILE = 'val_segments.csv'
-#         TEST_FILE = 'test_segments.csv'
-#     else:
-#         print("\n❌ ERROR: No data splits found!")
-#         print("Please run your main training script first to create the splits.")
-#         return None, None, None
-#
-#     OUTPUT_DIR = './alloauto-segmentation-training/fine_tuned_ALTO_models/crf_model'
-#
-#     # Use SAME base model as main training
-#     model_name = 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
-#     print(f"\nLoading tokenizer from: {model_name}")
-#     tokenizer = AutoTokenizer.from_pretrained(model_name)
-#
-#     print("Creating BERT + CRF model with constraints...")
-#     model = BertCrfForTokenClassification(model_name, num_labels=4)
-#
-#     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-#     model = model.to(device)
-#     print(f"Using device: {device}")
-#
-#     # Load datasets
-#     print(f"\nLoading datasets...")
-#     train_dataset = CodeSwitchingDataset4Class(TRAIN_FILE, tokenizer)
-#     val_dataset = CodeSwitchingDataset4Class(VAL_FILE, tokenizer)
-#     test_dataset = CodeSwitchingDataset4Class(TEST_FILE, tokenizer)
-#
-#     print(f"  Train: {len(train_dataset)} segments")
-#     print(f"  Val: {len(val_dataset)} segments")
-#     print(f"  Test: {len(test_dataset)} segments")
-#
-#     data_collator = DataCollatorForTokenClassification(tokenizer)
-#     optimizer_grouped_parameters = [
-#         {
-#             'params': [p for n, p in model.named_parameters() if 'crf' not in n],
-#             'lr': 2e-5  # Lower for BERT
-#         },
-#         {
-#             'params': [p for n, p in model.named_parameters() if 'crf' in n],
-#             'lr': 1e-3  # Much higher for CRF
-#         }
-#     ]
-#
-#     from torch.optim import AdamW
-#     optimizer = AdamW(optimizer_grouped_parameters, weight_decay=0.01)
-#
-#     # Training arguments
-#     training_args = TrainingArguments(
-#         output_dir=OUTPUT_DIR,
-#         eval_strategy="epoch",  # Changed from steps
-#         save_strategy="no",
-#         learning_rate=5e-5,  # Higher
-#         per_device_train_batch_size=8,
-#         per_device_eval_batch_size=8,
-#         num_train_epochs=40,  # More epochs
-#         weight_decay=0.01,
-#         warmup_ratio=0.15,  # More warmup
-#         metric_for_best_model='fbeta2',
-#         fp16=torch.cuda.is_available(),
-#         report_to=[]
-#     )
-#
-#     # Trainer
-#     trainer = CRFTrainer(
-#         model=model,
-#         args=training_args,
-#         train_dataset=train_dataset,
-#         eval_dataset=val_dataset,
-#         data_collator=data_collator,
-#         processing_class=tokenizer,
-#         compute_metrics=compute_metrics,
-#         optimizers=(optimizer, None)  # Custom optimizer
-#     )
-#
-#     # Train
-#     print("\nStarting training with CRF constraints...")
-#     print("Viterbi decoding will enforce logical transitions during inference")
-#     trainer.train()
-#
-#     # Save
-#     print(f"\nSaving model to {OUTPUT_DIR}/final_model...")
-#     model.save_pretrained(f'{OUTPUT_DIR}/final_model')
-#     tokenizer.save_pretrained(f'{OUTPUT_DIR}/final_model')
-#
-#     print(f"✅ Model saved successfully")
-#
-#     # Evaluate
-#     print("\nEvaluating on test set...")
-#     test_results = trainer.evaluate(eval_dataset=test_dataset)
-#
-#     print(f"\n=== CRF Model Test Results ===")
-#     print(f"Accuracy: {test_results['eval_accuracy']:.3f}")
-#     print(f"Precision: {test_results['eval_precision']:.3f}")
-#     print(f"Recall: {test_results['eval_recall']:.3f}")
-#     print(f"F1: {test_results['eval_f1']:.3f}")
-#     print(f"F-beta(2): {test_results['eval_fbeta2']:.3f}")
-#
-#     # Show learned transitions
-#     print("\n" + "=" * 80)
-#     print("LEARNED CRF TRANSITION MATRIX")
-#     print("=" * 80)
-#     transitions = model.crf.transitions.data.cpu().numpy()
-#
-#     labels = ['Auto(0)', 'Allo(1)', '→Auto(2)', '→Allo(3)']
-#     print(f"\n{'From/To':<12}", end='')
-#     for to_label in labels:
-#         print(f"{to_label:>12}", end='')
-#     print()
-#     print("-" * 60)
-#
-#     for i, from_label in enumerate(labels):
-#         print(f"{from_label:<12}", end='')
-#         for j in range(4):
-#             score = transitions[i, j]
-#             if score < -1000:
-#                 print(f"{'BLOCKED':>12}", end='')
-#             else:
-#                 print(f"{score:>12.2f}", end='')
-#         print()
-#
-#     print("\nBLOCKED transitions remain impossible due to hard constraints")
-#
-#     return trainer, model, tokenizer
-#
-#
-# if __name__ == "__main__":
-#     trainer, model, tokenizer = train_crf_model()
-
 """
 4-Class Code-Switching Detection System for Tibetan Text
 Classes:
@@ -534,7 +33,7 @@ from torch.utils.data import Dataset
 from pathlib import Path
 
 # Environment setup
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 ssl._create_default_https_context = ssl._create_unverified_context
 
 print(f"Number of GPUs available: {torch.cuda.device_count()}")
@@ -545,429 +44,6 @@ for i in range(torch.cuda.device_count()):
 # ============================================================================
 # PART 1: DATA PROCESSING
 # ============================================================================
-
-def aggressive_tag_removal(text):
-    """
-    Aggressively remove ALL forms of tags and partial tags from text
-    """
-    tag_patterns = [
-        # Full tags with any case and spacing
-        r'<\s*[Aa][Uu][Tt][Oo]\s*>',
-        r'<\s*[Aa][Ll][Ll][Oo]\s*>',
-        # Partial tags (opening)
-        r'<\s*[Aa][Uu][Tt][Oo]\b',
-        r'<\s*[Aa][Ll][Ll][Oo]\b',
-        r'<\s*[Aa][Uu][Tt]\b',
-        r'<\s*[Aa][Ll][Ll]\b',
-        r'<\s*[Aa][Uu]\b',
-        r'<\s*[Aa][Ll]\b',
-        # Partial tags (closing)
-        r'\b[Aa][Uu][Tt][Oo]\s*>',
-        r'\b[Aa][Ll][Ll][Oo]\s*>',
-        r'\b[Uu][Tt][Oo]\s*>',
-        r'\b[Ll][Ll][Oo]\s*>',
-        # Any word containing tag patterns
-        r'\S*<[Aa][Uu][Tt][Oo]\S*',
-        r'\S*<[Aa][Ll][Ll][Oo]\S*',
-        r'\S*[Aa][Uu][Tt][Oo]>\S*',
-        r'\S*[Aa][Ll][Ll][Oo]>\S*',
-    ]
-
-    cleaned_text = text
-    for pattern in tag_patterns:
-        cleaned_text = re.sub(pattern, ' ', cleaned_text)
-
-    cleaned_text = re.sub(r'\s+', ' ', cleaned_text)
-    return cleaned_text.strip()
-
-
-def process_segment_to_tokens_labels_clean(segment_text):
-    """
-    Convert segment to tokens and labels, ensuring NO tags in tokens
-    """
-    # Normalize tags for consistent splitting
-    normalized_text = re.sub(r'<\s*AUTO\s*>', '<auto>', segment_text, flags=re.IGNORECASE)
-    normalized_text = re.sub(r'<\s*ALLO\s*>', '<allo>', normalized_text, flags=re.IGNORECASE)
-
-    # Split by tags
-    parts = re.split(r'(<auto>|<allo>)', normalized_text.lower())
-
-    tokens = []
-    labels = []
-    current_mode = None
-
-    for i, part in enumerate(parts):
-        if part == '<auto>':
-            continue  # Skip tag
-        elif part == '<allo>':
-            continue  # Skip tag
-        elif part.strip():
-            # Clean any remaining tag fragments
-            clean_part = aggressive_tag_removal(part)
-            words = clean_part.strip().split()
-
-            # Determine mode from previous tags
-            segment_mode = None
-            for j in range(i - 1, -1, -1):
-                if parts[j] == '<auto>':
-                    segment_mode = 'auto'
-                    break
-                elif parts[j] == '<allo>':
-                    segment_mode = 'allo'
-                    break
-
-            if segment_mode is None:
-                segment_mode = 'auto'
-
-            for word_idx, word in enumerate(words):
-                # Double-check word doesn't contain tags
-                if contains_any_tag_pattern(word):
-                    continue  # Skip tag fragments
-
-                tokens.append(word)
-
-                # Assign label
-                if word_idx == 0 and current_mode is not None and current_mode != segment_mode:
-                    label = 2 if segment_mode == 'auto' else 3
-                else:
-                    label = 0 if segment_mode == 'auto' else 1
-
-                labels.append(label)
-
-            current_mode = segment_mode
-
-    return tokens, labels
-
-def contains_any_tag_pattern(text):
-    """
-    Check if text contains ANY form of tag or partial tag
-    Returns True if ANY tag pattern is found
-    """
-    # Comprehensive list of patterns to check
-    forbidden_patterns = [
-        # Full tags
-        r'<auto>', r'<AUTO>', r'<allo>', r'<ALLO>',
-        r'<Auto>', r'<Allo>',
-        # With spaces
-        r'<\s+auto\s+>', r'<\s+AUTO\s+>', r'<\s+allo\s+>', r'<\s+ALLO\s+>',
-        # Partial tags (missing closing)
-        r'<auto\b', r'<AUTO\b', r'<allo\b', r'<ALLO\b',
-        r'<aut\b', r'<AUT\b', r'<all\b', r'<ALL\b',
-        r'<au\b', r'<AU\b', r'<al\b', r'<AL\b',
-        # Partial tags (missing opening)
-        r'\bauto>', r'\bAUTO>', r'\ballo>', r'\bALLO>',
-        r'\buto>', r'\bUTO>', r'\bllo>', r'\bLLO>',
-        r'\bto>', r'\bTO>', r'\blo>', r'\bLO>',
-        # Check for fragments within words
-        r'<auto', r'<AUTO', r'<allo', r'<ALLO',
-        r'auto>', r'AUTO>', r'allo>', r'ALLO>',
-    ]
-
-    text_lower = text.lower()
-
-    for pattern in forbidden_patterns:
-        if re.search(pattern, text, re.IGNORECASE):
-            return True
-
-    # Also check for simple substring presence
-    forbidden_substrings = [
-        '<auto', '<AUTO', '<allo', '<ALLO',
-        'auto>', 'AUTO>', 'allo>', 'ALLO>',
-        '<Auto', '<Allo', 'Auto>', 'Allo>'
-    ]
-
-    for substring in forbidden_substrings:
-        if substring in text or substring.lower() in text_lower:
-            return True
-
-    return False
-def process_segment_to_tokens_labels_v2(segment_text):
-    """
-    Convert a segment to tokens and 4-class labels
-    MODIFIED: Tags are used for labeling but NOT included in tokens
-    """
-    # Split by tags while keeping them
-    parts = re.split(r'(<auto>|<allo>)', segment_text)
-
-    tokens = []
-    labels = []
-    current_mode = None
-
-    for i, part in enumerate(parts):
-        if part == '<auto>':
-            # Don't add tag to tokens, just note mode change
-            continue
-        elif part == '<allo>':
-            # Don't add tag to tokens, just note mode change
-            continue
-        elif part.strip():
-            words = part.strip().split()
-
-            # Determine what mode this segment should be in
-            segment_mode = None
-            for j in range(i - 1, -1, -1):
-                if parts[j] == '<auto>':
-                    segment_mode = 'auto'
-                    break
-                elif parts[j] == '<allo>':
-                    segment_mode = 'allo'
-                    break
-
-            if segment_mode is None:
-                segment_mode = 'auto'  # Default to auto if no tag found before
-
-            for word_idx, word in enumerate(words):
-                # Add the actual word (no tags)
-                tokens.append(word)
-
-                # Determine label based on position and mode change
-                if word_idx == 0 and current_mode is not None and current_mode != segment_mode:
-                    # This is the FIRST word after a mode change - it's a switch point
-                    label = 2 if segment_mode == 'auto' else 3  # Switch TO auto or Switch TO allo
-                else:
-                    # Continuation in current mode
-                    label = 0 if segment_mode == 'auto' else 1  # Non-switch auto or Non-switch allo
-
-                labels.append(label)
-
-            current_mode = segment_mode
-
-    return tokens, labels
-
-
-def verify_segment_has_switch(segment_text):
-    """
-    Verify that a segment contains at least one actual switch point
-    Returns True if segment has at least one transition between auto and allo
-    """
-    # Must have both tags
-    if '<auto>' not in segment_text or '<allo>' not in segment_text:
-        return False
-
-    # Check for actual switches by looking at tag sequences
-    parts = re.split(r'(<auto>|<allo>)', segment_text)
-
-    last_tag = None
-    switches_found = 0
-
-    for part in parts:
-        if part == '<auto>':
-            if last_tag == '<allo>':
-                switches_found += 1
-            last_tag = '<auto>'
-        elif part == '<allo>':
-            if last_tag == '<auto>':
-                switches_found += 1
-            last_tag = '<allo>'
-
-    return switches_found > 0
-
-
-def process_file_to_segments(file_path, file_type):
-    """
-    Process a single file and extract segments with guaranteed switches
-    MODIFIED: Ensures tokens don't contain ANY form of tags
-    """
-    print(f"Processing {file_type} file: {file_path.name}")
-
-    # Read file content
-    if file_type == 'docx':
-        doc = docx.Document(str(file_path))
-        text_content = ' '.join([para.text for para in doc.paragraphs])
-    else:  # txt file
-        encodings = ['utf-8', 'utf-16', 'latin-1', 'cp1252']
-        text_content = None
-
-        for encoding in encodings:
-            try:
-                with open(file_path, 'r', encoding=encoding) as f:
-                    text_content = f.read()
-                break
-            except UnicodeDecodeError:
-                continue
-
-        if text_content is None:
-            raise ValueError(f"Could not read {file_path.name} with any encoding")
-
-    # Clean and normalize
-    text_content = clean_and_normalize_text(text_content)
-
-    # Split into sentences
-    sentences = split_into_sentences(text_content)
-    print(f"  Found {len(sentences)} sentences")
-
-    # Extract segments with token limit and switch verification
-    segments = extract_segments_with_token_limit(sentences, min_tokens=300, max_tokens=400)
-    print(f"  Found {len(segments)} segments with verified switches (300-400 tokens each)")
-
-    # Convert segments to token-label pairs
-    processed_segments = []
-    segments_without_switches = 0
-    segments_with_tags = 0
-
-    for seg_idx, segment in enumerate(segments):
-        # Use the clean processing function
-        tokens, labels = process_segment_to_tokens_labels_clean(segment['text'])
-
-        if len(tokens) > 0:
-            # Count actual transitions in labels
-            num_transitions = sum(1 for l in labels if l in [2, 3])
-
-            # Double-check that we have switches
-            if num_transitions == 0:
-                segments_without_switches += 1
-                continue  # Skip segments without actual switches
-
-            # CRITICAL: Verify no tags in tokens
-            has_tags = False
-            for token in tokens:
-                if contains_any_tag_pattern(token):
-                    has_tags = True
-                    segments_with_tags += 1
-                    print(f"    WARNING: Found tag in token: '{token}'")
-                    break
-
-            if has_tags:
-                continue  # Skip this segment entirely
-
-            # Create text WITHOUT tags for storage
-            # Join tokens directly (they're already clean)
-            text_without_tags = ' '.join(tokens)
-
-            # Final verification
-            if contains_any_tag_pattern(text_without_tags):
-                print(f"    WARNING: Tags still found after cleaning in segment {seg_idx}")
-                segments_with_tags += 1
-                continue
-
-            processed_segments.append({
-                'segment_id': f"{file_path.stem}_{seg_idx}",
-                'source_file': file_path.name,
-                'file_type': file_type,
-                'tokens': tokens,  # These are now completely tag-free tokens
-                'labels': labels,
-                'num_tokens': len(tokens),
-                'num_transitions': num_transitions,
-                'original_text': text_without_tags  # Store clean text
-            })
-
-    if segments_without_switches > 0:
-        print(f"  Warning: Filtered out {segments_without_switches} segments without switches")
-
-    if segments_with_tags > 0:
-        print(f"  Warning: Filtered out {segments_with_tags} segments that still contained tags")
-
-    print(f"  Processed {len(processed_segments)} valid, clean segments (all have switches, no tags)")
-    return processed_segments
-
-
-def process_file_to_segments_v1(file_path, file_type):
-    """
-    Process a single file and extract segments with guaranteed switches
-    MODIFIED: Ensures tokens don't contain tags
-    """
-    print(f"Processing {file_type} file: {file_path.name}")
-
-    # Read file content
-    if file_type == 'docx':
-        doc = docx.Document(str(file_path))
-        text_content = ' '.join([para.text for para in doc.paragraphs])
-    else:  # txt file
-        encodings = ['utf-8', 'utf-16', 'latin-1', 'cp1252']
-        text_content = None
-
-        for encoding in encodings:
-            try:
-                with open(file_path, 'r', encoding=encoding) as f:
-                    text_content = f.read()
-                break
-            except UnicodeDecodeError:
-                continue
-
-        if text_content is None:
-            raise ValueError(f"Could not read {file_path.name} with any encoding")
-
-    # Clean and normalize
-    text_content = clean_and_normalize_text(text_content)
-
-    # Split into sentences
-    sentences = split_into_sentences(text_content)
-    print(f"  Found {len(sentences)} sentences")
-
-    # Extract segments with token limit and switch verification
-    segments = extract_segments_with_token_limit(sentences, min_tokens=300, max_tokens=400)
-    print(f"  Found {len(segments)} segments with verified switches (300-400 tokens each)")
-
-    # Convert segments to token-label pairs
-    processed_segments = []
-    segments_without_switches = 0
-
-    for seg_idx, segment in enumerate(segments):
-        tokens, labels = process_segment_to_tokens_labels_v2(segment['text'])
-
-        if len(tokens) > 0:
-            # Count actual transitions in labels
-            num_transitions = sum(1 for l in labels if l in [2, 3])
-
-            # Double-check that we have switches
-            if num_transitions == 0:
-                segments_without_switches += 1
-                continue  # Skip segments without actual switches
-
-            # Create text WITHOUT tags for storage
-            text_without_tags = segment['text']
-            text_without_tags = re.sub(r'<auto>', '', text_without_tags)
-            text_without_tags = re.sub(r'<allo>', '', text_without_tags)
-            text_without_tags = re.sub(r'\s+', ' ', text_without_tags).strip()
-
-            processed_segments.append({
-                'segment_id': f"{file_path.stem}_{seg_idx}",
-                'source_file': file_path.name,
-                'file_type': file_type,
-                'tokens': tokens,  # These are now tag-free tokens
-                'labels': labels,
-                'num_tokens': len(tokens),
-                'num_transitions': num_transitions,
-                'original_text': text_without_tags  # Store text without tags
-            })
-
-    if segments_without_switches > 0:
-        print(f"  Warning: Filtered out {segments_without_switches} segments without switches")
-
-    print(f"  Processed {len(processed_segments)} valid segments (all have switches)")
-    return processed_segments
-
-
-def validate_preprocessing(sample_segment_text):
-    """
-    Helper function to validate that preprocessing works correctly
-    Shows how tags are used for labeling but not included in tokens
-    """
-    print("\n=== PREPROCESSING VALIDATION ===")
-    print(f"Original text with tags:\n{sample_segment_text}\n")
-
-    tokens, labels = process_segment_to_tokens_labels_clean(sample_segment_text)
-
-    print("Tokens (no tags):")
-    for i, (token, label) in enumerate(zip(tokens[:20], labels[:20])):  # Show first 20
-        label_names = {
-            0: 'NonSwitch-Auto',
-            1: 'NonSwitch-Allo',
-            2: 'SWITCH→Auto',
-            3: 'SWITCH→Allo'
-        }
-        print(f"  {i:3d}: '{token:15s}' -> {label_names[label]}")
-
-    # Verify no tags in tokens
-    has_tags = any('<auto>' in t.lower() or '<allo>' in t.lower() for t in tokens)
-    print(f"\nTokens contain tags: {has_tags} (should be False)")
-
-    # Count switches
-    num_switches = sum(1 for l in labels if l in [2, 3])
-    print(f"Number of switch points: {num_switches}")
-
-    return tokens, labels
-
 
 
 def analyze_and_balance_switch_distribution(train_df, val_df, test_df):
@@ -1280,6 +356,34 @@ def extract_segments_with_token_limit(sentences, min_tokens=300, max_tokens=400)
     return segments
 
 
+def verify_segment_has_switch(segment_text):
+    """
+    Verify that a segment contains at least one actual switch point
+    Returns True if segment has at least one transition
+    """
+    # Must have both tags
+    if '<auto>' not in segment_text or '<allo>' not in segment_text:
+        return False
+
+    # Check for actual switches by looking at tag sequences
+    parts = re.split(r'(<auto>|<allo>)', segment_text)
+
+    last_tag = None
+    switches_found = 0
+
+    for part in parts:
+        if part == '<auto>':
+            if last_tag == '<allo>':
+                switches_found += 1
+            last_tag = '<auto>'
+        elif part == '<allo>':
+            if last_tag == '<auto>':
+                switches_found += 1
+            last_tag = '<allo>'
+
+    return switches_found > 0
+
+
 def extend_to_find_switch(current_segment, all_sentences, current_idx, max_tokens):
     """
     Try to extend segment to include at least one switch
@@ -1314,7 +418,7 @@ def extend_to_find_switch(current_segment, all_sentences, current_idx, max_token
     return None
 
 
-def process_segment_to_tokens_labels_old(segment_text):
+def process_segment_to_tokens_labels(segment_text):
     """
     Convert a segment to tokens and 4-class labels
     """
@@ -1364,7 +468,7 @@ def process_segment_to_tokens_labels_old(segment_text):
     return tokens, labels
 
 
-def process_file_to_segments_old(file_path, file_type):
+def process_file_to_segments(file_path, file_type):
     """
     Process a single file and extract segments with guaranteed switches
     """
@@ -1405,7 +509,7 @@ def process_file_to_segments_old(file_path, file_type):
     segments_without_switches = 0
 
     for seg_idx, segment in enumerate(segments):
-        tokens, labels = process_segment_to_tokens_labels_v2(segment['text'])
+        tokens, labels = process_segment_to_tokens_labels(segment['text'])
 
         if len(tokens) > 0:
             # Count actual transitions in labels
@@ -1434,21 +538,6 @@ def process_file_to_segments_old(file_path, file_type):
     return processed_segments
 
 
-def has_code_switching_tags(file_path, file_type):
-    """Check if file contains AUTO/ALLO tags before processing"""
-    try:
-        if file_type == 'docx':
-            doc = docx.Document(str(file_path))
-            text_content = ' '.join([para.text for para in doc.paragraphs])
-        else:
-            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                text_content = f.read()
-
-        # Check for any variation of tags
-        text_lower = text_content.lower()
-        return ('<auto>' in text_lower or '<allo>' in text_lower)
-    except:
-        return False
 def process_all_files(data_dir):
     """
     Process all .txt and .docx files in the data directory
@@ -1459,13 +548,8 @@ def process_all_files(data_dir):
     txt_files = list(data_path.glob("*.txt"))
     docx_files = list(data_path.glob("*.docx"))
 
-    # all_files = [(f, 'txt') for f in txt_files] + [(f, 'docx') for f in docx_files]
-    #
-
     all_files = [(f, 'txt') for f in txt_files] + [(f, 'docx') for f in docx_files]
-    # Filter files with tags
-    all_files = [(f, t) for f, t in all_files if has_code_switching_tags(f, t)]
-    print(f"Files with code-switching tags: {len(all_files)}")
+
     print(f"\nFound {len(txt_files)} .txt files and {len(docx_files)} .docx files")
     print(f"Total files to process: {len(all_files)}")
 
@@ -1859,54 +943,25 @@ class ProximityAwareLoss4Class(nn.Module):
                         proximity_adjusted_loss[b, pred_pos] *= self.false_positive_penalty
                 else:
                     proximity_adjusted_loss[b, pred_pos] *= self.false_positive_penalty * 2
-            # Penalize missed true switches with distance-aware scaling
+
+            # Penalize missed true switches
             for true_pos in true_switches_to_auto:
                 if len(pred_switches_to_auto) == 0:
-                    # No predictions at all - heavy penalty
-                    proximity_adjusted_loss[b, true_pos] *= 5.0
+                    proximity_adjusted_loss[b, true_pos] *= 3.0
                 else:
                     distances = torch.abs(pred_switches_to_auto - true_pos)
                     min_distance = torch.min(distances).item()
-
                     if min_distance > self.proximity_tolerance:
-                        # Scale penalty based on how far the nearest prediction is
-                        # Further away = higher penalty
-                        distance_penalty = 2.0 + (min_distance - self.proximity_tolerance) * 0.3
-                        distance_penalty = min(distance_penalty, 8.0)  # Cap at 8x
-                        proximity_adjusted_loss[b, true_pos] *= distance_penalty
-                    # If within tolerance, the positive proximity logic already handled it
+                        proximity_adjusted_loss[b, true_pos] *= 2.0
 
-            # Same for allo switches
             for true_pos in true_switches_to_allo:
                 if len(pred_switches_to_allo) == 0:
-                    proximity_adjusted_loss[b, true_pos] *= 5.0
+                    proximity_adjusted_loss[b, true_pos] *= 3.0
                 else:
                     distances = torch.abs(pred_switches_to_allo - true_pos)
                     min_distance = torch.min(distances).item()
-
                     if min_distance > self.proximity_tolerance:
-                        distance_penalty = 2.0 + (min_distance - self.proximity_tolerance) * 0.3
-                        distance_penalty = min(distance_penalty, 8.0)
-                        proximity_adjusted_loss[b, true_pos] *= distance_penalty
-
-            # Penalize missed true switches
-            # for true_pos in true_switches_to_auto:
-            #     if len(pred_switches_to_auto) == 0:
-            #         proximity_adjusted_loss[b, true_pos] *= 3.0
-            #     else:
-            #         distances = torch.abs(pred_switches_to_auto - true_pos)
-            #         min_distance = torch.min(distances).item()
-            #         if min_distance > self.proximity_tolerance:
-            #             proximity_adjusted_loss[b, true_pos] *= 2.0
-
-            # for true_pos in true_switches_to_allo:
-            #     if len(pred_switches_to_allo) == 0:
-            #         proximity_adjusted_loss[b, true_pos] *= 3.0
-            #     else:
-            #         distances = torch.abs(pred_switches_to_allo - true_pos)
-            #         min_distance = torch.min(distances).item()
-            #         if min_distance > self.proximity_tolerance:
-            #             proximity_adjusted_loss[b, true_pos] *= 2.0
+                        proximity_adjusted_loss[b, true_pos] *= 2.0
 
         # Apply valid mask and compute mean
         total_loss = proximity_adjusted_loss * valid_mask
@@ -2070,67 +1125,11 @@ def compute_metrics_for_trainer(eval_pred, tolerance=5):
         'matched_to_allo': switch_metrics['matched_to_allo']
     }
 
-import torch
-import torch.nn as nn
-from torchcrf import CRF
-from transformers import AutoModelForTokenClassification
 
 # ============================================================================
 # PART 5: CUSTOM TRAINER
 # ============================================================================
-class ProximityTrainedModelWithCRF(nn.Module):
-    """
-    Wraps your existing trained model and adds CRF for constrained inference
-    Training: Uses proximity loss (keeps all your existing learning)
-    Inference: Uses CRF Viterbi to enforce logical constraints
-    """
 
-    def __init__(self, pretrained_model_path):
-        super().__init__()
-
-        # Load your EXISTING proximity-trained model
-        self.bert_model = AutoModelForTokenClassification.from_pretrained(pretrained_model_path)
-
-        # Add CRF layer on top (only for inference)
-        self.crf = CRF(num_tags=4, batch_first=True)
-
-        # Initialize CRF transitions with constraints
-        self._init_crf_constraints()
-
-        # Flag to control whether to use CRF
-        self.use_crf = False  # False during training, True during inference
-
-    def _init_crf_constraints(self):
-        """Set impossible transitions to very negative values"""
-        with torch.no_grad():
-            IMPOSSIBLE = -10000.0
-
-            # Block invalid transitions (same as before)
-            self.crf.transitions[2, 2] = IMPOSSIBLE  # Auto→Auto switch
-            self.crf.transitions[2, 3] = IMPOSSIBLE
-            self.crf.transitions[3, 2] = IMPOSSIBLE
-            self.crf.transitions[3, 3] = IMPOSSIBLE
-            self.crf.transitions[2, 1] = IMPOSSIBLE
-            self.crf.transitions[3, 0] = IMPOSSIBLE
-            self.crf.transitions[0, 1] = IMPOSSIBLE
-            self.crf.transitions[0, 2] = IMPOSSIBLE
-            self.crf.transitions[1, 0] = IMPOSSIBLE
-            self.crf.transitions[1, 3] = IMPOSSIBLE
-
-    def forward(self, input_ids, attention_mask, **kwargs):
-        # Accept but ignore token_type_ids and other unexpected args
-        # Get BERT predictions
-        outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
-        logits = outputs.logits
-
-        # Apply CRF Viterbi for constrained decoding
-        mask = attention_mask.bool()
-        predictions = self.crf.decode(logits, mask=mask)
-
-        return {
-            'logits': logits,
-            'predictions': predictions
-        }
 class ProximityAwareTrainer4Class(Trainer):
     """Custom trainer with proximity-aware loss and transition constraints"""
 
@@ -2362,181 +1361,251 @@ def print_test_examples_proximity(model, tokenizer, test_csv='test_segments.csv'
 # ============================================================================
 # PART 7: MAIN TRAINING PIPELINE
 # ============================================================================
-import torch
-import torch.nn as nn
-from torchcrf import CRF
-from transformers import AutoModelForTokenClassification, AutoTokenizer
-import os
 
-
-class BERTWithCRFWrapper(nn.Module):
+def train_tibetan_code_switching():
     """
-    Wraps your trained BERT model with CRF for constrained inference
+        Main training pipeline with logical transition constraints
     """
+    print("=" * 60)
+    print("TIBETAN CODE-SWITCHING DETECTION TRAINING")
+    print("With Proximity-Aware Loss (5-token tolerance)")
+    print("With Logical Transition Constraints")
+    print("=" * 60)
 
-    def __init__(self, bert_model):
-        super().__init__()
-        self.bert = bert_model
-        self.crf = CRF(num_tags=4, batch_first=True)
-        self._init_crf_constraints()
+    # Step 1: Process all files
+    print("\nSTEP 1: Processing files...")
+    data_dir = 'dataset/all data'
+    # data_dir = 'classify_allo_auto/data'
 
-    def _init_crf_constraints(self):
-        """Set impossible transitions"""
-        with torch.no_grad():
-            IMPOSSIBLE = -10000.0
+    if not os.path.exists(data_dir):
+        print(f"ERROR: Data directory {data_dir} not found!")
+        return
 
-            # All 10 impossible transitions
-            self.crf.transitions[2, 2] = IMPOSSIBLE  # No consecutive switches
-            self.crf.transitions[2, 3] = IMPOSSIBLE
-            self.crf.transitions[3, 2] = IMPOSSIBLE
-            self.crf.transitions[3, 3] = IMPOSSIBLE
-            self.crf.transitions[2, 1] = IMPOSSIBLE  # After switch, stay in mode
-            self.crf.transitions[3, 0] = IMPOSSIBLE
-            self.crf.transitions[0, 1] = IMPOSSIBLE  # No mode change without switch
-            self.crf.transitions[0, 2] = IMPOSSIBLE  # Can't switch to same mode
-            self.crf.transitions[1, 0] = IMPOSSIBLE
-            self.crf.transitions[1, 3] = IMPOSSIBLE
+    df, all_segments = process_all_files(data_dir)
 
-    def forward(self, input_ids, attention_mask, **kwargs):  # ← ADD **kwargs HERE
-        # Accept but ignore token_type_ids and other unexpected args
-        # Get BERT predictions
-        outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
-        logits = outputs.logits
+    if len(df) == 0:
+        print("ERROR: No segments with transitions found!")
+        return
 
-        # Apply CRF Viterbi for constrained decoding
-        mask = attention_mask.bool()
-        predictions = self.crf.decode(logits, mask=mask)
+    # Save processed data
+    df.to_csv('all_segments_300_400_tokens.csv', index=False)
 
-        return {
-            'logits': logits,
-            'predictions': predictions
-        }
+    # Step 2: Create train/val/test split with better file diversity
+    print("\nSTEP 2: Creating train/val/test split with file diversity...")
+    train_df, val_df, test_df = create_train_val_test_split(df)
 
-    def save_pretrained(self, save_path):
-        """Save both BERT and CRF"""
-        os.makedirs(save_path, exist_ok=True)
+    # NEW: Analyze switch distribution
+    print("\n" + "=" * 60)
+    print("ANALYZING SWITCH DISTRIBUTION IN SPLITS")
+    print("=" * 60)
+    train_stats, val_stats, test_stats = analyze_and_balance_switch_distribution(
+        train_df, val_df, test_df
+    )
 
-        # Save BERT
-        self.bert.save_pretrained(save_path)
+    # NEW: Create stratified split if distribution is imbalanced
+    if abs(train_stats['auto_pct'] - test_stats['auto_pct']) > 5 or \
+            abs(train_stats['allo_pct'] - test_stats['allo_pct']) > 5:
+        print("\n" + "=" * 60)
+        print("CREATING BETTER STRATIFIED SPLIT DUE TO IMBALANCE")
+        print("=" * 60)
+        train_df, val_df, test_df = create_stratified_switch_split(df)
 
-        # Save CRF transitions
-        torch.save({
-            'crf_state_dict': self.crf.state_dict(),
-            'transitions': self.crf.transitions.data
-        }, os.path.join(save_path, 'crf_layer.pt'))
+        # Re-analyze the stratified split
+        print("\n📊 VERIFYING STRATIFIED SPLIT:")
+        train_stats, val_stats, test_stats = analyze_and_balance_switch_distribution(
+            train_df, val_df, test_df
+        )
 
-        print(f"Model saved to {save_path}")
+        # Use stratified files
+        train_dataset_file = 'train_segments_stratified.csv'
+        val_dataset_file = 'val_segments_stratified.csv'
+        test_dataset_file = 'test_segments_stratified.csv'
+    else:
+        print("\n✅ Distribution is balanced, using original splits")
+        train_dataset_file = 'train_segments.csv'
+        val_dataset_file = 'val_segments.csv'
+        test_dataset_file = 'test_segments.csv'
 
-    @classmethod
-    def from_pretrained(cls, load_path):
-        """Load both BERT and CRF"""
-        # Load BERT
-        bert_model = AutoModelForTokenClassification.from_pretrained(load_path)
-
-        # Create wrapper
-        model = cls(bert_model)
-
-        # Load CRF if exists
-        crf_path = os.path.join(load_path, 'crf_layer.pt')
-        if os.path.exists(crf_path):
-            crf_checkpoint = torch.load(crf_path, map_location='cpu')
-            model.crf.load_state_dict(crf_checkpoint['crf_state_dict'])
-            print(f"CRF layer loaded from {crf_path}")
-        else:
-            print("No saved CRF found - using initialized constraints")
-
-        return model
-
-
-# ============================================================================
-# USAGE: Create and Save
-# ============================================================================
-
-def create_and_save_crf_model():
-    """One-time setup: wrap your model and save it"""
-
-    # Load your existing trained model
-    pretrained_path = "./tibetan_code_switching_constrained_model_wylie-final_all_data_no_labels_no_prtial_v2_2_10/final_model"
-    print(f"Loading trained model from {pretrained_path}")
-
-    bert_model = AutoModelForTokenClassification.from_pretrained(pretrained_path)
-    tokenizer = AutoTokenizer.from_pretrained(pretrained_path)
-
-    # Wrap with CRF
-    print("Adding CRF layer with constraints...")
-    crf_model = BERTWithCRFWrapper(bert_model)
-
-    # Save the wrapped model
-    save_path = "./alloauto-segmentation-training/fine_tuned_ALTO_models/crf_enhanced_model"
-    crf_model.save_pretrained(save_path)
-    tokenizer.save_pretrained(save_path)
-
-    print(f"\nModel with CRF saved to: {save_path}")
-    print("You can now load this model anytime for inference")
-
-    return crf_model, tokenizer
-
-
-# ============================================================================
-# USAGE: Load and Use
-# ============================================================================
-
-def load_and_use_crf_model():
-    """Load the saved CRF model for inference"""
-
-    model_path = "./alloauto-segmentation-training/fine_tuned_ALTO_models/crf_enhanced_model"
-
-    print(f"Loading CRF-enhanced model from {model_path}")
-    model = BERTWithCRFWrapper.from_pretrained(model_path)
-    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    # Step 3: Initialize model with better configuration
+    print("\nSTEP 3: Initializing model...")
+    # model_name = 'bert-base-multilingual-cased'
+    model_name = 'OMRIDRORI/mbert-tibetan-continual-wylie-final'
+    # output_dir = './tibetan_code_switching_constrained_model_bert-base-multilingual-cased'
+    output_dir = './tibetan_code_switching_constrained_model_wylie-final_all_data'
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = model.to(device)
-    model.eval()
+    print(f"Using device: {device}")
 
-    print("Model loaded and ready for inference")
-    return model, tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForTokenClassification.from_pretrained(
+        model_name,
+        num_labels=4,
+        label2id={'non_switch_auto': 0, 'non_switch_allo': 1, 'to_auto': 2, 'to_allo': 3},
+        id2label={0: 'non_switch_auto', 1: 'non_switch_allo', 2: 'to_auto', 3: 'to_allo'},
+        hidden_dropout_prob=0.3,  # Add dropout for regularization
+        attention_probs_dropout_prob=0.3
+    )
+
+    # Initialize with balanced bias for both switch types
+    with torch.no_grad():
+        model.classifier.bias.data[0] = 0.0  # Non-switch auto
+        model.classifier.bias.data[1] = 0.0  # Non-switch allo
+        model.classifier.bias.data[2] = -1.0  # Switch to auto (slight negative bias)
+        model.classifier.bias.data[3] = -1.0  # Switch to allo (same as auto for balance)
+
+    model = model.to(device)
+
+    # Step 4: Create datasets (using potentially stratified files)
+    print("\nSTEP 4: Creating datasets...")
+    train_dataset = CodeSwitchingDataset4Class(train_dataset_file, tokenizer)
+    val_dataset = CodeSwitchingDataset4Class(val_dataset_file, tokenizer)
+    test_dataset = CodeSwitchingDataset4Class(test_dataset_file, tokenizer)
+
+    data_collator = DataCollatorForTokenClassification(tokenizer)
+
+
+    # Calculate class weights based on actual distribution
+    print("\nCalculating class distribution for better weighting...")
+    train_labels = []
+    for idx in range(len(train_df)):
+        labels = train_df.iloc[idx]['labels'].split(',')
+        train_labels.extend([int(l) for l in labels])
+
+    label_counts = {i: train_labels.count(i) for i in range(4)}
+    total_count = len(train_labels)
+
+    # Calculate separate weights for each switch type
+    to_auto_weight = (total_count / (4 * label_counts[2])) * 10 if label_counts[2] > 0 else 30
+    to_allo_weight = (total_count / (4 * label_counts[3])) * 10 if label_counts[3] > 0 else 30
+
+    # Boost Switch→Allo more if it's rarer
+    if label_counts[3] < label_counts[2] / 2:
+        to_allo_weight *= 1.5
+
+    to_auto_weight = min(to_auto_weight, 50)
+    to_allo_weight = min(to_allo_weight, 50)
+
+    print(f"  Class distribution in training:")
+    for i in range(4):
+        print(f"    Class {i}: {label_counts[i]} ({label_counts[i]/total_count*100:.1f}%)")
+    print(f"  Using Switch→Auto weight: {to_auto_weight:.1f}")
+    print(f"  Using Switch→Allo weight: {to_allo_weight:.1f}")
+
+    # Step 5: Training with improved settings
+    print("\nSTEP 5: Starting training with logical constraints...")
+    print("  - Invalid transitions (Auto→Auto, Allo→Allo) heavily penalized")
+    print("  - Valid transitions rewarded")
+
+    training_args = TrainingArguments(
+        output_dir=output_dir,
+        eval_strategy="steps",
+        eval_steps=30,
+        save_strategy="steps",
+        save_steps=60,
+        learning_rate=1e-5,
+        per_device_train_batch_size=4,
+        per_device_eval_batch_size=4,
+        num_train_epochs=35,  # More epochs to learn both switch types
+        weight_decay=0.1,
+        logging_dir=f'{output_dir}/logs',
+        logging_steps=20,
+        load_best_model_at_end=True,
+        metric_for_best_model='switch_f1',  # Balance precision and recall
+        greater_is_better=True,
+        warmup_steps=200,
+        save_total_limit=3,
+        fp16=torch.cuda.is_available(),
+        report_to=[],
+        gradient_accumulation_steps=4,
+        label_smoothing_factor=0.05,  # Reduced smoothing
+        gradient_checkpointing=True,
+        push_to_hub=True,  # Enable pushing to HF
+        hub_model_id="levshechter/tibetan-CS-detector_mbert-tibetan-continual-wylie_all_data",  # Your HF repo
+    )
+
+    # Custom trainer with logical constraints
+    trainer = ProximityAwareTrainer4Class(
+        model=model,
+        args=training_args,
+        data_collator=data_collator,
+        train_dataset=train_dataset,
+        eval_dataset=val_dataset,
+        processing_class=tokenizer,
+        compute_metrics=lambda eval_pred: compute_metrics_for_trainer(eval_pred, tolerance=5),
+        switch_loss_weight=max(to_auto_weight, to_allo_weight),  # Use higher weight
+        proximity_tolerance=5,
+        distance_decay=0.7,
+        false_positive_penalty=10.0,
+        invalid_transition_penalty=100.0  # Very high penalty for invalid transitions,
+
+    )
+
+    # Add early stopping callback
+    from transformers import EarlyStoppingCallback
+    trainer.add_callback(EarlyStoppingCallback(early_stopping_patience=5))
+
+    # Train the model
+    print("\nTraining with logical transition constraints...")
+    trainer.train()
+
+    # Save final model
+    trainer.save_model(f'{output_dir}/final_model')
+    tokenizer.save_pretrained(f'{output_dir}/final_model')
+
+    # Step 6: Evaluation with constraint application
+    print("\nSTEP 6: Evaluating on test set with constraints...")
+
+    # First, evaluate without constraints to see raw performance
+    print("\nRaw performance (without constraints):")
+    raw_results = trainer.evaluate(eval_dataset=test_dataset)
+
+    print(f"\n=== Raw Test Results (no constraints) ===")
+    print(f"Switch F1: {raw_results['eval_switch_f1']:.3f}")
+    print(f"Switch Precision: {raw_results['eval_switch_precision']:.3f}")
+    print(f"Switch Recall: {raw_results['eval_switch_recall']:.3f}")
+
+    # Now apply constraints during evaluation
+    print("\n=== Final Test Results (with logical constraints) ===")
+    test_results = trainer.evaluate(eval_dataset=test_dataset)
+
+    print(f"Accuracy: {test_results['eval_accuracy']:.3f}")
+    print(f"Switch F1: {test_results['eval_switch_f1']:.3f}")
+    print(f"Switch Precision: {test_results['eval_switch_precision']:.3f}")
+    print(f"Switch Recall: {test_results['eval_switch_recall']:.3f}")
+    print(f"Exact Matches: {test_results.get('eval_exact_matches', 0)}")
+    print(f"Proximity Matches: {test_results.get('eval_proximity_matches', 0)}")
+    print(f"True Switches: {test_results['eval_true_switches']}")
+    print(f"Predicted Switches: {test_results['eval_pred_switches']}")
+
+    # Per-type analysis
+    print(f"\nPer-Type Performance:")
+    print(f"  Switch→Auto Precision: {test_results.get('eval_to_auto_precision', 0):.3f}")
+    print(f"  Switch→Auto Recall: {test_results.get('eval_to_auto_recall', 0):.3f}")
+    print(f"  Switch→Allo Precision: {test_results.get('eval_to_allo_precision', 0):.3f}")
+    print(f"  Switch→Allo Recall: {test_results.get('eval_to_allo_recall', 0):.3f}")
+
+    # Check balance
+    auto_count = test_results.get('eval_matched_to_auto', 0)
+    allo_count = test_results.get('eval_matched_to_allo', 0)
+
+    if allo_count == 0 and test_results.get('eval_true_to_allo', 0) > 0:
+        print("\n⚠️ WARNING: Model still not predicting Switch→Allo!")
+        print("  Consider: 1) More training epochs, 2) Higher weight for Switch→Allo")
+
+    # Show some examples with constraint application
+    print("\nShowing test examples with logical constraints...")
+    print_test_examples_with_constraints(model, tokenizer, 'test_segments.csv', num_examples=3, tolerance=5)
+
+    print(f"\n=== Training Complete ===")
+    print(f"Model saved to: {output_dir}/final_model")
+    print(f"Logical constraints: Auto→Allo and Allo→Auto only")
+
+    return trainer, model, tokenizer, test_results
 
 
 # ============================================================================
-# Example Usage
+# MAIN EXECUTION
 # ============================================================================
 
 if __name__ == "__main__":
-    # Step 1: Create and save (do this ONCE)
-    print("=" * 80)
-    print("STEP 1: Creating CRF-enhanced model")
-    print("=" * 80)
-    crf_model, tokenizer = create_and_save_crf_model()
-
-    # Step 2: Load and use (do this anytime you need inference)
-    print("\n" + "=" * 80)
-    print("STEP 2: Loading saved model for inference")
-    print("=" * 80)
-    model, tokenizer = load_and_use_crf_model()
-
-    # Step 3: Test on a sample
-    tokens = ["བོད་ཡིག", "Tibetan", "language", "སྐད་ཡིག"]
-    inputs = tokenizer(
-        tokens,
-        is_split_into_words=True,
-        return_tensors="pt",
-        padding=True,
-        truncation=True
-    )
-
-    # Move inputs to the same device as the model
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    inputs = {k: v.to(device) for k, v in inputs.items()}  # ← ADD THIS LINE
-
-    with torch.no_grad():
-        outputs = model(**inputs)
-        predictions = outputs['predictions'][0]
-
-    print("\nSample prediction (guaranteed valid sequence):")
-    label_names = {0: 'Auto', 1: 'Allo', 2: '→Auto', 3: '→Allo'}
-    for token, pred in zip(tokens, predictions):
-        print(f"  {token}: {label_names[pred]}")
-
-
-
+    trainer, model, tokenizer, results = train_tibetan_code_switching()

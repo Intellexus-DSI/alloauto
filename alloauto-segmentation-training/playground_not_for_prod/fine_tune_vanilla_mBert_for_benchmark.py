@@ -15,7 +15,7 @@ from torch.utils.data import Dataset
 import pandas as pd
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 # ============================================================================
 # IMPORTANT: Use the EXACT SAME dataset class and files as main model
@@ -194,16 +194,16 @@ def train_mbert_baseline():
     # ========================================================================
 
     # Check if stratified splits exist (created by your main training)
-    if os.path.exists('train_segments_stratified.csv'):
+    if os.path.exists('train_segments_clean.csv'):
         print("\n✓ Found stratified splits (created by main training)")
-        TRAIN_FILE = 'train_segments_stratified.csv'
-        VAL_FILE = 'val_segments_stratified.csv'
-        TEST_FILE = 'test_segments_stratified.csv'
-    elif os.path.exists('train_segments.csv'):
-        print("\n✓ Found regular splits (created by main training)")
-        TRAIN_FILE = 'train_segments.csv'
+        TRAIN_FILE = 'train_segments_clean.csv'
         VAL_FILE = 'val_segments.csv'
         TEST_FILE = 'test_segments.csv'
+    # elif os.path.exists('train_segments.csv'):
+    #     print("\n✓ Found regular splits (created by main training)")
+    #     TRAIN_FILE = 'train_segments.csv'
+    #     VAL_FILE = 'val_segments.csv'
+    #     TEST_FILE = 'test_segments.csv'
     else:
         print("\n❌ ERROR: No data splits found!")
         print("Please run your main training script first to create the splits.")
@@ -216,7 +216,7 @@ def train_mbert_baseline():
             print(f"❌ ERROR: {filepath} not found!")
             return None, None, None
 
-    OUTPUT_DIR = './alloauto-segmentation-training/benchmark_models/mbert_baseline_model'
+    OUTPUT_DIR = './alloauto-segmentation-training/benchmark_models/mbert_baseline_model_clean_train'
 
     # ========================================================================
     # Load model

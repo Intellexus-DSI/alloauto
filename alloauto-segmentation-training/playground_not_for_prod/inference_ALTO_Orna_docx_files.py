@@ -245,14 +245,27 @@ if __name__ == "__main__":
     # Your .docx files
     docx_files = [
         'alloauto-segmentation-training/data/D3818_for_ALTO_TEST.docx',
-        'alloauto-segmentation-training/data/D496_for_ALTO_TEST.docx'
+        'alloauto-segmentation-training/data/D496_for_ALTO_TEST.docx',
+        'alloauto-segmentation-training/data/data_auto_Orna/auto with auto citation theg mchog 4.docx',
+        'alloauto-segmentation-training/data/data_auto_Orna/rTsags Dar ma rgyal po - gSang ldan gyi rgya cher bshad pa 2.docx'
     ]
 
     # Your model path
-    model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_additive_loss_10_10/final_model'
+    model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_combined_data_with_allo_and_auto_balanced_22_10/final_model'
+    # model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_combined_data_with_allo_and_auto_22_10/final_model'
+    # model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_NO_SEG_REWARD_16_10/final_model'
+
+
+
+    # model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_combined_data_with_allo_15_10/final_model'
+    # model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_allow_non_switch_test_train_and_fixed_loss_7_10_loss_segment_aware/final_model'
+    # model_path = './alloauto-segmentation-training/fine_tuned_ALTO_models/ALTO_additive_loss_10_10/final_model'
 
     # Output directory for CSV files
-    output_dir = './inference_results_Orna_13_10'
+    output_dir = './inference_results_Orna_22_10_MUL_ALTO_with_more_allo_auto_balanced_data_allo_and_auto_texts'
+    # output_dir = './inference_results_Orna_22_10_MUL_ALTO_with_more_allo_auto_data'
+    # output_dir = './inference_results_Orna_16_10_MUL_ALTO_no_seg_reward'
+    # output_dir = './inference_results_Orna_15_10_MUL'
 
     # Run inference
     results = run_inference_on_docx_files(docx_files, model_path, output_dir)
