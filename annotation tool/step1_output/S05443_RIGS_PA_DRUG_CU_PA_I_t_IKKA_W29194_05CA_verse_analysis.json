@@ -1,0 +1,914 @@
+[
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1,
+      16
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "chos dbyings spros kun nye bar zhi ba'i mkhar",
+      "gang gi thugs rje'i dkyil 'khor shar ba yis",
+      "bdag blo dad pa'i myu gu rgyas gyur pa'i",
+      "lag pad spyi bor zum byed de la 'dud",
+      "gang zhig skad cig yid la dran tsam gyis",
+      "rtag chad mthar lta'i ri bo rnam 'joms la",
+      "bla med theg mchog lam la bkri byed pa",
+      "mgon po klu sgrub zhabs la phyag 'tshal lo",
+      "thub pa'i dbang po mya ngan 'das gyur nas",
+      "de yi bstan pa snyigs mar gyur pa na",
+      "rten 'byung de nyid ston pa'i skyes gcig pu",
+      "zla ba'i zhabs la'ang zol med spyi bos 'dud",
+      "de yi dgongs don ma nor gsal bar ston",
+      "bla ma mchog la gus pas btud byas te",
+      "rigs pa'i dbang phyug gang gis mdzad pa yi",
+      "rigs pa drug cu pa ni rnam par dbye"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      28,
+      32
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "tshig don gsum gyis 'chad pa ni",
+      "gang gis skye dang 'jig pa dag",
+      "tshul 'di yis ni spangs gyur pa",
+      "rten cing 'byung ba gsung ba yi",
+      "thub dbang de la phyag 'tshal lo"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      147,
+      150
+    ],
+    "probability": 0.75,
+    "meter": 9,
+    "lines": [
+      "gang la 'phros pa ni 'grel pa ltar ro",
+      "gnyis pa brtsams par bya ba'i gzhung dngos la",
+      "rten 'brel mtha' bral du bstan pa dang",
+      "phung sogs gsungs pa drang don du bsgrub pa dang"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      166,
+      169
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang dag gi blo yod med las",
+      "rnam par 'das shing mi gnas pa",
+      "de dag gis ni rkyen gyi don",
+      "zab mo dmigs med rnam par rtogs"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      300,
+      303
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rigs pa gang gis yod nyid kyang",
+      "ldog par 'gyur ba mnyan par gyis",
+      "'og nas 'chad par 'gyur ba yi",
+      "ji ltar byis pas rnam brtags bzhin"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      314,
+      318
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rigs pa de yang gang zhe na",
+      "ji ltar byis pas rnam brtags bzhin",
+      "dngos po gal te bden gyur na",
+      "de dngos med pas rnam thar du",
+      "gang gis mi 'dod rgyu ci zhig"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      512,
+      515
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dngos po byung ba bzhig pa la",
+      "ji ltar 'gog pa brtags pa bzhin",
+      "de bzhin dam pa rnams kyis kyang",
+      "sgyu ma byas lta'i 'gog pa bzhed"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      542,
+      545
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rnam par 'jig pas 'gog 'gyur gyi",
+      "'dus byas yongs su shes pas min",
+      "de ni su la mngon sum 'gyur",
+      "bzhig ces pa de ci ltar 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      595,
+      598
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rjes bzlas zhes bya'i mdo 'di ni",
+      "shA ri'i bu yis mya ngan 'das",
+      "mngon du byas nas bshad pa yin",
+      "zhes gsungs pa 'di ji ltar drang"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      626,
+      629
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "ma rig rkyen can byung ba la",
+      "yang dag ye shes kyis gzigs na",
+      "skye ba dang ni 'gag pa'ang rung",
+      "'ga' yang dmigs par mi 'gyur ro"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      669,
+      674
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gal te chos shes mjug thogs su",
+      "'di la bye brag yod na ni",
+      "dngos po shin tu phra ba la'ang",
+      "gang gis skye bar rnam brtags pa",
+      "rnam par mi mkhas de yis ni",
+      "rkyen las byung ba'i don ma mthong"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      706,
+      709
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "nyon mongs zad pa'i dge slong gi",
+      "gal te 'khor ba rnam ldog na",
+      "de'i rtsom rdzogs pa'i sangs rgyas kyis",
+      "gang ma bshad pa rgyu ci zhig"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      764,
+      767
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dngos po smig rgyu dang 'dra bar",
+      "blo yis mthong bar gyur ba ni",
+      "sngon gyi mtha' 'am phyi ma'i mthar",
+      "lta ba yongs su bslad mi 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      781,
+      784
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang dag gis ni 'dus byas la",
+      "skye dang 'jig par rnam brtags pa",
+      "de dag rten 'byung 'khor lo yi",
+      "'gro ba rnam par mi shes so"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      896,
+      899
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "chos rnams stong pa 'di shes nas",
+      "las dang 'bras bu bstan pa gang",
+      "ngo mtshar bas kyang 'di ngo mtshar",
+      "rmad byung bas kyang 'di smad byung"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      958,
+      961
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de dang de rten gang 'byung de",
+      "rang gi ngo bor skyes ma yin",
+      "rang gi ngo bor gang ma skyes",
+      "de ni skye zhes ji skad bya"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      976,
+      979
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rgyu zad nyid las zhi ba ni",
+      "zad ces bya bar dmigs pa ste",
+      "rang bzhin gyis ni gang ma zad",
+      "de la zad ces ci skad brjod"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      998,
+      1001
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "kye ma 'du byed rnams mi rtag",
+      "skye zhing 'jig pa'i chos can yin",
+      "skyes nas 'jig par 'gyur ba ste",
+      "de dag nye bar zhi ba bde"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1013,
+      1016
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "skye ba shes pas 'jig pa shes",
+      "'jig pa shes pas mi rtag shes",
+      "mi rtag nyid la 'jug shes pas",
+      "dam pa'i chos kyang rtogs par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1024,
+      1027
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang dag rten cing 'brel 'byung ba",
+      "skye dang 'jig pa rnam spang bar",
+      "shes par gyur pa de dag ni",
+      "ltar gyur srid pa'i rgya mtsho brgal"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1030,
+      1033
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "so so'i skye bo dngos bdag can",
+      "yod dang med par phyin ci log",
+      "nyes pas nyon mongs dbang gyur rnams",
+      "rang gi sems kyis bslus par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1044,
+      1047
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dngos la mkhas pa rnams kyis ni",
+      "dngos po mi rtag bslu ba'i chos",
+      "gsog dang stong pa bdag med pa",
+      "rnam par dben zhes bya bar mthong"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1057,
+      1061
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gnas med dmigs pa yod ma yin",
+      "rtsa ba med cing gnas pa med",
+      "ma rig rgyu las shin tu byung",
+      "thog ma dbus mtha' rnam par spangs",
+      "chu shing bzhin du snying po med"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1079,
+      1082
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "tshangs sogs 'jig rten 'di la ni",
+      "bden pa rab tu gang snang ba",
+      "de ni 'phags la rdzun zhes gsungs",
+      "de las gzhan lta ci zhig lus"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1086,
+      1090
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'jig rten ma rig ldongs gyur pa",
+      "sred pa'i rgyun gyi rjes 'brang dang",
+      "mkhas pa sred pa dang bral ba",
+      "dam pa rnams lta ji ltar mnyam",
+      "tshangs pa la sogs pa'i 'jig rten"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1103,
+      1106
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "de nyid tshol la thog mar ni",
+      "thams cad yod ces brjod par bya",
+      "don rnams rtogs shing chags med la",
+      "phyis ni rnam par dben pa'o"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1120,
+      1123
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rnam par dben don mi shes la",
+      "thos pa tsam la 'jug byed cing",
+      "gang dag bsod nams mi byed pa",
+      "skyes bu tha shal de dag brlag"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1127,
+      1130
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "las rnams 'bras bur bcas nyid dang",
+      "'gro ba dag kyang yang dag bshad",
+      "de yi rang bzhin yongs shes dang",
+      "skye ba med pa dag kyang bstan"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1150,
+      1153
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dgongs pa'i dbang gis rgyal ba rnams",
+      "nga dang nga yi zhes gsungs ltar",
+      "phung po khams dang skye mched rnams",
+      "de bzhin dgongs pa'i dbang gis gsungs"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1161,
+      1164
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'byung ba che la sogs bshad pa",
+      "rnam par shes su yang dag 'du",
+      "de shes pas ni 'bras 'gyur na",
+      "log pa rnam brtags ma yin nam"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1180,
+      1183
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mya ngan 'das pa bden gcig pu",
+      "rgyal ba rnams kyis gang gsungs pa",
+      "de tshe lhag ma log min zhes",
+      "mkhas pa su zhig rtog par byed"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1195,
+      1198
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "ji srid yid kyi rnam g.yo ba",
+      "de srid bdud kyi spyod yul te",
+      "de lta yin na 'di la ni",
+      "nyes pa med par cis mi 'thad"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1205,
+      1208
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'jig rten ma rig rkyen can du",
+      "gang phyir sangs rgyas rnams gsung ba",
+      "de yi phyir na 'jig rten 'di",
+      "rnam rtog yin zhes cis mi 'thad"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1217,
+      1220
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "ma rig 'gags par gyur pa na",
+      "gang zhig 'gag par 'gyur ba de",
+      "mi shes pa la kun brtags par",
+      "ci lta bur na gsal mi 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1224,
+      1227
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang zhig rgyu dang bcas 'byung zhing",
+      "rkyen med par ni gnas pa med",
+      "rkyen med phyir yang 'jig 'gyur ba",
+      "de ni yod ces ci ltar rtogs"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1239,
+      1242
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gal te yod par smra ba rnams",
+      "dngos mchog gzung nas gnas pa rnams",
+      "lam de nyid la gnas pa ste",
+      "de la ngo mtshar cung zad med"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1249,
+      1252
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "sangs rgyas lam la brten nas ni",
+      "kun la mi rtag smra ba rnams",
+      "rtsod pas dngos rnams mchog gzung nas",
+      "gnas pa yang ni de rmad do"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1275,
+      1278
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang dag gis ni ma brten par",
+      "bdag gi 'jig rten mngon zhen pa",
+      "de dag kye ma rtag mi rtag",
+      "la sogs lta bas phrogs pa yin"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1285,
+      1288
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang dag brten nas dngos po rnams",
+      "de nyid du ni grub 'dod pa",
+      "de dag la yang rtag sogs skyon",
+      "de dag ji ltar 'byung mi 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1304,
+      1307
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'bras bu yod nyid gang 'dod dang",
+      "'bras bu med nyid gang 'dod pa",
+      "khyim gyi don du ka ba sogs",
+      "brgyan pa'i don yang med par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1317,
+      1320
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dngos por khas len yod na ni",
+      "'dod chags zhe sdang 'byung ba yi",
+      "lta ba mi bzad ma rungs 'dzin",
+      "de las byung ba'i rtsod par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1330,
+      1333
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de ni lta ba kun gyi rgyu",
+      "de med nyon mongs mi skyed de",
+      "de phyir de ni yongs shes na",
+      "lta dang nyon mongs yongs su 'byang"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1346,
+      1350
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "gang gis de shes 'gyur snyam na",
+      "brten cing 'byung ba mthong ba ste",
+      "brten nas skyes pa ma skyes par",
+      "thams cad mkhyen pa mchog gis gsungs",
+      "rkang pa dang pos dri ba"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1369,
+      1372
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gang zhig rkyen las skyes pa de ma skyes",
+      "de la skye ba'i rang bzhin yod ma yin",
+      "rkyen la rag las gang de stong par bshad",
+      "gang zhig stong nyid shes de bag yod yin"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1377,
+      1380
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "log pa'i shes pas zil non pa",
+      "bden pa min la bden 'dzin pa'i",
+      "yongs su 'dzin dang rtsod sogs kyi",
+      "rim pa chags las 'byung bar 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1385,
+      1388
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "che ba'i bdag nyid can de dag",
+      "rnams la phyogs med rtsod pa med",
+      "gang rnams la ni phyogs med pa",
+      "de la gzhan phyogs ga la yod"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1443,
+      1446
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang yang rung ba'i gnas rnyed na",
+      "nyon mongs sbrul gdug g.yo can gyis",
+      "zin par 'gyur ro gang gi sems",
+      "gnas med de dag zin mi 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1454,
+      1457
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gnas bcas sems dang ldan rnams la",
+      "nyon mongs dug chen cis mi 'byung",
+      "gang tshe bar mar 'dug pa yang",
+      "nyon mongs sbrul gyis zin par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1466,
+      1469
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "byis pa bden par 'du shes pa",
+      "gzugs brnyan la ni chags pa bzhin",
+      "de ltar 'jig rten rmongs pa'i phyir",
+      "yul gyi gzeb la thogs par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1472,
+      1475
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bdag nyid che rnams dngos po dag",
+      "gzugs brnyan lta bur ye shes kyi",
+      "mig gis mthong nas yul zhes ni",
+      "bya ba'i 'dam la mi thogs so"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1480,
+      1483
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "byis pa rnams ni gzugs la chags",
+      "bar ma dag ni chags bral 'gyur",
+      "gzugs kyi rang bzhin shes pa yi",
+      "blo mchog ldan pa rnam par grol"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1489,
+      1492
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "sdug snyam pa las chags par 'gyur",
+      "de las ldog pas 'dod chags bral",
+      "sgyu ma'i skyes bu ltar dben par",
+      "mthong nas mya ngan 'das par 'gyur"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1513,
+      1516
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gnas yod na ni 'dod chags dang",
+      "'dod chags bral bar 'gyur zhig na",
+      "gnas med bdag nyid chen po rnams",
+      "chags pa med cing chags bral min"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1522,
+      1526
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "gang dag rnam par dpen snyam du",
+      "g.yo ba'i yid kyang mi g.yo ste",
+      "nyon mongs sbrul gyis dkrugs gyur pa",
+      "mi bzad srid pa'i rgya mtsho brgal",
+      "srid pa'i rgya mtsho brgal bar 'gyur ro"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1534,
+      1537
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dge ba 'di yis skye bo kun",
+      "bsod nams ye shes tshogs bsags te",
+      "bsod nams ye shes las byung ba'i",
+      "dam pa gnyis ni thob par shog"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1571,
+      1587
+    ],
+    "probability": 0.971,
+    "meter": 9,
+    "lines": [
+      "rigs pa'i dbang phyug 'phags chen klu sgrub kyis",
+      "rten byung mtha' bral ston gzhung rgya mtsho las",
+      "rigs pa'i rjes 'brang blo gros bsrubs shing gis",
+      "ro brgya ldan pa'i mar gyi nyid khu blangs",
+      "de nyid ston mkhas bshes gnyen bsten pa dang",
+      "rigs ldan stong pa'i sa bon bzhag pa yis",
+      "gzhung 'di thos dang sems pa'i lce dbang gis",
+      "yang dag bdud rtsi mchog 'di blang bar gyis",
+      "bla med theg pa mchog la mi gnas shing",
+      "ring nas som nyi'i sa las brgal gyur pa",
+      "dam pa'i gsung gi chu rgyun las 'ongs pa",
+      "bag yod bdud rtsi'i gtam gyi gter chen yin",
+      "dngos zhen srid pa'i mtsho chen las 'ongs pa",
+      "rtag chad mthar lta'i chu bo legs brgal nas",
+      "yang dag lta ba'i thang la 'byin 'dod na",
+      "gzhung lugs gru chen 'di nang 'jug par byos",
+      "e ma ho dal thob skal ba bzang"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1591,
+      1603
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "bdag ni deng nas skye ba thams cad du",
+      "yon tan brgya ldan bshes gnyen bsten byed cing",
+      "bslab gsum dri med yid kyis gus mnos nas",
+      "tshul bzhin sems la g.yel ba med par shog",
+      "bdag ni phyi rol me 'obs dag gis bskor",
+      "sha dang rus pa thal bar rlog byed pa'i",
+      "lcags khang 'bar bar yud tsam gnas pa yi",
+      "dam pa rnams la gshe bar ma gyur cig",
+      "mkhas 'dod mkhas pa'i skye bo gshe ba dang",
+      "tshul ldan 'dod phyir gzhan gyi nyes pa gleng",
+      "bzang 'dod gzhan skyon mtshang nas 'bru byed pa'i",
+      "grogs dang nam yang phrad par ma gyur cig",
+      "de lta'i dge bar ba dkar dri med des"
+    ]
+  },
+  {
+    "text": "S05443_RIGS_PA_DRUG_CU_PA_I_t_IKKA_W29194_05CA.txt",
+    "lines_included": [
+      1618,
+      1621
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "phan bde'i 'byung gnas rgyal bstan yongs 'du'i ljon",
+      "rab rgyas 'gro kun thar mchog 'bras bzang la",
+      "spyod phyir bkra shis lhun grub chos grwa cher",
+      "chos sbyin 'dzad med dal 'gro'i rgyun 'di spel"
+    ]
+  }
+]

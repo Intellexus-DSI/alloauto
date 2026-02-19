@@ -1,0 +1,884 @@
+[
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      1133,
+      1150
+    ],
+    "probability": 0.889,
+    "meter": 9,
+    "lines": [
+      "'chi dang skye ba'i chu bo'i 'gram ring bo",
+      "bar gyi srid pa phra mos zam ltar ram",
+      "'phur pa'i bya dang grib ma bzhin 'brel yang",
+      "ma shes sde 'gas rdo la gtam rlung bzhin byas",
+      "thub dbang zhal skyin kun mkhyen dbyig gnyen gyis",
+      "lung dang ri gang pa nyin byed 'phreng ba bzhin",
+      "spel yang ngan zhen me khyer mi 'dod tshe",
+      "bsting tshig 'brug sgras blo gros mdongs brel tshim",
+      "bar srid rgyu dang thog med 'khyams tshul 'di",
+      "legs par bsam na bdag med gangs tshol can",
+      "'khor bar rmongs pas dur khrod skyed tshul 'di",
+      "ma bsam thar ba tshol ba blun po'i lugs",
+      "thog med dus nas skye ba'i yul dang lus",
+      "yang yang 'dor len nyo tshong ltar byas pas",
+      "sha yi ri 'did spong shes rab can",
+      "spong byed sde snod gsum yin snying ltar zungs",
+      "zhes pa bar skabs kyi tshigs su bcad pa'o",
+      "gnyis pa skye tshul rten 'brel gyi rang bzhin la"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.1096
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      2457,
+      2468
+    ],
+    "probability": 0.958,
+    "meter": 9,
+    "lines": [
+      "srid pa'i rtse mor lan brgyar nyer phyin kyang",
+      "bag la nyal gyi sred rmongs zhags ba 'dis",
+      "bdag 'dzin sdong bor btags bas 'og ma'i sar",
+      "yang yang brda tshul bsam na skyob skye",
+      "skyo yang bdag 'dzin stod phur ma phyung bar",
+      "mthu stobs lang tsho shes rab kyis bsnyems kyang",
+      "mi grol de bas bdag med rigs pa'i mtshon",
+      "btsal te sred ba'i dgra de gzhoms par gyis",
+      "blo dang ldan nam snying stobs yod dam med",
+      "phyugs dang mtshungs min gtan bde sgrub shes la",
+      "ltos tshul lan 'bum bsam ste nor bzang bzhin",
+      "thub bstan sde snod gsum gyi bcud bsten 'tshal"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      2743,
+      2746
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rten pa rgyas ba'i don du gnyis",
+      "srid gzhan 'phen dang 'grub pa yi",
+      "don du gnyis te go rim bzhin",
+      "zhes byung| shes bya chos can"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.6786
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3095,
+      3110
+    ],
+    "probability": 0.844,
+    "meter": 9,
+    "lines": [
+      "mun bshad rdo yi yol gor sbyad min pa",
+      "ji lta ji snyed 'jal ba'i a mr-i ta",
+      "legs bshad rin chen bu ma bzang yongs gang ba",
+      "'jam dbyangs tsod kha ba sogs yab sras 'bul",
+      "rnam dag smon lam las nyon sgyu ma yis",
+      "dag dang ma dag snod bcud sgyu 'phrul gar",
+      "rnam rtog ri mo bzhin du tshad bral yang",
+      "blo gros me long phyis dang 'dir bstan bya",
+      "la las grub mtha'i lugs bsres mu to'i phye",
+      "phal cher phyogs re'i khab mig skad gsang stod",
+      "'ga' zhig nges nges sbre'u shig thu lo",
+      "snod dang bcud kyi 'jig rten chags rim dbyibs",
+      "tshad grangs rten dang brten bkra'i lha rdzas dar",
+      "thub bstan rgyal mtshan lha ma'i dpal 'di ba sgrengs",
+      "zhes bya ba'ang bar skabs kyi tshigs su bcad pa'o",
+      "gnyis pa phyi snod kyi 'jig rten bshad pa la"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3203,
+      3207
+    ],
+    "probability": 0.7,
+    "meter": 7,
+    "lines": [
+      "rten gyi dkyil 'khor gsum bshad pa",
+      "rten pa ri mtsho gling gsum bshad pa",
+      "tsha grang dmyal ba'i gnas bshad pa",
+      "nyi zla'i char tshul dang tshad bshad pa",
+      "lha rnams kyi gnas bshad pa"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3283,
+      3286
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "chu dang gser gyi dkyil 'khor gyi",
+      "thad kar 'bum phrag bcu gnyis dang",
+      "stong phreg gsum dang brgya phrag ni",
+      "phyed dang lnga rnams kho na'o"
+    ],
+    "num_exact_derge_matches": 19,
+    "probability_of_derge_quotation": 0.9821
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3397,
+      3401
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'jig rten par mtshams thams cad du",
+      "nyi zla de bzhin skar ma dang",
+      "rgyu skar tshogs ni rgya chen kun",
+      "'khor yug mi 'da' 'jig rten gyi",
+      "bar mtshams thams cad mun par 'dug"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.8857
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3716,
+      3725
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "ngos tshad bzhi 'gyur khor yug ste",
+      "grub zhir bskor zhes gnad du gces",
+      "shes bya 'di la mtha' med ces",
+      "grags pa'i snyems pa srid rtse'i bar",
+      "phyin kyang deng 'dir mkhas rnams blor",
+      "mi dka' mkha' ngo'i 'jig rten bzhin",
+      "gnad kyi spul gzhi ma shes pas",
+      "byis pa ming brjod sgyu ma'i glus",
+      "sgo gsum dal bar ma mdzad par",
+      "ma bslad mig gis gnad ltos gsal"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3910,
+      3915
+    ],
+    "probability": 0.667,
+    "meter": 9,
+    "lines": [
+      "si ta rba brlabs lbu ba'i 'phreng ba can",
+      "'bab cing thams cad bsil ba'i chu yin te",
+      "phyogs bzhi'i khong khor yug dag nas byung",
+      "gang+ga'a shar phyogs rgya mtshor 'gro ba ste",
+      "sin+hu lho phyogs rgya mtshor 'gro ba yin",
+      "bak+Shu yang ni nub phyogs rgya mtshor 'gro"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      3932,
+      3935
+    ],
+    "probability": 0.875,
+    "meter": 11,
+    "lines": [
+      "'dzam bu gling 'dir chu klung ji snyed cig 'bab cing",
+      "me tog 'bras can sman dang nags tshal skyed byed pa",
+      "ma dros gnas ba'i klu dbang klu bdag brten nas byung",
+      "de ni klu'i rgyal po de yi mthu dpal yin"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4152,
+      4158
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "mdo rgyud so so'i bshad srol lha rdzas kyi",
+      "lugs mang bkra ba'i ri mo mo shes par",
+      "ri gling ming tsam bris pa'i chos mngon pa",
+      "bshad dang shes par rlom pa gnyid na mdzes",
+      "bye mdo'i grub mtha' tsam yang mi shes par",
+      "mdo rgyud dka' gnas mthong tshad bshad 'dod pa'i",
+      "blun sgom rtsom pa smyon pa'i zlos gar de"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4160,
+      4166
+    ],
+    "probability": 0.929,
+    "meter": 9,
+    "lines": [
+      "rgyal sras rnams dang lha klu dri za'i bar",
+      "nongs sam gzims ma ma thub bstan sde snod gsum",
+      "legs bshad lha yi rnga de dag rdungs shog",
+      "rgyal ba sras bcas kun gyis pad dkar ltar",
+      "bsngags pa don ldan 'gro ba'i gnyen gcig gyi",
+      "gsang gsum sprul ba'i bkod pa bye ba yis",
+      "bstan pa'i rgyal mtshan phyogs bcur bsgreng par mdzod"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4302,
+      4305
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bdag cag ngag rtsub khro ldan zhing",
+      "bdag cag ser snas 'jungs pas na",
+      "sbyin ba cung zad ma btang des",
+      "bdag cag yi dwags 'jig rten lhag"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.7786
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4354,
+      4357
+    ],
+    "probability": 0.75,
+    "meter": 11,
+    "lines": [
+      "srung ma lha yi grong khyer srang dang rnam rgyal byed",
+      "chos bzang rgyu ba'i lam dang 'obs dang skyed mos tshal",
+      "sa gzhi dang ni yongs 'dus brdol glang chen rnams",
+      "lta min rnams kyis 'ang de dang 'dra bar yod"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4362,
+      4368
+    ],
+    "probability": 0.929,
+    "meter": 9,
+    "lines": [
+      "ma 'khrul med rgyud me long nang bzhin du",
+      "skad cig 'char ba'i legs bshad kun gsal ma",
+      "nyi mas gsal lam 'od stong spro de su",
+      "gangs ljongs mkhas dbang drang srong brgya phrag gis",
+      "ma thon chos mngon snod bcud rlabs kyi phreng",
+      "ma 'dres dregs sgrogs gang+gA'i rgyun chen po",
+      "legs par drangs so lha dang mi rnams kyi"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4579,
+      4584
+    ],
+    "probability": 0.667,
+    "meter": 7,
+    "lines": [
+      "de bcu gnyis la yung tsam gcig",
+      "de sum cu la nyin zhag gcig",
+      "de bco lnga la phyogs dang",
+      "de gnyis la zla ba gcig",
+      "de gnyis la tshig pa gcig",
+      "de gsum la bgrod ba gcig"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4587,
+      4596
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mig 'dzum bco brgyad mthar gnas la",
+      "de sum cu la skad cig 'grang",
+      "de ni bcu gnyis yud tsam yin",
+      "de sum cu la nyin zhag gcig",
+      "de dag bco lnga phyogs su grags",
+      "snga phyi'i phyogs ni dkar nag gnyis",
+      "de gnyis bsngoms pa 'jal byed do",
+      "mchu zla la sogs gnyis gnyis la",
+      "de tshig de gsum bgrod pa gcig",
+      "lho byang bgrod pa gnyis la lo"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.2714
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4775,
+      4779
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rgya las 'gyur pa'i myang 'das las",
+      "zla ba gsum ni dpyid kyi dus",
+      "zla ba gsum ni dbyar gyi dus",
+      "zla ba gsum ni ston gyi phyogs",
+      "zla ba gsum ni dgun zhes bya"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.7429
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4791,
+      4794
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rgyal dang ldan pa'i zla ba nya",
+      "rgyal gyi zla ba gang yin de",
+      "ming ni rgyal yin mchu la sogs",
+      "de bzhin gzhan ni bcu gcig go"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.8929
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      4830,
+      4833
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dgun dang dbyid dang dbyar rnams kyi",
+      "zla ba phyed dang gnyis 'das shing",
+      "zla ba phyed ni lus pa na",
+      "mkhas pas zhag mi thub pa dor"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.9226
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5000,
+      5003
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "zla ba rang la gro zhun no",
+      "bdag dbyar zla ba'i rim brjod bya",
+      "nyin par bco brgyad thob nas kyang",
+      "mtshan me bcu gnyis shes par gyis"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.3571
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5024,
+      5027
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mchu ni zla ba rab rdzogs byed",
+      "dgun zla tha chung rang bzhin yin",
+      "mtshan mo bco brgyad shes par gyis",
+      "nyin par yang ni bcu gnyis yin"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.5149
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5057,
+      5065
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "e ma rab dkar gangs ri'i yul gyi lugs",
+      "sna tshogs dpyad tshe lo ni nyi zlas 'jog",
+      "kun mkhyen rloms 'gas gnas zla kho na zer",
+      "blun po mkhas rloms khyim zla 'ba' zhig 'dod",
+      "mkhyen lngan 'gas kyang res gza' 'das 'dod lo",
+      "som nyi'i dra ba mkhas rloms da ltar 'das",
+      "dus bzhi g.yon dang skya rengs nyin dus dang",
+      "rang 'gros rlung 'gros go la rags pa yang",
+      "mi shes dus 'khor mngon 'dul dus tshigs mkhan"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5068,
+      5072
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "kun mkhyen sangs rgyas de yang ya mtshan snyam",
+      "'di ni rloms bral lung gi tshig tsam zhig",
+      "bris so rang bzos sbyar ba ga la srid",
+      "skar rtsis 'dul mngon lo zla zhag gsum gyi",
+      "rags 'bring phra sogs de ltar lung las so"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5283,
+      5297
+    ],
+    "probability": 0.867,
+    "meter": 9,
+    "lines": [
+      "lha yul ma phyin rgyal khams bskor min kyang",
+      "mdo dang bstan bcos shel gyi me long ngor",
+      "bkra ba'i snod bcud ri mo shes mthong rnams",
+      "rnam rtog rgyu ba'i grangs bzhin sus brjod nus",
+      "shes bya ji snyed 'jog tshul them skas dang",
+      "las 'bras mi shes long bas da bu ma'i lta",
+      "bgrod 'dod rmongs ba cher 'gyur sum rtsen gyi",
+      "gshog bral gnyis skyes phung po bzhin no gsungs",
+      "ston pa mnyam med 'dzum gsungs pa dud rtsi de",
+      "snying la lcibs mdo sngags gang yin kyang",
+      "thabs shes nyi tshe mi bya zung 'brel du",
+      "skye dgu yongs la thal mo sbyar bar 'tshal",
+      "zhes pa'ang bar skabs kyi tshigs su ba cad pa'o",
+      "gnyis ba sa dang ma 'brel ba'i gnas ni",
+      "rtsa bar| de steng lha rnams gzhal med khang"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5421,
+      5436
+    ],
+    "probability": 0.906,
+    "meter": 7,
+    "lines": [
+      "rgyal chen ris nas der bzhi khri",
+      "sum rtsen gnas ni brgyad khri ltar",
+      "'thab bral khri phrag bcu drug gis",
+      "dga' ldan so gnyis 'phrul dga' nas",
+      "re bzhi gzhan 'phrul nyer brgyud brgyas",
+      "tshangs ris nyis brgyad brgyad kyis",
+      "tshangs mdun lnga brgya bcu drug gis",
+      "tshangs chen stong dang so gnyis kyis",
+      "'od chung nyis stong re bzhi yis",
+      "bzhi stong nyer brgyad brgyas tshang med",
+      "de tshegs gong mi'i 'dzam gling tshad",
+      "de'i gong mas 'dzam gling bar",
+      "nyis 'gyur gyis shig blo ldan kyai",
+      "nyer bzhi'i gnas kyi bar tshad sngom",
+      "rtsi gzhi dpag tshad khri phrag byas",
+      "zhes pa lta bu yin no"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5618,
+      5625
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "gzugs can dang po bskal ba phyed",
+      "de'i gong ma phyed phyed skyed",
+      "'od chung rnams kyi ltag yan chad",
+      "tshe ni nyis 'gyur nyis 'gyur ste",
+      "sprin med bskal chen gsum dor ro",
+      "'od chung yan chad bskal chen ste",
+      "'og ma gsum ni de phyed sogs",
+      "zhes bya ba yin pa'i phyir"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.4866
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5628,
+      5631
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "gzugs med bskal ba stong phrag ni",
+      "nyi shu lhag pas lhag pa yin",
+      "'od chung nas bzung bskal chen te",
+      "de'i 'og ma phyed yin no"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.9077
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5712,
+      5715
+    ],
+    "probability": 0.75,
+    "meter": 11,
+    "lines": [
+      "'thab bral ba'i tshe tshad dang bsdus 'joms kyi zhag dang",
+      "dga' ldan pa'i tshe tshad dang du 'bod pa'i zhag dang",
+      "'phrul dga'i tshe dang du 'bod chen po'i zhag dang",
+      "gzhan 'phrul ba'i tshe dang tsha ba'i zhag gcig mnyam ba'i phyir"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5783,
+      5794
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "shin tu mnag dka'i dan song sdug bsngal 'di",
+      "yang yang soms la mi dge'i lam rnams spongs",
+      "lha mir skyes kyang gtan mi bde'i rgyu",
+      "ngar 'dzin ma rig tshad de 'jig re ra na",
+      "las nyon de ltar ma shes phyi nang gi",
+      "chos byed nyon mongs spongs byed la 'khrul nas",
+      "lhag spyod bzhin 'khyams de bas gnad dam pa",
+      "bdag med bsgom la de nyid thabs dang sbrel",
+      "bdag med mthong dang sgom las gsum gyi",
+      "bdud rnams bye bas btsal kyang nyon mongs kun",
+      "bskal pa'i me dang phrad pa'i bya spu bzhin",
+      "mi ring skad cig gcig la dgra bcom 'gyur"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      5910,
+      5913
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dgun dang dpyid dang dbyar rnams kyi",
+      "zla ba phyed dang gnyis 'das nas",
+      "zla ba phyed ni lus pa na",
+      "mkhas pas zhag mi thub pa dor"
+    ],
+    "num_exact_derge_matches": 11,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6002,
+      6010
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "nyi zer phra yang dngos po ches gsal ltar",
+      "tshig tshogs chung yang thub dbang dgongs pa kun",
+      "'di la 'di bzhin 'chad pa gzhan su kye",
+      "dbag bsam shing la'ang yongs 'du gnyis mthong ngam",
+      "blo gros phra yang bla ma lha'i drin las",
+      "sku bzhi'i dbang gi rgyal bo'ang thob nus na",
+      "thos bsam blo gros tsam la ngo mtshar ci",
+      "thang shing la brten dbyi mo mkha' la snyegs",
+      "zhes pa'ang bar skabs kyi tshigs su bcad pa'o"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6230,
+      6245
+    ],
+    "probability": 0.906,
+    "meter": 7,
+    "lines": [
+      "de'i grangs med rtsi tshul yod de",
+      "lung sil bu ltar gyi sdom tshig las",
+      "gcig bcu brgya stong khri 'bum dang",
+      "sa ya bye ba dung phyur rnams",
+      "rkyang pa'i grangs su shes par bya",
+      "chen po'i zla dang bcas pa ni",
+      "ther 'bum khrag khrig rab bkra ma dang",
+      "gtan dkrig mi 'khrug khyad phyin dang",
+      "pang steng ded 'dren mtha' snang dang",
+      "rgyu rig 'od mdzes dbang po dang",
+      "legs phyin rtogs 'gro bying rdul dang",
+      "rgya rtags stobs 'khor brnga shes dang",
+      "rnam 'byung stobs mig nyi shu gcig",
+      "bar du brgyad ni ma rnyed pas",
+      "rang gi ming gang rung ba gzhugs",
+      "grangs med par du bcu 'gyur"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6474,
+      6477
+    ],
+    "probability": 0.875,
+    "meter": 11,
+    "lines": [
+      "de yang yin te| dang po gling bzhi'i bdag bo dang",
+      "gnyis ba byang ma gtogs pa gsum gyi bdag po dang",
+      "gsum pa lho dang shar gnyis kyi bdag po dang",
+      "tha ma gling 'di gcig bu'i bdag po yin pa'i phyir"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6539,
+      6543
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'khor los bsgyur ba thams cad la",
+      "'di dag yod par 'dod mod kyi",
+      "dag dang mdzes dang gsal ba ni",
+      "sangs rgyas rnams kyi char mi phod",
+      "ces gsungs pa ltar yin pa'i phyir"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.7714
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6560,
+      6565
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "ris bskor rgya mtsho tshun chad kyi",
+      "gling bzhi dag ni dbang phyug bla",
+      "rgyal bo chos dang ldan par 'gyur",
+      "'khor los bsgyur brdzu 'phrul che",
+      "rin chen bdun dang ldan par 'gyur",
+      "zhes pa lta bu mang ba'i phyir"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.5556
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6570,
+      6573
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "sa bdag rtog pa po rnams blo gros 'khrul",
+      "rtsod ba'i dus na 'khor los bsgyur mi 'byung",
+      "bsod nams mchog gis chos kyi mdzod 'di ni",
+      "nyes las rnam bar rgyal nas sangs rgyas 'gyur"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.8889
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6664,
+      6667
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "byang chub sems dpa' rtag tu ni",
+      "khyim pa 'khor los bsgyur rnams su",
+      "gyur nas skye ba thams cad du",
+      "sems can rnams kyi don byed do"
+    ],
+    "num_exact_derge_matches": 20,
+    "probability_of_derge_quotation": 0.9643
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6698,
+      6701
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "sangs rgyas mchod rten thal sbyar phyag 'tshal ba",
+      "mtho ris gnas shing tshangs dang lha dbang 'gyur",
+      "mir gyur na yang mi'i rgyal bor 'ong",
+      "de ni nam yang yongs su nyams mi 'gyur"
+    ],
+    "num_exact_derge_matches": 7,
+    "probability_of_derge_quotation": 0.8437
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6704,
+      6710
+    ],
+    "probability": 0.857,
+    "meter": 9,
+    "lines": [
+      "bgrang bas nam yang mi zad yon tan rmad",
+      "ldan ba'i sangs rgyas mthong ci mchod rten kyang",
+      "mchod bas lha mi'i dbang bo nyi ma bzhin",
+      "yang dang yang 'byung 'di las ngo mtshar gang",
+      "khron bzang chu bzhin sbyad kyang mi 'dzad ba'i",
+      "byang chub sems kyi mtshe'u 'di nyid la",
+      "nyon mongs skom bas gdung nad 'thung zhes"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6787,
+      6790
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bskal ba mtshon dang nad dang ni",
+      "mu ge dag gis tshar phyin to",
+      "zhag rnams dang ni zla ba dang",
+      "lo bdun dag ste go rim bzhin"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 0.8869
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6863,
+      6866
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de yi skyon dang chos mthun phyir",
+      "bzhi pa na meng mi g.yo'i phyir",
+      "mi rtag de yi gzhal med khang",
+      "sems can bcas te 'byung 'jig phyir"
+    ],
+    "num_exact_derge_matches": 15,
+    "probability_of_derge_quotation": 0.9643
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6897,
+      6900
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "me yis bdun no chu yis gcig",
+      "de ltar chu bdun thal nas kyang",
+      "me yis bdun no de nas ni",
+      "mjug tu rlung gis 'jig pa yin"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S19100E3.txt",
+    "lines_included": [
+      6976,
+      6987
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "'dod pa'i 'gro ba gnyis dang gzugs gzugs med",
+      "so so'i snod dang bcud kyi dbang po sogs",
+      "yod med legs par 'grub tshul 'di rtogs na",
+      "skyid sdug na 'chi'i byed po lha 'dre dgra",
+      "gza' skar grogs rnams min bar dag dod khums",
+      "de ltar ma shes mkhas dang nus ldan du",
+      "rlom nas chags sdang spyod pa khyod re blun",
+      "ma rig pa la sum cu sogs bshad pa",
+      "sel byed rig pa thos bsam sgom gsum gyi",
+      "sgo nas bdun bshad gan de shes phyir dang",
+      "gzhan las thos pa zhib par bshad pa'i phyir",
+      "thos bsam bsgom pas sangs rgyas legs par 'grub"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

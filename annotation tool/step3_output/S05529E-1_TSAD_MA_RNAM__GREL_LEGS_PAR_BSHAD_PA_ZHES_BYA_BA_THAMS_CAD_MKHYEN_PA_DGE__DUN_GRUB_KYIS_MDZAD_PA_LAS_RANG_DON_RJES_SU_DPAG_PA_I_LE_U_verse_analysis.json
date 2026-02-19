@@ -1,0 +1,87 @@
+[
+  {
+    "text": "S05529E-1_TSAD_MA_RNAM__GREL_LEGS_PAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_PA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_RANG_DON_RJES_SU_DPAG_PA_I_LE_U.txt",
+    "lines_included": [
+      10,
+      13
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "ston pa bstan pa slob ma'i tshogs",
+      "rigs pas sgrub byed grags pa'i gzhung",
+      "rnam 'grel legs par bshad pa'i gter",
+      "gzhan la phan phyir dbye bar bya"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-1_TSAD_MA_RNAM__GREL_LEGS_PAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_PA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_RANG_DON_RJES_SU_DPAG_PA_I_LE_U.txt",
+    "lines_included": [
+      94,
+      97
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "yang dag gsum gyi gtan tshigs bshad",
+      "nges gzung tshig la rtsod pa spang",
+      "zlog phyogs gtan tshigs ltar snang bshad",
+      "med na mi 'byung rgyas par bshad pa'o"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-1_TSAD_MA_RNAM__GREL_LEGS_PAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_PA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_RANG_DON_RJES_SU_DPAG_PA_I_LE_U.txt",
+    "lines_included": [
+      850,
+      853
+    ],
+    "probability": 0.75,
+    "meter": 7,
+    "lines": [
+      "rigs don gzhan las len mi dgos",
+      "gzhan sel khas mi len na",
+      "rigs don gzhan las len mi dgos",
+      "gzhan sel khas mi len na"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-1_TSAD_MA_RNAM__GREL_LEGS_PAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_PA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_RANG_DON_RJES_SU_DPAG_PA_I_LE_U.txt",
+    "lines_included": [
+      2489,
+      2492
+    ],
+    "probability": 0.75,
+    "meter": 7,
+    "lines": [
+      "brda las 'bras bu 'grub par bstan",
+      "sgra'i nus pas 'grub pa dgag",
+      "sbyor ba'i shan gyis 'grub pa dgag",
+      "go rims med pa'i 'gal ba spangs pa'o"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-1_TSAD_MA_RNAM__GREL_LEGS_PAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_PA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_RANG_DON_RJES_SU_DPAG_PA_I_LE_U.txt",
+    "lines_included": [
+      2536,
+      2539
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "byed pa por 'gyur te mi 'gyur bar thal",
+      "khyad par byar med pa can yin pa'i phyir",
+      "gal te sngags mngon par gsal ba de",
+      "sngags kyi 'bras bu la sbyor ba yin no"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

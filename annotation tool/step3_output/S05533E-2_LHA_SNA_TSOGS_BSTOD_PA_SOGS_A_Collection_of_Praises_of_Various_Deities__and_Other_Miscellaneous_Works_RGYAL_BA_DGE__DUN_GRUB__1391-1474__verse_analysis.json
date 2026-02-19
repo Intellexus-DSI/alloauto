@@ -1,0 +1,70 @@
+[
+  {
+    "text": "S05533E-2_LHA_SNA_TSOGS_BSTOD_PA_SOGS_A_Collection_of_Praises_of_Various_Deities__and_Other_Miscellaneous_Works_RGYAL_BA_DGE__DUN_GRUB__1391-1474_.txt",
+    "lines_included": [
+      21,
+      24
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "ji ltar yan lag tshogs tsam la",
+      "brten nas shing rtar 'dogs pa ltar",
+      "de bzhin phung po rnams brten nas",
+      "kun rdzob sems can zhes bya'o"
+    ],
+    "num_exact_derge_matches": 11,
+    "probability_of_derge_quotation": 0.9286
+  },
+  {
+    "text": "S05533E-2_LHA_SNA_TSOGS_BSTOD_PA_SOGS_A_Collection_of_Praises_of_Various_Deities__and_Other_Miscellaneous_Works_RGYAL_BA_DGE__DUN_GRUB__1391-1474_.txt",
+    "lines_included": [
+      231,
+      240
+    ],
+    "probability": 0.9,
+    "meter": 9,
+    "lines": [
+      "mthun rkyen sgrub par byed pa'i lus can rnams",
+      "rgyal ba byams pa mgon po'i zhabs drung du",
+      "theg mchog chos kyi dpal la spyod par shog",
+      "nam zhig rdo rje'i gdan gyi ri bo'i spor",
+      "byams mgon nyin byed dbang po shar pa'i tshe",
+      "bdag gi blo gros padmo kha bye nas",
+      "skal bzang bung ba'i tshogs rnams tshi mas byed shog",
+      "de tshe rgyal ba byams pa rab tu dgyes",
+      "phyag g.yas bdag gi mgo la bzhag bzhin du",
+      "bla med byang chub mchog tu lung bstan nas"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05533E-2_LHA_SNA_TSOGS_BSTOD_PA_SOGS_A_Collection_of_Praises_of_Various_Deities__and_Other_Miscellaneous_Works_RGYAL_BA_DGE__DUN_GRUB__1391-1474_.txt",
+    "lines_included": [
+      243,
+      257
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "byang chub sgrub pa'i tshe rabs kun tu yang",
+      "dus gsum rgyal ba sras bcas thams cad kyi",
+      "rlabs chen spyod pa ji snyed mchis pa kun",
+      "gcig tu bsdus nas tshul bzhin 'doms par shog",
+      "legs bshad ri mo bkra ba'i lung gi gos",
+      "rnam dpyod gser gyi yu ba la brten cing",
+      "bslab gsum nor bu'i tog gis rab mtshan pa'i",
+      "bstan pa'i rgyal mtshan phyogs bcur 'dzugs par shog",
+      "phan bde'i 'byung gnas bstan pa dar zhing rgyas",
+      "bstan 'dzin skyes bu thams cad sku khams bzang",
+      "lus can kun la bde skyid 'byung ba'i gnas",
+      "bkra shis lhun po rtag tu rgyas gyur cig",
+      "rtag tu byams pa rnam gsum goms pa'i mthus",
+      "bdud sde byams pa'i dpung gis 'joms pa dang",
+      "'gro kun byams pa'i stobs kyis skyong mjad pa'i"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

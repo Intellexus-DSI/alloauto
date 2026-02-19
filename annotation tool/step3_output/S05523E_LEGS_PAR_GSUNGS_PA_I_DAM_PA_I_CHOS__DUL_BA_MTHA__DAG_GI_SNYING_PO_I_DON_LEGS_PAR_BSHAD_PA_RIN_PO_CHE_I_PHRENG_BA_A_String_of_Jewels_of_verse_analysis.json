@@ -1,0 +1,780 @@
+[
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      239,
+      242
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'di ni nyon mongs pham byed lam",
+      "rgyal po yi ni 'dren pa mchog",
+      "'di ni thar pa'i grong 'jug pa'i",
+      "them skas gzhi dang 'dra bar gnas"
+    ],
+    "num_exact_derge_matches": 43,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      340,
+      343
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "dam pa mang po khas 'che mi byed la",
+      "gal te dka' bas khas ni blangs gyur na",
+      "rdo la ri mo bris pa lta bur ni",
+      "shi yang gzhan du byed par mi 'gyur ro"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.9167
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      370,
+      374
+    ],
+    "probability": 0.7,
+    "meter": 9,
+    "lines": [
+      "dang por sngon cho ga bstan par bya ste",
+      "de lung du dang por bstan pa'i phyir dang",
+      "brjod par bya ba nyung ba'i phyir ro",
+      "ci'i phyir sngon gyi cho ga zhes bya zhe na",
+      "da ltar gyi cho ga las sngar byung ba dang"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.5968
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      608,
+      611
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang zhig gsum la skyabs 'gro de",
+      "sangs rgyas dge 'dun byed pa'i chos",
+      "mi slob ba dang gnyis ka dang",
+      "mya ngan 'das la skyabs su 'gro"
+    ],
+    "num_exact_derge_matches": 14,
+    "probability_of_derge_quotation": 0.9583
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      920,
+      923
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "rgan la btsun pa'i nye ba'i tshig gis brjod",
+      "gzhon la'ang tshe dang ldan pa'i nye tshig gis",
+      "de bzhin gnas brtan zhes pa'i nye tshig brjod",
+      "de ltar 'dir ni ming smos rim pa yin"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.9444
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      1076,
+      1081
+    ],
+    "probability": 0.833,
+    "meter": 7,
+    "lines": [
+      "nyi ma brgyad cha shar ba dang",
+      "nyi ma bzhi cha shar ba dang",
+      "gung tshigs ma yol ba dang",
+      "nyi ma bzhi cha lus pa dang",
+      "nyi ma brgyad cha lus pa dang",
+      "nyi ma ma nub pa dang"
+    ],
+    "num_exact_derge_matches": 19,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      1347,
+      1354
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "lo bcu lon dang 'dzin dang mkhas",
+      "rig dang gsal dang 'dzin 'jug dang",
+      "slob dang slob 'jug rnam pa gnyis",
+      "phun sum tshogs gnyis rnam pa gsum",
+      "slob dang mi slob byung shes dang",
+      "gnas 'cha' 'char 'jug ltung ba shes",
+      "lho yi ri la rgyu ba yi",
+      "sde tshan yang dag bsdus pa yin"
+    ],
+    "num_exact_derge_matches": 22,
+    "probability_of_derge_quotation": 0.9509
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      1968,
+      1971
+    ],
+    "probability": 1.0,
+    "meter": 11,
+    "lines": [
+      "zla ba skar ma'i tshogs bcas sa la ltung yang srid",
+      "sa 'di ri dang nags bcas mkha' la 'gro yang sring",
+      "rgya mtsho chen po'i chu ni skam par 'gyur srid kyi",
+      "drang srong chen po rdzun gsung 'gyur ba srid ma yin"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.8955
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      2157,
+      2160
+    ],
+    "probability": 0.75,
+    "meter": 7,
+    "lines": [
+      "bsrung ba'i don du skra bzed ni",
+      "rgyar ni phyed dang gnyis khrul",
+      "srid du khru ni gsum yin te",
+      "lhag ba bcang bar mi bya'o"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.7798
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      2413,
+      2416
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rnam pa ji ltar bsku zhe na",
+      "mdung rtse'i rnam pa lta bu'am",
+      "rdza rnga'i rnam pa lta bur ro",
+      "zlum po dang zla gam bkag go"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      2724,
+      2727
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "dam pa'i skye bo sus kyang mi bsring ste",
+      "dul ba'i tshul gyis dge la brten par bya",
+      "de dang nye na de yi yon tan rdul",
+      "tshad du ma bsgos par yang 'gos par 'gyur"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.7708
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      2819,
+      2822
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rgan nam 'on te gzhon yang rung",
+      "gang la chos ni thos gyur pa",
+      "de la thog mar phyag byas te",
+      "zla ba tshes la bram ze bzhin"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      2828,
+      2835
+    ],
+    "probability": 0.938,
+    "meter": 7,
+    "lines": [
+      "brtul zhugs can gyis bla ma bas",
+      "sngar nyid mal nas langs nas ni",
+      "so shing bcas nas de 'og tu",
+      "ston pa la ni byag bya'o",
+      "de nas rab gus bskyed pa yis",
+      "bla ma la ni phyag bya ste",
+      "de ni de la gdam dag sogs",
+      "cho ga bzhin du phan 'dogs yin"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.9196
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      2839,
+      2843
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "tshig le'ur byas pa lnga bcu par",
+      "gdong dang so yi dri bkrus nas",
+      "rdzogs sangs rgyas la gus phyag 'tshal",
+      "bla ma gnas pa'i sgo glegs la",
+      "lag pas dal gyis brdung bar bya"
+    ],
+    "num_exact_derge_matches": 12,
+    "probability_of_derge_quotation": 0.8
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3060,
+      3071
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de yi khyad par sbyin bdag dang",
+      "dngos dang zhing gi khyad par las",
+      "sbyin bdag khyad 'phags dad sogs kyis",
+      "gus la sogs pa sbyin par byed",
+      "de phyir bkur sti rgya chen dang",
+      "dus dang bar chad med par rnyed",
+      "kha dog la sogs phun sum dngos",
+      "de las gzugs bzang grags ldan pa",
+      "dga' dang shin tu gzhon sha can",
+      "dus su reg na bde lus 'gyur",
+      "'gro dang sdug bsngal phan 'dogs dang",
+      "yon tan rnams kyis zhing khyad 'phags"
+    ],
+    "num_exact_derge_matches": 34,
+    "probability_of_derge_quotation": 0.9702
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3074,
+      3085
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "blo ldan chos dang mthun pa yis",
+      "nor rnyed bsag par mi bya ste",
+      "tshul khrims phun sum tshogs pa yi",
+      "yon gnas la ni yon du 'bul",
+      "dge sbyong bram ze nges pa dang",
+      "phongs pa legs par tshim byas na",
+      "shes rab can de lus zhig nas",
+      "lha yi lus su skye bar 'gyur",
+      "mkhas pas de ltar shes byas nas",
+      "dang ldan chags pa med sems kyis",
+      "yon gnas rnams la byin pa ni",
+      "dpa' bo ser sna med pas bsngags"
+    ],
+    "num_exact_derge_matches": 8,
+    "probability_of_derge_quotation": 0.9147
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3176,
+      3181
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gcig pu lam du 'gro mi bya",
+      "chu bo'i pha rol rkyal mi bya",
+      "skyes pa dang ni reg mi bya",
+      "skyes pa dang ni 'dug mi bya",
+      "smyan du 'gyur ba mi bya zhing",
+      "kha na ma tho bcab mi bya"
+    ],
+    "num_exact_derge_matches": 18,
+    "probability_of_derge_quotation": 0.9762
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3183,
+      3189
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rjes su mthun pa'i chos drug ni",
+      "gser la gzung bar mi bya zhing",
+      "'doms kyi spu ni breg mi bya",
+      "sa ni brko bar mi bya ste",
+      "rtswa sngon dag kyang bcad mi bya",
+      "sbyin len ma byas bza' mi bya",
+      "gsog 'jog byas pa bza' mi bya"
+    ],
+    "num_exact_derge_matches": 10,
+    "probability_of_derge_quotation": 0.9184
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3514,
+      3517
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang zhig bslab la mi gnas pa",
+      "bde gshegs rgyal mtshan 'dzin pa bas",
+      "bslab pa mi gnas skad cig la",
+      "gzugs bor khyim par gnas pa bzang"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.8929
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3530,
+      3534
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mtshan gnyis dag ni byung ba dang",
+      "rtsa ba chad dang mtshan 'das las",
+      "so so thar ba'i 'dul ba gtong",
+      "kha cig ltung par gyur las smra",
+      "gzhan dag dam chos nub pa las"
+    ],
+    "num_exact_derge_matches": 15,
+    "probability_of_derge_quotation": 0.869
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3700,
+      3704
+    ],
+    "probability": 0.9,
+    "meter": 11,
+    "lines": [
+      "nyes pa sbom po ni bzhi po 'di dag yin te",
+      "pham par 'gyur bas kun nas bslang ba lci ba dang",
+      "pham par 'gyur bas kun nas bslang ba yang ba dang",
+      "dge 'dun lhag mas kun nas bslang ba lci ba dang",
+      "dge 'dun lhag mas kun nas bslang ba yang ba'o zhes dang"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.9603
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3736,
+      3739
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bya ba mi byed pa dang ni",
+      "mi bya ba ni byed pa'i phyir",
+      "mi sbyor ba dang sbyor bcas las",
+      "ltung ba'i nyes pa 'byung bar 'gyur"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3876,
+      3879
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "du ma'i dbus na 'dug pa'i phyir",
+      "du ma nyid du rnam rtog la",
+      "'di ltar ldog pa'i sgo nas ni",
+      "mang po nyid du spyir rtog mod"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.9286
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      3926,
+      3932
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bya ba mi byed pa dang ni",
+      "mi bya ba ni byed pa'i phyir",
+      "mi spyor ba dang spyor bcas las",
+      "ltung ba'i nyes pa 'byung bar 'gyur",
+      "de yi rgyu yang rnam bzhi ste",
+      "mi shes pa dang bag med dang",
+      "nyon mongs mang dang ma gus pa"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.9558
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      4132,
+      4143
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "lci dang shin tu lci ba nyid",
+      "yang dang shin tu yang ba ste",
+      "phas pham pas ni kun bslang ba'i",
+      "spom po rnam pa bzhi yin no",
+      "skrag par mi byed lci ba ste",
+      "gzhan gyis de la 'bad pa yis",
+      "bzlog kyang mi nyan rab lcir shes",
+      "gzhan la khrel yod yang ba ste",
+      "rang nyid ngo tshas shin tu yang",
+      "bsam pa'i dbye bas 'gyur ba yin",
+      "de bzhin dge 'dun lhag ma yis",
+      "kun bslang sbom po rnam pa bzhi"
+    ],
+    "num_exact_derge_matches": 10,
+    "probability_of_derge_quotation": 0.9643
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      4701,
+      4704
+    ],
+    "probability": 0.75,
+    "meter": 9,
+    "lines": [
+      "rku ba'i dus su rin thad tshang ba dang",
+      "brku bya la ltos nas rin thad tshang ba dang",
+      "rku byed la ltos nas rin thang tshang ba",
+      "sbyor ba gcig gis nang du rin thang tshang ba'o"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      5419,
+      5422
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "dge 'dun dag ni nor gcig spun 'dra bas",
+      "dge 'dun ched byas skal ba mi rtag ste",
+      "zhing bgo min phyir sdom brtson mang phyir ro",
+      "gzhan du lung las rin thang bcad mi 'gyur"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.9444
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      5915,
+      5918
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "phan tshun zhe ni 'gras pa dang",
+      "char 'bab pa dang mtshan gyur dang",
+      "rgyal po'i khab kyi chu dron dang",
+      "glang chen rnams kyi sgra skad do"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      6512,
+      6515
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mdza' na mo ni bcu yin te",
+      "pha ma ming po phu nu mo|",
+      "gyug gyos nye du rigs dang ni",
+      "rus chags kyis bsrungs rnam 'khrug med"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      6859,
+      6862
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "yang dag sdom dang dka' thub can",
+      "drang srong rnams la skur 'debs pa",
+      "de dag spyi'u tshugs dag tu ni",
+      "dmyal ba kho nar skye bar 'gyur"
+    ],
+    "num_exact_derge_matches": 12,
+    "probability_of_derge_quotation": 0.9643
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      7816,
+      7819
+    ],
+    "probability": 0.75,
+    "meter": 11,
+    "lines": [
+      "gding ba byin gyis brlabs pa dang bral ba la ni",
+      "nyin mtshan 'das pa la brten pa'i nyes pa med de",
+      "chos gos gsum las dgag bya chung ba'i phyir ro",
+      "de yang sdom pa len pa dang bsrung ba dang"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      7886,
+      7897
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "khyim gcig dang ni khyim gnyis dang",
+      "khyim gyi tshogs dang ldan pa dang",
+      "rtsig pa rib ma 'obs skor dang",
+      "rnam bzhir bya ba grong dang khyim",
+      "sten 'gro mu stegs tshong rdal dang",
+      "tshong khang dgra khang g.yul dang ni",
+      "g.yul tshoms gru dang shing rta dang",
+      "shing ljon kun dga' ra ba yin",
+      "lam du 'gro 'greng 'dug nyal dang",
+      "thad kar yang ni de bzhin te",
+      "mtshams gzhan nyal ba tha ma yi",
+      "sde tshan yang dag bsdus pa yin"
+    ],
+    "num_exact_derge_matches": 31,
+    "probability_of_derge_quotation": 0.9476
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      8798,
+      8801
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "byin rlabs phyung dang gzhan bsngos dang",
+      "dngos po brlag dang rang gi ba'i",
+      "bsam pa rgyun ldan yid brtan yul",
+      "shi la der shes rten nyams rnams"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      9343,
+      9348
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "mchod rten bzhi po de'i khyad par",
+      "byang chub chen po'i mchod rten ni",
+      "rdo rje gdan na bzhugs pa",
+      "dbyibs grub bzhi bad rim bzhi pa",
+      "chos kyi 'khor lo'i mchod rten ni",
+      "ba ra na se na bzhugs pa"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.2143
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      9976,
+      9985
+    ],
+    "probability": 0.95,
+    "meter": 7,
+    "lines": [
+      "gnas khang zas la bsko ba gnyis",
+      "thug pa bag tshos 'grim pa gnyis",
+      "phran tshogs 'brim par byed pa dang",
+      "snod spyad 'drub dang gos kyi gnyis",
+      "dbyar gyi ras chen sbed dang 'gyed",
+      "mngag gzhug pa dang mdzes 'chos te",
+      "gang zag bcu dang gnyis po dag",
+      "ston pas yang dag bshad pa yin",
+      "shing thog 'grim pa sogs kyang bsdu'o",
+      "de dag kho na'am zhe na"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.7489
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      10058,
+      10061
+    ],
+    "probability": 0.75,
+    "meter": 9,
+    "lines": [
+      "don khyad par can bsgrub pa'i skabs min pa'o",
+      "kun slong mal cha mi bsdu bar 'dod pa",
+      "sbyor ba gzhan du 'gro bar rtsom pa",
+      "mthar thug 'dom bzhi bcu rtsa dgu las 'das pa'am"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      10329,
+      10333
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "ngan dang gsod dang grang dro dang",
+      "chol zangs dang ni bkru sman dang",
+      "rnal 'byor mthun dang kha ton dang",
+      "'jigs dang bcas dang 'jigs med do",
+      "zhes gsungs pa rnams bsdus pa yin no"
+    ],
+    "num_exact_derge_matches": 12,
+    "probability_of_derge_quotation": 0.8907
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      10859,
+      10862
+    ],
+    "probability": 0.75,
+    "meter": 9,
+    "lines": [
+      "bsam pa thag pas 'bod pa po yin pa'o",
+      "zas de gnyis bza' ba lnga'i khongs su gtogs pa",
+      "rung ba mgron bos kyi tshad du longs pa",
+      "phan tshun khongs su gtogs pa min pa"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      11736,
+      11739
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "rang spyad pa'i don nyid la 'jug pa dang",
+      "'jug tu 'dzud pa dag la shes gtso'o",
+      "gzhan yang srog chags dang bcas pa nyid la'o",
+      "gang gi srog chags dang bcas pa zhe na"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      12342,
+      12346
+    ],
+    "probability": 0.7,
+    "meter": 9,
+    "lines": [
+      "bkag pa las rkyen stobs kyis gnang ba ste",
+      "ma bkag pa snga dro zan zab dang",
+      "nam phyed na gnyid log pa lta bu dang",
+      "ma gnang ba rang bzhin lta bu la min no",
+      "kha cig des pa bzhi las gzhan pa gsung ste"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      12436,
+      12439
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "bdag nyid 'dun pa phul zin pa",
+      "go bya dge slong chos drug ldan",
+      "'dun ba len pa po yin pa",
+      "kun slong 'dun pa bsgyur bar 'dod pa"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05523E_LEGS_PAR_GSUNGS_PA_I_DAM_PA_I_CHOS__DUL_BA_MTHA__DAG_GI_SNYING_PO_I_DON_LEGS_PAR_BSHAD_PA_RIN_PO_CHE_I_PHRENG_BA_A_String_of_Jewels_of.txt",
+    "lines_included": [
+      12752,
+      12755
+    ],
+    "probability": 0.75,
+    "meter": 9,
+    "lines": [
+      "steng du rkang pa gnyis kyis brdzi bar bya'o",
+      "kha ma bsgyur ba'i gos gyon pa'i ltung byed do",
+      "gnyis pa rgyan las gyur ba la gnyis las",
+      "rnam 'byed kyi skabs nas 'byung ba la gnyis las"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.4072
+  }
+]

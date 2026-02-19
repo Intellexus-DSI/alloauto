@@ -1,0 +1,66 @@
+[
+  {
+    "text": "S05536E_DPAL_DUS_KYI__KHOR_LO_I_RIM_GNYIS_KYI_ZIN_BRIS_MKHAS_PA_I_YID__PHROG_Stealing_the_Hearts_of_the_Wise--Notes_on_the_Two_Stages_of_the_P.txt",
+    "lines_included": [
+      147,
+      153
+    ],
+    "probability": 0.714,
+    "meter": 7,
+    "lines": [
+      "dpral ba nas mgrin pa'i bar dang",
+      "de'i steng gi chud khyil ni",
+      "mgrin pa nas snying kha'i bar dang",
+      "de'i steng gi sa dkyil ni",
+      "snying kha nas lte ba'i bar dang",
+      "de'i steng gi ri rab ni",
+      "lte ba nas gsang gnas kyi bar dang"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05536E_DPAL_DUS_KYI__KHOR_LO_I_RIM_GNYIS_KYI_ZIN_BRIS_MKHAS_PA_I_YID__PHROG_Stealing_the_Hearts_of_the_Wise--Notes_on_the_Two_Stages_of_the_P.txt",
+    "lines_included": [
+      567,
+      572
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "dang po du ba lta bu ste",
+      "gnyis pa smig rgyu lta bu yin",
+      "gsum pa mkha' snang 'dra ba ste",
+      "bzhi pa mar me ltar 'bar ba",
+      "sprin gyi nam mkha' lta bu ni",
+      "rtag tu snang ba lnga pa'o"
+    ],
+    "num_exact_derge_matches": 12,
+    "probability_of_derge_quotation": 0.8194
+  },
+  {
+    "text": "S05536E_DPAL_DUS_KYI__KHOR_LO_I_RIM_GNYIS_KYI_ZIN_BRIS_MKHAS_PA_I_YID__PHROG_Stealing_the_Hearts_of_the_Wise--Notes_on_the_Two_Stages_of_the_P.txt",
+    "lines_included": [
+      903,
+      914
+    ],
+    "probability": 0.958,
+    "meter": 9,
+    "lines": [
+      "dang po'i sangs rgyas dus kyi 'khor lo yi",
+      "rdzogs rim yan lag drug gi dmigs rim 'di",
+      "rgyud 'grel khrid yig dam pa'i gsung bzhin du",
+      "gsal la ma nor mdor bsdus brjed byang du",
+      "dam pa'i gsung la mos pa brtan phyir dang",
+      "rang gi gdul bya 'ga' yis bskul ba dang",
+      "bdag dang mnyam pa gzhan la 'ang phan phyir du",
+      "dge 'dun grub kyis lhag bsam dag pas bkod",
+      "dge 'dis mkha' mnyam 'gro ba ma lus pa",
+      "gsang sngags rdo rje theg pa'i sgor zhugs nas",
+      "bde stong mchog gi dpal la longs spyod de",
+      "dam pa dang po'i sangs rgyas thob par shog"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

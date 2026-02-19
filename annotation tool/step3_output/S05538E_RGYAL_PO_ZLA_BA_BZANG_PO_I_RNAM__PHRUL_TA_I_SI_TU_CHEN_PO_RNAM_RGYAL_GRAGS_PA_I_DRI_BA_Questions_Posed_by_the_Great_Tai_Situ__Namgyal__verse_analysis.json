@@ -1,0 +1,55 @@
+[
+  {
+    "text": "S05538E_RGYAL_PO_ZLA_BA_BZANG_PO_I_RNAM__PHRUL_TA_I_SI_TU_CHEN_PO_RNAM_RGYAL_GRAGS_PA_I_DRI_BA_Questions_Posed_by_the_Great_Tai_Situ__Namgyal_.txt",
+    "lines_included": [
+      3,
+      13
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "dad cing 'dun pas bsrubs pa las grub pa'i",
+      "'gro ba'i dpal du shar ba'i 'od stong can",
+      "'phrin las bzang khyod rtag tu rgyal gyur cig",
+      "thos pa rgya mtsho'i btung bas mi ngoms shing",
+      "bsam pa yid kyi ri mo ci yang shes",
+      "sgom byung rtogs pa mchog tu gyur pa khyod",
+      "snyan pa'i grags pa srid rtse'i bar du g.yo",
+      "kha cig mkhas kyang mngon pa'i nga rgyal dang",
+      "gzhan 'ga' g.yo sgyu'i zol la brten mthong bas",
+      "gzu bor gnas pa khyod la dri ba'i tshig",
+      "cung zad brjod pa 'di la skabs phye zhig"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05538E_RGYAL_PO_ZLA_BA_BZANG_PO_I_RNAM__PHRUL_TA_I_SI_TU_CHEN_PO_RNAM_RGYAL_GRAGS_PA_I_DRI_BA_Questions_Posed_by_the_Great_Tai_Situ__Namgyal_.txt",
+    "lines_included": [
+      82,
+      97
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "mdo dang rgyud sde'i gshog pa'i rlabs chen thob",
+      "bden gnyis 'gros kyis ci yang sgeg pa can",
+      "mkhas mang chu bya'i dbus na mngon mtho ba'i",
+      "ngang pa'i rgyal po 'di ni bstan pa'i dpal",
+      "legs bshad mgrin pa'i dril chen sgrog pa khyod",
+      "ka la ping ka'i snyan pa lhur len pas",
+      "dris lan tshangs pa'i dbyangs kyi rjes 'gro ba",
+      "rna ba'i bcud len ched du sgrog par mdzod",
+      "rnam rgyal grags pa'i blo gros chu mtsho las",
+      "'phrin yig chu 'dzin dkar po'i phreng ba byung",
+      "pho nya'i dri bzhon dpal la rab brten nas",
+      "bkra shis lhun po'i pad mtsho'i ngogs su song",
+      "don bzang dbang po'i gzhu mdzes mchog tu bkra",
+      "snyan tshig bdud rtsi'i char zim dal bus 'bab",
+      "legs bshad 'brug sgra'i sgra dbyangs bsgrags pa na",
+      "mkhas mang gtsug phud can rnams dga' bar 'gyur"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

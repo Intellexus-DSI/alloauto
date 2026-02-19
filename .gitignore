@@ -1,0 +1,19 @@
+**/Sungbum_flat_shortened
+**/Sungbum_flat
+dataset/tokenizer/tibetan_bert_ready_512.txt
+
+/venv/
+
+# Agents
+**/.gemini
+
+# Python cache
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Secrets and credentials
+keys.yaml
+.env
+*.key
+*.pem

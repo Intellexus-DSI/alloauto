@@ -1,0 +1,27 @@
+# Core scientific computing
+numpy>=2.2.6
+pandas>=2.3.0
+
+# NLP and evaluation
+nltk>=3.9.0
+eval4ner>=0.1.0
+
+# Jupyter notebook environment
+jupyter>=1.1.0
+ipykernel>=6.30.0
+
+# Additional dependencies for IoU and evaluation metrics
+# (these are automatically installed with the above packages)
+
+pyyaml>=6.0
+
+# LangChain core packages
+langchain
+langchain_community
+langchain-huggingface
+
+# LLM providers (only OpenAI and Google)
+langchain-openai
+google-genai
+langchain-google-genai
+

@@ -1,0 +1,57 @@
+[
+  {
+    "text": "S05534E_SGROL_DKAR_THUN_MONG_MA_YIN_PA_I_RJES_GNANG_A_Unique_Rite_of_Permission_for_the_Practice_of_the_Lady_of_Liberation__Tara__in_White_RGY.txt",
+    "lines_included": [
+      32,
+      37
+    ],
+    "probability": 0.833,
+    "meter": 7,
+    "lines": [
+      "dus gsum sangs rgyas thams cad kyi",
+      "sku gsum ye shes ngo bo nyid",
+      "'gro ba'i gnyen mchog rje btsun mas",
+      "bdag la sku'i byin rlabs stsol",
+      "ces bas lan gsum du gsol ba btab",
+      "mdun skyed kyi rje btsun ma dang"
+    ],
+    "num_exact_derge_matches": 34,
+    "probability_of_derge_quotation": 0.2525
+  },
+  {
+    "text": "S05534E_SGROL_DKAR_THUN_MONG_MA_YIN_PA_I_RJES_GNANG_A_Unique_Rite_of_Permission_for_the_Practice_of_the_Lady_of_Liberation__Tara__in_White_RGY.txt",
+    "lines_included": [
+      71,
+      76
+    ],
+    "probability": 0.667,
+    "meter": 9,
+    "lines": [
+      "mar me gcig las gnyis mched pa'i tshul du",
+      "sngags kyi phreng ba de 'dra gnyis pa 'phros",
+      "bla ma'i thugs ka nas brgyud de zhal nas 'thon",
+      "slob ma rje btsun mar gsal ba'i zhal nas zhugs",
+      "thugs kar zla ba'i steng du 'khod par mos nas",
+      "sngags kyi rjes zlos brgya rtsa brgyad bya"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05534E_SGROL_DKAR_THUN_MONG_MA_YIN_PA_I_RJES_GNANG_A_Unique_Rite_of_Permission_for_the_Practice_of_the_Lady_of_Liberation__Tara__in_White_RGY.txt",
+    "lines_included": [
+      109,
+      112
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "bcom ldan bdag gis bzung lags kyis",
+      "bcom ldan bdag la byin gyis rlobs",
+      "ces gsol ba lan gsum bzlas pa'i rjes",
+      "de nas 'brang rgyas slob ma'i sbyi"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 0.4219
+  }
+]

@@ -1,0 +1,1344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secular/Scripture Classification Report</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        .heatmap {
+            margin-bottom: 20px;
+            padding: 5px;
+            background: #ddd;
+            border-radius: 4px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+        button {
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Secular vs Scripture Report</h2>
+    <p><strong>File:</strong> D4201.txt</p>
+    <p><strong>Chunks:</strong> 16</p>
+
+    <div class="controls">
+        <button onclick="toggle('.chunk-text')">Toggle Text</button>
+        <button onclick="toggle('.meta')">Toggle Scores</button>
+    </div>
+
+    <div class="heatmap">
+        <a href="#chunk-0" title="Scripture: 0.06, Secular: 0.94" style="background:rgb(15,239,15); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-1" title="Scripture: 0.86, Secular: 0.14" style="background:rgb(35,35,219); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-2" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-3" title="Scripture: 0.73, Secular: 0.27" style="background:rgb(68,68,186); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-4" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-5" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-6" title="Scripture: 0.92, Secular: 0.08" style="background:rgb(21,21,233); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-7" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(7,7,247); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-8" title="Scripture: 0.53, Secular: 0.47" style="background:rgb(120,120,134); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-9" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-10" title="Scripture: 0.28, Secular: 0.72" style="background:rgb(72,182,72); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-11" title="Scripture: 0.61, Secular: 0.39" style="background:rgb(99,99,155); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-12" title="Scripture: 0.93, Secular: 0.07" style="background:rgb(18,18,236); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-13" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-14" title="Scripture: 0.54, Secular: 0.46" style="background:rgb(118,118,136); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-15" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-16" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-17" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-18" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(5,5,249); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-19" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(2,2,252); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-20" title="Scripture: 0.87, Secular: 0.13" style="background:rgb(32,32,222); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-21" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-22" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-23" title="Scripture: 0.34, Secular: 0.66" style="background:rgb(87,167,87); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-24" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(6,6,248); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-25" title="Scripture: 0.67, Secular: 0.33" style="background:rgb(85,85,169); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-26" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-27" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(7,7,247); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-28" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-29" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-30" title="Scripture: 0.69, Secular: 0.31" style="background:rgb(79,79,175); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-31" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(7,7,247); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-32" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(4,4,250); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-33" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-34" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-35" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-36" title="Scripture: 0.24, Secular: 0.76" style="background:rgb(60,194,60); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-37" title="Scripture: 0.89, Secular: 0.11" style="background:rgb(28,28,226); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-38" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-39" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-40" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-41" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-42" title="Scripture: 0.59, Secular: 0.41" style="background:rgb(104,104,150); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-43" title="Scripture: 0.55, Secular: 0.45" style="background:rgb(115,115,139); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-44" title="Scripture: 0.57, Secular: 0.43" style="background:rgb(110,110,144); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-45" title="Scripture: 0.02, Secular: 0.98" style="background:rgb(5,249,5); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-46" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-47" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(6,6,248); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-48" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(13,13,241); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-49" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-50" title="Scripture: 0.00, Secular: 1.00" style="background:rgb(0,254,0); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-51" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-52" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-53" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-54" title="Scripture: 0.30, Secular: 0.70" style="background:rgb(76,178,76); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-55" title="Scripture: 0.61, Secular: 0.39" style="background:rgb(98,98,156); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-56" title="Scripture: 0.88, Secular: 0.12" style="background:rgb(31,31,223); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-57" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-58" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-59" title="Scripture: 0.07, Secular: 0.93" style="background:rgb(17,237,17); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-60" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(4,4,250); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-61" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(12,12,242); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-62" title="Scripture: 0.90, Secular: 0.10" style="background:rgb(25,25,229); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-63" title="Scripture: 0.40, Secular: 0.60" style="background:rgb(102,152,102); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-64" title="Scripture: 0.96, Secular: 0.04" style="background:rgb(10,10,244); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-65" title="Scripture: 0.15, Secular: 0.85" style="background:rgb(39,215,39); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-66" title="Scripture: 0.03, Secular: 0.97" style="background:rgb(8,246,8); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-67" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(11,11,243); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-68" title="Scripture: 0.91, Secular: 0.09" style="background:rgb(23,23,231); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-69" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-70" title="Scripture: 0.69, Secular: 0.31" style="background:rgb(77,77,177); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-71" title="Scripture: 0.96, Secular: 0.04" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-72" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-73" title="Scripture: 0.04, Secular: 0.96" style="background:rgb(9,245,9); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-74" title="Scripture: 0.91, Secular: 0.09" style="background:rgb(24,24,230); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-75" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-76" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-77" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-78" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-79" title="Scripture: 0.92, Secular: 0.08" style="background:rgb(19,19,235); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-80" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(5,5,249); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-81" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-82" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(6,6,248); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-83" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-84" title="Scripture: 0.96, Secular: 0.04" style="background:rgb(9,9,245); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-85" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-86" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-87" title="Scripture: 0.82, Secular: 0.18" style="background:rgb(47,47,207); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-88" title="Scripture: 0.84, Secular: 0.16" style="background:rgb(39,39,215); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-89" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(5,5,249); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-90" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-91" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-92" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-93" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(5,5,249); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-94" title="Scripture: 0.96, Secular: 0.04" style="background:rgb(11,11,243); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-95" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-96" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-97" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-98" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(7,7,247); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-99" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-100" title="Scripture: 0.15, Secular: 0.85" style="background:rgb(38,216,38); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-101" title="Scripture: 0.72, Secular: 0.28" style="background:rgb(71,71,183); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-102" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-103" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-104" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-105" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(2,2,252); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-106" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(11,11,243); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-107" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-108" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(4,4,250); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-109" title="Scripture: 0.87, Secular: 0.13" style="background:rgb(32,32,222); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-110" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-111" title="Scripture: 0.40, Secular: 0.60" style="background:rgb(101,153,101); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-112" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-113" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-114" title="Scripture: 0.82, Secular: 0.18" style="background:rgb(44,44,210); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-115" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-116" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(7,7,247); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-117" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-118" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-119" title="Scripture: 0.82, Secular: 0.18" style="background:rgb(45,45,209); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-120" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-121" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-122" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(11,11,243); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-123" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-124" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-125" title="Scripture: 0.42, Secular: 0.58" style="background:rgb(107,147,107); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-126" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-127" title="Scripture: 0.93, Secular: 0.07" style="background:rgb(16,16,238); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-128" title="Scripture: 0.93, Secular: 0.07" style="background:rgb(18,18,236); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-129" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-130" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(13,13,241); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-131" title="Scripture: 0.88, Secular: 0.12" style="background:rgb(30,30,224); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-132" title="Scripture: 0.02, Secular: 0.98" style="background:rgb(4,250,4); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-133" title="Scripture: 0.90, Secular: 0.10" style="background:rgb(24,24,230); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-134" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(4,4,250); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-135" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(6,6,248); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-136" title="Scripture: 0.96, Secular: 0.04" style="background:rgb(9,9,245); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-137" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-138" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-139" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-140" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-141" title="Scripture: 0.98, Secular: 0.02" style="background:rgb(5,5,249); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-142" title="Scripture: 0.96, Secular: 0.04" style="background:rgb(10,10,244); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-143" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(6,6,248); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-144" title="Scripture: 0.92, Secular: 0.08" style="background:rgb(21,21,233); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-145" title="Scripture: 0.41, Secular: 0.59" style="background:rgb(105,149,105); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-146" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-147" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-148" title="Scripture: 0.94, Secular: 0.06" style="background:rgb(15,15,239); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-149" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-150" title="Scripture: 0.69, Secular: 0.31" style="background:rgb(78,78,176); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-151" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-152" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(1,1,253); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-153" title="Scripture: 0.97, Secular: 0.03" style="background:rgb(8,8,246); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-154" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-155" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-156" title="Scripture: 1.00, Secular: 0.00" style="background:rgb(0,0,254); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-157" title="Scripture: 0.80, Secular: 0.20" style="background:rgb(51,51,203); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-158" title="Scripture: 0.87, Secular: 0.13" style="background:rgb(34,34,220); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-159" title="Scripture: 0.99, Secular: 0.01" style="background:rgb(3,3,251); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-160" title="Scripture: 0.00, Secular: 1.00" style="background:rgb(0,254,0); width:8px; height:20px; border-radius:2px;"></a>
+    </div>
+
+    
+    <div id="chunk-0" class="chunk" style="background-color:rgb(15,239,15); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 1</strong> —
+            Secular: 0.94, Scripture: 0.06
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;"># dgra bcom dge &#x27; dun &#x27; phel gyis lung bstan pa bzhugs so</pre>
+    </div>
+    
+    <div id="chunk-1" class="chunk" style="background-color:rgb(35,35,219); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 2</strong> —
+            Secular: 0.14, Scripture: 0.86
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">@## dgra bcom pa dge &#x27; dun &#x27; phel gyis lung bstan pa /</pre>
+    </div>
+    
+    <div id="chunk-2" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 3</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; phags pa &#x27; jam dpal gzhon nur gyur pa la phyag &#x27; tshal lo &#x27; di skad bdag gis slob dpon gyis bshad pa thos pa na</pre>
+    </div>
+    
+    <div id="chunk-3" class="chunk" style="background-color:rgb(68,68,186); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 4</strong> —
+            Secular: 0.27, Scripture: 0.73
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">yul &#x27; di &#x27; i gtsug lag khang bru nya zhes bya ba &#x27; i dgra bcom pa dge &#x27; dun &#x27; phel zhes bya ba gsum rig pa mngon par shes pa thob pa / rnam par thar pa brgyad la bsam gtan pa zhig dus gzhan zhig na slob ma zhig dang thabs cig tu dbyar zla ba gsum &#x27; jig tshogs kyi ri zhes bya ba la bzhugs te /</pre>
+    </div>
+    
+    <div id="chunk-4" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 5</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">slob ma ban + de chos &#x27; dul ba la slob pa zhig lags na / sangs rgyas mya ngan las &#x27; das nas lo nyis stong lon pa dang /</pre>
+    </div>
+    
+    <div id="chunk-5" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 6</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sangs rgyas kyi bstan pa rgya gar gyi yul kau shAm + bI zhes bya bar nub par &#x27; gyur ro zhes thos nas &#x27; di snyam du rgya gar yul gyi chos dus de tsam zhig na / yul kau shAm + bIr nub par &#x27; gyur ba lta zhig na /</pre>
+    </div>
+    
+    <div id="chunk-6" class="chunk" style="background-color:rgb(21,21,233); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 7</strong> —
+            Secular: 0.08, Scripture: 0.92
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">li yul la sogs pa gzhan gyi chos yun ji srid cig tu gnas par &#x27; gyur / nam &#x27; jig rkyen ni gang gis &#x27; jig par &#x27; gyur snyam du the tshom skyes so</pre>
+    </div>
+    
+    <div id="chunk-7" class="chunk" style="background-color:rgb(7,7,247); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 8</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas dgra bcom pa de phyi &#x27; phred kyi dus kyi tshe nang du yang dag &#x27; jog pa las bzhengs pa dang / slob ma des mkhan po &#x27; i zhabs la yan lag lngas phyag &#x27; tshal nas &#x27; di skad ces the tshom zhus so</pre>
+    </div>
+    
+    <div id="chunk-8" class="chunk" style="background-color:rgb(120,120,134); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 9</strong> —
+            Secular: 0.47, Scripture: 0.53
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">slob dpon ston pa bcom ldan &#x27; das shAkya thub pa &#x27; i bstan pa lo nyis stong nas &#x27; jig par lung bstan na / li yul &#x27; di la sogs pa yul gzhan gyi bstan pa ji srid du gnas par &#x27; gyur /</pre>
+    </div>
+    
+    <div id="chunk-9" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 10</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">nam &#x27; jig rkyen gang gis &#x27; jig par &#x27; gyur ba lags / de nas mkhan pos bka &#x27; stsal pa /</pre>
+    </div>
+    
+    <div id="chunk-10" class="chunk" style="background-color:rgb(72,182,72); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 11</strong> —
+            Secular: 0.72, Scripture: 0.28
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bu khyod kyis li yul la sogs pa &#x27; i skye bo mang po &#x27; i don dang / bde bar gshegs pa &#x27; i bstan pa yun ring du gnas par bya ba &#x27; i phyir the tshom dris pa legs kyis /</pre>
+    </div>
+    
+    <div id="chunk-11" class="chunk" style="background-color:rgb(99,99,155); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 12</strong> —
+            Secular: 0.39, Scripture: 0.61
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">legs par nyon la yid la zung shig dang / li yul la sogs pa &#x27; i bstan pa ji srid du gnas par &#x27; gyur /</pre>
+    </div>
+    
+    <div id="chunk-12" class="chunk" style="background-color:rgb(18,18,236); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 13</strong> —
+            Secular: 0.07, Scripture: 0.93
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">nam &#x27; jig pa dang rkyen gang gis &#x27; jig par &#x27; gyur ba ngas so sor lung bstan par bya &#x27; o bcom ldan &#x27; das shAkya thub pa &#x27; i bstan pa ni bcom ldan &#x27; das mya ngan las &#x27; das nas lo stong lnga brgya lon pa dang yul du dad pa med pa rnams &#x27; byung zhing dam pa &#x27; i chos &#x27; jig tu rgol lo</pre>
+    </div>
+    
+    <div id="chunk-13" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 14</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe li yul &#x27; dir dad pa med pa &#x27; i rgyal po yang &#x27; byung bar &#x27; gyur zhing / yul yang rgyal pos phan tshun rtod cing &#x27; phrog par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-14" class="chunk" style="background-color:rgb(118,118,136); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 15</strong> —
+            Secular: 0.46, Scripture: 0.54
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de phyin chad ni yul yang nyin gcig bzhin du nyams par &#x27; gyur / grong dang gtsug lag khang la sogs pa yang phal cher stongs par &#x27; gyur /</pre>
+    </div>
+    
+    <div id="chunk-15" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 16</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">mi rnams kyang nyin gcig bzhin du phyir yang dkon mchog gsum la dad pa &#x27; bri bar &#x27; gyur ro rgyu des na dkon mchog gsum dang /</pre>
+    </div>
+    
+    <div id="chunk-16" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 17</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">chos smra ba dang / bsam gtan pa kun kyang mchod gnas su mi byed cing /</pre>
+    </div>
+    
+    <div id="chunk-17" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 18</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">mu stegs kyi rgyal po dang / blon po dang /</pre>
+    </div>
+    
+    <div id="chunk-18" class="chunk" style="background-color:rgb(5,5,249); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 19</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">yul &#x27; dzin pa dang / khyim bdag rnams kyang chos dang mi mthun pa &#x27; i phyogs &#x27; dzin cing dge ba bcu &#x27; i las kyi lam yal bar &#x27; dor bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-19" class="chunk" style="background-color:rgb(2,2,252); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 20</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">chos dang mthun pa ma yin pa dang / ma brtags pa dang /</pre>
+    </div>
+    
+    <div id="chunk-20" class="chunk" style="background-color:rgb(32,32,222); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 21</strong> —
+            Secular: 0.13, Scripture: 0.87
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bab chol gyi longs spyod kyang sogs par byed par &#x27; gyur ro de nas de &#x27; i &#x27; og tu dge slong dang /</pre>
+    </div>
+    
+    <div id="chunk-21" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 22</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge slong ma rnams &#x27; tsho ba &#x27; i yo byad kyi phyir g . yem spyo bar gyur te / chos &#x27; dul ba las &#x27; byung ba dge sbyong gi tshul dang /</pre>
+    </div>
+    
+    <div id="chunk-22" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 23</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">spyod pa zhi ba dang / dul ba dang /</pre>
+    </div>
+    
+    <div id="chunk-23" class="chunk" style="background-color:rgb(87,167,87); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 24</strong> —
+            Secular: 0.66, Scripture: 0.34
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">ngo tsha shes pa dang / khrel yod pa la sogs pa yal bar &#x27; gyur zhing /</pre>
+    </div>
+    
+    <div id="chunk-24" class="chunk" style="background-color:rgb(6,6,248); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 25</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">zhing dang / ldum ra dang /</pre>
+    </div>
+    
+    <div id="chunk-25" class="chunk" style="background-color:rgb(85,85,169); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 26</strong> —
+            Secular: 0.33, Scripture: 0.67
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">nyo tshong dang / skyi brnya dang /</pre>
+    </div>
+    
+    <div id="chunk-26" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 27</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">slong mo ba rnams kyis &#x27; tsho bar byed do khyim pas bslab par bya ba &#x27; i bzo dang /</pre>
+    </div>
+    
+    <div id="chunk-27" class="chunk" style="background-color:rgb(7,7,247); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 28</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">khyim gyi so nams dang /&#x27; thab rtsod dang /</pre>
+    </div>
+    
+    <div id="chunk-28" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 29</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sgo gsol rngam po che yang byed par &#x27; gyur / pho nyar yang &#x27; gro bar byed /</pre>
+    </div>
+    
+    <div id="chunk-29" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 30</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">las kyi go &#x27; phang dang / rtsa &#x27; jing yang tshol bar byed par &#x27; gyur te /</pre>
+    </div>
+    
+    <div id="chunk-30" class="chunk" style="background-color:rgb(79,79,175); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 31</strong> —
+            Secular: 0.31, Scripture: 0.69
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe gtsug lag khang dang / dgon pa la mi gnas shing bde bar gshegs pa &#x27; i gdams ngag yal bar bor te /</pre>
+    </div>
+    
+    <div id="chunk-31" class="chunk" style="background-color:rgb(7,7,247); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 32</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">yang dang yang du mkhar dang / grong dang /</pre>
+    </div>
+    
+    <div id="chunk-32" class="chunk" style="background-color:rgb(4,4,250); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 33</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">tshong dus dang / srang dang /</pre>
+    </div>
+    
+    <div id="chunk-33" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 34</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sum mdo na gnas par sems dga &#x27; bar &#x27; gyur / bran dang /</pre>
+    </div>
+    
+    <div id="chunk-34" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 35</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bran mo dang / rkang &#x27; gros kyang tshol bar byed do</pre>
+    </div>
+    
+    <div id="chunk-35" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 36</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgyu des na khyim bdag dang / yul &#x27; dzin pa dang /</pre>
+    </div>
+    
+    <div id="chunk-36" class="chunk" style="background-color:rgb(60,194,60); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 37</strong> —
+            Secular: 0.76, Scripture: 0.24
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">blon po la sogs pas kyang de dag la rim gro mi byed cing / dad pa phyir log nas dkon mchog dang dge &#x27; dun gyi dkor la yang &#x27; phrog par byed do</pre>
+    </div>
+    
+    <div id="chunk-37" class="chunk" style="background-color:rgb(28,28,226); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 38</strong> —
+            Secular: 0.11, Scripture: 0.89
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">khyim pa de dag gis kyang nor rdzas de dag la brten cing spyad pas bsod nams &#x27; bri bar &#x27; gyur ro rgyu des na li yul la sogs par gnod pa sna tshogs &#x27; byung zhing lo re bzhin dma &#x27; bar &#x27; gyur te /</pre>
+    </div>
+    
+    <div id="chunk-38" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 39</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rtsod pa dang / nad dang /</pre>
+    </div>
+    
+    <div id="chunk-39" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 40</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dus ma yin pa &#x27; i char dang / rlung dang /</pre>
+    </div>
+    
+    <div id="chunk-40" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 41</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dgra mang po yang &#x27; byung bar &#x27; gyur ro dus ma yin pa &#x27; i sad dang /</pre>
+    </div>
+    
+    <div id="chunk-41" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 42</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">srin bu dang / bye ba dang /</pre>
+    </div>
+    
+    <div id="chunk-42" class="chunk" style="background-color:rgb(104,104,150); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 43</strong> —
+            Secular: 0.41, Scripture: 0.59
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">byi ba yang &#x27; byung bar &#x27; gyur ro de &#x27; i tshe na sems can rnams nang mi mthun par &#x27; gyur zhing dus tshigs kyang &#x27; chol bar &#x27; gyur te /</pre>
+    </div>
+    
+    <div id="chunk-43" class="chunk" style="background-color:rgb(115,115,139); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 44</strong> —
+            Secular: 0.45, Scripture: 0.55
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de ltar na yul gang dang gang du chos lugs log pa byed pa de dang der ni gnod pa de dag &#x27; byung bar &#x27; gyur ro de &#x27; i tshe li yul la sogs par rgyal po dang /</pre>
+    </div>
+    
+    <div id="chunk-44" class="chunk" style="background-color:rgb(110,110,144); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 45</strong> —
+            Secular: 0.43, Scripture: 0.57
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">blon po la sogs pa ya rabs las kyang dkon mchog la snying thag pa nas dad pa &#x27; ga &#x27; las mi &#x27; byung na / phal pa lta smos kyang ci dgos te /</pre>
+    </div>
+    
+    <div id="chunk-45" class="chunk" style="background-color:rgb(5,249,5); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 46</strong> —
+            Secular: 0.98, Scripture: 0.02
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgyu de lta bus li yul la sogs pa &#x27; i dkon mchog gsum gyi mchod gnas thams cad kyi thams cad du rme gs med par &#x27; gyur ro de nas li yul la sogs par dge slong gi gnas sngon rgyal po la sogs pa dad pa can gyis byas pa yang blon po la sogs pa dad pa med pa rnams kyis btsan &#x27; phrogs su &#x27; phrogs nas bdag nyid gnas par byed do</pre>
+    </div>
+    
+    <div id="chunk-46" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 47</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge slong rnams kyang &#x27; khyams nas &#x27; tsho ba dang / chos gos dang /</pre>
+    </div>
+    
+    <div id="chunk-47" class="chunk" style="background-color:rgb(6,6,248); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 48</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">gnas kyis phongs par &#x27; gyur ro blon po la sogs pa de dag gis dge slong gi zhing chu dang /</pre>
+    </div>
+    
+    <div id="chunk-48" class="chunk" style="background-color:rgb(13,13,241); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 49</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">ldum ra la sogs pa yo byad rnams kyang btsan thab su &#x27; phrog par byed / lha &#x27; bangs dang /</pre>
+    </div>
+    
+    <div id="chunk-49" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 50</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">nang gi g . yog rnams kyang dge slong gi ngag mi nyan cing gnya &#x27; rengs su byed par &#x27; gyur ro de nas dge slong rnams kyis kyang de lta bur gyur par shes nas yi mug ste /</pre>
+    </div>
+    
+    <div id="chunk-50" class="chunk" style="background-color:rgb(0,254,0); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 51</strong> —
+            Secular: 1.00, Scripture: 0.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">li yul gyi dge slong rnams phan tshun du gcig la gcig &#x27; di skad du yu bu cag rnams gtsug lag khang tshar ma zhes bya ba dang po chos &#x27; byung ba &#x27; i gnas der &#x27; du &#x27; o zhes sbran nas gtsug lag khang der &#x27; dus te / dpyid zla tha chungs tshes bco lnga &#x27; i nub mo gso sbyong byas nas gcig la gcig &#x27; di skad du yu bu cag rnams sngon bag med par gyur nas mkhas pa chos dang mthun pa rnams la dbang zos pa &#x27; i rgyus de ltar khyim pa rnams kyis kyang rtsis med par byas te /</pre>
+    </div>
+    
+    <div id="chunk-51" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 52</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">da ni &#x27; tsho ba yang mi &#x27; byor na deng phyin chad gang du &#x27; dong / thabs ni gang gis &#x27; tsho bar bya zhes smras te /</pre>
+    </div>
+    
+    <div id="chunk-52" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 53</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe thams cad kyis cho de chen po &#x27; debs par &#x27; gyur ro de nas de &#x27; i tshe bde bar gshegs pa &#x27; i bstan pa srung ba &#x27; i lha /</pre>
+    </div>
+    
+    <div id="chunk-53" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 54</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bcom ldan &#x27; das kyi byas pa gzo ba thams cad kyang gtsug lag khang der &#x27; dus te gcig la gcig lta zhing &#x27; di skad du bde bar gshegs pa &#x27; i bstan pa ni yun ring por mi gnas so yul &#x27; di yang stongs par &#x27; gyur ro zhes mya ngan byed cing du bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-54" class="chunk" style="background-color:rgb(76,178,76); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 55</strong> —
+            Secular: 0.70, Scripture: 0.30
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe dge slong de dag &#x27; di snyam du yul &#x27; dir ni &#x27; tsho ba mi &#x27; byor na &#x27; di bor te yul gzhan du &#x27; gro bar bya &#x27; o snyam du sems mthun par gyur pa gang du &#x27; dod par bya zhes gros byas te / yul nye ba gzhan dang gzhan na ni dad pa med pa dag gis gang /</pre>
+    </div>
+    
+    <div id="chunk-55" class="chunk" style="background-color:rgb(98,98,156); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 56</strong> —
+            Secular: 0.39, Scripture: 0.61
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgya gar yul du &#x27; dong du ni lam mi thar bas bod kyi yul na / dkon mchog gsum la mchod gnas su byed ces grags pas der &#x27; gro bar byas nas nyi ma &#x27; di la &#x27; dong ngo zhes dus btab nas de &#x27; i nub mo gtsug lag khang tshar mar gzhag go</pre>
+    </div>
+    
+    <div id="chunk-56" class="chunk" style="background-color:rgb(31,31,223); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 57</strong> —
+            Secular: 0.12, Scripture: 0.88
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">nam langs pa dang bud med dad pa can zhig gis gdan chud la spyan drangs te / de nas gaN + DI brdungs nas dge &#x27; dun spyi &#x27; i gtsug lag khang bskor te mchod pa byas pa dang /</pre>
+    </div>
+    
+    <div id="chunk-57" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 58</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sangs rgyas kyi gzugs brnyan gyi gdan khri zhig gas pa &#x27; i gseb nas sgrom bu thar ma can zhig snang bar gyur te / de nas sgrom bu de phye ba dang /</pre>
+    </div>
+    
+    <div id="chunk-58" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 59</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i nang nas gser las byas pa &#x27; i kha zas kyi sder cha bdun byung ste / dge slong kun gyis de blangs te /</pre>
+    </div>
+    
+    <div id="chunk-59" class="chunk" style="background-color:rgb(17,237,17); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 60</strong> —
+            Secular: 0.93, Scripture: 0.07
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; brur bsgyur nas de dge &#x27; dun kun dbyar zla ba gsum gtsug lag khang tshar mar tshul du &#x27; jug pa &#x27; i &#x27; tsho ba sbyar nas zong lhag ma las yul nas byung ste /&#x27; gro ba &#x27; i lam brgyags dang khur khal sbyar re</pre>
+    </div>
+    
+    <div id="chunk-60" class="chunk" style="background-color:rgb(4,4,250); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 61</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dbyar zla ba gsum &#x27; das nas &#x27; di skad du yu bu rnams byin gyis brlabs pa &#x27; i yul &#x27; di bltas la &#x27; gro bar bya &#x27; o zhes smras te song nas /&#x27; phags pa sa &#x27; i snying po &#x27; i gnas gtsug lag khang ye shes ri zhes bya ba &#x27; i drung du phyin pa dang /</pre>
+    </div>
+    
+    <div id="chunk-61" class="chunk" style="background-color:rgb(12,12,242); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 62</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe de na brag la mchod rten gyi &#x27; og gzhi rnyed pa zhig yod pa rdib pa &#x27; i nang nas / gser phor chen po mu tig gis gang ba zhig byung ba dang de yang blangs te &#x27; brur bsgyur nas phyogs der rgun zla ba gsum gnas pa &#x27; i &#x27; tsho ba sbyar te /</pre>
+    </div>
+    
+    <div id="chunk-62" class="chunk" style="background-color:rgb(25,25,229); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 63</strong> —
+            Secular: 0.10, Scripture: 0.90
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas dpyid byung ste &#x27; gro ba &#x27; i dus la bab nas song ste / shel chu &#x27; og ma brgal ba dang /</pre>
+    </div>
+    
+    <div id="chunk-63" class="chunk" style="background-color:rgb(102,152,102); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 64</strong> —
+            Secular: 0.60, Scripture: 0.40
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">yul mi stod pa rnams kyis sa lam yogs su gdugs tshod sbyar nas / nyi ma re re zhing gtsug lag khang dag tu gdugs tshod gsol bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-64" class="chunk" style="background-color:rgb(10,10,244); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 65</strong> —
+            Secular: 0.04, Scripture: 0.96
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe yul mi smad pa rnams kyis kyang dge slong rnams yul byung ste &#x27; gro zhes thos nas dge &#x27; dun de dag gtsug lag khang cong zhes bya bar spyan drangs nas / zhag bdun gyi bar du bshos sbyor bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-65" class="chunk" style="background-color:rgb(39,215,39); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 66</strong> —
+            Secular: 0.85, Scripture: 0.15
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe li yul na gnas pa &#x27; i klu thams cad &#x27; di snyam du bde bar gshegs pa &#x27; i bstan pa ni rme gs med par &#x27; gyur la thug go snyam du mya ngan byed cing bstan pa gnas par bya ba &#x27; i phyir char chen po phab ste / char pa des gtsug lag khang cong zhes bya ba &#x27; i nang nas mchod rten gyi gzhi zhig yod pa nas gser phor gser phyes gang ba zhig byung ba dang /</pre>
+    </div>
+    
+    <div id="chunk-66" class="chunk" style="background-color:rgb(8,246,8); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 67</strong> —
+            Secular: 0.97, Scripture: 0.03
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de yang dge &#x27; dun gyis btsongs nas dpyid kyi &#x27; tsho ba &#x27; i yo byad rnams sbyor bar &#x27; gyur ro de nas yang yul mi smad pa rnams kyis gtsug lag khang sA la &#x27; i tshal zhes bya bar dge &#x27; dun rnams spyan drangs nas zhag bdun gyi bar gyi gdugs tshod gsol nas zhag bdun lon pa &#x27; i nyin par yul stod smad kyi mi thams cad gtsug lag khang sa na bar &#x27; dus nas dge &#x27; dun la rdzongs dang khur khal &#x27; bul lo</pre>
+    </div>
+    
+    <div id="chunk-67" class="chunk" style="background-color:rgb(11,11,243); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 68</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe mi rgan rgon rnams ni bslab pa &#x27; dzin par byed / gzhon nu rnams ni rgyang nas lta zhing gad mos &#x27; debs pa dang grogs byed par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-68" class="chunk" style="background-color:rgb(23,23,231); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 69</strong> —
+            Secular: 0.09, Scripture: 0.91
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe mkhar dge ba can gyi nang nas kyang mi rgan rgon kha cig gis gos kha dog bsgyur ba dang / lam du &#x27; jug pa &#x27; i yo byad so so nas thogs nas so so &#x27; i dge ba &#x27; i bshes gnyen dge slong de dag gi mdun du lhags nas &#x27; phags pa rnams bzod par bzhes shig ces smra zhing mchis te /</pre>
+    </div>
+    
+    <div id="chunk-69" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 70</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">phyag &#x27; tshal bar &#x27; gyur ro de &#x27; i tshe mchod pa de ni dper na ku sha &#x27; i grong khyer gyi mi rnams bcom ldan &#x27; das mya ngan las &#x27; das par shes nas mya ngan byed pa bzhin du mchod pa byed pa dang &#x27; dra bar /</pre>
+    </div>
+    
+    <div id="chunk-70" class="chunk" style="background-color:rgb(77,77,177); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 71</strong> —
+            Secular: 0.31, Scripture: 0.69
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">li yul du dkon mchog gsum mchod pa &#x27; i tha ma yin no de &#x27; i &#x27; og tu dge slong rnams gtsug lag khang de nas bod yul ngos su chas pa dang lam kha na mchod rten rnying pa zhig gi drung du dpal lha mo chen mos dge &#x27; dun gyi ched du gser gyi dang tse phu dung gang bzhag pa rnyed nas dge &#x27; dun gyis de bgos te lam gyi chas rdzas sbyor bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-71" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 72</strong> —
+            Secular: 0.04, Scripture: 0.96
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe li yul gyi mkhar gtsug lag khang ka sa ra zhes bya bar rgyal rigs las skyes pa &#x27; i yon bdag cig &#x27; byung bar &#x27; gyur te / yon bdag des dge &#x27; dun rnams zhag bdun du mchod ston gsol bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-72" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 73</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe mchod ston gsol ba de ni li yul du dge &#x27; dun gyi mchod ston gsol ba &#x27; i tha ma yin no de nas dge slong rnams me skar gyi lam du zhugs te song ba dang /</pre>
+    </div>
+    
+    <div id="chunk-73" class="chunk" style="background-color:rgb(9,245,9); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 74</strong> —
+            Secular: 0.96, Scripture: 0.04
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe dge slong pho mo gsar bu las phal cher rang rang gi slob dpon dang / mkhan po la chos gos phul te bzod par gsol nas slar yul du ldog par &#x27; gyur dge slong pho mo gsar bu kha cig ni rab tu byung ba &#x27; i dngos po mi gtong zhing pha ma la sogs pa &#x27; i gnyen skyel du &#x27; ongs pa rnams la mya ngan gyi tshig smra zhing dus nas gnyen rnams phyir bzlog ste /</pre>
+    </div>
+    
+    <div id="chunk-74" class="chunk" style="background-color:rgb(24,24,230); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 75</strong> —
+            Secular: 0.09, Scripture: 0.91
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge &#x27; dun dang lhan cig tu mi dga &#x27; ba &#x27; i yid kyis phyir byin gyis brlabs pa &#x27; i yul dang / gnyen gyi rjes bzhin du lta bzhin par me skar gyi lam du zhugs te &#x27; gro bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-75" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 76</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de ltar song ba dang de &#x27; i tshe rnam thos kyi bu dang / dpal lha mo chen mo gnyis mchog tu snying rje skyes te /</pre>
+    </div>
+    
+    <div id="chunk-76" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 77</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; brog mi pho mo gnyis kyi lus su bsgyur te / dge &#x27; dun rnams spyan drangs nas yul me skar du zla ba gsum gyi bar du gdugs tshod gsol te /</pre>
+    </div>
+    
+    <div id="chunk-77" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 78</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">lam du &#x27; jug pa &#x27; i yo byad ci dgos pa yang rdzong bar &#x27; gyur ro de nas dge slong de dag mdo lo &#x27; i lam du zhugs nas ri dang lung pa &#x27; i sul gtugs te song ba dang /</pre>
+    </div>
+    
+    <div id="chunk-78" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 79</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; brog dgon par lam stor nas ngu zhing phyogs bcu &#x27; i sangs rgyas kyi mtshan dang li yul gyi lha thams cad kyi ming nas &#x27; bod par &#x27; gyur ro de &#x27; i tshe rnam thos kyi bu snying rje skyas nas g . yag dkar po sgal pa dang /</pre>
+    </div>
+    
+    <div id="chunk-79" class="chunk" style="background-color:rgb(19,19,235); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 80</strong> —
+            Secular: 0.08, Scripture: 0.92
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">snal chu can cig tu sprul nas dge slong de dag gi drung du &#x27; ongs pa dang dge slong rnams kyis de mthong nas g . yag &#x27; di ni mi &#x27; i khal g . yag cig yin te /&#x27; di &#x27; i phyi bzhin song na gdon mi za bar mi rnams dang phrad par &#x27; gyur bas da ni mi &#x27; chi &#x27; o snyam du yid sos te /</pre>
+    </div>
+    
+    <div id="chunk-80" class="chunk" style="background-color:rgb(5,5,249); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 81</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">g . yag des kyang lam drangs nas gseb lam du byung ste / tshal byir bskyal nas g . yag nyid mi snang bar gyur to</pre>
+    </div>
+    
+    <div id="chunk-81" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 82</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe dge slong rgan rgon mang po zhig ni lam kar &#x27; chi bar &#x27; gyur ro de nas yul tshal byi &#x27; i bod rnams kyis dge slong de dag mthong nas bsu te</pre>
+    </div>
+    
+    <div id="chunk-82" class="chunk" style="background-color:rgb(6,6,248); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 83</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; phral du yo byad rnams sbyar nas bod yul &#x27; dir li yul gyi dge slong mang po lhags na ji ltar bgyi zhes pho nyar gtong bar &#x27; gyur ro de &#x27; i tshe na rgya rje &#x27; i bu mo byang chub sems dpa &#x27; i rigs can cig btsas pa bod kyi rgyal po &#x27; i khab tu len cing btsun mo dam pa byed par &#x27; gyur te</pre>
+    </div>
+    
+    <div id="chunk-83" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 84</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de ni dad pa shin tu che ba / snying rje dang ldan pa skad snyan pa dang des pa /</pre>
+    </div>
+    
+    <div id="chunk-84" class="chunk" style="background-color:rgb(9,9,245); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 85</strong> —
+            Secular: 0.04, Scripture: 0.96
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bslab pa &#x27; i yan lag lnga bzung ba zhig &#x27; byung bar &#x27; gyur ro btsun mo des nyi &#x27; og gzhan nas dge slong mang po bod kyi yul du lhags par mthong nas /</pre>
+    </div>
+    
+    <div id="chunk-85" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 86</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sangs rgyas kyi bstan pa ni ring du mi gnas so snyam nas mya ngan chen pos non nas rang gi &#x27; khor bud med nyis brgya dang / skyes pa sum brgya dang /</pre>
+    </div>
+    
+    <div id="chunk-86" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 87</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">ru rum dang / gzo bo dang gnang chen rnams drung du bos te ngus nas &#x27; di skad ces /</pre>
+    </div>
+    
+    <div id="chunk-87" class="chunk" style="background-color:rgb(47,47,207); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 88</strong> —
+            Secular: 0.18, Scripture: 0.82
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bde bar gshegs pa &#x27; i bstan pa ni de &#x27; u re &#x27; jig par gyur gyis khyed rnams myur du bsod nams ma byas / tshul khrims ma bsrungs na &#x27; phyis par &#x27; ong ngo zhes smras par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-88" class="chunk" style="background-color:rgb(39,39,215); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 89</strong> —
+            Secular: 0.16, Scripture: 0.84
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas btsun mo des rgyal po la &#x27; di skad du dge &#x27; dun de rnams bdag gis bzhon pa dang gos la sogs pa &#x27; i yo byad sbyar nas &#x27; dir spyan drang bar ci gnang zhes gsol pas rgyal pos kyang gnang bar &#x27; gyur te / tshul de lta bus dge slong de dag bod yul du &#x27; gro bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-89" class="chunk" style="background-color:rgb(5,5,249); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 90</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe bod yul gyi rgyal po dang blon po rnams kyis dge slong de dag mthong nas dad pa chen po skye zhing gtsug lag khang chen po bdun yang brtsig par &#x27; gyur ro de bzhin du dge slong an rtse pa dang gus tig pa dang /</pre>
+    </div>
+    
+    <div id="chunk-90" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 91</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">par wan pa dang / shu lag pa rnams kyang sdug bsngal chen pos non nas bru sha &#x27; i yul du &#x27; gro bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-91" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 92</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">tho kar yul dang / kha che &#x27; i yul gyi dge slong rnams kyang dad pa med pa &#x27; i mi rnams kyis gtses te /</pre>
+    </div>
+    
+    <div id="chunk-92" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 93</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">ma chags nas bru sha &#x27; i yul du &#x27; gro bar &#x27; gyur ro dge slong de dag thams cad kyis bru sha &#x27; i yul du phyin nas /</pre>
+    </div>
+    
+    <div id="chunk-93" class="chunk" style="background-color:rgb(5,5,249); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 94</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bod yul na gtsug lag khang mang po brtsigs pa dang / rgyal po byang chub sems dpa &#x27; zhig gnas pas dkon mchog gsum la mchod pa dang ri mo cher byed pa thos nas yid dga &#x27; ste /</pre>
+    </div>
+    
+    <div id="chunk-94" class="chunk" style="background-color:rgb(11,11,243); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 95</strong> —
+            Secular: 0.04, Scripture: 0.96
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">thams cad bod yul du &#x27; gro bar &#x27; gyur ro bod yul du lhags nas lo gsum gyi bar du ni mchod pa chen po la sogs pa skyid pa nyams su myong bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-95" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 96</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">lo gsum lon pa dang bod kyi yul du bdud kyi ris kyi lha dang / lha ma yin dang /</pre>
+    </div>
+    
+    <div id="chunk-96" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 97</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">klu dang / gnod sbyin dang /</pre>
+    </div>
+    
+    <div id="chunk-97" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 98</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dri za rnams kyis nad chen po &#x27; bras dang / phol mig dang /</pre>
+    </div>
+    
+    <div id="chunk-98" class="chunk" style="background-color:rgb(7,7,247); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 99</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; brum bu gdug pa dag gtong bar &#x27; gyur te / nad des zhang blon dang dmag du ma dag &#x27; chi bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-99" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 100</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe rgyal mo de &#x27; i snying gar &#x27; bras gsug pa byung ste / shi nas lha yul du skye bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-100" class="chunk" style="background-color:rgb(38,216,38); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 101</strong> —
+            Secular: 0.85, Scripture: 0.15
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe bod kyi zhang blon rnams khros &#x27; khrugs te &#x27; di skad ces bdag cag gi yul &#x27; di sngon gya nom pa las phyis mi bkra mi shis pa &#x27; khyams pa sha stag &#x27; dir lhags nas da ni yul du yang &#x27; di lta bu gnod pa rnam pa sna tshogs byung bar &#x27; gyur gyis / rdzas lhag ma &#x27; di rnams kyang yul &#x27; dir mi gzhag cing sa mtshams &#x27; das te bskrad par bya &#x27; o zhes gros byas nas dge slong gcig kyang bod yul du gnas su mi gnang ngo zhes glo bur du bsgo bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-101" class="chunk" style="background-color:rgb(71,71,183); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 102</strong> —
+            Secular: 0.28, Scripture: 0.72
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgyal mo de nad kyis thebs pa &#x27; i tshe bdag nyid mi &#x27; tsho bar tshor nas rgyal po la kha chems su bdag gum na bdag gi nor rdzas ril gyis dge &#x27; dun la &#x27; bul bar ci gnang zhes gsol nas rgyal pos kyang gnang ste / btsun mo &#x27; i rdzas thams cad dge &#x27; dun la &#x27; bul zhing des rgya gar gyi yul gan d + ha ra zhes bya bar &#x27; gro ba &#x27; i rdzas byas nas &#x27; gro bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-102" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 103</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe bod yul gyi dge slong rnams kyang yi chad nas nyi &#x27; og gi dge slong rnams dang gros gcig tu byas nas lhan cig tu &#x27; gro bar &#x27; gyur ro skye bo dang rtsod pa &#x27; i dus de &#x27; i tshe rgya yul gyi dge slong rnams kyang shin tu sdug bsngal bas gzir nas yul gan d + ha rar &#x27; gro bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-103" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 104</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de ltar dong ba dang dge slong de dag thams cad yul gan d + ha rar &#x27; gro ba &#x27; i lam kar phrad par &#x27; gyur ro de &#x27; i tshe bod kyi dmag gis rjes bzhin bsnyags nas lam kar bran g . yog dang /</pre>
+    </div>
+    
+    <div id="chunk-104" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 105</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">nor phyugs dag phrogs te dge slong dag kyang gsod par &#x27; gyur ro de ltar dge slong de dag bod kyi dmag gis bdas nas klu &#x27; i rgyal po e la &#x27; i &#x27; dab kyi gnas drung du phyin pa dang /</pre>
+    </div>
+    
+    <div id="chunk-105" class="chunk" style="background-color:rgb(2,2,252); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 106</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">klu &#x27; i rgyal po e la &#x27; i &#x27; dab kyis mi rgan zhig gi gzugs su bsgyur te dge &#x27; dun gyi mdun du &#x27; ongs nas phyag &#x27; tshal te / skyes bu dam pa khyed rnams gar gshegs zhes dris pa dang /</pre>
+    </div>
+    
+    <div id="chunk-106" class="chunk" style="background-color:rgb(11,11,243); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 107</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge slong rnams kyis &#x27; di skad du bdag cag gi yul na dad pa med pa sha stag gis gang bas &#x27; tsho ba &#x27; i yo byad la sogs pas phongs te / da yul gan d + ha rar &#x27; tsho ba &#x27; i yo byad tsam zhig ci rnyed snyam nas lhags so zhes smras pa dang /</pre>
+    </div>
+    
+    <div id="chunk-107" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 108</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas de &#x27; i tshe klu &#x27; i rgyal po de bde bar gshegs pa &#x27; i bstan pa &#x27; jig pa &#x27; i mtshan ma rtogs nas mchi ma khrag tu &#x27; dzag cing dus nas / dge &#x27; dun rnams la yul der gshegs nas shul brgyags ji tsam mnga &#x27; zhes rmed par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-108" class="chunk" style="background-color:rgb(4,4,250); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 109</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge &#x27; dun kun gyis kyang zhib tu brtsis nas zhag bco lnga &#x27; i brgyags yod do zhes smra bar &#x27; gyur ro klu &#x27; i rgyal pos &#x27; di skad du &#x27; di nas yul gan d + ha rar mtsho &#x27; di &#x27; i g . yas g . yon du bskor na zhag bzhi bcu rtsa lnga &#x27; i shul mchis na /</pre>
+    </div>
+    
+    <div id="chunk-109" class="chunk" style="background-color:rgb(32,32,222); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 110</strong> —
+            Secular: 0.13, Scripture: 0.87
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dgung bco lnga &#x27; i brgyags &#x27; tshal lam / gzhan yang shul ka nas la ka mthon po dang nags tshal stug po dang /</pre>
+    </div>
+    
+    <div id="chunk-110" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 111</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">gcan gzan gdug pa dang / sbrul gdug pa dang /</pre>
+    </div>
+    
+    <div id="chunk-111" class="chunk" style="background-color:rgb(101,153,101); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 112</strong> —
+            Secular: 0.60, Scripture: 0.40
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sdig sbrul la sogs pa dang / chom rkun pa yang mchis pas phyi nas tshur yang dmag gis bsnyegs pa dang /</pre>
+    </div>
+    
+    <div id="chunk-112" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 113</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">mtsho &#x27; di &#x27; i nang na yang bdag gi &#x27; khor gtum po dad pa ma mchis pa du ma zhig mchis pas bdag gis phyir bzlog par mi nus te / bdag ni de &#x27; i shul du bzhud par mi dga &#x27; zhing mchis so</pre>
+    </div>
+    
+    <div id="chunk-113" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 114</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe dge slong pho mo mang po de dag thams cad &#x27; di snyam du bdag cag rnams &#x27; chi ba &#x27; i dus la bab pa &#x27; dra snyam nas ngu zhing mya ngan byed par &#x27; gyur ro de &#x27; i tshe klu &#x27; i rgyal po e la &#x27; i &#x27; dab kyis dge &#x27; dun rnams kyi mdun du pus mo btsugs nas dge &#x27; dun ma bshums shig /</pre>
+    </div>
+    
+    <div id="chunk-114" class="chunk" style="background-color:rgb(44,44,210); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 115</strong> —
+            Secular: 0.18, Scripture: 0.82
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bdag gis dge &#x27; dun rnams kyi slad du srog kyang yongs su btang zhing bdag nyid kyi lus mtsho &#x27; di &#x27; i steng du zam par bgyid lags so bdag gis sngon bde bar gshegs pa &#x27; i bstan pa thog mar legs par ma bsrungs par chad par srog gis god pa zhig gcod par &#x27; tshal lo zhes smras par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-115" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 116</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas klu &#x27; i rgyal po des rang gi lus sbrul chen po zhig gi gzugs su bsgyur nas / bod yul ngos kyi ri &#x27; i rtse mo la ni mgos &#x27; khyud /</pre>
+    </div>
+    
+    <div id="chunk-116" class="chunk" style="background-color:rgb(7,7,247); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 117</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">yul gan d + ha ra &#x27; i ri &#x27; i rtse mo la ni mjug mas &#x27; khyud de lus kyi zheng du ni shing rta lnga &#x27; i khyon tsam gyi zam par btags so de &#x27; i tshe dge slong de dag gis sbrul chen po de &#x27; i gzugs de mthong nas sngangs skrag ste /</pre>
+    </div>
+    
+    <div id="chunk-117" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 118</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">phyogs su &#x27; byer par &#x27; gyur ro de nas klu &#x27; i rgyal po des mi skad phyung ste /</pre>
+    </div>
+    
+    <div id="chunk-118" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 119</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge &#x27; dun dag ma sngangs shig / bdag gi lus &#x27; di khyed kyi slad du zam par btags pa lags kyis /</pre>
+    </div>
+    
+    <div id="chunk-119" class="chunk" style="background-color:rgb(45,45,209); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 120</strong> —
+            Secular: 0.18, Scripture: 0.82
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">ma bsnyengs par rjes dgra choms su dogs pa ni &#x27; bangs dang phyag rjed dang khur rnams sngon la dgyer du gsol de &#x27; i &#x27; og tu dge &#x27; dun gzhon rims gshegs su gsol bgres po rnams ni slad kyis gshegs su gsol zhes smra bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-120" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 121</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe klu &#x27; i rgyal po de &#x27; i rgyab kyi pags pa phyugs kyi rmig pa dang mi &#x27; i rkang pas bshus te rma chen po byung ste mtsho &#x27; i nang du rnag khrag kyang &#x27; dzag par &#x27; gyur ro mi phyugs phal yang mtsho &#x27; i nang du ltung zhing &#x27; chi bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-121" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 122</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">tha mar dge &#x27; dun rgan rabs rgal ba &#x27; i &#x27; og tu klu &#x27; i rgyal po nyid kyang &#x27; chi bar &#x27; gyur ro mtsho de yang skams par &#x27; gyur te /</pre>
+    </div>
+    
+    <div id="chunk-122" class="chunk" style="background-color:rgb(11,11,243); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 123</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">mtsho bskams pa &#x27; i nang du klu &#x27; i rgyal po shi ba &#x27; i rus pa ri lta bur &#x27; dug par &#x27; gyur ro ma &#x27; ongs pa &#x27; i dus na sangs rgyas byams pa &#x27; khor lnga brgya dang thabs cig tu klu &#x27; i rgyal po e la &#x27; i &#x27; dab kyi rus pa &#x27; i drung du gshegs te klu &#x27; i rgyal po e la &#x27; i &#x27; dab kyi skyes pa &#x27; i rabs brjod pas byams pa &#x27; i &#x27; khor dge slong lnga brgya po de dag thams cad kyis dgra bcom pa &#x27; i &#x27; bras bu thob par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-123" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 124</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas dge slong de dag yul gan d + ha rar phyin nas lo gnyis kyi par du gnas so lo gsum pa &#x27; i tshe yul de &#x27; i rgyal po dad pa can zhig yod pas &#x27; chi bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-124" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 125</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgyal po de shi ba &#x27; i &#x27; og tu rgyal po de &#x27; i bu dad pa can zhig dang dad pa med pa zhig rgyal srid la brtod nas dmag gi g . yul bkye nas / phyogs gnyis su chad par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-125" class="chunk" style="background-color:rgb(107,147,107); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 126</strong> —
+            Secular: 0.58, Scripture: 0.42
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe na dge slong de dag gi nang na dge slong dpa &#x27; ba brtul phod pa tsham tshom med pa stong zhig yod pas rgyal bu dad pa med pa de dmag gis btab ste pham par byas nas rgyal bu dad pa can de la rgyal srid &#x27; bul bar &#x27; gyur ro rgyal bu dad pa can des zla ba lnga rgyal po byas nas yang dge slong stong po de dag gis bsad nas dge slong gcig rgyal po la bcug ste lo gnyis kyi bar du rgyal po byed par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-126" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 127</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe yul gan d + ha ra &#x27; i blon po dang yul mi thams cad &#x27; dus te gsangs nas ci &#x27; i phyir nyi &#x27; og gi mi bdag cag gi yul du bros pa / ngan pa &#x27; dis bdag cag gi rgyal po gsad do zhes gros byas nas &#x27; phral la dmag drangs te rgyal po gtubs par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-127" class="chunk" style="background-color:rgb(16,16,238); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 128</strong> —
+            Secular: 0.07, Scripture: 0.93
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe yul gan d + ha ra na gnas pa &#x27; i dge slong thams cad mthong dgu bsad de dge slong gang zhig yul dbus su bros te thar pa de &#x27; ba &#x27; zhig gson par &#x27; gyur ro de &#x27; i &#x27; og tu yul dbus ma gtogs par &#x27; dzam bu &#x27; i gling &#x27; di na dad pa med pa gsum &#x27; byung bar &#x27; gyur te /</pre>
+    </div>
+    
+    <div id="chunk-128" class="chunk" style="background-color:rgb(18,18,236); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 129</strong> —
+            Secular: 0.07, Scripture: 0.93
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">sig ni la sogs pa mang po zhig gis rgyal po ni ta zig gi rgyal po byed par &#x27; gyur ro dru gu rus sna tshogs du mi &#x27; i rgyal po ni dru gus byed par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-129" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 130</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">gzhan mang po zhig gi rgyal po ni bod kyi rgyal po byed par &#x27; gyur ro rgyal po de gsum ka ni yang sems mthun par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-130" class="chunk" style="background-color:rgb(13,13,241); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 131</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgyal po de gsum la dmag dpa &#x27; ba / brtul bod pa sum &#x27; bum zhig yod pas yul dbus ma gtogs pa /</pre>
+    </div>
+    
+    <div id="chunk-131" class="chunk" style="background-color:rgb(30,30,224); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 132</strong> —
+            Secular: 0.12, Scripture: 0.88
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">gzhan yang dag pa &#x27; i lta ba &#x27; dzin pa &#x27; i yul thams cad bcom nas mi mang po kha btags nas grong la sogs pa yang stongs par &#x27; gyur ro de nas rgyal po de gsum &#x27; dus nas yul dbus su dmag drangs zhes gros byed par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-132" class="chunk" style="background-color:rgb(4,250,4); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 133</strong> —
+            Secular: 0.98, Scripture: 0.02
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe na yul dbus kau shAm + bI zhes bya bar rgyal po bzod dka &#x27; zhes bya ba zhig &#x27; byung bar &#x27; gyur te / de btsas pa &#x27; i tshe khrag gi char pa yang &#x27; bab lag pa gnyis kyang gru mo man chad khrag gis bskus pa lta bur dmar ba zhig yin no de &#x27; i blon po yan lag mchog dang ldan pa lnga brgya dang dmag mi g . yul ngor dpa &#x27; ba nyis &#x27; bum byung bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-133" class="chunk" style="background-color:rgb(24,24,230); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 134</strong> —
+            Secular: 0.10, Scripture: 0.90
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe ta zig gi rgyal po la sogs pa gsum yul dbus kau shAm + bIr sod nas rgyal po bzod dka &#x27; tshol bar byed do de nas rgyal po bzod dkas de skad thos nas dmag dang chas te rgyal po de dag gi mdun du bsgugs nas zla ba gsum gyi bar du rgyun du g . yul chen po sprad pa dang /</pre>
+    </div>
+    
+    <div id="chunk-134" class="chunk" style="background-color:rgb(4,4,250); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 135</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">rgyal po dad pa med pa de gsum dmag dang bcas te gtan med par brlag par &#x27; gyur ro rgyal po bzod dka &#x27; dmag dang bcas pa slar yul du &#x27; khor nas rgyal po de &#x27; di snyam du bdag gis mi mang po kha btags na /</pre>
+    </div>
+    
+    <div id="chunk-135" class="chunk" style="background-color:rgb(6,6,248); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 136</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bdag gi &#x27; gro ba ni ji lta bu zhig tu skye bar &#x27; gyur / nam zhig ngan song gsum las thar par &#x27; gyur snyam du &#x27; gyod pa skye bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-136" class="chunk" style="background-color:rgb(9,9,245); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 137</strong> —
+            Secular: 0.04, Scripture: 0.96
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas rgyal po de la blon po rnams kyis gsol ba / ma bsnyengs par dmar bu can gyi yul na dge slong shir sha ka zhes bgyi ba sde snod gsum la mkhas pa zhig bzhugs pas de spyan drongs dang /</pre>
+    </div>
+    
+    <div id="chunk-137" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 138</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">des lha khyod kyi las ngan pa de bshags par &#x27; gyur ro zhes smra bar &#x27; gyur la / rgyal pos kyang dge slong de spyan drangs nas /</pre>
+    </div>
+    
+    <div id="chunk-138" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 139</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i mdun du las ngan pa ji ltar byas pa thams cad lo rgyus smra bar &#x27; gyur ro dge slong des kyang &#x27; di skad du rgyal po khyod kyis shin tu ma legs pa byas kyi che thang du &#x27; gyod la /</pre>
+    </div>
+    
+    <div id="chunk-139" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 140</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; dzam bu &#x27; i gling gi dge slong thams cad &#x27; dir spyan drongs la rtag tu yo byad lnga phul te / skyabs su &#x27; gro ba dang nyin gcig bzhin du dge &#x27; dun gyi mdun du sdig pa shogs shig /</pre>
+    </div>
+    
+    <div id="chunk-140" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 141</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">khyod kyis mi mang po kha btags pa &#x27; i las bsrabs par &#x27; gyur ro zhes smra bar &#x27; gyur ro de nas de &#x27; i tshe rgyal po des yul yul gyi dge slong rnams spyan &#x27; dren pa gtong bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-141" class="chunk" style="background-color:rgb(5,5,249); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 142</strong> —
+            Secular: 0.02, Scripture: 0.98
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge slong rnams kyis kyang yul kau shAm + bI zhes bya ba na rgyal po bzod dka &#x27; zhes bya ba dge &#x27; dun la yo byad lnga &#x27; bul ba zhig yod do zhes thos nas yi rangs te / yul kau shAm + bI zhes bya bar &#x27; gro bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-142" class="chunk" style="background-color:rgb(10,10,244); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 143</strong> —
+            Secular: 0.04, Scripture: 0.96
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe yul kau shAm + bIr dge slong &#x27; bum &#x27; du bar &#x27; gyur ro de nas tshes bco lnga &#x27; i nub mo dge slong rnams gso sbyong la &#x27; dus te dge slong shir sha ka bos nas khyed kyis so sor thar pa &#x27; i mdo thon cig ces smra bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-143" class="chunk" style="background-color:rgb(6,6,248); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 144</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge slong shir sha kas kyang &#x27; di skad du khyed rnams la so sor thar pas ci zhig bya / mi sna dang rna ba gcad pa la me long gis ci zhig bya zhes smra bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-144" class="chunk" style="background-color:rgb(21,21,233); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 145</strong> —
+            Secular: 0.08, Scripture: 0.92
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas de &#x27; i tshe dge slong de dag gi nang na dgra bcom pa su ta ra zhes bya ba langs nas seng ge lta bu &#x27; i skad kyis dge slong shir sha ka la &#x27; di skad ces khyod ci &#x27; i phyir de skad ces smra kho bo ni bde bar gshegs pas bka &#x27; stsal pa bzhin bslab pa cig kyang ma nyams so zhes smras pa dang / dge slong shir sha ka shin tu skyengs par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-145" class="chunk" style="background-color:rgb(105,149,105); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 146</strong> —
+            Secular: 0.59, Scripture: 0.41
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas dge slong shir sha ka &#x27; i slob ma a kan bi zhes bya bas dgra bcom pa de la &#x27; di skad du khyod ci &#x27; i phyir nga &#x27; i slob dpon la mi mad sngar de skad smra zhes khros nas lag pa gnyis kyis sgo gtan blangs nas dgra bcom pa de gsod par &#x27; gyur ro de nas dgra bcom pa de &#x27; i slob ma dge slong ka ra ta zhes bya bas kyang rang gi slob dpon gsad par mthong nas shin tu khros te dbyug pa blangs nas dge slong shir sha ka gsod par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-146" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 147</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe dge slong dag rim gyis khros nas phyog gnyis su chad nas gcig gis gcig gsod par &#x27; gyur ro de nas sum cu rtsa gsum gyi lha thams cad der lhags te /</pre>
+    </div>
+    
+    <div id="chunk-147" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 148</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dge slong shi ba &#x27; i ro de dag mthong nas ngud mos &#x27; debs shing mchod pa byed par &#x27; gyur ro dge slong de dag gis gos kha dog bsgyur ba dang skra dang sen mo yang lha &#x27; i gnas su khyer bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-148" class="chunk" style="background-color:rgb(15,15,239); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 149</strong> —
+            Secular: 0.06, Scripture: 0.94
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de &#x27; i tshe yul der rlung dmar nag po dang / ser po dang &#x27; dres pa ldang zhing dus dus su me &#x27; i char pa &#x27; bab pa dang sa g . yo ba dang /</pre>
+    </div>
+    
+    <div id="chunk-149" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 150</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; ur sgra dang tug com dag kyang &#x27; byung bar &#x27; gyur ro de nas rgyal po des skya rengs shar ba &#x27; i tshe &#x27; di ltar dge slong thams cad kha btags pa mthong nas /</pre>
+    </div>
+    
+    <div id="chunk-150" class="chunk" style="background-color:rgb(78,78,176); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 151</strong> —
+            Secular: 0.31, Scripture: 0.69
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">mya ngan gyis gdungs pa &#x27; i rgyus mig gis res &#x27; ga &#x27; ni mthong res &#x27; ga &#x27; ni mi mthong bar &#x27; gyur ba bzhin du myong la / gtsug lag khang du brgyugs nas cho nges btab ste /</pre>
+    </div>
+    
+    <div id="chunk-151" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 152</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dgra bcom pa dang dge slong sde snod gsum pa &#x27; i ming nas &#x27; bod cing de gnyis kyi ro pang gis &#x27; khyud de /&#x27; di skad du kye sde snod gsum pa khyod ni bde bar gshegs pa &#x27; i dam pa &#x27; i chos kyi mdzod &#x27; dzin pa lags /</pre>
+    </div>
+    
+    <div id="chunk-152" class="chunk" style="background-color:rgb(1,1,253); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 153</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">kye dgra bcom pa khyod ni bde bar gshegs pa &#x27; i bslab pa &#x27; i gzhi &#x27; dzin pa lags na / da khyed gnyis nongs pas &#x27; jig rten &#x27; di stongs par gyur to zhes smra bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-153" class="chunk" style="background-color:rgb(8,8,246); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 154</strong> —
+            Secular: 0.03, Scripture: 0.97
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dam pa &#x27; i chos nub pa &#x27; i nub mo sum cu rtsa gsum pa &#x27; i lha rnams kyang lha ma yin gyis pham par byas nas &#x27; bros par &#x27; gyur ro de nyid kyi nub mo lha rtag tu myos pa &#x27; i nang nas lha &#x27; di ni zhes bya ba &#x27; chi &#x27; pho bar &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-154" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 155</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de nas &#x27; dzam bu &#x27; i gling de &#x27; i bu ram shing dang / rgun dang sbrang rtsi thams cad kyang nub par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-155" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 156</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">bdud dbang sgyur zhes bya ba yang &#x27; chi bar &#x27; gyur te / de nas nas dang gro dang &#x27; bras thams cad nub par &#x27; gyur te /</pre>
+    </div>
+    
+    <div id="chunk-156" class="chunk" style="background-color:rgb(0,0,254); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 157</strong> —
+            Secular: 0.00, Scripture: 1.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">&#x27; dzam bu &#x27; i gling gi mi rnams kyi zas su sred dang khre rgod dang rtswa &#x27; i &#x27; bras bu sna tshogs za bar &#x27; gyur ro dar dang za &#x27; og dang man tri dang /</pre>
+    </div>
+    
+    <div id="chunk-157" class="chunk" style="background-color:rgb(51,51,203); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 158</strong> —
+            Secular: 0.20, Scripture: 0.80
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">ras bzang po la sogs pa yang nub nas gos su gso ras dang / re phyar la sogs pa gyon par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-158" class="chunk" style="background-color:rgb(34,34,220); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 159</strong> —
+            Secular: 0.13, Scripture: 0.87
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">gser la sogs pa &#x27; i rin po che sna tshogs kyi rgyan rnams kyang nub nas rgyan du rtswa las byas pa la sogs pa thogs par &#x27; gyur ro tshon bzang po dang ro zhim po rnams kyang nub par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-159" class="chunk" style="background-color:rgb(3,3,251); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 160</strong> —
+            Secular: 0.01, Scripture: 0.99
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">de bzhin gshegs pa &#x27; i sku gzugs rnams kyang klu &#x27; i gnas su &#x27; khyer bar &#x27; gyur ro li yul gyi mkhan po rnams &#x27; dus nas li rje btsun legs kyi ring la yos bu &#x27; i lo la brtsis nas de nas lo brgya rtsa gnyis na dam pa &#x27; i chos nub par &#x27; gyur ro</pre>
+    </div>
+    
+    <div id="chunk-160" class="chunk" style="background-color:rgb(0,254,0); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 161</strong> —
+            Secular: 1.00, Scripture: 0.00
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">dgra bcom pa dge &#x27; dun &#x27; phel gyis lung bstan pa rdzogs so [ ]</pre>
+    </div>
+    
+
+    <script>
+        function toggle(selector) {
+            const items = document.querySelectorAll(selector);
+            items.forEach(el => {
+                el.style.display = (el.style.display === 'none') ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secular/Scripture Classification Report</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        .heatmap {
+            margin-bottom: 20px;
+            padding: 5px;
+            background: #ddd;
+            border-radius: 4px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+        button {
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Secular vs Scripture Report</h2>
+    <p><strong>File:</strong> D279.txt</p>
+    <p><strong>Chunks:</strong> 523</p>
+
+    <div class="controls">
+        <button onclick="toggle('.chunk-text')">Toggle Text</button>
+        <button onclick="toggle('.meta')">Toggle Scores</button>
+    </div>
+
+    <div class="heatmap">
+        <a href="#chunk-0" title="Scripture: 0.83, Secular: 0.17" style="background:rgb(42,42,212); width:8px; height:20px; border-radius:2px;"></a><a href="#chunk-1" title="Scripture: 0.95, Secular: 0.05" style="background:rgb(12,12,242); width:8px; height:20px; border-radius:2px;"></a>
+    </div>
+
+    
+    <div id="chunk-0" class="chunk" style="background-color:rgb(42,42,212); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 1</strong> —
+            Secular: 0.17, Scripture: 0.83
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">@# / / rgya gar skad du / Ar + ya bud d + ha a nu smr - i ti / bod skad du / &#x27; phags pa sangs rgyas rjes su dran pa / sangs rgyas dang / byang chub sems dpa &#x27; thams cad la phyag &#x27; tshal lo / / &#x27; di ltar sangs rgyas bcom ldan &#x27; das de ni de bzhin gshegs pa dgra bcom pa yang dag par rdzogs pa &#x27; i sangs rgyas / rig pa dang zhabs su ldan pa / bde bar gshegs pa / &#x27; jig rten mkhyen pa / skyes bu &#x27; dul ba &#x27; i kha lo sgyur ba / bla na med pa / lha dang mi rnams kyi ston pa / sangs rgyas bcom ldan &#x27; das so / / de bzhin gshegs pa de dag ni bsod nams dag gi rgyu &#x27; thun pa / dge ba &#x27; i rtsa ba rnams chud mi za ba / bzod pas brgyan pa / bsod nams kyi gter rnams kyi gzhi / dpe byad bzang po rnams kyis spras pa / mtshan gyi me tog rgyas pa / spyod yul ran par &#x27; thun pa / mthong na mi &#x27; thun pa med pa / dad pas mos pa rnams mngon par dga &#x27; ba / shes rab zil gyis mi non pa / stobs rnams la brdzi ba med pa / sems can thams cad kyi ston pa / byang chub sems dpa &#x27; rnams kyi yab / &#x27; phags pa &#x27; i gang zag rnams kyi rgyal po / mya ngan las &#x27; das pa &#x27; i grong khyer du &#x27; gro ba rnams kyi ded dpon / ye shes dpag tu med pa / spobs pa bsam gyis mi khyab pa / gsung rnam par dag pa / dbyangs snyan pa / sku byad lta bas chog mi shes pa / sku mtshungs pa med pa / &#x27; dod pa dag gis ma gos pa / gzugs dag gis nye bar ma gos pa / gzugs med pa dag dang ma &#x27; dres pa / phung po dag las rab tu rnam par grol ba / khams rnams dang mi ldan pa / skye mched rnams bsdams pa / mdud pa rnams shin tu bcad pa / yongs su gdung ba dag las rnam par grol ba / sred pa las shin tu grol ba / chu bo las rgal ba / ye shes yongs su rdzogs pa / &#x27; das pa dang / ma byon pa dang / da ltar byung ba &#x27; i sangs rgyas bcom ldan &#x27; das rnams kyi ye shes la gnas pa / mya ngan las &#x27; das pa la mi gnas pa / yang dag pa nyid kyi mtha &#x27; la gnas pa / sems can thams cad la gzigs pa &#x27; i sa la bzhugs pa ste / &#x27; di dag ni de bzhin gshegs pa &#x27; i ye shes yang dag pa &#x27; i che ba &#x27; i yon tan yin no / / &#x27; phags</pre>
+    </div>
+    
+    <div id="chunk-1" class="chunk" style="background-color:rgb(12,12,242); padding:10px; margin:6px; border-radius:4px;">
+        <div class="meta" style="font-size:0.9em; color:#333;">
+            <strong>Chunk 2</strong> —
+            Secular: 0.05, Scripture: 0.95
+        </div>
+        <pre class="chunk-text" style="white-space:pre-wrap; margin-top:6px;">pa sangs rgyas rjes su dran pa rdzogs so / /</pre>
+    </div>
+    
+
+    <script>
+        function toggle(selector) {
+            const items = document.querySelectorAll(selector);
+            items.forEach(el => {
+                el.style.display = (el.style.display === 'none') ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+[
+  {
+    "text": "S05440_MNGON_PAR_RTOGS_PA_BRGYAD_DON_BDUN_CU_DANG_BCAS_PA_I__GREL_PA_NYAMS_SU_LEN_TSUL_MDO_TZAM_DANG_BCAS_PA_W29194_05CA_5440_2.txt",
+    "lines_included": [
+      1,
+      8
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gang gis skad cig yid la dran tsam gyis",
+      "'jigs rung ngan 'gro'i g.yang sa las bsgral nas",
+      "phun tshogs thar pa'i bde la 'god byed pa",
+      "dpal ldan bla ma'i zhabs la spyi bos 'dud",
+      "rgya che rab zab dpag par dka' ba'i don",
+      "rgyal dang de sras 'phags tshogs skyed byed yum",
+      "de don ji bzhin gsal bar mi rtogs mod",
+      "rang rtogs dran phyir ji ltar nus bzhin dbye"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05440_MNGON_PAR_RTOGS_PA_BRGYAD_DON_BDUN_CU_DANG_BCAS_PA_I__GREL_PA_NYAMS_SU_LEN_TSUL_MDO_TZAM_DANG_BCAS_PA_W29194_05CA_5440_2.txt",
+    "lines_included": [
+      535,
+      541
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "phal cher snga ma rtags kyis rgyu byed pas",
+      "legs par ma brtags par du mi dag gis",
+      "mdog gzugs lan 'ga' mthong bas yid ma rton",
+      "ra gan kha bsgyur lta bur mi 'tsham zhing",
+      "lcags phye gser gyis g.yogs pa ji lta bar",
+      "khong pa rab sdug phyi rol 'phags tshul gyis",
+      "'jig rten 'di ni 'khor dang bcas pa rgyud"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.8482
+  },
+  {
+    "text": "S05440_MNGON_PAR_RTOGS_PA_BRGYAD_DON_BDUN_CU_DANG_BCAS_PA_I__GREL_PA_NYAMS_SU_LEN_TSUL_MDO_TZAM_DANG_BCAS_PA_W29194_05CA_5440_2.txt",
+    "lines_included": [
+      575,
+      582
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "shes rab pha rol phyin tshul snying po'i don",
+      "dpal ldan bla ma'i gsung gi bdud rtsi'i rgyun",
+      "cha shas tsam zhig myangs par gyur pa'i mthus",
+      "de ltar phyogs tsam phye ste bshad pa yin",
+      "dge 'dis mtha' yas 'gro ba ma lus kun",
+      "bshes gnyen mnyes par byed dang mi 'bral zhing",
+      "gcig tu gzhung don 'dris par byas pa'i mthus",
+      "'bras bu sku gsum lhun gyis grub par shog"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05440_MNGON_PAR_RTOGS_PA_BRGYAD_DON_BDUN_CU_DANG_BCAS_PA_I__GREL_PA_NYAMS_SU_LEN_TSUL_MDO_TZAM_DANG_BCAS_PA_W29194_05CA_5440_2.txt",
+    "lines_included": [
+      589,
+      592
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "phan bde'i 'byung gnas rgyal bstan yongs 'du'i ljon",
+      "rab rgyas 'gro kun thar mchog 'bras bzang la",
+      "spyod phyir bkra shis lhun grub chos grwa cher",
+      "chos sbyin 'dzad med dal 'gro'i rgyun 'di spel"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

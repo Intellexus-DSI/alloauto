@@ -1,0 +1,1918 @@
+[
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      36,
+      39
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "ma bcos spros bral bla ma chos kyi sku",
+      "bde chen longs spyod bla ma chos kyi rje",
+      "pad sdong las 'khrungs bla ma sprul pa'i sku",
+      "sku gsum rdo rje 'chang la spyi bos 'dud"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      94,
+      97
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gdod nas rnam dag bdud rtsi'i sman",
+      "ye shes lnga rdzogs a mr-i ta",
+      "dug lnga sel ba'i bdud rtsi mchog",
+      "bcom ldan 'khor dang bcas la dbul"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.25
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      101,
+      105
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "gdug pa'i dgra bgegs tshogs rnams dang",
+      "dug lnga'i nyon mongs dbyings su bsgral",
+      "sha khrag phung po bdud rtsir gyur",
+      "bcom ldan 'khor dang bcas la dbul",
+      "X sarba big+hA na sha truM kha khA"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      109,
+      112
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rang snang thabs dang shes rab ni",
+      "rdo rje padma mnyam par sbyor",
+      "bde stong lhan cig skyes pa'i dngos",
+      "bcom ldan 'khor dang bcas la dbul"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      114,
+      118
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "lhun grub sgrib bral bde chen chos kyi sku",
+      "dbang po'i gzhu ltar dwangs pa longs spyod rdzogs",
+      "khro rgyal gdug pa 'dul mdzad sprul pa'i sku",
+      "sku gsum dbyer med khyod la phyag 'tshal lo",
+      "zhes bstod de bzlas pa bya ba'i tshul ni"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      137,
+      141
+    ],
+    "probability": 0.8,
+    "meter": 7,
+    "lines": [
+      "kun mkhyen ye shes phung po can",
+      "zhes sogs lan gsum gyis gsol ba gdab",
+      "spyi dang bye brag gi chos bshad",
+      "dkon mchog gsum la bdag skyabs mchi",
+      "zhes sogs kyis sdom pa gzung"
+    ],
+    "num_exact_derge_matches": 59,
+    "probability_of_derge_quotation": 0.3873
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      143,
+      146
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "dus gsum sangs rgyas thams cad kyi",
+      "sku yi rdo rje slob dpon gyis",
+      "bdag la padma drag po yi",
+      "sku yi rjes gnang stsal du gsol"
+    ],
+    "num_exact_derge_matches": 34,
+    "probability_of_derge_quotation": 0.3702
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      184,
+      191
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bcom ldan 'di la stsal lags kyi",
+      "'di la 'go bar mdzad du gsol",
+      "dus 'di nyid nas bzung nas su",
+      "byang chub snying por mchis kyi bar",
+      "lhag pa'i lha ni mdzad du gsol",
+      "rkyen ngan bar chad thams cad sol",
+      "bgegs dang log 'dren rdul du rlog",
+      "mchog dang thun mong dngos grub stsol"
+    ],
+    "num_exact_derge_matches": 32,
+    "probability_of_derge_quotation": 0.2872
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      210,
+      215
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "dur khrod ri brag dmar po la",
+      "nub ri mtho zhing shar ri dma'",
+      "nags tshal stug po nub tu bltas",
+      "nam mkha' padma 'dab brgyad 'dra",
+      "nyi zla gza' skar 'od 'bar zhing",
+      "chu phran ri brag kun 'dud par"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      221,
+      224
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "brtson 'grus ldan pas rtse gcig bsgrub",
+      "ces gsungs pa ltar gyi sgrub pa pos",
+      "tsha tsha sbyin gtong mdo sde gdon",
+      "'dus byas dge rtsa nus tshad bya"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      251,
+      261
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'bar ba'i khro bo me dpung 'bar",
+      "gdug pa'i mtshon cha sna tshogs bsnams",
+      "bgegs dang log 'dren rdul du rlog",
+      "dbang chen me dpung dmar nag 'bar",
+      "bskal pa dus mtha'i me lta bu",
+      "dbang drag mtshon cha brag ltar gtams",
+      "gang la bab kyang gcod cing sgrol",
+      "dbang chen khro bo mi bzad rngam",
+      "srid pa'i ye shes 'khor lo 'khrigs",
+      "dbang chen mtshams las gang 'da' ba",
+      "rdul phran bzhin du rlag par gyis"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.1218
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      328,
+      331
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rta mchog dpal la phyag 'tshal lo",
+      "khro mo yum la phyag 'tshal lo",
+      "sprul pa'i sku la phyag 'tshal lo",
+      "sgo ma bzhi la phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.3929
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      341,
+      345
+    ],
+    "probability": 0.9,
+    "meter": 9,
+    "lines": [
+      "bag med tshul gyi dam las 'gal gyur te",
+      "padma dbang chen dkyil 'khor lha tshogs kyi",
+      "thugs dang 'gal ba'i las ni ci bgyis pa",
+      "thugs rje che mnga' khyed la bzod par gsol",
+      "bzod par bzhes nas tshangs pa'i dngos grub stsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      358,
+      400
+    ],
+    "probability": 0.965,
+    "meter": 9,
+    "lines": [
+      "gnam lcags ur mo'i gzer chen ta la la",
+      "sprul pa'i lcang lo mang po'i kha bad can",
+      "gsang ba'i me ri dmar nag 'tshub mar 'bar",
+      "mi ro thod phreng keng rus sogs kyis brgyan",
+      "rak+ta'i rgya mtsho rba rlabs chil li li",
+      "rus chen tshogs kyi phung po khral la la",
+      "khrag dang zhag gi 'bab chu zu lu lu",
+      "sha chen tshil chen dri ngad thul lu lu",
+      "tsit+ta gsar rnying rgyan mchog ye re re",
+      "dbang chen khrag 'thung rgyal po 'khor dang bcas",
+      "rgyud sde brgyad kyi lha tshogs mang po dang",
+      "ma mo mkha' 'gro'i tshogs dang bcas pa rnams",
+      "gnas mchog 'di ru byin gyis brlab tu gsol",
+      "sgrub mchog bdag la dbang zhig skur du gsol",
+      "bgegs dang log 'dren bar chad bsal du gsol",
+      "mchog dang thun mong dngos grub stsal du gsol",
+      "grub pa'i rtags mtshan myur du bstan du gsol",
+      "chos nyid zhi ba'i tshul gyis don mdzad pa'i",
+      "bcom ldan zhi ba'i lha tshogs dbyings nas bzhengs",
+      "khro bo'i tshul gyis gdug pa 'dul mdzad pa'i",
+      "'bar ba khro bo'i lha tshogs dbyings nas bzhengs",
+      "skye med chos kyi dbyings nas sku bzhengs pa",
+      "'jam dpal sku yi lha tshogs dbyings nas bzhengs",
+      "khams gsum dbang du sdud pa'i las mdzad pa'i",
+      "padma gsung gi lha tshogs dbyings nas bzhengs",
+      "dus gsum bde gshegs rnams kyi las mdzad pa'i",
+      "yang dag thugs kyi lha tshogs dbyings nas bzhengs",
+      "dug lnga gtan 'joms ye shes lnga sbyor ba'i",
+      "bdud rtsi yon tan lha tshogs dbyings nas bzhengs",
+      "gdug pa'i tshogs rnams ma lus tshar gcod pa'i",
+      "phur pa phrin las lha tshogs dbyings nas bzhengs",
+      "thabs dang shes rab gnyis med dgyes rol ba'i",
+      "ma mo rbod gtong lha tshogs dbyings nas bzhengs",
+      "bstan la gnod pa'i dgra bgegs tshar gcod pa'i",
+      "dmod pa drag sngags lha tshogs dbyings nas bzhengs",
+      "legs nyes stangs 'dzin dam tshig rjes gcod pa'i",
+      "'jig rten mchod bstod lha tshogs dbyings nas bzhengs",
+      "rtsi shing thams cad ye nas sman dang bcud",
+      "snang srid thams cad ye nas byang chub sems",
+      "stong gsum thams cad ye nas gzhal yas khang",
+      "rgyud drug thams cad ye nas rgyal ba'i sku",
+      "sgra dbyangs thams cad drag po'i sngags kyi tshig",
+      "gnas mchog 'di ru byin gyis brlab tu gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      575,
+      588
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "chos rnams sna tshogs rang shar ba",
+      "rang bzhin med de chu zla 'dra",
+      "thugs rje chen pos kun la khyab",
+      "snying po ye shes hUM gi dbyibs",
+      "chen po lnga yi snying po la",
+      "'byung ba lnga yi dwangs ma chags",
+      "ye shes 'bar ba'i gzhal yas khang",
+      "chos kyi dbyings kyi gnas chen po",
+      "'khor lo dbang chen pho brang ldan",
+      "phyi nang med par yongs su gsal",
+      "gdan gding sku bskyed dbang bskur zhing",
+      "byin gyis brlab pa rab tu bya",
+      "yab yum gnyis med sbyor ba las",
+      "sprul pa'i dkyil 'khor rab tu ston"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.1241
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      598,
+      605
+    ],
+    "probability": 0.938,
+    "meter": 7,
+    "lines": [
+      "dbang chen khros pa'i rgyal po bzhengs",
+      "dbus nyid ye shes gzhal yas nas",
+      "padma rta mchog gshegs su gsol",
+      "yum chen khro mo gshegs su gsol",
+      "phyogs bzhi 'khor lo'i rtsibs steng nas",
+      "sprul pa'i khro bo gshegs su gsol",
+      "sgo bzhi gnas kyi gzhal yas nas",
+      "sgo ma rnam bzhi gshegs su gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      629,
+      632
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "zag med bde ster mchod yon 'di",
+      "padma dbang chen dkyil 'khor la",
+      "bdag nyid dad pas 'bul lags kyi",
+      "thugs rjes dgongs la bzhes su gsol"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.2857
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      640,
+      644
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "zab pa sbyor sgrol gyi mchod pa",
+      "dam rdzas gtor ma'i mchod pa",
+      "dug lnga dam rdzas kyi mchod pa",
+      "'dod yon lnga'i mchod pa rnams las",
+      "bdud rtsi sman gyi mchod pa ni"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      649,
+      656
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rang byung gdod nas rnam par dag",
+      "rtsa brgyad stong las sbyar ba'i sman",
+      "ye shes lnga rdzogs grub pa'i rdzas",
+      "'chi med bdud rtsi ra sa yin",
+      "dam rdzas mchog gi mchod pa 'di",
+      "rtsa brgyud bla ma'i tshogs rnams la",
+      "bdag gis dad pas 'bul lags kyi",
+      "bzhes te 'phrul gyi dngos grub stsol"
+    ],
+    "num_exact_derge_matches": 14,
+    "probability_of_derge_quotation": 0.2143
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      678,
+      683
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "sprul pa'i khro bo bzhi rnams la",
+      "X badzra kro d+ha shwa ra sogs",
+      "sgo srung chen mo bzhi rnams la",
+      "bdag gis dad pas 'bul lags kyi",
+      "bzhes nas 'phrul gyi dngos grub stsol",
+      "badzra aM ku sha dzaH sogs kyi mthar"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.2143
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      708,
+      713
+    ],
+    "probability": 0.833,
+    "meter": 7,
+    "lines": [
+      "gsang ba thabs dang shes rab las",
+      "padma nor bu mnyam sbyor bas",
+      "dgyes pa chen po'i bde chen dang",
+      "byang chub sems kyi mchod pa 'di",
+      "padma dbang chen dkyil 'khor la",
+      "mchod par 'bul lo bzhes su gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      733,
+      738
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "khyad par 'dod yon mchod pa'i mchog",
+      "sha khrag rkang rus gtor ma yis",
+      "khro rgyal dbang chen thugs dam bskang",
+      "yum chen khro mo'i thugs dam bskang",
+      "sprul pa'i khro bo'i thugs dam bskang",
+      "sgo ma bzhi yi thugs dam bskang"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      743,
+      749
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gzugs kyi lha mo sku mdog dkar",
+      "gzugs kyi longs spyod sna tshogs 'dzin",
+      "dbang chen khro bo'i spyan la 'bul",
+      "bzhes nas dngos grub stsal du gsol",
+      "sgra yi lha mo sku mdog sngo",
+      "sgra yi longs spyod sna tshogs 'dzin",
+      "dbang chen khro bo'i snyan la 'bul"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      758,
+      763
+    ],
+    "probability": 0.833,
+    "meter": 7,
+    "lines": [
+      "dbang chen khro bo'i sku la 'bul",
+      "X chos dbyings lha mo sku mdog dkar",
+      "phyag na chos kyi 'byung gnas 'dzin",
+      "dbang chen khro bo'i thugs la 'bul",
+      "bzhes nas dngos grub stsal du gsol",
+      "dug lnga dam rdzas kyi mchod pa ni"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      767,
+      770
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'dod chags zhe sdang gti mug dang",
+      "nga rgyal phrag dog mchod par 'bul",
+      "sku gsung thugs dang yon tan dang",
+      "phrin las dngos por bzhes su gsol"
+    ],
+    "num_exact_derge_matches": 42,
+    "probability_of_derge_quotation": 0.3988
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      775,
+      827
+    ],
+    "probability": 0.925,
+    "meter": 9,
+    "lines": [
+      "dmar nag gru gsum dbang gi dkyil 'khor nas",
+      "padma 'khyil ba dbang chen khro bo'i sku",
+      "thugs rje thabs kyis sprul skur bzhengs su gsol",
+      "bdud pho bdud mo byi chings bsnol ba'i khri",
+      "chags med padma nyi zla'i gdan steng na",
+      "dus gsum dbang sgyur ye shes lha yi lha",
+      "dbang chen phrag thung ha ya grI ba'i sku",
+      "sku mdog dmar nag zhal gsum phyag drug pa",
+      "zhabs bzhi brkyang bskum rngam 'gying brjid pa'i sku",
+      "spyan gsum zhal bgrad dbang gi mche ba gtsigs",
+      "smin ma smra ra ag tshom me ltar 'bar",
+      "dbu skra kham nag ral pa gyen du 'bar",
+      "spyi gtsug rta mgo ljang gu zil gnon rngam",
+      "rngog ma dmar po dbang gi rta skad 'tsher",
+      "g.yas dkar g.yon ljang dbus dmar rngam sgra sgrog",
+      "sku stod zhing lpags glang chen ko rlon gsol",
+      "sku smad stag gi sham thabs bdud dpung 'dul",
+      "thod rlon tshar gsum phreng bas rgyan du mdzes",
+      "sbrul chen rigs bzhis sku brgyan phyag zhabs spras",
+      "dang po padma ban d+has dbang du sdud",
+      "bar pa lcags kyu zhags pas dmigs pa 'gugs",
+      "tha ma be con ral gris dgra bgegs sgrol",
+      "dbang drag me dpung klong dkyil rin chen spras",
+      "sku la dur khrod chas brgyad rdzogs par ldan",
+      "dbang chen gdug pa'i spyan rtsa zlog pa yis",
+      "snang srid dregs pa thams cad dbang du sdud",
+      "shangs nas rlung nag 'tshub pa'i bskal pa 'byung",
+      "snang srid kun 'thor mthu chen drag rtsal 'dul",
+      "snyan nas bskal pa'i 'brug stong di ri ri",
+      "srid pa'i che btsan thams cad zil gyis gnon",
+      "tshems las drag po'i thog chen phab pa yis",
+      "sdang dgra gnod bgegs thal ba'i rdul du rlogs",
+      "zhal nas rak+ta'i rgya mtsho 'khrug cing 'khyil",
+      "bstan pa bshig pa'i dgra la skyi thang phob",
+      "khro rgyal dbang gi rta skad tsher re re",
+      "thugs rjes dbang chen che btsan dbang du sdud",
+      "padma dbang chen khrag 'thung mi bzad pa",
+      "khyod kyi dbang drag phrin las dus la bab",
+      "sdang dgra gnod byed thal ba rdul du rlogs",
+      "hrIH khro rgyal dbang chen sku yi g.yon phyogs na",
+      "khro mo padma gar gyi dbang phyug ma",
+      "sku mdog mthing nag zhal gcig phyag gnyis ma",
+      "spyan gsum zhal bgrad dbang gi mche ba gtsigs",
+      "dbu skra ral pa nag po mun ltar gtibs",
+      "sku la dur khrod chas brgyad legs par brgyan",
+      "phyag g.yas tsit+ta thogs nas yab la 'khyud",
+      "phyag g.yon dung chen dmar 'khyil gtso la stob",
+      "khro mo kun gyi dbang phyug chen mo khyod",
+      "rngam pa'i nga ros thams cad zil gyis gnon",
+      "spyan nas khrag 'dzag zhal nas mi ro 'drul",
+      "snyan nas 'brug sgrog shangs nas rlung nag 'tshub",
+      "khyod kyi dbang drag phrin las dus la bab",
+      "sdang dgra gnod byed thal ba rdul du rlogs"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.0526
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      830,
+      844
+    ],
+    "probability": 0.967,
+    "meter": 9,
+    "lines": [
+      "thugs kyi sprul pa dbang chen khro bo'i sku",
+      "shar phyogs 'khor lo 'bar ba'i rtsibs steng na",
+      "dri za pho mo bsnol ba'i gdan steng na",
+      "rdo rje dbang chen dkar po khro bo'i sku",
+      "zhal gcig phyag gnyis dur khrod chas brgyad rdzogs",
+      "spyan gsum zhal bgrad mche gtsigs mi ro za",
+      "dbu skra kham nag gyen brdzes sbrul gyis bcings",
+      "phyag g.yas rdo rjes dgra bgegs mgo lus gshog",
+      "phyag g.yon dbyug thos myos shing brgyal bar byed",
+      "me dpung klong na 'gying zhing gar stabs tshul",
+      "rngam pa'i nga ro 'brug stong di ri ri",
+      "thugs kyi sprul pas stong gsum khyab par byed",
+      "khyod kyi dbang drag phrin las dus la bab",
+      "sdang dgra gnod byed thal ba rdul du rlogs",
+      "hrIH yab yum thabs dang shes rab rol pa las"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      868,
+      871
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bud med dkar mo 'jigs tshul can",
+      "khrag gi ral pa shar ra ra",
+      "phyag na lcags kyus dgra snying 'byin",
+      "rings par khug cig aM ku sha"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      874,
+      877
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "g.yu yi ral pa shar ra ra",
+      "phyag na zhags pas bla tshe 'gugs",
+      "chings shig sdoms shig pA sha hUM",
+      "nub phyogs zangs kyi sgo khyud nas"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      914,
+      925
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mi bzad khro bo rta mchog dpal",
+      "dbang drag stobs chen rngam brjid gtum",
+      "sku mdog dmar nag brjid cing 'gying",
+      "dbu gsum rnam thar gsum yang ston",
+      "phyag drug rgyud drug rtsad nas gcod",
+      "zhabs bzhis 'khor ba'i chos bzhi sgrol",
+      "dur khrod chas brgyad sku la rdzogs",
+      "rta mgo ljang gu rta skad 'tsher",
+      "me dpung 'bar ba'i klong na bzhugs",
+      "rngam pa'i nga ro 'brug stong sgrog",
+      "dregs pa pho mo dbang du sdud",
+      "dbang chen sku la phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      930,
+      939
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "sku nyid dngos su mthong ba 'am",
+      "slob dpon nyi zla mgo la 'char",
+      "rdzas la me 'bar 'od 'phro zhing",
+      "sgrub khang g.yo 'gyur sgra chen 'byung",
+      "padma'i sdong por 'dug pa dang",
+      "snang srid me tog padmas khengs",
+      "sangs rgyas nyag gcig chos nyan pa",
+      "rmi lam mngon sum phyi nang gsang",
+      "mthong nas dngos grub dam rdzas blang",
+      "drag po'i las rnams kun la sbyar"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      961,
+      964
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rang bzhin rnam dag ngang nyid las",
+      "sprul pa'i khro bo mi bzad pa",
+      "padma dbang chen dkyil 'khor lha",
+      "longs spyod tshogs la gshegs su gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      974,
+      991
+    ],
+    "probability": 0.889,
+    "meter": 7,
+    "lines": [
+      "spyan gyi thugs dam skongs gyur cig",
+      "gzugs kyi mchod pa bzhes su gsol",
+      "snyan pa sgra yi mchod pa 'di",
+      "padma dbang chen snyan la 'bul",
+      "snyan gyi thugs dam skongs gyur cig",
+      "sgra yi mchod pa bzhes su gsol",
+      "dri zhim ngad kyi mchod pa 'di",
+      "padma dbang chen shangs la 'bul",
+      "shangs kyi thugs dam skongs gyur cig",
+      "dri yi mchod pa bzhes su gsol",
+      "zhal zas ro yi mchod pa 'di",
+      "padma dbang chen ljags la 'bul",
+      "ljags kyi thugs dam skongs gyur cig",
+      "ro yi mchod pa bzhes su gsol",
+      "'jam pa reg bya'i mchod pa 'di",
+      "padma dbang chen sku la 'bul",
+      "sku yi thugs dam skongs gyur cig",
+      "reg bya'i mchod pa bzhes su gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1016,
+      1019
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gzigs shig mdzes ldan dam pa'i chos",
+      "'di la the tshom byar mi rung",
+      "bram ze khyi dang gdol pa phag",
+      "rang bzhin gcig tu dgongs te rol"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.8929
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1022,
+      1026
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bde bar gshegs pa'i chos kyi mchog",
+      "'dod chags dri ma med pa 'di",
+      "gzung 'dzin rnam par spangs pa yi",
+      "de bzhin nyid la bdag phyag 'tshal",
+      "a la la hoH zhes blangs te"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.7524
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1034,
+      1041
+    ],
+    "probability": 0.938,
+    "meter": 7,
+    "lines": [
+      "yum chen gar gyi dbang phyug ma",
+      "lhag ma'i tshogs kyis bskor ba ni",
+      "bde gshegs khyung dang gza' gdong dang",
+      "ma mo sde brgyad 'khor dang bcas",
+      "bod khams skyong ba'i bstan ma sogs",
+      "lhag ma'i mchod pa 'di bzhes la",
+      "rnal 'byor bcol ba'i phrin las mdzod",
+      "lhag ma'i tshogs la kha raM khA hi"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1104,
+      1117
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "mi ro rta ro mang po gcal du bkram",
+      "mi khrag rta khrag du ma mtsho ru 'khyil",
+      "'khor yug zangs ri'i 'phreng bas kun nas bskor",
+      "bse mkhar smug po mchong gi ba gam can",
+      "thod pa brtsegs pa'i gzhal yas chen po nas",
+      "chos skyong dregs pa lcam sring gshegs su gsol",
+      "'khor tshogs bshan pa'i tshogs kyang gshegs su gsol",
+      "zhing bcu'i dam nyams dgra bo gdul ba dang",
+      "rnal 'byor bdag gis las bcol bsgrub pa'i phyir",
+      "da lta nyid du gnas 'dir gshegs su gsol",
+      "da lta nyid du gnas 'dir gshegs nas kyang",
+      "rings pa'i tshul gyis mchod gtor 'di bzhes la",
+      "nag po'i phyogs dang gang la dmigs pa yi",
+      "gnod byed dgra bgegs thal ba'i rdul du rlogs"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1120,
+      1127
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "chos nyid zhi ba'i ngang las ma g.yos kyang",
+      "ma rungs gdul phyir drag po'i skur bstan nas",
+      "mthu stobs phun tshogs bstan ba srung mdzad pa'i",
+      "sgrol gying bshan pa dmar po la phyag 'tshal",
+      "bka' yi 'khor gnas ye shes srung ma'i tshogs",
+      "rnal 'byor 'dod pa'i bde ster gsang ba'i yum",
+      "las byed bshan pa gtum po sde lnga dang",
+      "ma mo the rang tshogs la gus pas 'dud"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1161,
+      1196
+    ],
+    "probability": 0.931,
+    "meter": 9,
+    "lines": [
+      "srog bdag dmar po 'khor bcas spyan lam du",
+      "nam mkha' gang ba'i dam rdzas spyan gzigs tshogs",
+      "'byung zhing rgyas la thugs dam skongs gyur cig",
+      "ra dmar khrag chang mchod yon mtsho ltar 'khyil",
+      "dbang po lnga yi me tog ri ltar spungs",
+      "sha chen tshil chen dud pa sprin ltar 'khrigs",
+      "zhun chen sgron me nyi ltar 'bar ba 'dis",
+      "gnod sbyin dregs pa lcam sring thugs dam bskang",
+      "las mkhan srog bdag dmar po'i thugs dam bskang",
+      "gri thogs bshan pa'i tshogs kyi thugs dam bskang",
+      "'khor tshogs dam can rgya mtsho'i thugs dam bskang",
+      "'khor dang bcas pa'i thugs dam bskongs gyur nas",
+      "rnal 'byor dpon slob nyams chags sos gyur cig",
+      "mi mthun rkyen dang bar gcod zlog pa dang",
+      "mthun pa'i dngos grub ma lus stsal du gsol",
+      "gser zhun 'khyil 'dra mkhris pa'i dri chab dang",
+      "dgra bgegs sha khrag spungs pa'i zhal zas dang",
+      "snyan brjid rol mo'i sgra yis stong gsum khyab",
+      "ro brgya ldan pa'i gser skyems dam pa 'dis",
+      "X rno sdug ra g.yo sha rgyas dal gyis 'gro",
+      "mdzes pa'i spu ldan mtshams sprin phung po bzhin",
+      "'ja' tshon ltar bkra dar gyi rgyan cha can",
+      "spyan gzigs bse yi ra skyes kham pa 'dis",
+      "X zhol g.yag kham pa rnams ni ngar 'jo byed",
+      "mdzes ldan rta mchog rnams ni glog bzhin 'gyu",
+      "dur bya srin bya'i gar gyis mkha' lam khyab",
+      "bse khra dam nyams klad la lding ba 'dis",
+      "X sra zhing brtan pa rdo rje'i go khrab dang",
+      "rno ngar mi bzad sna tshogs mtshon cha dang",
+      "dur bya'i sgros rgyan dar dmar g.yo bas mdzes",
+      "dgra bgegs snying la thog ltar rgyug pa 'dis",
+      "X sha khrag gtor ma'i tshogs kyis sa gzhi gang",
+      "phyi nang 'dod yon tshogs kyis bar snang gang",
+      "rgyal srid rin chen bdun gyis nam mkha' gang",
+      "dngos bshams yid kyis sprul pa'i mchod sprin 'dis",
+      "X sems nyid rang bzhin mkha' ltar rnam dag kyang"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1199,
+      1204
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "nongs par gang gyur bshags dang bshags yul dang",
+      "bshags bya dmigs med ngang du dag par bgyi",
+      "sgrol gying srog bdag dmar po 'khor bcas kyis",
+      "gnod byed dgra bgegs thams cad tshar chod la",
+      "yid bzhin nor dang dpag bsam shing bzhin du",
+      "mchog dang thun mong dngos grub char du phob"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1206,
+      1237
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "byang shar ma ru tse yi dur khrod nas",
+      "mchong dmar brag la brten pa'i gnas bcas pa",
+      "sgrol gying chen po srog bdag dmar po dang",
+      "srog bdud chen mo bse yi lan phran can",
+      "lcam sring khyed kyi bka' las mi 'da' ba'i",
+      "las mkhan srog bdag dmar po 'khor dang bcas",
+      "sgrol byed bshan pa gri thogs brgyad po dang",
+      "rol bshan nyi shu rtsa gcig 'khor dang bcas",
+      "bdud dang gnod sbyin srin po sum stong dang",
+      "btsan dmar stong gi dmag tshogs 'khor dang bcas",
+      "ma mo 'bum dang the'u rang stong la sogs",
+      "ston pa'i bka' nyan bstan srung rgya mtsho'i tshogs",
+      "'dir gshegs rgyan gyi gtor ma 'di bzhes shig",
+      "dgra sha khrag gi mchod pa 'di bzhes shig",
+      "gtsang ma phud kyi gser skyems 'di bzhes shig",
+      "ra dmar khrag chang mchod yon 'di bzhes shig",
+      "sngar bcol legs pa'i gtang rag gnyan po gtong",
+      "da 'chol legs pa'i gsol 'debs rten du 'bul",
+      "rgyal ba'i bstan dang bstan 'dzin gces par skyongs",
+      "rnal 'byor bdag gi gnas lus longs spyod dang",
+      "'khor dang yo byad bzhon pa la sogs pa",
+      "bcol lo ltos so srung ma mthu rtsal can",
+      "nyin gsum bya ra rgyang nas ma g.yel cig",
+      "mtshan gsum mel tshe drung nas ma g.yel cig",
+      "rtag tu sgrub pa'i stongs grogs ma g.yel cig",
+      "bla mas bcol ba'i phrin las ma g.yel cig",
+      "sdang ba'i dgra la mngon pa'i rtags ston la",
+      "rnal 'byor bdag gi mgon skyabs dpung gnyen mdzod",
+      "bla ma'i sku dgra bstan pa'i spyi dgra dang",
+      "rnal 'byor sgos dgra sems can yongs la 'tshe",
+      "ma nyes log par lta ba'i dgra dang bgegs",
+      "dpal mgon khyod kyis sgrol la bstan pa srungs"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1245,
+      1253
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "hUM| padma dbang chen dkyil 'khor nas",
+      "chos kyi dbyings las ma g.yos kyang",
+      "bstan pa gnyan po srung ba dang",
+      "dgra bgegs thal bar rlog pa dang",
+      "rnal 'byor las bcol bsgrub pa'i phyir",
+      "srog gcod dregs pa gying lnga dang",
+      "gza' gdong lcam dral 'khor dang bcas",
+      "sngon gyi dam las ma 'da' bar",
+      "rings pa'i tshul gyis da tshur spyon"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.1931
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1261,
+      1321
+    ],
+    "probability": 0.984,
+    "meter": 7,
+    "lines": [
+      "hrIH bcom ldan padma he ru ka",
+      "dbang chen thugs kyi sprul pa ni",
+      "srog bdag 'od kyi rgyal po byung",
+      "skyes mchog 'od kyi mi bo che",
+      "sku la seng ge'i slog pa gsol",
+      "dbu la byi le dkar po bcings",
+      "nam mkha' 'ja' yi ska rags can",
+      "chibs su seng ge dkar mo chibs",
+      "lcags kyi sder mos dgra snying 'byin",
+      "g.yas pa ral gris dgra sogs gcod",
+      "g.yon pa 'od kyi zhags pa 'phen",
+      "dgra bo'i tshe srog don snying phyung",
+      "bskul lo drag tu dgra srog chod",
+      "shar gyi dkar po dam tshig can",
+      "rta ru dkar po ngang ring zhon",
+      "sku la dar dkar ral gu gsol",
+      "dbu la dung gi cod paN can",
+      "phyag na shel gyi zangs gri thogs",
+      "phyag g.yon zhags pa dgra la 'debs",
+      "tshangs pa dung gi thor tshugs can",
+      "dgra bo'i lto phrol khong snying phyung",
+      "lho yi dge bsnyen dam tshig can",
+      "sku la za 'og sngo khra gsol",
+      "dbu la bse man 'gying thod bcings",
+      "rta ni kham pa lag dkar zhon",
+      "g.yas pa bse yi rdo rje thogs",
+      "g.yon pa tsit+ta dmar po thogs",
+      "gying chen rdo rje gshogs rgod rtsal",
+      "dgra bo'i snying phyung srog rtsa chod",
+      "nub kyi bdud nag dam tshig can",
+      "sku la lcags kyi zhun khrab gsol",
+      "dbu la bdud zhwa lding nag gsol",
+      "chibs su bdud rta nag po chibs",
+      "phyag g.yas bdud kyi khram shing bsnams",
+      "phyag g.yon zhags pa nag po 'debs",
+      "nag po gsod byed bdud kyi bu",
+      "dgra yi tshe srog khram la thob",
+      "byang gi srog bdag dam tshig can",
+      "sku la bse khrab dmar po gsol",
+      "dbu la bse rmog zangs ring gsol",
+      "chibs su bse yi ra skyes chibs",
+      "phyag g.yas zangs kyi gri rings bsnams",
+      "g.yon pa zhags pa dgra la 'debs",
+      "bse rog srog gcod lag dmar 'gying",
+      "dgra bo'i mdangs phrogs srog rtsa chod",
+      "dam nyams ma gtang sho ra re",
+      "hrIH padma'i rgyal po rta mchog dpal",
+      "khro rgyal khrag 'thung he ru ka",
+      "thugs kyi sprul pa mi bzad pa",
+      "skyi thang chu 'khyag mnga' bdag khyod",
+      "khyab 'jug chen po ra hu la",
+      "byi ta se ta sgra gcan 'dzin",
+      "drang srong chen po kun tu rgyu",
+      "gza' rgod chen po skyi thang bdag",
+      "dud kha mgo dgu mig gis khengs",
+      "ro smad sbrul gyis rgya mtsho 'khrug",
+      "phyag g.yas skyi thang 'khor lo bsnams",
+      "phyag g.yon chu srin zhags pa 'phen",
+      "dgra yul lo thog rdul du rlogs",
+      "hUM| phyogs bzhi nam mkha'i klong dkyil na",
+      "ngan sngags bdag mo skyi thang phob"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1323,
+      1331
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "lho yi baM srin dred mo gdong",
+      "nub kyi kong srin ba glang gdong",
+      "byang gi 'brog srin chu srin gdong",
+      "ngan sngags bdag mo khyed bzhi ni",
+      "g.yas pa zor ba g.yon nad rkyal",
+      "skyi thang chu rgod mnga' bdag ma",
+      "dgra bo'i lo thog sna ma la",
+      "chu rgod 'khyag pa'i skyi thang phob",
+      "dgra yul thal ba'i rdul du rlogs"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1359,
+      1365
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bdud mo chen mo khyed bzhi yang",
+      "sngon gyi thugs dam rjes dgongs la",
+      "bran g.yog mang po'i 'khor dang bcas",
+      "lhab lhub mang po'i rgyan dang bcas",
+      "sil snyan rol mo'i sgra dang bcas",
+      "'dir spyon mthun pa'i dam rdzas bzhes",
+      "bcol ba'i phrin las grub par mdzod"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1366,
+      1369
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gangs dkar sha med rdo rje spyan gcig ma",
+      "mkha' rag khyung btsun rdo rje dpal gyi yum",
+      "gser chen mkha' lding rdo rje klu mo dang",
+      "rma ri rab 'byams rdo rje grags mo rgyal"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1407,
+      1413
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gsang don yid bzhin rgya mtsho'i 'jug ngogs nas",
+      "dngos grub gnyis kyi nor bu len 'dod na",
+      "sgrub thabs gru chen 'di la brten par byos",
+      "'dir 'bad las byung rnam dkar nyi 'od kyis",
+      "nag phyogs bdud sde'i mun pa drungs phyung nas",
+      "sku gsum 'dab brgya'i tshal du gegs med par",
+      "gzhan phan sbrang rtsi'i ro la spyod gyur cig"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1422,
+      1425
+    ],
+    "probability": 0.75,
+    "meter": 7,
+    "lines": [
+      "kun mkhyen ye shes phung po can",
+      "zhes sogs kyis gsol ba gdab",
+      "spyi dang bye brag gi chos bshad",
+      "byang sems kyi sdom pa gzung"
+    ],
+    "num_exact_derge_matches": 15,
+    "probability_of_derge_quotation": 0.4151
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1515,
+      1518
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "sangs rgyas kun dngos rtsa ba'i bla ma dang",
+      "gnyis su med pa dpal ldan khro bo'i rgyal",
+      "padma dbang chen zhabs la gus btud nas",
+      "de yi sgrub thabs tshul bzhin bri bar bya"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1570,
+      1575
+    ],
+    "probability": 0.667,
+    "meter": 7,
+    "lines": [
+      "oM badzra thun b+h+yoH oM trig nan",
+      "badzra dzaH dzaH sa ma ya stwaM",
+      "sde brgyad gshed 'bebs kyi drag sngags so",
+      "oM haM sha trig trig nan",
+      "trig hur thuM dzaH mA ra ya phaT",
+      "oM ru trig trig ru trig trig nan"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1604,
+      1629
+    ],
+    "probability": 0.981,
+    "meter": 9,
+    "lines": [
+      "'jigs rung dus mtha'i me ltar 'bar ba'i sku",
+      "mi bzad drag sngags nga ro sgrog pa'i gsung",
+      "mkhyen brtse nus pa dpag par dka' ba'i thugs",
+      "khro rgyal dbang po'i sku gsung thugs la bstod",
+      "nyi ma'i 'od zer 'bum gyi gos gyon pa'i",
+      "padma rA ga'i lhun po lta bu'i sku",
+      "srid gsum bgegs dpung phye mar 'thag byed pa'i",
+      "dpal chen khrag 'thung dbang po khyod la bstod",
+      "mtshams sprin 'byung po'i khrag gi gos gyon pa'i",
+      "rab dkar mche ba'i chu 'dzin g.yo ba can",
+      "nam mkha'i khams kun rgod pa'i 'brug sgra bzhin",
+      "ha ha'i gad rgyangs phyogs mthar sgrog la bstod",
+      "byi ru'i yal 'dab bskyod lta'i phyag drug gis",
+      "rab bzung mi bzad mtshon cha rdo rje'i thog",
+      "gang du btab pas lus med bdag po'i grong",
+      "skad cig tsam gyis brlag par mdzad la bstod",
+      "dus mtha'i me 'od 'phro ba'i sprin chen las",
+      "bzod dka'i gnam lcags ser chen 'bab pa bzhin",
+      "grangs med sku yi sprul pas 'byung po'i tshogs",
+      "ma lus thal bar brlag mdzad khyod la bstod",
+      "ma lus phyogs bcu'i rgyal bas mgon po khyod",
+      "bstan dang bstan 'dzin skyong bar dbang bskur ba",
+      "bdag cag khro bo'i dbang po khyod dran na",
+      "bar gcod bgegs dpung thal bar brlag par mdzod",
+      "rnal 'byor dam chos sgrub la gegs byed pa'i",
+      "bdud kyi rigs gyur 'byung po thams cad kyi"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1637,
+      1645
+    ],
+    "probability": 0.944,
+    "meter": 9,
+    "lines": [
+      "mjug bsngo ba smon lam shis brjod sogs bya'o",
+      "dran pa tsam gyis phyi nang bgegs kyi tshogs",
+      "thal bar rlog byed khro bo'i dbang po ni",
+      "rta mgrin padma dbang chen zhes su grags",
+      "de yi sgrub thabs skyer sgang lugs su bshad",
+      "rnam dpyod mkha' ltar yangs pa rgyal ba'i sras",
+      "snying stobs zla ba rgyas pa 'dir 'ongs kyi",
+      "ston pa'i bka' nyan bstan srung rgya mtshos kyang",
+      "tshul bzhin phrin las sgrub la ma g.yel cig"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1646,
+      1649
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "drag po'i bzlas brjod mthar son cing",
+      "bskyed pa'i rim pa rab brtan pas",
+      "srid gsum bgegs kun 'joms byed pa",
+      "rnal 'byor de 'dra skal ba bzang"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1650,
+      1653
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "de skad smra ba dge 'dun rgya mtsho'i dpal",
+      "bzang po de la lan gcig ma yin par",
+      "rdo rje rgyal mtshan zhes pa'i rnal 'byor pas",
+      "legs par bskul las thogs pa med par smras"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1701,
+      1712
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "rgyal ba kun gyi ye shes sgyu ma las",
+      "gdug pa 'dul phyir khro bo'i skur bstan pa",
+      "bdud bzhi'i rlung gis mi g.yo skye dgu'i dpal",
+      "bcom ldan mi g.yo mgon la phyag 'tshal lo",
+      "sku mdog mthing nag dbang sngon brtsegs pa yi",
+      "lhun po nyi ma'i 'od kyis 'khyud pa bzhin",
+      "rin chen rgyan dang ltos 'gro'i tshogs kyis brgyan",
+      "dran pas bar chad kun sel khyod la 'dud",
+      "phyi nang bgegs kyi tshogs kyis mi brdzi zhing",
+      "tshe dang bsod nams dpal 'byor rgyas pa dang",
+      "zab mo'i lam gyi nyams len mthar phyin nas",
+      "sku gsum go 'phang mngon du 'gyur bar mdzod"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.18
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1746,
+      1749
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "khyod ni mgon po spyan ras gzigs",
+      "kun la khyab pa'i thugs rje yis",
+      "'gro ba ma lus sgrol mdzad pa",
+      "bdag sogs rnams la sbyin gyis rlobs"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      1934,
+      1937
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bcom ldan rdo rje rnal 'byor ma",
+      "sku mdog dkar mo rgyal ba'i yum",
+      "mi shes mun pa 'joms mdzad ma",
+      "rdo rje phag mo khyod la 'dud"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.2857
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2004,
+      2007
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "ye shes khyung lnga'i mchu sder 'jigs rung dang",
+      "yi ge lnga yi 'od zer spro bsdu yis",
+      "'byung ba lnga las gyur pa'i dug rnams dang",
+      "klu rigs lnga yi dug rnams zhi bar mdzod"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2021,
+      2025
+    ],
+    "probability": 0.8,
+    "meter": 7,
+    "lines": [
+      "phyag dang maN+Dal sngon du 'gro bas",
+      "kun mkhyen ye shes phung po can",
+      "zhes sogs lan gsum gyis gsol ba btab",
+      "dkon mchog gsum la bdag skyabs mchi",
+      "zhes sogs kyis sdom pa gzung"
+    ],
+    "num_exact_derge_matches": 59,
+    "probability_of_derge_quotation": 0.3579
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2047,
+      2050
+    ],
+    "probability": 0.75,
+    "meter": 7,
+    "lines": [
+      "sngags kyi rjes zlos lan bdun nam",
+      "lan brgya rtsa brgyad sogs bya'o",
+      "de ni gsung gi rjes gnang ngo",
+      "thugs kyi rjes gnang la gsol ba gdab"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2102,
+      2105
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "rab 'byams rgyal ba'i mkhyen brtse 'phrin las rnams",
+      "rab mdzes yid 'ong lha mo'i skur bstan nas",
+      "rab mang 'gro la tshe dang mchog stsol ma",
+      "rab dkar lha mo ut+pal bsnams la bstod"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2160,
+      2165
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "de nas slob ma rnams khrus byas",
+      "phyag dang maN+Dal sngon du 'gro bas",
+      "dus gsum sangs rgyas thams cad dang",
+      "sku gsum ye shes dbyer med pa",
+      "'gro ba'i 'dren mchog rje btsun ma'i",
+      "rjes gnang dam pa stsal du"
+    ],
+    "num_exact_derge_matches": 8,
+    "probability_of_derge_quotation": 0.244
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2244,
+      2248
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bcom ldan 'di la stsal lags kyis",
+      "'di la 'go bar mdzad du gsol",
+      "dus 'di nas ni thams cad du",
+      "lhag pa'i lha ni mdzad du gsol",
+      "dngos grub thams cad stsal du gsol"
+    ],
+    "num_exact_derge_matches": 16,
+    "probability_of_derge_quotation": 0.5062
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2361,
+      2380
+    ],
+    "probability": 0.95,
+    "meter": 9,
+    "lines": [
+      "ma lus rgyal ba'i ye shes sgyu 'phrul gar",
+      "phyag na padmo'i tshems dkar ze 'bru las",
+      "yid 'phrog 'jo sgeg lha mo'i skur bstan pa",
+      "ngag dbang lha mo'i zhabs la phyag 'tshal lo",
+      "kai la sha yi phung po ltar mdzes sku",
+      "ston ka'i zla ba lan brgyar phyis pa'i zhal",
+      "ut+pal nags tshal nye bar 'phos pa'i spyan",
+      "bcu drug lang tsho'i dpal mnga' khyod la 'dud",
+      "zhal nas dbyangs gsal phreng ba'i glu dbyangs dang",
+      "phyag gnyis dri za'i phang 'gro'i sgra snyan gyis",
+      "kun gyi rna ba'i bcud len rgyas mdzad ma",
+      "zhabs gnyis tsog bu'i tshul gyis 'gying la 'dud",
+      "hrIM yig dbyangs gsal phreng ba'i 'od ris can",
+      "shes rab 'khor lo snying la bran pas kyang",
+      "'chad rtsod rtsom la thogs pa med pa'i blo",
+      "ster mdzad ngag dbang lha mo khyod la 'dud",
+      "bshad pas blo gsal tshogs rnams dga' byed cing",
+      "rtsod pas phal rgol ma lus zil gyis gnon",
+      "sdebs legs rtsom pas mkhas rnams mgu byed pa'i",
+      "'chad rtsod rtsom pa'i shes rab bdag la stsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2417,
+      2420
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "dus gsum rgyal ba kun gyi sku yi dngos",
+      "gangs ri ltar dkar rab brjid khro bo'i sku",
+      "dran pa tsam gyis shes rab mchog stsol ba'i",
+      "bcom ldan mi g.yo mgon la phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.2795
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2483,
+      2486
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "rab brjid gangs ri'i dbang po thun mtshams kyi",
+      "chu 'dzin gzhon nus 'khyud pa lta bu'i sku",
+      "dran pa yis kyang tshe dang mchog stsol ba",
+      "he ru ka dpal yab yum la phyag 'tshal"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2544,
+      2548
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de bzhin du shap+ta'i bar gyis mchod",
+      "bcom ldan mgon po tshe dpag med",
+      "sdig pa'i dri ma phyir bsal nas",
+      "mkha' dang mnyam pa'i sku mnga' ba",
+      "mnyam nyid sku la phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 7,
+    "probability_of_derge_quotation": 0.6286
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2591,
+      2595
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "de nas slob ma rnams khrus byas",
+      "phyag dang maN+Dal sngon du 'gro bas",
+      "kun mkhyen ye shes phung po can",
+      "zhes sogs kyis lan gsum gsol ba gdab",
+      "spyi dang bye brag gi chos bshad"
+    ],
+    "num_exact_derge_matches": 15,
+    "probability_of_derge_quotation": 0.3398
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2609,
+      2612
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "tshe chang la brten nas bskur ba",
+      "tshe ril la brten nas bskur ba",
+      "tshe spel ba dang bzhi las",
+      "dang po la yar ba dgug pa"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2805,
+      2810
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bkra shis tshe brtan dpal gyi zas",
+      "snying po bsdus pa'i bcud 'di ni",
+      "de ring bu yis bza' bar gyis",
+      "'di zos sangs rgyas tshe dpag med",
+      "zhal zas bsten na nad kun las",
+      "grol 'gyur the tshom bya mi dgos"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2821,
+      2824
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "ma gcig grub pa'i rgyal mo nas brgyud pa'i",
+      "rmad byung sgrub pa'i sgo nas rang gzhan don",
+      "sgrub pa'i rim pa cung zad gsal byas pas",
+      "'gro kun 'chi med rig 'dzin thob gyur cig"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2895,
+      2903
+    ],
+    "probability": 0.944,
+    "meter": 9,
+    "lines": [
+      "bla med spyi 'gro ltar byin gyis brlabs nas",
+      "dpal ldan tshogs bdag padma rA ga'i mdog",
+      "phyag g.yas dgra sta mnga' chen lcags kyu dang",
+      "rdo rje ral gri 'phang mdung 'dzin mdzad cing",
+      "g.yon pa gtun shing gzhu dang kha TwAM ga",
+      "khrag dang sha yis gang ba'i thod pa dang",
+      "ba dan gsum pas brgyan pa'i phub 'dzin cing",
+      "byi ba la gnas glang po'i gdong pa can",
+      "rang bzhin gnas nas 'dir byon mchod pa bzhes"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2910,
+      2917
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "lha chen sras po byi ru'i lhun po bzhin",
+      "rab mdzes rten 'brel dag pa'i phyag mnga' ba",
+      "dran pa tsam gyis nor gyi char pa 'bebs",
+      "dpal ldan tshogs kyi bdag po khyod la bstod",
+      "gnod byed dgra bgegs ma lus tshar bcad nas",
+      "bdag gi 'gal rkyen bar chad kun zhi zhing",
+      "tshe dang dpal 'byor longs spyod mnga' thang rgyas",
+      "khams gsum dbang du 'du ba'i 'phrin las mdzod"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2947,
+      2950
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "phyogs bcu dus gsum sangs rgyas thams cad kyi",
+      "mkhyen brtse gcig bsdus rje btsun spyan ras gzigs",
+      "de yi sprul pa phyag drug mgon po la",
+      "lus ngag yid gsum gus pas phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.3056
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2953,
+      2979
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "sku mdog gangs ri ltar dkar 'od zer 'bar",
+      "zhal gcig phyag drug zhabs gnyis nor bdag mnan",
+      "dbul phongs sdug bsngal sel la phyag 'tshal lo",
+      "phyag g.yas dang pos yid bzhin nor bu 'phyar",
+      "bar pa gri gug dbul phongs sdug bsngal gcod",
+      "tha ma cang tes mkha' 'gro dbang du sdud",
+      "khams gsum dbang du sdud la phyag 'tshal lo",
+      "g.yon pa rin chen bum pa dku la brten",
+      "bar pa rtse gsum khams gsum dbang du sdud",
+      "tha ma lcags kyus ngan song gnas nas 'dren",
+      "mgon po thugs rje can la phyag 'tshal lo",
+      "sku stod rin chen rgyan gyis rnam par spras",
+      "sku smad rin chen zar bus rnam par mdzes",
+      "phyag zhabs thams cad yid bzhin nor bus spras",
+      "'gro ba'i re 'dod skong la phyag 'tshal lo",
+      "khyod ni yid la dran pa tsam gyis kyang",
+      "de yi mod la dbul phongs sdug bsngal kun",
+      "yid bzhin nor bu bzhin du sel mdzad pa'i",
+      "yid bzhin nor bu khyod la phyag 'tshal lo",
+      "khyod la gus btud bstod pa'i byin rlabs gyis",
+      "ji srid byang chub ma thob bar du yang",
+      "mgon po khyod kyi thugs rjes legs bzung nas",
+      "byang chub sgrub pa'i mthun rkyen myur du sgrubs",
+      "'di yi dge bas bdag kyang khyed bzhin du",
+      "'gro ba'i don la mthu dang ldan pa dang",
+      "thun mong mchog gi dngos grub stsol ba la",
+      "yid bzhin nor bu lta bur bdag gyur cig"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.1025
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      2999,
+      3002
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dbang bzhi rdzogs par skur du gsol",
+      "sgrib bzhi dag par mdzad du gsol",
+      "'phrin las rnam bzhi 'grub pa dang",
+      "sku bzhi 'thob par mdzad du gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3035,
+      3038
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dam rdzas 'chi med bdud rtsi'i zas",
+      "zo shig bu khyod rigs su skye",
+      "nga yis bsgos pa'i bka' ma bcag",
+      "sgrub la nan tan gces su bya"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.25
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3094,
+      3098
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gdug pa gdul phyir khros pa'i skur ston yang",
+      "rnal 'byor chos bzhin sgrub pa'i 'dod don rnams",
+      "yid bzhin nor dang dpag bsam shing bzhin du",
+      "mchog dang thun mong dngos grub ma lus pa",
+      "da lta nyid du gnas 'dir stsal du gsol"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3124,
+      3128
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "nag mo gdug can dregs pa can",
+      "kun tu khyab pa'i gzugs ston ma",
+      "nag mo'i gtso mo dre'u rta chibs",
+      "'dir byon byin gyis brlab tu gsol",
+      "zhes lan gsum gyi rjes zlos bya"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3142,
+      3152
+    ],
+    "probability": 0.955,
+    "meter": 7,
+    "lines": [
+      "de nas gsol ba gdab pa ni",
+      "he ru ka dpal rdo rje 'dzin",
+      "dpa' bo chen po dgongs su gsol",
+      "shAkya seng ge'i bstan pa la",
+      "byang chub mchog tu sems bskyed de",
+      "gtso bo ston pa'i bka' bsrung dang",
+      "de yi bstan pa bsrung ba'i phyir",
+      "ma mo drag mo la sogs pa",
+      "mthu dang dngos grub myur ba'i rgyu",
+      "dam tshig can de bdag la stsol",
+      "zhes lan gsum gyis gsol ba gdab"
+    ],
+    "num_exact_derge_matches": 25,
+    "probability_of_derge_quotation": 0.2271
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3156,
+      3159
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dus gsum sangs rgyas thams cad kyi",
+      "sku yi rdo rje slob dpon gyis",
+      "bdag la 'dod khams dbang phyug ma'i",
+      "sku yi rjes gnang stsal du gsol"
+    ],
+    "num_exact_derge_matches": 34,
+    "probability_of_derge_quotation": 0.3286
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3172,
+      3177
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dus 'di nas ni bzung nas su",
+      "byang chub snying por mchis kyi bar",
+      "lhag pa'i lha ni mdzad du gsol",
+      "rkyen ngan bar chad thams cad sol",
+      "mchog dang thun mong dngos grub kun",
+      "da lta nyid du stsal du gsol"
+    ],
+    "num_exact_derge_matches": 33,
+    "probability_of_derge_quotation": 0.3829
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3189,
+      3192
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bcom ldan 'di la stsal lags kyis",
+      "bcom ldan 'di la 'go bar mdzod",
+      "sngags kyi dngos grub sbyin pa dang",
+      "brtul zhugs brtan par mdzad du gsol"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.6071
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3216,
+      3219
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dam rdzas 'chi med bdud rtsi'i zas",
+      "zo zhig bu khyod rigs su skye",
+      "nga yis bsgo ba'i bka' ma bcag",
+      "sgrub la nan tan gces par gyis"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3229,
+      3234
+    ],
+    "probability": 0.667,
+    "meter": 7,
+    "lines": [
+      "gnyis pa na rdo rje rtse lnga",
+      "gsum pa na rdo rje lcags kyu",
+      "g.yon gyi dang pos rdo rje dbyug pa",
+      "gnyis pas rdo rje zhags pa",
+      "gsum pas rdo rje sdigs mdzub mdzad pa",
+      "thod pa skam po lnga'i dbu rgyan dang"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.3099
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3280,
+      3285
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'di la nye bar mdzad du gsol",
+      "dus 'di nas ni bzung nas ni",
+      "byang chub snying por mchis kyi bar",
+      "lhag pa'i lha ni mdzad du gsol",
+      "rkyen ngan bar chad thams cad sol",
+      "dngos grub thams cad stsal du gsol"
+    ],
+    "num_exact_derge_matches": 37,
+    "probability_of_derge_quotation": 0.3571
+  },
+  {
+    "text": "S05558E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_YI_DAM_SGRUB_SKOR_DANG_RJES_GNANG_GI_RIM_PA_RNAMS_Works_Related_to_Reaching_Clo.txt",
+    "lines_included": [
+      3364,
+      3368
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rdo rje slob dpon dgongs su gsol",
+      "sangs rgyas bstan pa bsrung ba dang",
+      "zhing bcu'i dgra bgegs bsgral ba'i phyir",
+      "chos skyong sbrags sgrub bdag la stsol",
+      "zhes lan gsum gyis gsol ba gdab"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 0.4179
+  }
+]

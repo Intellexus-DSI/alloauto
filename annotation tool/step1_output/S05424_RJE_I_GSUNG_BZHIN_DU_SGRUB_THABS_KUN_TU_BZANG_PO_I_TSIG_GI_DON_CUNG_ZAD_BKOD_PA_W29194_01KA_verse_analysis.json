@@ -1,0 +1,47 @@
+[
+  {
+    "text": "S05424_RJE_I_GSUNG_BZHIN_DU_SGRUB_THABS_KUN_TU_BZANG_PO_I_TSIG_GI_DON_CUNG_ZAD_BKOD_PA_W29194_01KA.txt",
+    "lines_included": [
+      1,
+      4
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gang zhig skad cig yid la dran tsam gyis",
+      "srid pa'i sdug bsngal ma lus gcod mdzad cing",
+      "dpal ldan khyab bdag go 'phang mchog stsol ba'i",
+      "rje btsun bla ma rnams la gus phyag 'tshal"
+    ]
+  },
+  {
+    "text": "S05424_RJE_I_GSUNG_BZHIN_DU_SGRUB_THABS_KUN_TU_BZANG_PO_I_TSIG_GI_DON_CUNG_ZAD_BKOD_PA_W29194_01KA.txt",
+    "lines_included": [
+      1270,
+      1273
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rang gi sems sngar bshad pa ltar",
+      "dkyil 'khor gyi 'khor lor gnas shing",
+      "mdun du yang dkyil 'khor bris nas",
+      "zhi sogs kyi dngos grub bsgrub par bya'o"
+    ]
+  },
+  {
+    "text": "S05424_RJE_I_GSUNG_BZHIN_DU_SGRUB_THABS_KUN_TU_BZANG_PO_I_TSIG_GI_DON_CUNG_ZAD_BKOD_PA_W29194_01KA.txt",
+    "lines_included": [
+      1329,
+      1332
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "phan bde'i 'byung gnas rgyal bstan yongs 'du'i ljon",
+      "rab rgyas 'gro kun thar mchog 'bras bzang la",
+      "spyod phyir bkra shis lhun grub chos grwa cher",
+      "chos sbyin 'dzad med dal 'gro'i rgyun 'di spel"
+    ]
+  }
+]

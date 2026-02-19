@@ -1,0 +1,105 @@
+[
+  {
+    "text": "S05564E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_DKAR_GTOR_DANG_GTOR_MA_BRGYA_RTZA_I_RIM_PA_The_Offering_of_White_Tormas_and_the.txt",
+    "lines_included": [
+      1,
+      5
+    ],
+    "probability": 0.9,
+    "meter": 9,
+    "lines": [
+      "rgyal ba sras bcas rnams la phyag 'tshal nas",
+      "tshegs chung tsam gyis sbyin pa'i pha rol phyin",
+      "yongs su rdzogs byed gtor ma'i rim pa ni",
+      "don gnyer thugs dang sbyar te bri bar bya",
+      "thog mar dkar gtor gyi rim pa ni"
+    ]
+  },
+  {
+    "text": "S05564E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_DKAR_GTOR_DANG_GTOR_MA_BRGYA_RTZA_I_RIM_PA_The_Offering_of_White_Tormas_and_the.txt",
+    "lines_included": [
+      52,
+      57
+    ],
+    "probability": 0.917,
+    "meter": 9,
+    "lines": [
+      "nor gyi dbang phyug rin cen gter mnga' zhing",
+      "zhes pa sh+lau ka gcig gis bstod nas",
+      "ser sna'i las kyi me yis gdungs pa rnams",
+      "skye dang skye bar khyed la skyabs su mchi",
+      "rin cen bdud rtsi'i gter gyi char rgyun gyis",
+      "sems can dbul ba'i sdug bsngal zhi bar mdzod"
+    ]
+  },
+  {
+    "text": "S05564E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_DKAR_GTOR_DANG_GTOR_MA_BRGYA_RTZA_I_RIM_PA_The_Offering_of_White_Tormas_and_the.txt",
+    "lines_included": [
+      78,
+      81
+    ],
+    "probability": 1.0,
+    "meter": 11,
+    "lines": [
+      "mgon po nam mkha'i mdog can nor gyi char 'bebs pa",
+      "ma skyes rang bzhin dag pas sku mdog sngon por bzhugs",
+      "khyod ni rdo rje sems dpa' nyid de bdag dran na",
+      "rtag tu yid la re ba'i 'bras bu mchis par mdzod"
+    ]
+  },
+  {
+    "text": "S05564E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_DKAR_GTOR_DANG_GTOR_MA_BRGYA_RTZA_I_RIM_PA_The_Offering_of_White_Tormas_and_the.txt",
+    "lines_included": [
+      124,
+      127
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rab 'byams rgya mtsho dpag med na",
+      "zhes sogs kyis mchod yon dbul",
+      "de nas sku khrus gsol ba dang",
+      "chu sbyin rnams gong ltar byas la"
+    ]
+  },
+  {
+    "text": "S05564E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_DKAR_GTOR_DANG_GTOR_MA_BRGYA_RTZA_I_RIM_PA_The_Offering_of_White_Tormas_and_the.txt",
+    "lines_included": [
+      129,
+      132
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "oM AH hUM gis byin gyis brlabs",
+      "'og nas 'byung ba ltar bsngos la",
+      "'dod don la 'phrin las bcol lo",
+      "de nas brgya rtsa'i rim pa ni"
+    ]
+  },
+  {
+    "text": "S05564E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_DKAR_GTOR_DANG_GTOR_MA_BRGYA_RTZA_I_RIM_PA_The_Offering_of_White_Tormas_and_the.txt",
+    "lines_included": [
+      244,
+      257
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "chos rnams thams cad rgyu las byung",
+      "de rgyu de bzhin gshegs pas gsungs",
+      "rgyu la 'gog pa gang yin pa",
+      "dge sbyong chen po 'di skad gsung",
+      "sdig pa ci yang mi bya zhing",
+      "dge ba phun sum tshogs par spyad",
+      "rang gi sems ni yongs su 'dul",
+      "'di ni sangs rgyas bstan pa yin",
+      "lus kyi sdom pa legs pa ste",
+      "ngag gi sdom pa legs pa yin",
+      "yid kyi sdom pa legs pas na",
+      "thams cad du ni sdom pa legs",
+      "thams cad srung ba'i dge slong dag",
+      "sdug bsngal kun las nges par grol"
+    ]
+  }
+]

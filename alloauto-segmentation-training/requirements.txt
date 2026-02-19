@@ -1,0 +1,13 @@
+torch
+numpy
+pandas
+transformers
+scikit-learn
+onnxruntime
+pytorch-crf
+datasets
+python-docx
+matplotlib
+sentencepiece
+accelerate
+tensorboard

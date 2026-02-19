@@ -1,0 +1,23 @@
+# Model configuration
+temperature: 0.3
+few_shot: false
+cot: false
+seed: 42
+model_name: "gemini-2.5-flash"
+# model_name: "gemini-2.5-pro"
+# model_name: "gpt-4o"
+# model_name: "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+# model_name: "Qwen/Qwen2.5-VL-72B-Instruct"
+# model_name: "claude-sonnet-4-5-20250929"
+# max_tokens: 15000
+
+# Data configuration  
+data_dir: "../dataset/annotated-data"
+data_file_name: "test_segments.csv"
+
+# Results configuration for reasoning profile
+results_model_name: "gemini-2.5-flash"
+
+# Debug configuration
+debug_samples: -1 # Set to 0 or negative to use all samples, positive number to limit samples
+

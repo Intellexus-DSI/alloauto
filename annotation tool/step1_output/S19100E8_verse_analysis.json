@@ -1,0 +1,560 @@
+[
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      6,
+      13
+    ],
+    "probability": 0.938,
+    "meter": 9,
+    "lines": [
+      "mgon de'i rang lugs gangs ri las 'ongs pa'i",
+      "dgongs 'grel chu klung phyogs bzhir 'gyed mdzad pa'i",
+      "sras kyi thu po rnams dang yab sras zung",
+      "chos mngon shing rta che rnams e ma bsngags",
+      "ngo mtshar lan gcig skye la che zhing mdzes",
+      "dri mas nad kun sel la yun ring ba'i",
+      "u dum+ba ra'i me tog 'dis tshim bas",
+      "pad tshal gzhan la lta ba'i gus pa lhod"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      305,
+      308
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "snyoms 'jug dge ba rtse gcig pa",
+      "rjes 'brang bcas na phung po lnga",
+      "dpyod dang dga' dang bde dang ldan",
+      "yan lag snga snga spangs pa yi"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      402,
+      405
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "nyer bsdogs gsum dang bcas par ni",
+      "gzugs kyi 'du shes pa shig ces bya",
+      "gzugs med pa na gzugs med do",
+      "gzugs ni sems las skyes par 'gyur"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      531,
+      534
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "tshe dang drod dang rnam shes kyis",
+      "gang tshe lus 'di 'dor byed cing",
+      "bor nas de tshe nyal ba ni",
+      "ji ltar shing la sems med bzhin"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      642,
+      645
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rnam shes mtha' yas mkha' mtha' yas",
+      "ci yang med ces byed ltar",
+      "sbyor phyir dman phyir 'du shes med",
+      "'du shes med pa'ang ma yin pa'o"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      667,
+      674
+    ],
+    "probability": 0.938,
+    "meter": 7,
+    "lines": [
+      "de ltar snyoms 'jug dngos gzhi'i rdzas",
+      "rnam pa brgyad bdun rnam pa gsum",
+      "ro myangs ldan dang dag pa ba",
+      "zag med brgyad pa rnam pa gnyis",
+      "ro myangs mtshungs ldan sred bcas so",
+      "'jig rten pa yi dge pa ni",
+      "dag pa de ni des myang bya",
+      "zag med 'jig rten 'das pa'o"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      727,
+      734
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dang po la lnga rtog dpyod dang",
+      "dga' dang bde dang ting 'dzin rnams",
+      "gnyis pa la ni yan lag bzhi",
+      "rab dang dang ni dga' la sogs",
+      "gsum pa la lnga btang snyoms dang",
+      "dran dang shes bzhin bde dang gnas",
+      "mtha' na bzhi dran btang snyoms dang",
+      "bde min sdug min ting 'dzin rnams"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      850,
+      853
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "nyon mongs can la dga' bde dang",
+      "rab dang shes bzhin dran pa dang",
+      "btang snyoms dran pa dag pa med",
+      "kha cig shin tu sbyangs btang snyoms"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      892,
+      895
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "skyon brgyad las ni grol ba'i phyir",
+      "bzhi pa g.yo ba med pa yin",
+      "rtog dang dpyod dang dbugs dag dang",
+      "bde ba la sogs bzhi yin no"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      927,
+      930
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "skye ba'i bsam gtan dag na ni",
+      "yid bde bde dang btang snyoms dang",
+      "btang snyoms yid bde bde ba dang",
+      "btang snyoms btang snyoms tshor ba yod"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      961,
+      964
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gnyis pa sogs na lus mig dang",
+      "rna ba'i rnam shes rnam rig slong",
+      "gang yin de ni dang por gtogs",
+      "de lung ma bstan nyon mongs min"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1006,
+      1009
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de dang mi ldan 'dod chags bral",
+      "skye ba las ni dag pa 'thob",
+      "zag med 'dod chags bral ba yi",
+      "nyon mongs can rnams skye ba yi"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1074,
+      1081
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "zag pa med pa'i mjug thogs su",
+      "ba ltag 'og gsum pa'i bar dge ba",
+      "skye 'o dag pa las de bzhin",
+      "rang gi sa pa'i nyon mongs kyang",
+      "nyon mongs can las rang dag dang",
+      "nyon mongs sa 'og ma'i dag gcig kyang",
+      "shi 'pho dag las nyon mongs kun",
+      "nyon mongs can las gong ma min"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1154,
+      1159
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dag pa nyams pa cha mthun sogs",
+      "rnam bzhi de ni go rim bzhin",
+      "nyon mongs skye dang rang sa dang",
+      "gong dang zag med rjes mthun pa'o",
+      "nyams cha mthun phyogs mjug thogs su",
+      "gnyis dang gsum dang gsum dang gcig"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1188,
+      1191
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "sa brgyad rnam pa gnyis 'brel dang",
+      "gcig rgal song zhing 'ongs nas ni",
+      "ris mi mthun pa gsum par 'gro",
+      "thod rgal gyi ni snyoms 'jug yin"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1242,
+      1245
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bsam gtan gzugs med rang dang ni",
+      "'og sa'i rten can 'og dgos med",
+      "srid rtser 'phags pa'i ci yang med",
+      "mngon du byas nas zag pa zad"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1263,
+      1267
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gsum pa dmigs pa'i khyad par ni",
+      "sred bcas rang gi srid la dmigs",
+      "bsam gtan dge yul yod dgu yin",
+      "gzugs med dngos gzhi dge rnams kyi",
+      "spyod yul zag bcas 'og ma min"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1423,
+      1428
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mtshan med zhi ba'i rnam pa dang",
+      "stong nyid bdag med stong nyid du",
+      "'jug pa'o smon pa med pa ni",
+      "de las gzhan bden rnam pa can",
+      "dag dang dri ma med de dag",
+      "dri med rnam thar sgo gsum mo"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1504,
+      1511
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "stong nyid stong nyid ces la sogs",
+      "gzhan yang ting nge 'dzin gsum mo",
+      "gnyis ni stong dang mi rtag par",
+      "mi slob pa la dmigs pa yin",
+      "mtshan ma med pa mtshan med ni",
+      "zhi bar ma brtags zad pa la",
+      "zag bcas mi'i nang mi g.yo la",
+      "nyer bsdogs bdun ni ma gtogs so"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1559,
+      1564
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "dge ba'i bsam gtan dang po ni",
+      "bde 'gyur ting 'dzin bsgom pa yin",
+      "mig gi mngon shes mthong 'gyur 'dod",
+      "sbyor ba las byung blo dbye 'gyur",
+      "rdo rje lta bu'i bsam gtan mtha'i",
+      "gang yin de zag zad 'gyur bsgom"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1614,
+      1625
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "tshad med pa ni bzhi yin no",
+      "gnod sems la sogs gnyen po'i phyir",
+      "zhe sdang med byams snying rje yang",
+      "yid bde ba ni dga' ba yin",
+      "btang snyoms ma chags rnam pa ni",
+      "kye ma bde 'gyur sdug bsngal dang",
+      "dgar 'gyur sems can rnams snyam pa",
+      "spyod yul 'dod pa'i sems can rnams",
+      "dga' ba bsam gtan gnyis na yod",
+      "gzhan ni drug na kha cig lnga",
+      "de yis mi spong mi dag gi",
+      "nang du skyed do nges gsum ldan"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1816,
+      1827
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "rnam par thar brgyad dang po gnyis",
+      "mi sdug bsam gtan gnyis na yod",
+      "gsum pa mtha' na de ma chags",
+      "gzugs med mnyam bzhag dge rnams so",
+      "'gog pa'i snyoms bar 'jug pa'o",
+      "phrab phra ba'i mjug thogs su",
+      "rang gi dag dang 'og ma yi",
+      "'phags pa'i sems kyis de las ldang",
+      "dang po 'dod gtogs snang yul can",
+      "gang dag gzugs can min de dag",
+      "spyod yul gong dang rang gi sa'i",
+      "sdug bsngal sogs dang rjes shes phyogs"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      1936,
+      1939
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "zil gyis gnon pa'i skye mched brgyad",
+      "gnyis ni rnam thar dang po bzhin",
+      "gnyis ni gnyis pa bzhin no gzhan",
+      "sdug pa'i rnam par thar pa bzhin"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2088,
+      2095
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'gog pa bshad zin lhag ma ni",
+      "'dod chags bral dang sbyor bas thob",
+      "gzugs med ces bya khams gsum gyi",
+      "rten can lhag ma mi las skye",
+      "khams gnyis dag tu gzugs med pa",
+      "rgyu dang las kyi stobs kyis skyes",
+      "gzugs kyi khams su bsam gtan rnams",
+      "de dag dang chos nyid kyis kyang"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2149,
+      2158
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "yang dag rdzogs pa'i sangs rgyas zhal lung gi",
+      "bdud rtsi myang ba'i snyoms 'jug brgyad kyis skor",
+      "lung rigs rnam sad dpag bsam ljon pa las",
+      "skyes pa'i rin chen brgyan 'phreng da longs kye",
+      "bsam gzugs la brten ting 'dzin rnam thar dang",
+      "zil gnon zad par skye mched phul gyis gtam",
+      "rnam grol bdud rtsi'i gos 'dzin 'o ma'i mtsho",
+      "mkhos mchog dbyangs can rab bkra 'byung ba'i gnas",
+      "blo chen mes pos myang yang ma tshim mo",
+      "'khor 'das phun tshogs rin chen 'byung ba'i gnas"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2170,
+      2173
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "ston pa'i dam chos rnam gnyis te",
+      "lung dang rtogs pa'i bdag nyid do",
+      "de 'dzin byed pa smra byed pa",
+      "sgrub par byed pa kho na yin"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2327,
+      2330
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "bdag gis mngon pa'i chos 'di phal cher ni",
+      "kha che bye brag smra ba'i tshul grub bshad",
+      "nyes par zin gang de 'dir bdag gis nyes",
+      "dam chos tshul la thub rnams tshad ma yin"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2352,
+      2363
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "ston pa 'jig rten mig ni zum gyur cing",
+      "dbang gyur skye bo phal cher zad pa na",
+      "de nyid ma mthong rang dgar gyur pa yi",
+      "don rtogs rnams kyis bstan pa 'di dkrugs so",
+      "rang byung rang byung bstan pa gces 'dzin rnams",
+      "mchog tu zhir gshegs 'gro mgon med pa na",
+      "'doms med yon tan 'joms par byed pa yi",
+      "dri mas dga' mgur deng sang 'di na spyod",
+      "de ltar thub pa dag gi bstan pa ni",
+      "lkog mar srog phyin 'dra dang dri ma rnams",
+      "stobs dang ldan pa'i dus su rigs nas ni",
+      "thar pa 'dod pa dag gis bag yod byos"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2379,
+      2383
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'gro la ban pa sna tshogs dag",
+      "mnyam du mdzad pa'i sku de ni",
+      "thub pa'i sprul sku rgyun mi 'chad",
+      "de bzhin 'khor pa ji srid 'di'i",
+      "las ni rgyun mi 'chad par 'dod"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2397,
+      2409
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "rgyal bstan spyi dang tshe gcig sangs rgyas chos",
+      "rgyal ba gnyis pa'i mdo sngags bstan pa dang",
+      "phrad pa skal bzang rmad du byung snyam du",
+      "thos bsam bsgom pa'i snying po longs dang kyai",
+      "thub bstan lnga phrag drug pa'i zhe gcig par",
+      "slebs pas lhag ma'i tshul bsam blang dor la",
+      "dam chos sgron me bzung ba'i dus 'di ru",
+      "spyang krungs glen pa'i 'dam ka ma nor gces",
+      "snyigs ma'i dang tshul mthong nas mod bzhin du",
+      "gsong dang 'tshe ba'i rtog ngo'i dgra 'dre yang",
+      "grangs med gces pa'i ma dang phar byas tshul",
+      "yang yang som la snying rje sems bskyed rigs",
+      "dman pa'i regs can yin yang spyir 'khor ba"
+    ]
+  },
+  {
+    "text": "S19100E8.txt",
+    "lines_included": [
+      2412,
+      2437
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "yang yang bsam na nges 'byung bdag med lta",
+      "legs bsgom 'khor bar phyi phyag mi dga' 'am",
+      "rig chad dman pa'i gang zag yin 'gas kyang",
+      "rin chen gling nas stong log mi byed par",
+      "las ngan bshags dang tshogs bsags dad mos kyis",
+      "mngon mtho'i khang bzang brgyud na dga' 'am snyam",
+      "de ltar bro ba'i glu 'dra'i chos bshad mkhan",
+      "snyigs dus chos dang dam pa mang bsten kyang",
+      "rnam g.yeng rlung gis g.yo ba'i dge sbyong zhig",
+      "rang dang gzhan la tshig lab gros de lo",
+      "thub bstan sde snod kun gyi ma mo che",
+      "mdo dang mkhas pas lung mang rigs pa'i tshogs",
+      "dri med byed sa legs par gsal byas mod",
+      "nongs pa gang mchis bla ma lhag la 'chags",
+      "mi dman bsod nams kha ba dung lta bu",
+      "dkar ba gang des mkha' mnyam ma rnams kyi",
+      "sems rgyud chos la khos zhing thub dbang zhal",
+      "mthong kyang mi ngoms gsung bzhin sgrub gyur cig",
+      "gong 'og theg pa grub mtha'i them skas kyis",
+      "'gros tshul mang yang bla med byang chub kyi",
+      "snying po 'gro la khyab bdag rgyal rnams kyi",
+      "thugs bskyed bzhin du byang chub myur thob shog",
+      "lhun po rgya mtsho bdun gyi rkeng ching can",
+      "gling bzhi'i 'dab ma ji srid gnas kyi bar",
+      "legs bshad 'dis kyang thub bstan gsal byed kyi",
+      "nyi ma'i 'od bzhin snang bar gyur cig gu"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "text": "S05569E_RJE_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_SGROL_MA_PHYAG__TSAL_NYER_GCIG_GI_RNAM_BSHAD_An_Explanation_of__The_21_Prostrations_t.txt",
+    "lines_included": [
+      2,
+      5
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'gro kun srid mtsho las sgrol ba'i",
+      "rje btsun ma la phyag 'tshal nas",
+      "de nyid bstod pa'i tshigs su bcad",
+      "nyi shu rtsa gcig dbye bar bya"
+    ]
+  },
+  {
+    "text": "S05569E_RJE_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_SGROL_MA_PHYAG__TSAL_NYER_GCIG_GI_RNAM_BSHAD_An_Explanation_of__The_21_Prostrations_t.txt",
+    "lines_included": [
+      200,
+      207
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "rab 'byams rgyal ba kun gyi mkhyen brtse rnams",
+      "mdzes sdug lha mo'i gzugs kyis ngom pa gang",
+      "mar gad ljon pa bskyod pa'i zlos gar la",
+      "dad pa'i 'dren byed bung ba rab bkod de",
+      "nyi shu rtsa gcig 'dab 'phreng g.yo ba las",
+      "snying po sbrang rtsi'i zil dngar 'di blangs pas",
+      "mtha' dag 'gro 'di rgyal yum dge ma de'i",
+      "drin las chos sku'i dbyings la 'khrid gyur cig"
+    ]
+  }
+]

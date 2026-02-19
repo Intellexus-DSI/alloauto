@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Auto/Allo Classifier</title>
+    <script type="module">
+        import { env, pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.4.1';
+
+        let classifier;
+        let MAX_LEN = 512;
+
+        env.allowRemoteModels = false;
+        env.localModelPath = '.';
+
+        async function loadModel() {
+            document.getElementById("classify-btn").disabled = true;
+            document.getElementById("status").innerText = "🔄 Loading model...";
+            classifier = await pipeline('text-classification', './model', {
+                quantized: false,
+                revision: 'main',
+                local_files_only: true,
+            });
+
+
+
+            document.getElementById("status").innerText = "✅ Model loaded!";
+            document.getElementById("classify-btn").disabled = false;
+        }
+
+        function splitChunks(text) {
+            const chunks = text.split(/\s*\/+\s*/).map(s => s.trim()).filter(Boolean);
+            return chunks;
+        }
+
+        function confidenceColor(allo, auto) {
+            const r = Math.floor(255 * allo);
+            const g = Math.floor(255 * (1 - Math.max(auto, allo)));
+            const b = Math.floor(255 * auto);
+            return `rgb(${r},${g},${b})`;
+        }
+
+        function softmax(arr) {
+            const max = Math.max(...arr);
+            const exps = arr.map(x => Math.exp(x - max));
+            const sum = exps.reduce((a, b) => a + b, 0);
+            return exps.map(x => x / sum);
+        }
+
+        function nextFrame() {
+            return new Promise(resolve => requestAnimationFrame(resolve));
+        }
+
+        async function classifyInput() {
+            document.getElementById("classify-btn").disabled = true;
+
+            const input = document.getElementById("input").value;
+            const chunks = splitChunks(input);
+            const results = [];
+
+            const outputDiv = document.getElementById("output");
+            const heatmapDiv = document.getElementById("heatmap");
+            outputDiv.innerHTML = "";
+            heatmapDiv.innerHTML = "";
+
+            // 🔁 Show and reset progress bar
+            const progressContainer = document.getElementById("progress-container");
+            const progressBar = document.getElementById("progress-bar");
+            progressContainer.style.display = "block";
+            progressBar.style.width = "0%";
+
+            for (let i = 0; i < chunks.length; i++) {
+                const chunk = chunks[i];
+                try {
+                    const tokens = await classifier.tokenizer(chunk);
+                    //console.log("Tokens are ", tokens, "for chunk", i + 1, ":", chunk.substring(0, 50) + '...');
+                    const output = await classifier.model(tokens);
+                    const logits = output.logits.data;
+                    const [allo, auto] = softmax(Array.from(logits));
+                    results.push({ chunk, allo, auto });
+                } catch (e) {
+                    console.error(`❌ Error classifying chunk ${i + 1}:`, e);
+                    results.push({ chunk, allo: 0.5, auto: 0.5 });
+                }
+
+                // 🔁 Update progress bar
+                const progressPercent = ((i + 1) / chunks.length) * 100;
+                progressBar.style.width = `${progressPercent}%`;
+
+                // Give browser a chance to update the UI every 10 chunks
+                if (i % 10 === 0) {
+                    await nextFrame();
+                }
+            }
+
+            // 🔁 Hide progress bar after processing
+            progressContainer.style.display = "none";
+
+            results.forEach((r, i) => {
+                const color = confidenceColor(r.allo, r.auto);
+
+                const heatCell = document.createElement("a");
+                heatCell.href = `#chunk-${i}`;
+                heatCell.title = `Allo: ${r.allo.toFixed(2)}, Auto: ${r.auto.toFixed(2)}`;
+                heatCell.style = `background:${color}; width:10px; height:18px; display:inline-block; margin:1px; border-radius:2px;`;
+                heatmapDiv.appendChild(heatCell);
+
+                const div = document.createElement("div");
+                div.id = `chunk-${i}`;
+                div.style = `background:${color}; padding:10px; margin:6px; border-radius:4px;`;
+                div.innerHTML = `
+          <div><strong>Chunk ${i + 1}</strong> — Allo: ${r.allo.toFixed(2)}, Auto: ${r.auto.toFixed(2)}</div>
+          <pre style="white-space:pre-wrap">${r.chunk}</pre>
+        `;
+                outputDiv.appendChild(div);
+            });
+
+            document.getElementById("classify-btn").disabled = false;
+        }
+
+
+        window.addEventListener('load', loadModel);
+        window.classifyInput = classifyInput;
+    </script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        #heatmap {
+            margin: 10px 0 20px 0;
+            padding: 8px;
+            background: #eee;
+            border-radius: 4px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            font-family: monospace;
+        }
+
+        button {
+            margin-top: 8px;
+            padding: 6px 12px;
+            font-size: 1em;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Tibetan Autochthonous vs Allochthonous Classifier v2</h2>
+    <p id="status">Loading model...</p>
+    <textarea id="input" rows="10" placeholder="Paste Wylie-transcribed text here..."></textarea><br>
+    <button id="classify-btn" onclick="classifyInput()">Classify</button>
+    <div id="progress-container"
+        style="height: 6px; background: #ccc; border-radius: 3px; margin-top: 10px; display: none;">
+        <div id="progress-bar" style="height: 100%; width: 0%; background: #3b82f6; border-radius: 3px;"></div>
+    </div>
+
+    <div id="heatmap"></div>
+    <div id="output"></div>
+</body>
+
+</html>

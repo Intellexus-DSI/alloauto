@@ -1,0 +1,68 @@
+[
+  {
+    "text": "S05442_RNAM__GREL_GYI_BSDUS_DON_THAR_LAM_GYI_DE_NYID_GSAL_BYED_W29194_05CA.txt",
+    "lines_included": [
+      2,
+      6
+    ],
+    "probability": 0.9,
+    "meter": 9,
+    "lines": [
+      "'gro kun thar pa'i bde la 'god mdzad pa'i",
+      "bla ma lhar bcas gtsug gis gus btud nas",
+      "gsung rab rgya mtshor 'jug pa'i sgo gcig pu",
+      "tshad ma rnam 'grel don bsdus bri bar bya",
+      "bstan bcos rnam 'grel 'di la bzhi ste"
+    ]
+  },
+  {
+    "text": "S05442_RNAM__GREL_GYI_BSDUS_DON_THAR_LAM_GYI_DE_NYID_GSAL_BYED_W29194_05CA.txt",
+    "lines_included": [
+      122,
+      126
+    ],
+    "probability": 0.7,
+    "meter": 9,
+    "lines": [
+      "mi ltos pa la gnod pa bstan pa dang",
+      "byas mi rtag don gzhan yin pa la gnod pa'o",
+      "gnyis pa 'brel pa nges byed bshad pa la",
+      "bsgrub rtags kyi 'brel pa nges byed dang",
+      "ma dmigs pa'i rtags kyi 'brel pa nges byed do"
+    ]
+  },
+  {
+    "text": "S05442_RNAM__GREL_GYI_BSDUS_DON_THAR_LAM_GYI_DE_NYID_GSAL_BYED_W29194_05CA.txt",
+    "lines_included": [
+      5299,
+      5306
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "rnam dpyod brtson pa'i skal ba mi dman zhing",
+      "rnam grol don gnyer mkhas pa'i skye bo yis",
+      "gsung rab mtha' dag blta ba'i sgo gcig pu",
+      "rnam 'grel mdzad pa'i lugs bzang don bsdus byas",
+      "de ltar bsags pa'i dge ba ci yod des",
+      "srid pa'i btson rar 'khyams pa'i ma rnams kun",
+      "yang dag rigs pa'i lam bzang 'dir zhugs te",
+      "kun mkhyen rgyal ba'i grong khyer 'jug par shog"
+    ]
+  },
+  {
+    "text": "S05442_RNAM__GREL_GYI_BSDUS_DON_THAR_LAM_GYI_DE_NYID_GSAL_BYED_W29194_05CA.txt",
+    "lines_included": [
+      5313,
+      5316
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "phan bde'i 'byung gnas rgyal bsten yongs 'du'i ljon",
+      "rab rgyas 'gro kun thar mchog 'bras bzang la",
+      "spyod phyir bkra shis lhun grub chos grwa cher",
+      "chos sbyin 'dzad med dal 'gro'i rgyun 'di spel"
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "text": "S05529E-2_TSAD_MA_RNAM__GREL_LEGS_BAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_BA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_TSAD_MA_GRUB_PA_I_LE_U_I_RNAM_B.txt",
+    "lines_included": [
+      403,
+      406
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "da ltar gyi rig pa 'di bzhin",
+      "tha mal pa'i 'chi sems chos can",
+      "rig pa phyi ma mtshams sbyor te",
+      "chags bcas kyi rig pa yin pa'i phyir"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-2_TSAD_MA_RNAM__GREL_LEGS_BAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_BA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_TSAD_MA_GRUB_PA_I_LE_U_I_RNAM_B.txt",
+    "lines_included": [
+      1314,
+      1317
+    ],
+    "probability": 0.75,
+    "meter": 9,
+    "lines": [
+      "skye ba snga phyi med pa'i phyir zhe na",
+      "skyes ma thag pa'i 'dod chags sogs chos can",
+      "rigs 'dra snga ma sngon du song ste",
+      "goms pa las gsal bar mthong ba'i phyir"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-2_TSAD_MA_RNAM__GREL_LEGS_BAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_BA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_TSAD_MA_GRUB_PA_I_LE_U_I_RNAM_B.txt",
+    "lines_included": [
+      1695,
+      1698
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "sngon gyi 'du byed kyi nus pa zad nas",
+      "srid pa gzhan mtshams mi sbyor ba'i phyir",
+      "theg chen dgra bcom pa gang de chos can",
+      "srid par gnas pa nyes med nyid yin te"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05529E-2_TSAD_MA_RNAM__GREL_LEGS_BAR_BSHAD_PA_ZHES_BYA_BA_THAMS_CAD_MKHYEN_BA_DGE__DUN_GRUB_KYIS_MDZAD_PA_LAS_TSAD_MA_GRUB_PA_I_LE_U_I_RNAM_B.txt",
+    "lines_included": [
+      2060,
+      2063
+    ],
+    "probability": 0.75,
+    "meter": 7,
+    "lines": [
+      "tha dad shes pas grol ba dgag",
+      "yid 'byung ba tsam gyis grol ba dgag",
+      "de dag 'khor ba yin par bstan",
+      "des na 'jig lta spang bar gdams pa'o"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

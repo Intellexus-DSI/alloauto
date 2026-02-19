@@ -1,0 +1,977 @@
+{?RTF1?ANS-i?ANS-iCPG1252?CXCXARTF1404?CXCXASUBRTF130 {?FXNTTBL?F0?FSW-iSS?FCHARSET0 hELVET-iCA|} {?CXLXRTBL|?RED255?GREEN255?BLUE255|} ?MARGL1440?MARGR1440?V-iEWW10800?V-iEWH8400?V-iEWK-iND0 ?PARD?TX720?TX1440?TX2160?TX2880?TX3600?TX4320?TX5040?TX5760?TX6480?TX7200?TX7920?TX8640?PARD-iRNATURAL?PART-iGHTENFACTXR0 ?F0?FS24 ?CF0 ! / /
+sgrub thabs rgya mtsho'i mngon rtogs dang rjes gnang ? gi chog bsgrigs dpag bsam ljon pa zhes bya ba bzhugs so / /
+? ? @## / /
+na maHswa ra swastyai tsa gu ru many+dzu g+ho She ? b+h+yaH bla ma mchog gsum yi dam lha tshogs dang / /
+rgyal ba gnyis ? pa yab sras brgyud pa'i tshogs / /
+'gro ba'i re skong tsin+ta ma ? Ni dang / /
+? ? bstan bsrung rgya mtshor gus bas phyag byas te / /
+rdo rje rnal ? 'byor ma yis bka' gnang bzhin / /
+mkhas grub du mas mngon mdzad ? 'phrin las bzhi'i / /
+gter gyur sgrub thabs rgya mtsho'i rjes ? gnang gi /
+? ? chog sgrigs dbag bsam ljon pas bsam kun ster / /
+de la 'dir ? sgrub thabs rgya mtshor grags pa'i rjes gnang gi cho ga la ? sngon 'gro dngos gzhi rjes gsum las /
+dang po ni /
+gnas bkra ? shis par ? ? mchod stegs 'tshams pa'i steng du /
+many+dzi'i khar maN+Dal la ? dri'i thig le lha grangs dang mthun pa byed dgos /
+de la rdo ? rje gdan gtso 'khor gsum pa'i dri'i thig le dang /
+tshom bu rdul ? tshon nam 'bras ? ? @## / /
+sogs kyis bkod /
+de'i mthar mchod yon /
+zhabs bsil /
+me ? tog /
+bdug spos /
+mar me /
+dri chab /
+zhal zas rnams kyis bskor /
+? shar mdun drang por 'bul gtor ? ? zlum po dkar chog rgyan gyis spras pa dang /
+chos skyong dang ? gzhi bdag gi dkar gtor rnams dang /
+gtor gsol dang /
+zhal zas /
+? me tog /
+spos /
+mchod yon sogs gso ba'i chas dang /
+gtor ma'i ? ? chab sogs tshang ba /
+slob dpon gyi mdun cog steng du ting shag ? dang bla med skabs rdo dril dgos /
+'thor nas 'bras sam nas ting ? sogs snod legs par bkang ba dang /
+slob mar bkye bsdu'i nas ? ? maN+Dal sogs mthong brgyud rnam par dag pa'i phyag len ltar sta ? gon bya'o / /
+gnyis pa dngos gzhi la /
+bdag bskyed bzlas pa dang ? bcas pa bya ba dang /
+mdun bskyed bsgrub cing mchod bstod dang ? ? brtan byed bzlas pa bya ba dang /
+gtor ma 'bul ba dang /
+? rjes gnang ji ltar byed tshul dang /
+sgrub thabs so so'i mngon ? rtogs mi 'dra ba bye brag tu bshad pa dang bzhi /
+dang po ni /
+? slob dpon gyis las bum du /
+skad cig gis bgegs mthar byed sngon ? po ? ? zhal gcig phyag gnyis pa /
+phyag g.yas sna tshogs rdo rje 'phyar ? zhing /
+g.yon sdigs mdzub can /
+khro bo'i rgyan gyis brgyan pa ? bskyed /
+gnas gsum byin gyis brlab /
+ye shes pa spyan drangs ? bstims mchod bstod bzlas pa /
+oM a mr-i te hUM phaT ? ? dang rtsa sngags bzlas shing /
+gtor ma phul nas chur bstims pa ? bsangs chu rgyud ltar ram /
+man ngag ltar na chu steng du zla ? bar sngags bkod nas bzlas pa byed /
+de bsangs chu sgrub tshul ? bsdus pa'o / /
+mchod pa rnams la bsangs chu gtor la /
+? ? oM a mr-i te hUM phaT /
+zhes pas bsangs /
+oM swa b+ha wa ? shud+d+ha sarba d+harmA swa b+ha wa shud+d+ho nyahaM /
+stong par ? sbyangs /
+stong pa'i ngang las oM las rin po che'i snod yangs ? shing rgya che ba rnams kyi nang du oM 'od du zhu ba las ? byung ba'i lha rdzas las grub pa'i ? ? mchod yon zhabs bsil me tog bdug spos snang gsal dri chab zhal ? zas rol mo rnams dwangs shing thogs pa med pa nam mkha' dang ? mnyam par gyur par bsam /
+so so'i phyag rgya bya zhing /
+oM ? badzra ar+g+haM AHhUM /
+oM badzra pA tyaM AHhUM /
+oM ? ? badzra puSh+pe AHhUM /
+de bzhin du /
+d+hu pe /
+a lo ke /
+gan+d+he /
+? nai wi tya /
+shap+ta'i bar thog mtha' sbyar bas brlab /
+mthar rol ? mo dkrol /
+oM badzra d+harmA ra Ni ta sogs lan gsum gyis byin ? dbab /
+spros pa byed na rol chen yang byed /
+bdag dang ? @# / /
+mar gyur 'gro ba nam mkha' dang mnyam pa'i sems can ? thams cad dus 'di nas ji srid byang chub snying por mchis kyi ? bar du dpal ldan bla ma dam pa rnams la skyabs su mchi'o /
+? /
+rdzogs pa'i sangs rgyas ? ? rnams la skyabs su mchi'o / /
+dam pa'i chos rnams la skyabs su ? mchi'o / /
+'phags pa'i dge 'dun rnams la skyabs su mchi'o / /
+zhes ? lan gsum sogs kyis skyabs 'gro dang /
+sems can thams cad kyi ? don du sangs rgyas thob ? ? par bya /
+de'i ched du lha 'di dang 'di'i sgom bzlas bya'o ? snyam du bsam la /
+dkon mchog gsum la bdag skyabs mchi /
+sogs ? lan gsum mam bdun sogs brjod la sems bskyed /
+rang nyid skad ? cig gis thub pa rdo rje gdan du ? ? gsal ba'i thugs kar zla ba'i steng du b+h+ruM las 'od 'phros ? thub pa rdo rje gdan gtso 'khor gsum la sangs rgyas dang byang ? chub sems dpa'i tshogs kyis bskor ba mdun gyi nam mkhar spyan ? drangs /
+bar bsam la /
+oM badzra sa mA dzaH zhes ? ? sngags rgyas spyan drangs /
+oM shAkya mu ni sa pa ri wA ra ? oM badzra ar+g+haM swAhA /
+swAhA mchod ces pa yin pas /
+bra ? ti ts+tsha med kyang chog /
+de bzhin du /
+shap+ta'i bar gyis mchod /
+? dkon mchog gsum la bdag skyabs mchi /
+sogs gsum ? ? gyis sems bskyed /
+sems can thams cad bde ba dang bde ba'i rgyu ? dang sogs kyis tshad med bzhi bsgom /
+oM swa b+ha wa sogs brjod ? de /
+rang gi phung khams skye mched thams cad bden par mi dmigs ? par stong pa nyid du gyur /
+stong pa'i ? ? ngang las phung po'i bdud ser po nyon mongs bdud dmar po ? 'chi bdag bdud nag po lha'i bu'i bdud sngon po rnams kyi steng ? du seng ges bteg pa'i rin po che'i khri'i steng du padma dang ? rdo rje dang a las zla ba'i dkyil 'khor gyi steng du hUM las ? rdo rje ser po hUM ? ? gis mtshan pa /
+de las 'od 'phros /
+'phags pa mchod /
+sems can gyi ? don byas /
+slar 'dus yongs su gyur pa las /
+rang nyid thub pa ? rdo rje gdan sku mdog gser btso ma'i mdog can /
+zhal gcig phyag ? gnyis pa g.yas sa gnon dang ? ? g.yon mnyam bzhag gi phyag rgya can /
+zhabs rdo rje skyil krung ? gis bzhugs pa /
+na bza' chos gos ngur smrig gsol zhing mtshan ? bzang po sum cu rtsa gnyis dang /
+dpe byad bzang po brgyad cus ? spras pa /
+tshangs par spyod pa'i cha lugs can /
+? ? de'i g.yas su byams pa ser po g.yas rnga yab /
+g.yon klu shing ? gi yal ga me tog dang bcas pa 'dzin pa /
+g.yon du spyan ras ? gzigs dkar po g.yas rnga yab dang g.yon padma dkar po 'dzin ? pa /
+gnyis ka'ang mnyam stabs kyis ? ? bzhengs shing rin po che'i rgyan dang dar sna tshogs kyi na ? bza' can /
+bcom ldan 'das kyi zhal la blta zhing bzhugs pa'i ? spyi bor oM dkar po / /
+mgrin par AHdmar po / /
+thugs kar hUM ? sngon po / /
+thugs ka'i hUM las 'od 'phros /
+? ? phyogs bcu'i sangs rgyas byang sems thams cad dam tshig gsum ? bkod gtso 'khor gsum gyi rnam par oM badzra sa mA dzaH zhes ? sngags dang phyag rgyas spyan drangs /
+de nyid la /
+oM shAkya ? mu ni sa pa ri wA ra badzra ar+g+haM swAhA /
+nas /
+shap+ta swA ? ? @# / /
+hA'i bar gyis mchod /
+dzaHhUM baM hoHgnyis su med ? par gyur /
+par bsam /
+slar yang thugs ka'i sa bon las 'od zer ? 'phros /
+dbang gi lha rigs lnga 'khor dang bcas pa oM badzra ? sa mA dzaH zhes sngags dang phyag rgyas ? ? spyan drangs /
+oM pany+tsa ku la sa pa ri wA ra ar+g+haM /
+sogs ? kyis dbang gi lha la mchod /
+de bzhin gshegs pa thams cad kyis ? bdag la mngon par dbang bskur du gsol /
+zhes gsol ba btab pas /
+? dbang gi lha rnams kyis oM badzra b+ha ? ? ba a b+hi Shiny+tsa hUM /
+zhes gsungs shing bum pa'i chus spyi ? bo nas dbang bskur /
+sku gang /
+dri ma dag /
+chu'i lhag ma yar ? lud pa las gtso bo la mi bskyod pa dang /
+byams pa la rnam ? snang /
+spyan ras gzigs la 'od dpag med kyis dbu brgyan ? ? par gyur /
+par bsam la /
+thugs kar sa bon gyi mthar sngags kyi ? phreng ba mar me lta bus bskor pa las 'od zer 'phros /
+'phags ? pa mchod /
+sems can gyi don byas /
+sangs rgyas byang sems rnams ? kyi thugs rje byin rlabs nus mthu thams ? ? cad 'od zer gyi rnam par spyan drangs /
+rang la thim pas rang ? sangs rgyas byang sems thams cad dang thugs rje sogs mnyam par ? byas byung snyam du bsam /
+oM AHbadzra hUM swAhA /
+zhes pa ? brgya 'am nyer gcig sogs bzlas pa'i mthar spro na yig ? ? brgyas brtan par byas /
+thal mo sbyar la /
+bdag dang sems can ? thams cad la mchog thun mong gi dngos grub ma lus pa bstsal tu ? gsol /
+zhes 'dod don la gsol ba gdab cing /
+'od zer gyis bsdu ba ? mi legs /
+grwa lnga lta bu gtso 'khor ? ? gyi bzlas pa'i lung so sor dgos pa dang de 'dra byed pa ? nges can mi dgos te /
+bdag mdun tha dad du bsgrub pa'o /
+! ? /
+gnyis pa ni /
+mdun gyi maN+Dal tshom bu dang bcas pa /
+bsangs ? sbyangs /
+stong pa'i ngang las phung po'i bdud ser po /
+zhes ? sogs ? ? nas| yongs su gyur pa las thub pa rdo rje gdan sku mdog ser ? po /
+nas /
+badzra sa mA dzaHzhes pa'i bar bdag bskyed ltar bya /
+? ting shag brdung zhing spro na /
+ma lus sems can kun gyi mgon ? gyur cing / /
+zhes sogs tshigs bcad kyis sam /
+bsdu na ? ? sngags dang phyag rgya tsam gyis spyan drangs /
+ye shes pa ? gzhug pa nas rigs bdag gis rgyas gdab pa'i bar gong bzhin no /
+? /
+mchod pa bsangs sbyangs /
+byin rlabs /
+phyag rgya dang bcas /
+? oM shAkya mu ni sa pa ri wA ra sngon du 'gro ba'i chu gnyis ? nyer ? ? spyod rol mo bcas kyis mchod /
+ting shag brdungs /
+thabs mkhas ? thugs rjes shAkya'i rigs su 'khrungs /
+sogs tshigs bcad gcig ? gis bstod /
+mdun bskyed kyi thugs kar sa bon gyi mthar sngags ? phreng gis bskor pa las 'od zer 'phros ? ? don gnyis byas par bsam la /
+gong ltar bzlas pa ci rigs byas /
+? de'i bar la mchod g.yog pas gtor ma la chab bran /
+gtor ma ? bsangs sbyangs /
+stong pa'i ngang las oM las rin po che'i snod ? yangs shing rgya che ba'i nang du gtor ma kha dog dri ? ? ro nus pa phun sum tshogs pa ye shes kyi bdud rtsi'i rgya mtsho ? chen por gyur /
+par bsam la /
+oM AHhUM /
+lan gsum gyis byin ? gyis rlabs /
+rdo rje thal mo kha gyen du bstan la /
+oM ? AHbadzra hUM swAhA'i mthar /
+a ka ro sogs lan gsum gyis ? ? @# / /
+gtor ma 'bul ba 'am /
+mtshan sngags mthar btags pas ? kyang phul chog /
+sngar ltar mchod bstod /
+bdag dang rdo rje ? slob ma sogs sems can thams cad la byin gyis rlabs shing dngos ? grub thams cad stsal tu ? ? gsol /
+zhes 'dod don la gsol ba gdab cing me tog gtor rol mo ? bya /
+snga ma las rang gi thugs ka'i sa bon las chos skyong ? ba'i bsrung ma thams cad /
+badzra sa mA dzaHsa spyan drangs /
+? mdun du bzhugs par dmigs la gtor ma sngar ? ? ltar brlab /
+chos skyong rnams kyis gsol bar bsam la /
+oM ? d+harmA pA la sa pa ri wA ra i daM pa liM ta kha kha khA ? hi khA hi /
+lan gsum gyis bsngos la 'dod don la 'phrin las ? bcol /
+gzhi bdag gtor ma bsangs sbyangs /
+stong pa'i ngang ? ? las zag med kyi bdud rtsi'i rgya mtshor bsam la /
+oM na ? maHsarba ta thA ga ta a wa lo ki te oM saM b+ha ra saM b+ha ? ra hUM /
+gsum dang /
+a ka ro gsum gyis bsngos la /
+mchod sbyin ? gyi gtor ma 'di 'dzam gling skyong ba spyi dang bod skyong ? bstan ma ? ? bcu gnyis dang yul phyogs dgon sde 'di dag bsrung ba'i lha klu ? gnod sbyin sogs 'byung po dkar phyogs la dga' ba rnams la 'bul ? gyi /
+las dang bya ba ci byed kyang ko long phrag dog sogs ma ? mdzad par /
+'phrin las gnas ? ? po bzang po mdzod /
+bdag gi bsam pa'i stobs dang ni / /
+sogs ? brjod la gshegs par bsam /
+! /
+gsum pa rjes gnang byed tshul ni /
+? slob ma rnams phyi nas khrus dang nang du phyag byas gral la ? gnas pa la /
+las kyi rdo rjes ? ? ma tog bkye bsdu grub rjes snyim pa me tog dang bcas te ? 'khod pa la /
+slob dpon gyis byams snying rje bskyed cing /
+phun ? tshogs bzhir gsal ba'i sgo nas /
+'o lags so snod kyi skyon gsum ? spangs 'du shes drug bsten pa spyi dang 'dra /
+phun tshogs ? ? bzhi'i sgo nas gsan dgos pas phun tshogs bzhi ni /
+gnas 'di yang ? tha mal ba ma yin par ye shes rang snang las grub pa'i 'og min ? stug po bkod pa lta bu la lha'i gzhal yas khang gru bzhi sgo ? bzhi rgyan thams cad kyis spras pa dang /
+ston pa ? ? phun sum tshogs pa bla ma rdo rje 'chang sogs skyabs de'i lhar ? dmigs pa dang /
+'khor phun sum tshogs pa khyed rang rnams sangs ? rgyas rigs lnga byang sems sogs kyi rnam par dang /
+mdzad pa ? phun sum tshogs pa gdul bya gang 'dul gyi sprul pa'i ? ? tshogs 'phra bzhin par dmigs nas ched du bya ba sems can thams ? cad kyi don du bla na med pa'i sangs rgyas kyi go 'phang thob ? par bya /
+de'i ched du yi dam gyi lha 'di'i rjes su gnang ba ? gsan snyam pa gyis la gsan par zhu /
+de la gsan bya'i ? ? chos ni mnyam med thub pa'i dbang pos dang por thugs bskyed /
+? bar du grangs med gsum du tshogs bsags /
+mthar 'og min du longs ? spyod rdzogs pa'i skur sangs rgyas /
+'dzam gling bye ba phrag ? brgyar shAkya thub pa bye ba phrag brgya ri ? ? rab kyi rtser lha'i gzhal yas khang du rgyud sde sna tshogs ? gsungs pa grub chen so so'i lugs mang po yod pa las /
+'di ni ? 'jam dpal rtsa rgyud las /
+yi ge a ming bdag nyid can / /
+ston ? pa'i bstan pa gces 'dzin byed / /
+ces ? ? @# / /
+lung bstan pa ltar a b+h+ya ka ra gup+ta zhes grags pa ? dang /
+sku tshe de la'ang rdo rje sems dpas byin gyis brlabs ? shing ye shes kyi mkha' 'gro mas mngon sum du lung bstan cing /
+? phreng ba skor gsum dang /
+sgrub ? ? thabs bsdus pa rgya mtshor grags pa 'di sogs rtsom par bskul ba ? yin te /
+man snye las /
+phal cher mgon po de yis bdag /
+byin gyis ? brlabs pa de gsung gi /
+don de rang nyid gsal smra ste / /
+dbul ? po la ni mi sbyin no / /
+gzhan ? ? yang rmi lam du mthong ba'i / /
+rje btsun btsun mos bskul pa'i ? phyir / /
+zhes gsungs pa lags par gda' /
+rjes gnang gang nas ? bshad snyam na /
+spyi rgyud las /
+slob ma lha yi rigs mthong ba /
+? /
+dbang ni rnam pa bzhi yin no / /
+zhes ? ? gsungs pas dbang bzhi'i dang po ni /
+slob ma snod rung du byed ? pa'i dbang chen dang /
+dbang gnyis pa me tog phog pa'i lha'i ? dkyil 'khor du bum par sngags bzlas nas dbang bskur ba ste /
+? snar thang brgya rtsa lta bu nus pa bskyed pa'i dbang du ? ? grags /
+dbang gsum pa ni /
+sems rgyud gdon gyis rlams pa zhi ? ba'i phyir du drag po'i dkyil 'khor du dbang bskur ba dang /
+? dbang bzhi pa 'byor pa rgyas par byed pa'i dbang lha mo dpal ? gyi dkyil 'khor du dbang bskur pa rkyal srid ? ? sogs 'dod pas yin par bshad bas /
+chos ldan rab 'byor gyis ? gsang 'dus dbang bshad du de dag rjes gnang yin gsungs bas na /
+? rjes gnang ni slob ma la yon tan ma skyes ba skyed pa dang /
+? skyes pa gong 'phel byed ba dang /
+? ? phyi nang gi bgegs zhi ba dang /
+dpal dang 'byor pa skyed ? cing 'phel ba'i don du rjes gnang byed pa yin gyi /
+la las saM ? b+hu Ta las /
+dbang dang bka' gnang thob nas ni /
+zhes pa'i bka' ? gnang lha'i rjes gnang la byed pa mi rung ste /
+de bla mas ? ? slob mar sems can gyi don byed par tshig gis ster pa yin no /
+? /
+de yang bod du byung ba'i sgrub thabs kun las btus ba rgyas ? 'bring bsdus gsum las /
+dang po ni /
+sgrub thabs rgya mtshor ? grags pa a b+h+yas sngon gyi paN grub chen po so so'i ? ? thugs bzhed kyi sgrub yig gnang ba sna tshogs phyogs gcig tu ? bsdus pa yar lung lo tsA ba grags pa rgyal mtshan gyis bsgyur ? ba 'di la sgrub thabs gzungs bcas pa nyis brgya dang bzhi bcu ? zhe gnyis yod cing /
+rjes gnang mi dgos pa'i ? ? sgrub thabs dang gzungs bco brgyad /
+rjes gnang dang 'brel ba ? nyis brgya dang nyi shu rtsa bzhi la rjes gnang brgya dang zhe ? gcig byas te /
+lha dang sku mdog dang phyag mtshan dang sngags ? rnams gcig na sgrub thabs mang po la'ang rjes gnang ? ? gcig gis chog /
+lha dang sku mdog phyag mtshan sngags rnams mi ? gcig na rjes gnang dgos te /
+gshin rje gshed dmar dang dgra nag ? bzhin /
+sngags mi gcig na lha dang sku mdog zhal phyag grangs ? gcig kyang rjes gnang so sor bya ste /
+? ? spyan ras gzigs ha la ha la bzhin dang /
+sher phyin ser mo ? phyag gnyis ma bzhin no / /
+gnyis pa 'bring po ni /
+pa tsha ba lo ? tsA ba nyi ma grags kyis bsgyur ba'i sgrub thabs phyed dang ? nyis brgya pa zhig yod kyang lung dang rjes gnang dong sang mi ? @# / /
+snang| dkon mchog rjes dran mgor bkod pa gcig go /
+gsum ? pa bsdus pa ni /
+pa ri lo chen gyis rdo rje gdan pa che chung ? dang d+ha byang chub sems dpa' dang /
+shi la a ka ra dang /
+bai ro ? tsa na rak+Shi ta dang lnga la zhus ? ? shing| sgrub thabs de re'i gsham na 'gyur gyi kha byang yod ? cing /
+sgrub thabs dgu bcu go gnyis la rigs mthun sdebs pas rjes ? gnang bdun cu don dgu yod do / /
+dpe rnying la lar lotsA ba gzhan ? gyis bsgyur ba bsnan nas sgrub thabs ? ? yang brgya byas mod kyang /
+pa ri'i 'gyur min no / /
+de dag las ? 'dir rgyas pa paN chen a b+h+ya'i sgrub thabs rgya mtsho'i thub ba ? rdo rje gdan gyi sgrub thabs gsum gyi rjes gnang byed pa yin ? pas /
+slob dpon gyi bya ba rnams grub zin /
+khyed rang ? ? rnams kyi bya ba la /
+sngon 'gro /
+dngos gzhi /
+rjes gsum las /
+dang ? po maN+Dal dbul zhing gsol ba gdab ba dang /
+rgyud dag par byed ? pa'i sdom bzung /
+thun mong ma yin pa'i gsol 'debs gsum las /
+dang ? po phun tshogs bzhi ? ? ldan gyi dad mos sgo nas maN+Dal 'bul bar zhu /
+maN+Dal phul grub ? nas /
+phyag snyim pa me tog dang bcas gsol 'debs 'di'i rjes zlos ? lan gsum mdzod /
+rdo rje 'dzin pa dgongs su gsol / /
+bdag ni 'gro ? la phan don du / /
+brtse chen ? ? khyod la gsol 'debs kyi / /
+ma lus rjes gnang stsal tu gsol /
+? /
+gnyis pa ni /
+mdun gyi nam mkhar thub pa rdo rje gdan gtso 'khor ? gsum la sangs rgyas byang sems kyis bskor ba sprin gyi phung po ? lta bur mos la /
+de'i spyan sngar ? ? sdig pa bshags pa sogs bdun rnam dag bgyi snyam pas 'di'i ? rjes zlos lan gsum mdzod /
+dkon mchog gsum la nas /
+'grub par shog ? /
+gsum byas /
+gsum pa thun mong ma yin ba'i gsol ba 'debs pa 'di'i ? rjes zlos lan ? ? gsum mdzod /
+dus gsum sangs rgyas thams cad kyi ngo bo bla ma dam ? pas bdag la thub pa rdo rje gdan gtso 'khor gsum pa'i sku gsung ? thugs kyi rjes gnang ma lus pa stsal tu gsol /
+gnyis pa dngos ? gzhi la /
+sku'i dang gsung gi dang ? ? thugs kyi rjes gnang dang gsum las /
+thog mar sku'i rjes su gnang ? ba'i slad du dmigs pa 'di bzhin mdzod /
+slob dpon dang mdun ? bskyed kyi thugs ka'i 'od zer nyi ma lta bus khyed rang lus 'ja' ? 'od du dag cing 'od gsal stong par mos pa ? ? gyis /
+oM swa b+ha wa nas /
+haM /
+snang srid 'khor 'das kyi bsdus ? pa'i chos thams cad rang bzhin gyis dag pa 'od gsal stong pa ? nyid du gyur /
+stong pa'i ngang las nas /
+gnas gsum byin gyis ? brlabs ba'i bar bdag bskyed ltar /
+thugs ? ? kar hUM sngon po rnams gsal chem mi byung bar mos /
+slob dpon ? gyi thugs ka'i sa bon gyi 'od zer gyis sangs rgyas byang sems ? thams cad thub pa rdo rje gdan gtso 'khor gyi rnam pa tshad med ? grangs med pa spyan drangs /
+khyed rnams kyi sku ? ? lus la thim /
+de bzhin du slob dpon mdun bskyed dang bcas pa'i ? thugs ka nas kyang thub pa rdo rje gdan gtso 'khor gsum gyi sku ? che ba ri rab tsam /
+'bring bor phran tsam /
+chung ba rdul phran ? tsam tshad med grangs med dpag tu med pa kha ? ? @# / /
+pa bu yug 'tshub pa ltar spyi bo sogs ba spu'i bu ga ? dbang po'i sgo thams cad nas sib sib thim pa'i mos pa mdzod /
+rol ? mo bya zhing /
+oM AHbadzra hAM swAhA'i mthar /
+oM badzra a ? be sha ya AHAHAHdzaHhUM baM hoHzhes ? ? yang yang brjod pas gnyis su med par bstim pas /
+des ni /
+thub pa ? rdo rje gdan gtso 'khor rnams kyi sku'i rjes su gnang ba thob /
+? khyed rang rnams kyi skye ba thog ma med pa nas lus kyi sgo nas ? bsags pa'i sdig sgrib thams cad sbyangs /
+thub ? ? pa rdo rje gdan gtso 'khor rnams kyi sku'i byin rlabs zhugs /
+de ? la brten nas lus lha skur bsgom pa dang sku'i 'phrin las mtha' ? dag sgrub par dbang zhing 'bras bu sangs rgyas kyi gzugs sku ? 'grub pa'i skal pa can du byas so / /
+gsung gi ? ? rjes gnang gi slad du slob dpon thub pa rdo rje gdan du gsal ? ba'i thugs kar hUM yig gi mthar sngags phreng gis bskor ba las ? sngags kyi phreng ba mar me gcig las gnyis chad kyi tshul du ? byung zhal nas thon /
+khyed rang rnams thub pa rdo rje ? ? gdan gyi skur gsal ba'i zhal du zhugs /
+thugs ka'i hUM yig gi ? mthar g.yas skor du 'khod par mos la sngags 'di'i rjes zlos lan ? gsum mdzod /
+sngags lan gsum sogs brjod pa'i mthar /
+dang po dam ? tshig sems dpa'i ? ? tshul| gnyis pa ye shes sems dpa'i tshul /
+gsum pa phyin chad kyis ? brtan par mdzad par mos la slob dpon la me tog phul zhing /
+skal ? ba phun tshogs drug dang ldan pa'i sngags de 'dzin 'dod pas phun ? tshogs drug ldan de ? ? bdag la stsol cig snyam du gsol ba 'debs pa 'di'i rjes ? zlos mdzod /
+bcom ldan bdag gis bzung lags kyi / /
+bcom ldan bdag ? la 'go par mdzod / /
+lan gsum gsol ba btab pas khyed rang rnams ? pas phul ba'i me tog gi phreng ? ? ba de sngags kyi phreng ba dang dbyangs gsal gyi rang bzhin du ? byas te khyed rang rnams kyi spyi bor bzhag pas thugs ka'i ? sngags phreng la thim pas byin rlabs phun tshogs thob par mos pa ? mdzod /
+bcom ldan bdag gis stsal lags kyi / /
+'di la ? ? 'go bar mdzad du gsol / /
+sngags kyi dngos grub stsal tu gsol /
+? /
+brtul zhugs brtan par mdzad du gsol / /
+gsum brjod nas /
+rdo rje ? slob ma 'di rnams kyi rgyud la bcom ldan 'das rdo rje gdan gtso ? 'khor rnams kyi gsang sngags kyi ? ? nus mthu dang byin rlabs ma lus pa 'jug par gyur cig /
+de ltar na ? thub pa rdo rje gdan gtso 'khor gyi gsung gi rjes gnang thob /
+? khyed rnams kyi tshe rabs thog med nas bsags pa'i ngag gi sdig ? sgrib thams cad sbyangs /
+thub dbang 'khor ? ? bcas kyi gsung gi byin rlabs zhugs /
+de la brten nas sngags ba ? zla ba dang sngags kyi dngos grub mtha' dag sgrub pa la dbang ? bar byas /
+'bras bu longs spyod rdzogs pa'i sku 'grub pa'i skal ? ba can du byas pa yin no / /
+thugs kyi rdzes ? ? gnang gi slad du khyed rang rnams lhar gsal ba la dmigs pa gtad ? pas lha sku je dwangs je dwangs la 'ja' 'od kyi rnam par gyur ? te /
+'khor rnams 'od du zhu khyed rang la /
+khyed rnams kyang 'od ? du zhu nas thugs ka'i sa bon la /
+de yang je phrar ? ? @# / /
+gyur te mthar nam mkha' la 'ja' yal ba ltar mi dmigs ? par bsam ste /
+gsang 'dus las /
+dngos po med pas bsgom pa med /
+? /
+sgom par bya ba sgom pa min / /
+de ltar dngos po dngos med pas /
+? /
+sgom pa ? ? dmigs su med pa'o / /
+zhes rkang pa dang pos chad mtha' bkag ? /
+gnyis pas rtag mtha' bkag /
+gsum pas rtag chad gnyis bsres pa ? dngos su bkag nas /
+shugs la tha snyad du yod pa med pa gang rung ? ma yin pa'i gnyis min gyi mtha' ? ? bkag pa yin pas /
+chos thams cad rang bzhin gyis mi dmigs pa'i ? 'od gsal nam mkha' lta bu la mnyam par bzhag bar mdzod /
+spro na /
+? rdo rje slob ma 'di rnams kyi thugs rgyud la thub pa 'khor bcas ? kyi thugs gnyis su med pa'i ? ? ye shes kyi byin rlabs dang nus mthu thams cad ma lus pa 'jug ? par gyur cig /
+ces brjod /
+de ltar na /
+thub pa rdo rje gdan gtso ? 'khor rnams kyi thugs kyi rjes gnang thob /
+khyed rnams kyi tshe ? rabs thog med nas bsags pa'i yid gyi sdig ? ? sgrib thams cad sbyangs /
+thub pa rdo rje gdan 'khor bcas kyi ? thugs kyi byin rlabs zhugs /
+de la brten nas thugs rnam par mi ? rtog pa'i ye shes sgom pa thugs ting nge 'dzin gyi 'phrin las ? mtha' dag sgrub pa la dbang bar byas shing 'bras bu ? ? chos kyi sku 'grub pa'i skal ba can du byas ba yin no / /
+des thub ? pa rdo rje gdan gtso 'khor gyi rjes gnang phul zin pas gtang rag ? gi maN+Dal 'bul bcug /
+de nas rgya gzhung gi thog mar dam tshig ? gsum bkod kyi sgrub thabs gnyis la lung ma ? ? gtogs rjes gnang mi dgos /
+thub pa rdo rje gdan gtso 'khor ? gyi sgrub thabs gsum yod pa'i lung bya /
+rjes gnang gnyis pa'i ? sgrub thabs du yod kyi lung yang 'dir bklags /
+tshom bu'i lha la ? mchod pa byin gyis brlabs shing mchod bstod ? ? dang 'dod don gong ltar zhus /
+ma 'byor pa dang nyams pa sogs ? kyis nongs pa bzod par gsol /
+badzra satwa AHmang du brjod ? cing /
+oM khyed kyis sems can don kun mdzad / /
+ces sogs kyi ? mthar /
+badzra muHse gol byas la /
+tshom bu'i lha ? ? ye shes pa gshegs /
+dam tshig pa rang la thim par bsam la las kyi ? rdo rjes tshom bu rnying ba bsdus te gsar ba bshams /
+mchod la ? gsos /
+gtor ma yang gsos /
+de'i bar la slob dpon gyis skyabs 'gro ? nas mdun bskyed bzlas pa'i bar ? ? gyi spyi'i chings gong bzhin /
+khyad par lha'i gdan dang sa bon ? gtso bor rigs bdag dang sngags brjod /
+mchod pa'i sngon gyi mtshan ? sngags bstod pa rnams nges par byas la nyams su blangs /
+! /
+rjes ? gnang ni /
+'o nam mkha' dang ? ? mnyam pa'i sems can thams cad kyi don du sangs rgyas thob par ? bya /
+de'i ched du 'phags pa spyan ras gzigs gtso 'khor gyi rjes ? su gnang ba zab mo zhu snyam pa'i sgo nas maN+Dal 'bul bar zhu /
+? maN+Dal grub nas /
+spyan ras gzigs ni ? ? dran nas kyang /
+nad gdon 'jigs pa brgyad sogs zhi /
+sogs chos ? bshad ltar mdzad nas thun mong ma yin pa'i gsol ba gdab pa sogs ? nas thugs kyi rjes gnang gi bar rigs 'gre sbyar la bya /
+slar ? yang rjes gnang phyi ma'i sgrub ? ? @# / /
+thabs du yod lung byed pa sogs byed /
+chos thun re re ? bzhin yang rjes gnang dang po la gsol 'debs rgyun bshags sogs ? yang yang bya zhing /
+rjes gnang phyi ma'i tshe chos skyong dang ? gzhi bdag gtor ma sogs bsngos /
+? ? 'phrin las bcol zhing gshegs su gsol /
+de nas rjes gnang phyi ? ma'i mthar dam tshig dang sdom pa srungs snyam pas 'di'i rjes ? zlos lan gsum mdzod /
+gtso bos ji ltar bka' stsal pa /
+sogs dang /
+? rjes gnang rdzogs par thob pa'i ? ? gtang rag gi maN+Dal 'bul bcug /
+rgyud las dngos grub 'dod pas lus ? longs spyod thams cad tshigs bcad 'dis 'bul bar bshad pas /
+de dag ? phul bar mos nas 'di'i rjes zlos mdzod /
+deng nas brtsams te sogs ? dang /
+bsod ? ? nams 'di yis thams cad gzigs pa sogs kyis bsngo ba dang /
+nyin mo ? bde legs sogs kyi bkra shis bya'o / /
+slob dpon gyis rjes chog ? gong ltar dang rang lhar gsal ba'i gnas gsum yi ge gsum gyis ? bsrungs /
+bsngo smon bkra ? ? shis rgyas pa bya'o / /
+! / /
+bzhi pa sgrub thabs so sor mi 'dra ba ? bye brag tu bshad pa ni /
+spyan ras gzigs kyi skor la /
+?? 'jig ? rten dbang phyug dkar po zhal gcig phyag bzhi pa rtog pa nas ? gsungs pa'i gtso 'khor gsum pa'i sgrub ? ? thabs ni /
+tshogs zhing sogs spyi 'gro ngos zin par byas la /
+? bsangs sbyangs /
+stong pa'i ngang las pad zla'i steng du ? hrIHdkar po las 'od 'phros /
+'phags pa mchod /
+sems can gyi don ? byas /
+slar 'dus yongs su gyur pa las /
+'jig ? ? rten dbang phyug sku mdog dkar po zhal gcig phyag bzhi pa /
+? dang po gnyis thugs kar thal mo sbyar ba /
+g.yas 'og mas bgrang ? phreng dang g.yon 'og mas padma dkar po 'dzin pa /
+rin po che'i ? rgyan dang dar sna tshogs kyi na bza' can /
+zhabs ? ? rdo rje skyil krung gis bzhugs pa /
+g.yas phyogs su padma'i steng ? du nor bu 'dzin pa dang /
+g.yon du padma'i steng du 'bru drug ma ? gnyis zhal gcig phyag bzhi sogs gtso bo dang mtshungs par bskyed /
+? gnas gsum brlabs dam ye bsre /
+? ? dbang lhas dbang bskur /
+rigs bdag 'od dpag med kyis dbu brgyan /
+? mchod bstod bya /
+sngags /
+oM ma Ni padma'i hUM /
+mtshan sngags /
+? oM lo ke shwar /
+bstod pa /
+skyon gyis ma gos sku mdog dkar /
+? /
+rdzogs sangs rgyas kyis dbu la brgyan / /
+? ? thugs rje'i spyan gyis 'gro la gzigs / /
+spyan ras gzigs la phyag ? 'tshal lo /
+?? /
+za ma tog bkod pa'i mdo las bshad pa'i yi ge drug ? pa'i sgrub thabs ni /
+stong pa'i ngang las rdo rje dang padma ? dang zla ba'i dkyil 'khor gyi steng du hrIHlas ? ? 'jig rten dbang phyug sku mdog ston zla ltar dkar ba /
+zhal gcig ? phyag bzhi pa /
+rtsa phyag gnyis thal mo sbyar ba /
+lhag ma g.yas ? bgrang phreng dang /
+g.yon padma dang nor bu 'dzin pa /
+rin po che ? dang dar sna tshogs kyi na bza' /
+stag gi ? ? pags pa'i sham thabs can /
+'od zer dkar po 'phro zhing zhabs rdo ? rje skyil krung gis bzhugs /
+thub pa rdo rje gdan gyi rgya gzhung ? las de nas ye shes sems dpa' dang dam tshig sems dpa' gcig tu ? byas te /
+zhes gsungs pa ltar du ? @# / /
+mas bshad pas /
+gnas gsum brlab /
+dam ye bsras /
+dbang ? bskur rgyas gdab /
+mchod bstod sgrub thabs thams cad la bya ? zhing /
+'dir rigs bdag /
+sngags /
+mtshan sngags /
+bstod pa kun la ? 'dra /
+? ? mtshams med byas pas kyang 'grub pa dang /
+nad sogs 'dags par ? bshad /
+?? 'jig rten mgon po padma kha 'byed gyi sgrub thabs ? ni /
+padma dang zla ba'i steng du 'jig rten mgon po zhi ba sku ? mdog zla ba ltar dkar ba /
+zhal gcig phyag ? ? bzhi pa /
+g.yon padma bsnams pa /
+g.yas mchog sbyin gyi phyag ? rgya /
+phyag gnyis khu tshur bcing /
+gung mo gnyis padma kha phye ? ba ltar /
+ral ba'i cod pan dang rin po che'i rgyan dang dar sna ? tshogs kyi na bza' can /
+zhabs rdo rje skyil krung gis ? ? bzhugs pa /
+gnas gsum brlab /
+dam ye bsres /
+dbang bskur /
+rigs ? bdag /
+sngags /
+mtshan sngags /
+bstod pa rnams 'dra'o /
+?? /
+yi ge ? drug pa gtso 'khor gsum pa'i sgrub thabs ni /
+padma'i steng du ? hrIHlas rje btsun dbang phyug ni /
+? ? gong ltar bskyed /
+de'i g.yas su nor bu 'dzin pa /
+phyag dang po ? gnyis thal mo sbyar ba /
+g.yas 'og mas nor bu dang /
+g.yon 'og ? mas padma 'dzin pa /
+g.yon du 'bru drug ma phyag dang po gnyis ? thal mo sbyar ba /
+g.yas 'og mas po ti dang /
+? ? g.yon 'og mas padma 'dzin pa /
+gzhan gtso bo lta bu /
+gnas gsum ? brlab /
+dam ye /
+dbang bskur /
+rigs bdag /
+sngags /
+mtshan sngags ? rnams 'dra /
+?? rnam snang mngon byang nas bshad pa'i kha sar ? ba Ni'i sgrub thabs bzhi ni /
+? ? sna tshogs padma dang zla ba'i teng du hrIHlas 'jig rten ? dbang phyug kha sar ba Ni sku mdog dkar po zhal 'dzum zhing lo ? bcu drug lon pa lta bu /
+zhal gcig phyag gnyis pa g.yas mchog ? sbyin las bdud rtsi babs pas bkres skom sel ba /
+g.yon ? ? sdong bu dang cas pa'i padma bsnams pa /
+ral ba'i cod pan can /
+? rin po che'i rgyan dang dar sna tshogs kyi na bza' can /
+'od zer ? dkar po bye ba 'phro ba'i dbus na skyil krung phyed pas bzhugs ? pa /
+de'i g.yas su sgrol ma ljang khu g.yas mchog ? ? sbyin dang g.yon ut+pal /
+nor bzang ser po thal mo sbyar zhing ? chos kyi ka pA la 'dzin pa /
+g.yon du khro gnyar can ser mo ? phyag bzhi ma /
+g.yas phyag 'tshal ba dang bgrang phreng /
+g.yon ? na dbyug gu rtse gsum dang sbyi blugs bsnams pa /
+? ? de'i g.yon du rta mgrin dmar po thung zhing lto ba 'phyang ? bskra kham ser 'bar ba /
+spyan gsum pa /
+g.yas phyag 'tshal ba'i ? tshul dang /
+g.yon dbyug pa o ma tshugs byas pa /
+stag gi pags ? pa'i na bza' can /
+gnas gsum brlab /
+dam ye ? ? dad dbang bskur /
+gtso bo la 'od dpag med /
+'khor rnams la gtso ? bo nyid kyis dbu brgyan /
+sngags /
+oM hrIHswAhA /
+mtshan ? sngags /
+oM lo ke shwar kha sar+pa Ni sa pa ri wA ra /
+bstod ? pa /
+mtshan dpe'i cha shas yongs su rdzogs pa'i ? ? sku| |ston ka'i zla ba 'bum phrag 'khrigs pa'i gzi / /
+rin chen ? bye ba'i rgyan gyis rnam par brgyan /
+thugs rje chen po khyod ? la phyag 'tshal lo / /
+zhes so /
+?? /
+mkha' spyod kyi 'jig rten ? dbang phyug gtso 'khor bcu gsum pa'i sgrub ? ? @# / /
+thabs ni /
+baM las sna tshogs padma 'dab ma brgyad ? pa'i steng du a las zla ba'i dkyil 'khor gyi steng du ? hrIHwas mkha' spyod 'jig rten dbang phyug dkar po zhal 'dzum ? zhing lo bcu drug lon pa lta bu zhal gcig phyag gnyis /
+? ? g.yas bdud rtsi'i rgyun 'bab ba'i mchog sbyin dang /
+g.yon ? sdong bu dang bcas pa'i padma bsnams pa /
+ral ba'i cod pan can ? rin po che'i rgyan dang dar sna tshogs kyin bza' can /
+'od zer ? dkar po dang ldan pa /
+rin po che dang seng ge'i ? ? gdan gyi steng du skyil krung phyed pas bzhugs pa /
+de'i g.yas ? logs su sgrol ma ljang khu g.yas mchog sbyin dang g.yon ut+pal ? 'dzin pa /
+nor bzang ser po gser mdog thal mo sbyar zhing g.yon ? po te bsnams pa /
+g.yon logs su ? ? khro gnyer can ser po g.yas mchog sbyin dang g.yon dbyug gu ? rtse gsum pa 'dzin pa /
+rta mgrin dmar po thub zhing lto ba ? 'phyang ba /
+skra dmar ser gyen du brdzes pa sprul nag gis se ? ral kha byas pa /
+smar ser po /
+spyan gsum ? ? dmar zhing zlum pa /
+smin mtshams su khro gnyer bsdus pa /
+stag ? gi pags pa'i sham thabs can /
+g.yas phyag 'tshal ba'i tshul dang /
+? g.yon dbyug pa oM ma tshugs byas pa /
+shar du rnam snang / /
+lhor ? rin 'byung /
+nub tu 'od ? ? dpag med /
+byang du don grub /
+mer spyan ma /
+bden bral du ma ma ? gi /
+rlung du gos dkar mo /
+dbang ldan du dbyings kyi dbang ? phyug ma /
+rigs bdag /
+sngags /
+oM hrIHswAhA /
+mtshan sngags ? bstod pa 'dra /
+?? 'jig rten dbang phyug ? ? seng ge'i sgra'i sgrub thabs bzhi la ni /
+stong ba'i ? ngang las paM las padma dmar po 'dab ma brgyad ba'i steng du ? AHlas seng ge dkar po mgo g.yas su bstan cing gdong gyen du ? phyogs ba /
+ral pa dmar po thur la 'phyang zhing rin po che'i ? rgyan gyis ? ? spras pa /
+de'i steng du a las zla ba'i dkyil 'khor gyi steng ? du hrIH yig las 'od zer 'phros /
+'phags pa mchod sems can ? thams cad kyi sdig sgrib sbyangs /
+seng ge'i sgra'i go 'phang ? la bkod /
+tshur 'dus yongs su gyur pa las rang nyid rje btsun ? ? seng ge'i sgra dkar po zhal gcig phyag gnyis pa /
+ral pa'i cod ? pan can /
+spyan gsum pa /
+dka' thub kyi cha lugs 'dzin pa /
+zhabs ? gnyis rol pa'i stabs kyis bzhugs pa /
+phyag g.yas skyabs sbyin ? gyi phyag rgya bus mo g.yas kyi steng du brkyang pa /
+? ? g.yon pa sku rgyab tu gdan la bsten pa /
+g.yas su sbrul dkar ? pos dkris pa'i rtse gsum dkar po dang /
+g.yon logs su padma ? dkar po'i steng du ral gri dkar po dang /
+de dang nye bar gnas ? pa'i padma dkar po'i steng du me tog dri bzang sna tshogs pas ? ? kang ba'i thod pa dkar po can kriSh+Na sa ra'i bags pas nu ma ? g.yon pa bkab pa /
+rang gi lus las de bzhin gshegs pa lnga ? 'phro zhing /
+spyi bor rnam par snang mdzad /
+dpung pa g.yas par ? mi bskyod pa /
+g.yon par 'od dpag med /
+dku ? ? g.yas par rin chen 'byung ldan /
+g.yon par don yod grub pa ? rnams bzhugs pa /
+rigs bdag 'od dpag med /
+oM AHhrIHsid+ha ? nA da hUM phaT /
+bzla rgyu'i snying po dang /
+na mo rat+na tra ? yA ya /
+phyag 'tshal lo dkon mchog gsum la /
+? ? @# / /
+na maHAr+ya a wa lo ki te shwa rA ya /
+phyag 'tshal ? 'phags pa spyan ras gzigs dbang phyug la /
+bo d+hi satwA ya /
+? byang chub sems dpa' la /
+mahA satwA ya /
+sems dpa' chen po ? la /
+mahA ka ru Ni ka ya /
+snying rje chen po kye /
+tadya thA /
+? 'di lta ste /
+ka Ta /
+'phong nga /
+? ? krits+tsha /
+dbul ba /
+dza la she 'tsho ba'i gsob bo /
+oM a ka Te /
+? kun nas gso ba la myur ba'i khyad par gso ba'am rnam par gsog /
+? bi ka Te /
+nges par gso dang /
+ni keTa /
+sgrub pa yod dang nye ? ba'o / /
+ka TaM ka Te /
+shin tu yang gso ba /
+ka ro Te /
+byed pa ? drag po /
+ka ro Ta /
+drag po gso bar byed pa /
+? ? bidya swAhA /
+rig pa gzhi tshugs /
+zhes ba gzungs te /
+phan yon ? ni /
+tsan+t+ra go mis mdzad pa las /
+gzungs sngags 'di zhes pa nas ? de nas lci ba lhag ma de nyid la mngon par bsngags te lus la ? nye bar byugs na /
+nad thams cad rab tu zhi bar ? ? 'gyur ro / /
+gal te mtshams med ba'i las byas pas kyang nyi ma ? bdun nam /
+bcu bzhi 'am /
+nyi ma nyi shu rtsa gcig gis ma 'grub ? na /
+de'i tshe bdag gis mtshams med pa lnga byas pa yin no zhes ? pa gzungs las kyang gsungs so / /
+?? ? ? 'jig rten dbang phyug ha la ha la zhal gsum phyag drug pa gtso ? 'khor gnyis pa'i sgrub thabs ni /
+stong ba'i ngang las padma ? dmar po dang zla ba'i dkyil 'khor gyi steng du hrIHlas 'od ? zer 'phros /
+'phags pa mchod sems can gyi don byas /
+? ? slar 'dus pa yongs su gyur ba las rang nyid 'jig rten dbang ? phyug ha la ha la sku mdog dmar po zhal gsum phyag drug pa /
+? rtsa zhal dkar po /
+g.yas zhal sngon po /
+g.yon zhal ser po /
+? zhal re re la spyan gsum gsum dang ldan ? ? ba| phyag g.yas kyi dang pos mchog sbyin /
+gnyis pa na ? bgrad phreng /
+gsum ba na mda' /
+g.yon gyi dang po na rang gi ? pus mo'i steng na gnas pa'i 'dod pa'i lha mo'i nu ma 'dzin pa /
+? gnyis pa na pad dkar gyi sdong bu yal ka gsum pa /
+? ? gsum pa na gzhu 'dzin pa /
+brla g.yon pa'i steng du lha mo sgeg ? mo zhal gcig phyag gnyis ma /
+g.yon pas chu skyes 'dzin pa /
+? g.yas pas bcom ldan 'das la 'khyud ba /
+thod ba'i phreng ba ? dang zla ba phyed pas dbul brgyan pa /
+rin po ? ? che'i rgyan dang stag gi pags pa'i sham thabs can /
+g.yas ngos ? na sbrul gyis dkris pa'i rtse gsum dang /
+g.yon du me nyog sna ? tshogs kyis bkang ba'i thod pa padma'i steng na gnas pa /
+rin po ? che'i ri'i phugs na padma dmar po dang zla ba la rol pa'i ? ? stabs kyis bzhugs pa /
+rigs bdag 'od dpag med /
+sngags /
+oM ? badzra d+hArmA hrIHmtshan sngags /
+lo ki shwa ra sa pa ri wA ? ra /
+bstod pa 'dra /
+?? 'jig rten dbang phyug ha la ha la zhal ? gsum phyag drug pa gtso rkyang gi sgrub thabs ni /
+stong ? ? pa'i ngang las padma dmar po dang zla ba'i steng du hrIH las ? padma hrIHsa mtshan pa las 'od 'phros /
+don gnyis byas shing ? 'dus pa las /
+rang nyid 'jig rten dbang phyug ha la ha la sku ? mdog dkar po zhal gsum phyag drug pa rtsa zhal dkar po /
+g.yas ? ? zhal sngon po /
+g.yon zhal ser po /
+zhal re re la spyan gsum ? gsum dang ldan pa /
+phyag g.yas dang pos mchog sbyin /
+gnyis par ? bgrang phreng /
+gsum pa na mda' /
+g.yon gyi dang po na 'dod pa'i ? lha mo'i nu ma /
+gnyis pas pad ? ? @# / /
+dkar gyi sdong bu dang /
+gsum pas gzhu 'dzin pa /
+rin ? po che'i rgyan dang stag gi pags pa'i sham thabs byas pa /
+? padma dmar po dang zla ba la rol pa'i stabs kyis gzhugs pa /
+? thod pa'i phreng ba dang zla ba phyed pas dbu la brgyan ? ? pa| g.yas ngos su sbrul gyis dkris pa'i rtse gsum dang /
+g.yon ? ngos su me tog sna tshogs kyis bkang ba'i thod pa padma'i steng ? na gnas pa /
+rin po che'i ri'i phugs na bzhugs pa /
+rigs bdag ? 'od dpag med /
+sngags /
+oM ha la ha la hrIH ? ? mtshan sngags bstod pa 'dra /
+ha la ha la'i sgrub thabs gnyis ? lhan skyes rol pas mdzad par ba ri pas gsungs /
+?? rdo rje ? chos dkar po zhal gsum phyag drug pa'i sgrub thabs ni /
+stong ? pa'i ngang las padma dmar po'i steng du hrIHlas 'od zer ? 'phros ? ? don gnyis byas /
+sems can thams cad rdo rje chos kyi go 'phang ? la bkod tshur 'dus pa las /
+rang nyid rdo rje chos sku mdog ston ? ka'i zla ba lta bu zhal gsum phyag drug pa /
+rtsa zhal dkar pa ? sogs nas /
+mda' 'dzin pa'i bar gong dang 'dra /
+? ? g.yon gyi dang po na padma dkar po'i sdong bu /
+gnyis pas rang ? gi pus mo'i steng na gnas pa'i 'dod pa'i lha mo'i num /
+gsum pa ? na gzhu 'dzin ba /
+g.yas phyogs na sbrul gyis dkris pa'i rtse ? gsum dang /
+g.yon phyogs na me tog ? ? sna tshogs kyis bkang ba'i thod pa padma'i steng na 'dzin pa /
+? rin po che'i ri'i phugs na padma dmar po'i steng du rol ba'i ? stabs kyis bzhugs pa /
+sna tshogs ba'i sangs rgyas kyi sku 'phro ? ba /
+sangs rgyas lnga'i cod pan can /
+rab tu dgyes ? ? pa'i spyan rgyas pa /
+rigs bdag 'od dpag med /
+sngags /
+oM ? badzra d+harmA d+h+rIH mtshan sngags /
+badzrad+harmA /
+bstod pa /
+? 'dod chags rdo rje chos kyi sku / /
+kun rtog ye shes rdo rje'i ? gsung / /
+ting 'dzin chen po'i rdzu 'phrul gyis / /
+gar mdzad mgon ? la ? ? phyag 'tshal bstod / /
+ces so /
+?? gar dbang gtso 'khor dgu'i ? sgrub thabs sangs rgyas kyis gsungs pa ni /
+stong pa'i ngang ? las sna tshogs padma 'dab ma brgyad pa'i lte bar hrIHdmar po ? las 'od zer 'phros don gnyis byas /
+slar 'dus pa las ? ? rang nyid spyan ras gzigs gar gyi dbang phyug sku mdog dmar ? po /
+zhal gcig phyag gnyis pa rgyan thams cad kyis brgyan pa /
+? 'od dpag tu med pa'i cod pan can /
+rang 'dra'i yum gos dkar mo ? la snyoms par 'jug cing 'khyud pa'i phyag g.yon ? ? padma dmar po bsnams pa /
+g.yas pas gar gyi tshul gyis khab kyi ? phyag rgyas padma de'i kha 'byed pa /
+gtso bo'i gdan padma 'dab ? ma brgyad pa'i shar gi 'dab mar rnam gzigs ma dkar mo padma ? dmar po bsnams pa /
+lho'i 'dab mar sgrol ma ljang khu ? ? padma ljang khu 'dzin pa /
+nub tu gar dbang ma ser mo g.yon ? ut+pal sngon po /
+byang du khro gnyer can dkar mo padma ser po /
+? byang shar du padma'i gnas can ser mo padma dmar po /
+shar lhor ? rdo rje padma'i dbang phyug nam mkha'i mdog can pad ? ? dkar 'dzin pa /
+lho nub tu sna tshogs padma dkar mos padma sngon ? po /
+nub byang du sna tshogs rdo rje ma sna tshogs mdog can sna ? tshogs padma bsnams pa /
+thams cad kyis g.yas pas padma kha ? 'byed pa /
+thams cad rin po che'i rgyan dang dar sna ? @# / /
+tshogs kyi na bza' can /
+zhabs sems dpa'i skyil krung ? gis bzhugs pa /
+gtso bo la 'od dpag med /
+'khor rnams la gtso bos ? dbu brgyan pa /
+sngags /
+oM padma ni rten shwa re hUM /
+mtshan ? sngags /
+oM padma ni rti shwa ra ? ? sa pa ri wA ra /
+bstod pa /
+gang gi rang bzhin chags bral yang /
+? /
+chags pa can la chags pa dang / /
+mthun par bstan pas chags sogs ? rnams / /
+zhi mdzad de la phyag 'tshal lo / /
+zhes so / /
+?? nad sogs ? nyer zhi'i mthu chen po can gyi gar ? ? dbang phyag bco brgyad pa lha lnga'i sgrub thabs ni /
+stong pa'i ? ngang las nas /
+tshur 'dus yongs su gyur pa las rje btsun spyan ? ras gzigs padma gar gyi dbang phyug sku mdog dmar po zhal gcig ? phyag bco brgyad pa /
+phyag thams cad kyis sna tshogs ? ? padma re re bsnams pa /
+ral ba'i thor tshugs dang 'od dpag med ? kyis dbu rgyan can /
+rin po che'i rgyan dang dar sna tshogs kyi na ? bza' mdzad pa /
+skyil krung phyed pas bzhugs pa /
+rnal 'byor ma'i ? tshogs kyis yongs su bskor pa /
+g.yas logs ? ? su sgrol ma dang nor bzang dang /
+g.yon logs su khro gnyer can ? dang rta mgrin te /
+thams cad kyang lha'i rgyan dang gos kyis ? brgyan pa /
+rigs bdag /
+sngags /
+mtshan sngags /
+bstod pa 'dra /
+?? ? 'jig rten dbang phyug ha ri ha ri ha ri la zhon ? ? pa'i sgrub thabs sangs rgyas kyi gsung dang gnyis pa ni /
+stong ? pa'i ngang las yaM las rlung dkyil gzhu lta bu ba dan gyis mtshan ? pa /
+raM las me dkyil dmar po zur gsum raM gyis mtshan pa /
+baM las ? chu dkyil dkar po zlum po bam gyis mtshan ? ? pa| laM las sa dkyil ser po gru bzhi pa rdo rje rtse gsum ? pas mtshan pa /
+suM las ri rab rin po che sna bdun gyi rang bzhin ? lcogs brgyad dang ldan pa'i steng du paM las padma dang a las ? zla ba'i dkyil 'khor gyi steng du hrIHlas 'od zer 'phros /
+? 'phags pa ? ? mchod /
+sems can gyi don byas /
+spyan ras gzigs kyi go 'phang la ? bkod /
+tshur 'dus yongs su gyur pa las rang nyid 'jig rten dbang ? phyug ha ri ha ri ha ri la zhon pa sku mdog dkar po zhal gcig ? phyag drug pa /
+ral ba'i cod ban ldan zhing zhi ba'i ? ? cha lugs can /
+phyag g.yas kyi ngang pos sangs rgyas rnams dpang ? por mdzad pa /
+gnyis pa na phreng ba /
+gsum pa na ngan song na ? gnas pa'i sems can la ngag bston pa /
+g.yon gyi dang po na dbyug ? pa /
+gnyis pa na ri dwags nag po'i pags pa /
+? ? gsum pa na ril ba spyi blug 'dzin pa /
+rin po che'i rgyan dang ? dar gyi na bza' can /
+zhabs rol pa'i stabs kyis bzhugs pa /
+rigs ? bdag 'od dpag med /
+sngags /
+oM hrIHhUM /
+mtshan sngags /
+oM ha ? ri ha ri ha ri bA ha na di b+ha wA /
+bstod pa /
+skyon ? ? gyis ma gos yang rung /
+phan yon ni /
+sangs rgyas kyis rtag tu ? bsgom na /
+sems can thams cad kyi don byed nus pa dang /
+shes rab ? che zhing skye dgu nad dang nyer 'tshe med cing 'byor ba dang ? ldan pa sogs gsungs so / /
+?? khams gsum ? ? dbang du byed pa'i spyan ras gzigs dmar po gtso rkyang gi sgrub ? thabs gnyis ni /
+stong pa'i ngang las sa gsum po lug gnyis la ? gnas pa rdo rje zhags pas sbrel ba'i steng du padma dang nyi ? ma'i steng du hrIHlas 'od 'phros /
+'od dpag med sogs ? ? @# / /
+spyan drangs shing /
+'jig rten gsum po 'od zer dmar pos ? dbang du sdud cing 'od kyi rnam pas sa bon la 'dus pa yongs su ? gyur pa las /
+rang nyid khams gsum dbang du byed pa'i spyan ras ? gzigs dbang phyug sku mdog dmar ? ? po zhal gcig phyag gnyis pa spyan gsum pa /
+g.yas rdo rjes mtshan ? pa'i zhags pa dang /
+g.yon lcags kyu bsnams pa /
+padma dmar po la ? rdo rje skyil krung gis bzhugs pa /
+mdzes pa'i rgyan dang gos ? kyis rnam par brgyan pa /
+sprul pa sna tshogs 'phro ? ? ba| sangs rgyas dang rdo rje rnal 'byor ma rnams kyis dbang ? bskur ba byang chub sems dpa' rnams kyis mchod par byed pa /
+rig ? 'dzin dang /
+khyab 'jug dang /
+bde byed dang /
+tshangs pa dang /
+sna ? tshogs pa'i rnal 'byor ma'i tshogs kyis gar dang rol ? ? mo sna tshogs 'bud brdung dkrol bar byed pa /
+'byung po'i tshogs la ? sogs pa'i 'khor sna tshogs pa mi'i mgo po dang keng rus la sogs ? pas brgyan pa du mas gdugs dang rnga yab la sogs pa du mas bkur ? sti byed pa /
+de bzhin gshegs pa 'od ? ? dpag med kyis dbu brgyan pa /
+sngags /
+hrIMHhUM yAMHmtshan ? sngags /
+oM trai lo kya ba shaM ka ra lo ki shwa ra /
+bstod pa /
+? dus gsum sangs rgyas thams cad kyi / /
+mkhyen brtse nus pa'i ngo ? bo nyid / /
+sgrub la dngos grub mchog stsol pa'i / /
+yi dam lha la ? ? phyag 'tshal lo / /
+zhes ba'am /
+sgrub pa po la bu bzhin gzigs mdzad ? cing / /
+mi 'bral lus dang grib ma ji bzhin du / /
+dam tshig can la ? dngos grub mchog stsol ba'i / /
+skyabs mchog yi dam lha la phyag ? 'tshal lo / /
+zhes so / /
+bstod pa dmigs ? ? bsal med pa la 'dis bstod /
+?? 'jig rten dbang phyug dmar ? po zhal gcig phyag bzhi ba gtso 'khor gsum pa'i sgrub thabs ni /
+? stong pa'i ngang las sna tshogs padma dang zla ba'i dkyil 'khor ? gyi steng du hrIHdmar po las 'od 'phros /
+don gnyis byas ? ? 'dus pa las rang nyid 'phags pa spyan ras gzigs sku mdog dmar po ? zhal gcig phyag bzhi pa /
+g.yas gnyis na zhags pa dang lcags kyu /
+? g.yon gnyis na mda' dang gzhu 'dzin pa /
+na bza' dmar pos brgyan ? pa sku las 'od zer dmar po'i ? ? phreng ba 'phro ba sgeg pa'i nyams dang ldan pa g.yas su sgrol ? ma dang /
+g.yon phyogs su khro gnyer can ma gnyis ka'ang bzhad ? pa /
+rigs bdag gtso bo la 'od dpag med /
+'khor rnams la gtso bo ? nyid kyis dbu brgyan /
+sngags /
+oM tsa Ti tsi Na Ti tsi ? ? Shi? bi klo li /
+a mu kaM sad+ha na bA da nA bar m+me ba sha ma ? na ya swAhA /
+mtshan sngags /
+rak+ta lo ke shwa ra /
+bstod pa /
+? skyon gyis ma gos sogs /
+?? 'jig rten gsum lhag par dbang du ? byed pa'i spyan ras gzigs kyi sgrub thabs ni /
+stong pa'i ngang ? ? las hrIHyig dmar po las skyes pa'i padma dmar po'i steng du ? AHlas 'od zer 'phros nas /
+'dus pa las 'phags pa spyan ras ? gzigs dbang phyug sku mdog dmar po /
+ral ba'i cod pan can 'od ? dpag med kyis dbu brgyan pa /
+phyag g.yon na ? ? padma dmar po bsnams pa /
+g.yas pas gsal bar mdzad pa /
+rin po ? che'i rgyan sna tshogs dang dar sna tshogs kyin bza' can /
+sngags /
+? oM AHhUM /
+mtshan sngags /
+lo ki shwa ra /
+bstod pa 'dra /
+?? ? 'jig rten dbang phyug mgrin sngon ? ? @# / /
+can ser po'i sgrub thabs ni /
+stong pa'i ngang las ? padma dmar po'i steng du ri dwags kr-iSh+Na'i pags pa'i steng du ? a las zla ba'i dkyil 'khor gyi dbus su hrIHser po las 'od ? 'phros nas /
+'dus ba las bcom ldan 'das ? ? spyan ras gzigs dbang phyug sku mdog gser mdog can zla ba phyed ? pa dang ral ba'i cod ban gyis dbul brgyan pa 'od dpag med spyi ? bor bzhugs pa /
+e na ya'i bags pas mchod phyir thogs dang /
+stag ? gi pags pa'i sham thabs can nor bu dang ? ? bcas pa'i sbrul dag gi mjug ma sngon po mgul bar bcings pa'i ? logs gnyis su mgo gyen du phyogs pa /
+padma dmar po'i steng du ri ? dwags nag po'i pags pa la rdo rje'i skyil krung gis bzhugs pa /
+? ting nge 'dzin gyi phyag rgya'i steng du rin po che ? ? sna tshogs pas bkang ba'i thod pa bsnams pa /
+sngags /
+oM s+phu liM ? gASh+DA hA pak+Sha /
+zhes so / /
+mtshan sngags /
+nI la kaNTHa ? Ar+ya a ba lo ki te shwa ra /
+bstod pa 'dra /
+?? sgyu 'phrul ? dra ba'i rim pa'i spyan ras gzigs nag po zhal lnga phyag bcu ? gnyis ? ? pa'i sgrub thabs ni /
+stong pa'i ngang las mdun gyi nam mkhar raM ? las nyi ma'i dkyil 'khor gyi steng du hUM las sna tshogs rdo ? rje /
+de yongs su gyur pa las rdo rje'i rab dra ba gur ye shes ? kyi me 'bar ba'i nang du /
+dur khrod brgyad kyis bskor ba'i ? ? dbus su padma dmar po 'dab ma brgyad pa'i lte bar nyi ma'i dkyil ? 'khor gyi steng du hrIHlas 'od zer nas /
+'dus yongs su gyur pa ? las rang nyid 'phags pa spyan ras gzigs dbang phyug sku mdog nag ? po zhal lnga phyag bcu gnyis pa /
+rtsa zhal ? ? g.yas su dkar la dmar ba'i zhal gnyis /
+g.yon du ser po ? dang ljang khu'i zhal gnyis /
+de thams cad kyang spyan gsum gsum ? dang ldan pa mche ba gtsigs pa /
+dbu skra ser po gyen du brdzes ? pa /
+phyag bcu gnyis kyi g.yas drug na Da ma ru dang kha ? ? ? ka dang lcags kyu dang zhags pa dang rdo rje dang mda' 'dzin ? pa /
+g.yon pa drug na sdigs mdzub dang thod pa dang padma dang ? nor du dang 'khor lo dang gzhu rnams 'dzin pa /
+phyag rgya drug ? dang ldan cing mi mgo rlon pa'i phreng pa dang /
+stag gi pags ? pa'i ? ? sham thabs can /
+g.yon brkyang gis bzhugs pa /
+rigs bdag rdo rje ? sems dpa' /
+sngags /
+oM AHhUM i ti mu ni bar badzri hrIHhUM ? dzaHmtshan sngags /
+Ar+ya a wa lo ki shwa ra /
+bstod pa /
+gang gi ? rang bzhin khro bral yang / /
+khro ba can ? ? la khro ba dang / /
+mthun par bstan pas khro sogs rnams / /
+zhi ? mdzad de la phyag 'tshal lo / /
+?? phyag na padma'i gzungs dang ? ma sha'i gzungs gnyis la rjes gnang mi dgos /
+don yod zhags pa ? gtso 'khor lnga'i sgrub thabs ni /
+stong ba'i ? ? ngang las rgya mtsho dang rin po che'i ri rab dang padma'i steng ? du byang chub kyi sems zhu ba las byung ba'i A li kA li'i ? rang bzhin zla ba nyi ma yang dag par sbyar ba la hrIHdkar po ? las byung ba'i 'dam skyes kyi ze'u 'bru de las 'od 'phros 'phags ? pa ? ? mchod /
+sems can gyi don byas gcig tu gyur pa las /
+rin po che'i ? ri'i phugs na sna tshogs padma dang zla ba la mnyam pa'i stabs ? kyis bzhugs pa'i bcom ldan 'das 'phags pa spyan ras gzigs don ? yod zhags pa sku mdog ston ? ? @# / /
+ka'i sprin ltar dkar bzhal gcig phyag bcu gnyis pa /
+? ral pa'i cod pan dang 'od dpag med kyis dbu brgyan pa /
+mchod ? phyir thogs dkar pos brgyan cing zhi ba'i tshul can /
+zhi ba'i ? rgyan dang 'od zer 'bar pa /
+phyag g.yas drug ? ? gi dang pos mchog spyin dang /
+gnyis pas sangs rgyas la phyag ? 'tshal pa'i tshul dang mdzod 'dren pa /
+gsum pas nor bu'i phreng ba ? dkar po /
+bzhi pa na mda' /
+lnga pa na me'i dkyil 'khor /
+drug pa ? na rin po che sna tshogs pa'i 'khri shing rnams 'dzin ? ? pa| g.yon drug gi dang po na padma dmar po /
+gnyis pa na ri rab /
+? gsum pa na rtse gsum /
+bzhi pa na gzhu /
+lnga pa na gser gyi ril ? ba spyi blugs /
+drug pa na don yod pa'i 'bras bu bcings pa'i ? zhags pa bsnams pa /
+de'i mdun du padma dang zla ba la ha ? ? yig dmar po las lcags kyu /
+de yongs su gyur pa las /
+don yod ? lcags kyu dmar po zhal gcig phyag bzhi pa g.yas na lcags kyu ? dang rdo rje /
+g.yon na zhags pa dang padma bsnams pa /
+ral ba'i ? cod pan dang rgyan dmar po can /
+rgya nag gi gos kyi bla ? ? gos bsnams pa /
+g.yas su nyi ma'i steng du hUM las dbyug pa dkar ? po yongs su gyur pa las rta mgrin dmar po zhal gcig phyag bzhi ? pa /
+g.yas gnyis kyi dang pos dbyug pa 'phyar zhing /
+gnyis pas ? rdo rje bsnams pa /
+g.yon gnyis na sdigs ? ? mdzub dang zhags pa 'dzin pa /
+dbu'i steng na rta mgo ljang khu /
+? sku la sprul gyis brgyan pa /
+thung zhing gsus ba 'phyang ba stag ? gi pags pa'i sham thabs can /
+dbu skra dmar ser 'bar zhing khro ? gnyer bsdus shing spyan gsum dang ldan pa /
+hI hI'i sgra ? ? sgrogs pa can no / /
+rgyab tu chu skyes dang nyi ma'i steng ? du ha las ral gri de las lha mo ral gcig ma sngon mo zhal gcig ? phyag bzhim /
+g.yas gnyis na ral gri dang gri gug /
+g.yon gnyis na ? ut+pal dang thod pa /
+ral ba dmar po gyen du 'khyil pa /
+? ? khro bo'i rnam pa can glang po che'i pags pa'i stod g.yogs dang ? stag lpags kyi sham thabs can /
+g.yas brkyang gis bzhugs pa /
+? g.yon du chu skyes dang zla ba'i steng du Ta yig ser po las chu ? skyes /
+de yongs su gyur pa las khro gnyer can ral ? ? ba'i thor tshugs dang gzhon nu dar la babs a mdzes shing /
+sku ? mdog ser mo zhal gcig phyag bzhi ma g.yas gnyis padma dang ? bgrang phreng /
+g.yon gnyis na dbyug pa dang spyi blugs 'dzin pa /
+? dar dkar po'i na bza' dang lha'i rgyan gyis brgyan ? ? pa| rigs bdag 'od dpag med /
+'khor la gtso bos dbu brgyan /
+? sngags /
+oM hrIHtrai lo kya bi dza ya /
+a mo g+ha bA sha /
+a ? pra ti ha ta hri ha hUM phaT swAhA /
+mtshan sngags /
+oM a mo ? g+ha pA sha lo ke shwar /
+bstod pa /
+skyon gyis ma gos sogs so / /
+? ? 'dir rgya gzhung du gtso bo don zhags phyag bcu gnyis pa /
+phyag ? bcu pa dang /
+phyag 'jig rten gsum las rgyal ba /
+don yod zhags ? pa /
+so sor thogs pa med pa /
+drug pa dang /
+phyag bzhi pa dang ? bzhi bshad kyang 'khor mthun pas rjes gnang so sor ma byas 'dug ? kyang ? ? bshad tshul rjes ma dang mthun na legs /
+?? 'jig rten dbang ? phyug b+hu kha ma dmar po zhal gcig phyag gnyis pa lha lnga'i ? sgrub thabs gcig la ni /
+stong pa'i ngang las paM las sna tshogs ? padma dang a las zla ba'i steng du hrIH dmar po las 'od ? @# / /
+zer 'phros /
+nas /
+slar 'dus yongs su gyur pa las 'phags ? pa spyan ras gzigs dbang phyug ban d+hu ka lta bur dmar po zhal ? gcig phyag gnyis pa /
+g.yas pas mchog sbyin dang g.yon pas chu ? skyes dmar po bsnams pa /
+? ? padma rgyas pa'i zhal mnga' pa /
+ut+pal gyi 'dab ma ltar yangs ? pa'i spyan gnyis dang ldan pa /
+ral ba gnag snum mdzes par mu tig ? gi chun pos brgyan cing lha'i gos kyi na bza' can lo bcu drug ? lon pa lta bu /
+'od zer dmar po 'phro zhing ? ? zhangs gnyis mnyam pa'i stabs kyis bzhugs pa /
+phyogs mtshams ? bzhir padma dang zla ba'i dkyil 'khor ro / /
+de dag gi steng du ? mer laM las spyan ma dkar mo /
+lho nub tu maM las ma ma gi sngon ? mo /
+nub byang du paM las gos dkar mo ser mo /
+? ? dbang ldan du taM las sgrol ma ljang khu ste /
+de thams cad thal ? sbyar bus mo sa la btsugs pa lang tsho dar zhing num zung gis ? mdzes pa /
+sku smad rgyas shing 'dzum pa'i zhal can /
+rin po che'i ? rgyan sna tshogs dang /
+dar gyi na bza' can 'gyid pa'i tshul gyis ? ? bzhugs pa /
+gtso bo la 'od dpag med dang 'khor rnams la ngag gi ? dbang phyug gis dbu brgyan pa /
+sngags /
+oM hrIHhUM /
+mtshan ? sngags /
+oM Ar+ya b+hu kha ma sa pa ri wA ra /
+bstod pa /
+sangs ? rgyas kun gyis rab tu bsngags / /
+? ? yon tan dam pa rnams kyi mdzod / /
+spyan ras gzigs kyi mtshan gsol ? ba / /
+rtag par brtse la phyag 'tshal lo / /
+zhes pa'o / /
+'di skor la ? sgrubs thabs so gcig dang gzungs gnyis dang bcas pa don zhags ? gtso bo'i sgo nas bzhir ? ? yod cing /
+po ti 'dzin pa'i sgrub thabs zhar la yod pa dang ? sum cu rtsa lnga yod cing /
+rigs bsdus nas rjes gnang nyi shur ? byas so / /
+}

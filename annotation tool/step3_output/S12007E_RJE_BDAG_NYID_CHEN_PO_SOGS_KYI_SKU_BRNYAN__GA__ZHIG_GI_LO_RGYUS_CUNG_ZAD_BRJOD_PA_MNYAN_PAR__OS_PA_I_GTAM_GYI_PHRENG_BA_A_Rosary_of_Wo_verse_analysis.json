@@ -1,0 +1,78 @@
+[
+  {
+    "text": "S12007E_RJE_BDAG_NYID_CHEN_PO_SOGS_KYI_SKU_BRNYAN__GA__ZHIG_GI_LO_RGYUS_CUNG_ZAD_BRJOD_PA_MNYAN_PAR__OS_PA_I_GTAM_GYI_PHRENG_BA_A_Rosary_of_Wo.txt",
+    "lines_included": [
+      2,
+      5
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "zung 'jug sgyu ma'i sku la dbang 'byor bas",
+      "sku gsung thugs rten brtan g.yo rab 'byams su",
+      "mos pa'i mtha' bzhin 'gog med rtag 'char ba",
+      "'jam dpal snying pos byang chub par du skyongs"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S12007E_RJE_BDAG_NYID_CHEN_PO_SOGS_KYI_SKU_BRNYAN__GA__ZHIG_GI_LO_RGYUS_CUNG_ZAD_BRJOD_PA_MNYAN_PAR__OS_PA_I_GTAM_GYI_PHRENG_BA_A_Rosary_of_Wo.txt",
+    "lines_included": [
+      238,
+      242
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "khong gis khyim de'i phyi sgo'i ya them la",
+      "ri bong 'dzin pa rgyu skar phreng ba can",
+      "mtshan mo mkha' la rgyu ba ma mthong nas",
+      "dwangs pa'i mtsho nang 'di na zla ba zhes",
+      "gzugs brnyan zla bar 'dzin pa shin tu 'khrul"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S12007E_RJE_BDAG_NYID_CHEN_PO_SOGS_KYI_SKU_BRNYAN__GA__ZHIG_GI_LO_RGYUS_CUNG_ZAD_BRJOD_PA_MNYAN_PAR__OS_PA_I_GTAM_GYI_PHRENG_BA_A_Rosary_of_Wo.txt",
+    "lines_included": [
+      264,
+      274
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rgyal ba'i 'phrin las gzugs can du",
+      "shar pa'i sku brnyan byin can 'ga'i",
+      "ngo mtshar yid kyi me long du",
+      "bkra ba yi ge'i ris su 'phos",
+      "dang 'dun mos gus kyis bskul te",
+      "mchog gsum sku gsung thugs rten la",
+      "lhag par bya ba byed brtson pa'i",
+      "gzur gnas blo ldan de bsngags 'os",
+      "thub pa'i ras bris mthong ba dang",
+      "mtshan tsam thos pas don smin pa",
+      "sgra sgrogs skye bo'i tshogs bzhin du"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S12007E_RJE_BDAG_NYID_CHEN_PO_SOGS_KYI_SKU_BRNYAN__GA__ZHIG_GI_LO_RGYUS_CUNG_ZAD_BRJOD_PA_MNYAN_PAR__OS_PA_I_GTAM_GYI_PHRENG_BA_A_Rosary_of_Wo.txt",
+    "lines_included": [
+      280,
+      283
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "chos srid 'byor ba'i mdzod dang dge bcu ldan",
+      "dga' ldan rab rgyas zhes bya'i rgyud grwa cher",
+      "kun mkhyen 'jam dbyangs bzhad ba yab sras kyi",
+      "thugs rjes chos sbyin 'dzad med rgyun 'di spel"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "text": "S05573E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_GRUB_MTHA__RGYA_MTSOR__JUG_PA_I_GRU_RDZINGS_ZHES_BYA_BA_I_BSTAN_BCOS_The_Classi.txt",
+    "lines_included": [
+      101,
+      117
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "de skad du yang dul ba lhas",
+      "shar nub ri dang gangs rir gnas",
+      "'jig rten 'das par smra ba dang",
+      "btags par smra ba'i sde rnams ni",
+      "lnga tshan dge 'dun phal chen pa",
+      "gzhi kun yod dang 'od srung sde",
+      "sa srung sde dang chos srung sde",
+      "mang thos gos dmar slob mar bcas",
+      "phye ste smra ba'i sde rnams ni",
+      "gzhi kun yod par smra ba yin",
+      "rgyal byed tshal gnas 'jigs med gnas",
+      "gtsug lag khang gnas gnas brtan pa",
+      "sar sgrog ri dang srung ba la",
+      "gnas ma bu pa'i sde rnams ni",
+      "mang pos bkur ba'i sde pa yin",
+      "yul don slob dpon bye brag gis",
+      "tha dad sde pa bco brgyad do"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.7262
+  },
+  {
+    "text": "S05573E_RJE_BTZUN_THAMS_CAD_MKHYEN_PA_I_GSUNG__BUM_THOR_BU_LAS_GRUB_MTHA__RGYA_MTSOR__JUG_PA_I_GRU_RDZINGS_ZHES_BYA_BA_I_BSTAN_BCOS_The_Classi.txt",
+    "lines_included": [
+      196,
+      203
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "mngon pa sde bdun po de yang",
+      "chos kyi phung po shA ri'i bus",
+      "gdags pa'i bstan bcos mo'u 'gal bus",
+      "rab tu byed pa dbyig bshes kyis",
+      "ye shes la 'jug kA tya'i bus",
+      "rnam shes tshogs ni lha skyid kyis",
+      "'gro ba'i rnam grangs gsus po ches",
+      "khams kyi tshogs ni gang pos byas"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.295
+  }
+]

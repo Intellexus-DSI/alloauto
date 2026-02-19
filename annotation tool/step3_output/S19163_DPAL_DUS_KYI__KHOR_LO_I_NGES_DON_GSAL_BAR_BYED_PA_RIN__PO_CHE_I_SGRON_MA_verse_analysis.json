@@ -1,0 +1,739 @@
+[
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      7,
+      10
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gangs ri'i khrod 'dir mkhas rlom gzhan dag gis",
+      "dang po'i sangs rgyas dus kyi 'khor lo'i rgyud",
+      "ji bzhin ma rtogs blo ngan mun pas bslad",
+      "thar 'dod phal cher log pa'i lam la khrid"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      22,
+      25
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "'jig rten mkhyen pas gzhan la ma gsan par",
+      "bden pa 'di gnyis kyis ni ston par mdzad",
+      "gang zhig kun rdzob de bzhin don dam ste",
+      "bden pa gsum pa 'ga' yang ma mchis so"
+    ],
+    "num_exact_derge_matches": 8,
+    "probability_of_derge_quotation": 0.9167
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      27,
+      31
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "klu sgrub kyi zhal snga nas kyang",
+      "sangs rgyas rnams kyis chos bstan pa",
+      "bden pa gnyis la yang dag brten",
+      "'jig rten kun rdzob bden pa dang",
+      "dam pa'i don gyi bden pa'o"
+    ],
+    "num_exact_derge_matches": 106,
+    "probability_of_derge_quotation": 0.8686
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      34,
+      38
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gsang ba 'dus pa'i rgyud phyi mar",
+      "rdo rje can gyi chos bstan pa",
+      "rim pa gnyis la yang dag brten",
+      "bskyed pa yi ni rim pa dang",
+      "de bzhin rdzogs pa'i rim nyid do"
+    ],
+    "num_exact_derge_matches": 22,
+    "probability_of_derge_quotation": 0.7171
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      159,
+      165
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rnam pa bcu po don bcu'i don",
+      "thub dbang stobs bcu khyab pa'i bdag",
+      "kun gyi don ni ma lus byed",
+      "rnam bcu dbang ldan che ba po",
+      "thog ma med pa spros med bdag",
+      "de bzhin nyid dag dag pa'i bdag",
+      "ces sogs kyis bstan par bzhed la"
+    ],
+    "num_exact_derge_matches": 71,
+    "probability_of_derge_quotation": 0.8776
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      170,
+      173
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "de'i steng du ra yig me'i dkyil 'khor dang",
+      "de'i steng du wa yig chu'i dkyil 'khor dang",
+      "de'i steng du la yig sa'i dkyil 'khor dang",
+      "de'i steng du ma yig lhun po'i rnam pa'o"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      211,
+      218
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang zag phung por smra ba yi",
+      "'jig rten grangs can 'ug phrug sogs",
+      "gos med bcas sogs gal te zhig",
+      "yod med 'das par smra na dris",
+      "de phyir sangs rgyas rnams kyi ni",
+      "bstan pa 'chi med yod med las",
+      "'das pa zab mo zhes bya ba",
+      "chos kyi khyad pa yin zhes gyis"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 0.9003
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      226,
+      229
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "blo ngan log par ston byed pa",
+      "sman pa mkhas par rab grags pa",
+      "gang gi legs bshad 'di 'dra na",
+      "de yi nyes bshad ci 'dra zhig"
+    ],
+    "num_exact_derge_matches": 12,
+    "probability_of_derge_quotation": 0.6964
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      264,
+      268
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "ces sogs kyis don 'di ston la",
+      "gzhan yang brtag pa gnyis par",
+      "lus la ye shes chen po gnas",
+      "rtog pa thams cad rnam par spangs",
+      "dngos po kun la khyab pa po"
+    ],
+    "num_exact_derge_matches": 42,
+    "probability_of_derge_quotation": 0.6238
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      271,
+      274
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "thog mtha' med pa'i sems dpa' ni",
+      "rdo rje sems dpa' bde ba che",
+      "kun tu bzang po kun gyi bdag",
+      "rdo rje snyems ma bdag po'i bdag"
+    ],
+    "num_exact_derge_matches": 134,
+    "probability_of_derge_quotation": 0.9167
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      278,
+      281
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "thog ma med pa'i dus kyi dbyings",
+      "chos rnams kun gyi gnas yin te",
+      "de yod pas na 'gro kun dang",
+      "mya ngan 'das pa'ang thob par 'gyur"
+    ],
+    "num_exact_derge_matches": 51,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      284,
+      288
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "gos hrul nang na rgyal ba'i sku dang ni",
+      "bud med ngan ma'i lto na mi bdag dang",
+      "sa la rin chen gzugs yod ji lta bar",
+      "glo bur nyon mongs dri mas sgrib pa yi",
+      "sems can rnams la de bzhin khams 'di gnas"
+    ],
+    "num_exact_derge_matches": 8,
+    "probability_of_derge_quotation": 0.9778
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      291,
+      294
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang zhig kun tu ma shes na",
+      "srid pa gsum du rnam 'khor zhing",
+      "sems can kun la nges gnas pa'i",
+      "chos kyi dbyings la phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.8929
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      325,
+      329
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "'phags pa lha'i zhal snga nas kyang",
+      "'tshe ba med dang bdag rtag pa",
+      "'di la rgyu ni ci yod snyam",
+      "rnam pa kun tu shing srin las",
+      "rdo rje bsrung byar mi 'gyur ro"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 0.7875
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      379,
+      382
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "sems kyi rang bzhin 'od gsal gang yin pa",
+      "de ni nam mkha' bzhin du 'gyur med te",
+      "yang dag min rtog las byung 'dod chags sogs",
+      "glo bur dri mas de nyon mongs mi 'gyur"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.9583
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      409,
+      415
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "rnam shes yul 'dzin pa yi chos",
+      "ji ltar yod de 'dzin pa dang",
+      "yod pa yi ni bdag nyid de",
+      "'di yi skyed par byed pa'ang yin",
+      "rang bzhin 'di yin 'di las de",
+      "rkyen gzhan gyis ni gol 'gyur zhing",
+      "ldog pa las ni rkyen la ltos"
+    ],
+    "num_exact_derge_matches": 17,
+    "probability_of_derge_quotation": 0.8571
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      432,
+      436
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "de skad du yang mdor bsdus dang po las",
+      "ji ltar rdo dreg skud pa'i gos dag ni",
+      "me yis bsregs pa nyid kyis dag 'gyur ba",
+      "de bzhin skyes bu rnams kyis dam pa yi",
+      "sems ni shes rab ye shes dag gis so"
+    ],
+    "num_exact_derge_matches": 3,
+    "probability_of_derge_quotation": 0.8014
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      445,
+      448
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "rgyal bas ji snyed gsungs pa rnams",
+      "de dag rnams kyis nyon mongs ldog",
+      "khams de nyams par byed ma yin",
+      "ces gang gsungs pa ltar ro"
+    ],
+    "num_exact_derge_matches": 2,
+    "probability_of_derge_quotation": 0.6429
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      502,
+      509
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "ji ltar me ni shing la brtags gnas kyang",
+      "bcad dang dbye ba'i thabs kyis mi mthong ste",
+      "gtsub shing gtsub stan lag pas bsrubs pa las",
+      "de la gnas pa yang ni mthong 'gyur ba",
+      "de bzhin sems kyi 'od gsal rtog pa yi",
+      "sgom pa'i thabs rnams dag gis mi mthong ste",
+      "de nyid du 'di rkyang ma dag dang ni",
+      "ro ma gcig tu sbyor bas mthong bar 'gyur"
+    ],
+    "num_exact_derge_matches": 10,
+    "probability_of_derge_quotation": 0.9444
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      531,
+      534
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "phung po rnam dpyad stong pa nyid",
+      "chu shing bzhin du snying po med",
+      "rnam pa kun gyi mchog ldan pa'i",
+      "stong nyid de ltar 'byung ba min"
+    ],
+    "num_exact_derge_matches": 46,
+    "probability_of_derge_quotation": 0.4286
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      606,
+      610
+    ],
+    "probability": 0.9,
+    "meter": 7,
+    "lines": [
+      "dbang bskur rdo rje chen po la",
+      "khams gsum kun gyi phyag byas pa",
+      "sangs rgyas kun gyi gsang gsum gyi",
+      "gnas las byung ba nga yis sbyin",
+      "zhes gang gsungs pa yin no"
+    ],
+    "num_exact_derge_matches": 77,
+    "probability_of_derge_quotation": 0.7571
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      621,
+      624
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "gzugs la sogs par rtog pa dkyil 'khor gyi",
+      "'khor lor bsgoms pa goms par gyur pas ni",
+      "grub pa 'jig rten pa rnams grub gyur gyi",
+      "'dod pa'i dngos grub chen po gal zhig"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.785
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      647,
+      650
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "bskyed pa'i rim la legs gnas shing",
+      "rdzogs pa'i rim pa 'dod rnams la",
+      "thabs 'di rdzogs pa'i sangs rgyas kyis",
+      "skas kyi rim pa lta bur gsungs"
+    ],
+    "num_exact_derge_matches": 72,
+    "probability_of_derge_quotation": 1.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      717,
+      720
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "gang zhig dge slong dngos gnas dang",
+      "gang zhig rgan por gyur pa dang",
+      "gang zhig rtog la dga' ba'i mi",
+      "de la rin chen sbyin mi bya"
+    ],
+    "num_exact_derge_matches": 5,
+    "probability_of_derge_quotation": 0.5446
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      730,
+      733
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "mchog tu mi 'gyur bzhi pa de nyid ni",
+      "sangs rgyas rnams kyi shes rab ye shes te",
+      "gang zhig de ni slar yang de bzhin 'dis",
+      "rang gi phyag rgya chen mor rgyal bas gsungs"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.9688
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      745,
+      748
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "tha mal mchog gi dbye ba yis",
+      "bsnyen pa rnam pa gnyis su 'dod",
+      "tha mal pa ni rdo rje bzhis",
+      "mchog tu yan lag drug gis so"
+    ],
+    "num_exact_derge_matches": 6,
+    "probability_of_derge_quotation": 0.8929
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      758,
+      761
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "so sor sdud dang bsam gtan dang",
+      "srog rtsol de bzhin 'dzin pa dang",
+      "rjes su dran dang ting 'dzin te",
+      "sbyor ba yan lag drug tu 'dod"
+    ],
+    "num_exact_derge_matches": 74,
+    "probability_of_derge_quotation": 0.9643
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      810,
+      815
+    ],
+    "probability": 0.917,
+    "meter": 7,
+    "lines": [
+      "mtshan mo'i khams ni rnam pa lngar",
+      "byang chub rdo rjes gsungs pa ste",
+      "smig sgyu 'dra ba dang po ste",
+      "gnyis pa du ba lta bu'o",
+      "gsum pa me khyer 'dra ba ste",
+      "bzhi pa mar me 'bar lta bu"
+    ],
+    "num_exact_derge_matches": 9,
+    "probability_of_derge_quotation": 0.4921
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      831,
+      838
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "nam mkha' las byung rang byung ba",
+      "shes rab ye shes me bo che",
+      "'od chen rnam par snang bar byed",
+      "ye shes snang ba lam me ba",
+      "'gro ba'i mar me ye shes sgron",
+      "gzi brjid chen po 'od gsal ba",
+      "sngags mchog mnga' bdag rigs sngags rgyal",
+      "ces sogs kyis bstan par bzhed do"
+    ],
+    "num_exact_derge_matches": 172,
+    "probability_of_derge_quotation": 0.8542
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      841,
+      844
+    ],
+    "probability": 0.875,
+    "meter": 7,
+    "lines": [
+      "stong par rtse gcig yid byas nas",
+      "nyi ma gcig ni yongs su brtag",
+      "gal te rtags ni ma byung na",
+      "de tshe nga'i brdzun tshig yin"
+    ],
+    "num_exact_derge_matches": 8,
+    "probability_of_derge_quotation": 0.7024
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      854,
+      857
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "'khor ba snying po med pa zad gyur pa",
+      "de las skyes pa'i sangs rgyas nyid 'bras te",
+      "chu shing gis ni 'bras bu smin pa rnams",
+      "chu shing nyams pas 'byung bar 'gyur ba bzhin"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      950,
+      953
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "lte bar gtum po 'bar ba yis",
+      "de bzhin gshegs pa lnga bsregs cing",
+      "spyan la sogs pa yang bsregs nas",
+      "bsregs pas ri bong can haM 'dzag"
+    ],
+    "num_exact_derge_matches": 14,
+    "probability_of_derge_quotation": 0.8929
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1145,
+      1148
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "byang sems sum cu rtsa gnyis kyis",
+      "gang tshe yongs su gang gyur pa",
+      "phung po dbang po 'byung ba yi",
+      "sangs rgyas de yi de ma thag"
+    ],
+    "num_exact_derge_matches": 4,
+    "probability_of_derge_quotation": 0.9167
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1384,
+      1417
+    ],
+    "probability": 0.985,
+    "meter": 7,
+    "lines": [
+      "de nyid bcom ldan rnal 'byor te",
+      "byang chub sems ni 'od gsal ba",
+      "kun tu 'od kyi sa chen po",
+      "nyi ma'i dkyil 'khor gzi brjid ldan",
+      "gnyis pa bdud rtsi'i 'od zhes pa",
+      "shin tu 'od bzang zla ba 'dra",
+      "gsum pa nam mkha' 'od zhes pa",
+      "mkha' bzhin legs par rab tu gnas",
+      "sa bzhi pa ni gang yin te",
+      "rdo rje'i 'od mtha' yid du 'ong",
+      "bsam gtan pa'i sbyor ba yis",
+      "rdo rje zhes ni yongs su grags",
+      "lnga pa rin chen 'od ces bya",
+      "dbang bskur ba la rab tu gnas",
+      "drug pa pad mo 'chang zhes bya",
+      "pad bzhin rab tu rnam par snang",
+      "rang bzhin dag pa'i chos nyid te",
+      "dri ma med cing yongs bzung med",
+      "bdun pa las kyi 'od ces bya",
+      "sangs rgyas phrin las byed par 'dod",
+      "brgyad pa dpe med pa zhes bya",
+      "'di la dpe ni yod ma yin",
+      "dgu pa dpe bral zhes bya ste",
+      "thams cad dpe ni so sor rtogs",
+      "bcu pa shes rab 'od ces bya",
+      "sangs rgyas sa ni bla na med",
+      "bcu gcig thams cad mkhyen ces bya",
+      "sa chen po ni 'od gsal ba",
+      "bcu gnyis so so'i bdag nyid rig",
+      "rnal 'byor ye shes rab rdzogs pa",
+      "sa chen po ni 'di dag ldan",
+      "sangs rgyas rnams kyi don dam las",
+      "sangs rgyas rnams dang sangs rgyas chos",
+      "rnal 'byor pa dang ye shes spyod"
+    ],
+    "num_exact_derge_matches": 64,
+    "probability_of_derge_quotation": 0.9338
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1642,
+      1645
+    ],
+    "probability": 1.0,
+    "meter": 7,
+    "lines": [
+      "yod min med min yod med min",
+      "gnyis ka'i bdag nyid min pa'ang min",
+      "mtha' bzhi las ni rnam grol ba",
+      "bde chen sku la phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 48,
+    "probability_of_derge_quotation": 0.8966
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1647,
+      1657
+    ],
+    "probability": 0.955,
+    "meter": 7,
+    "lines": [
+      "phyag rgya chen po mi 'gyur bde",
+      "gzung dang 'dzin pa dbyibs dag dang",
+      "rtog dang brjod pa rnam par spangs",
+      "dri za'i grong khyer rnam pa dang",
+      "dpra phab pa yi rang bzhin can",
+      "shes rab thabs kyi bdag nyid sbyor",
+      "e waM yi ge de la 'dud",
+      "phra rab rdul gyi chos nyid 'das",
+      "dpra phab pa'i rang bzhin can",
+      "rnam pa kun gyi mchog ldan ma",
+      "phyag rgya chen mo de la 'dud"
+    ],
+    "num_exact_derge_matches": 19,
+    "probability_of_derge_quotation": 0.9264
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1672,
+      1675
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "thar pa'i sa bon dge legs kun gyi gzhi",
+      "yang dag lta ba'i nor mchog 'phrog byed cing",
+      "thar pa'i srog rtsa gcod par byed pa yi",
+      "lta ngan las lhag phung byed dgra gzhan med"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1777,
+      1783
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "'di don 'grel byed mkhas pa gzhan rnams kyis",
+      "snying po dor nas spun pa yang yang 'phyar",
+      "rgya mtsho bsrubs las bdud rtsi ji bzhin du",
+      "yang dag don gyi snying po kho bos blangs",
+      "'dab brgya'i tshal nas sbrang rtsi bung bas len",
+      "chu dang 'o ma ngang pas so sor 'byed",
+      "nor bu mching bu ded dpon mkhas pas shes"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S19163_DPAL_DUS_KYI__KHOR_LO_I_NGES_DON_GSAL_BAR_BYED_PA_RIN__PO_CHE_I_SGRON_MA.txt",
+    "lines_included": [
+      1796,
+      1806
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "nges don gyi bdud rtsi kho bos blangs pa'o",
+      "legs bshad nyes bshad mkhas pa'i blo yis rtogs",
+      "yod pa'i legs bshad phrag dog mun pas sgrib",
+      "med pa'i skyon rnams blo ngan mig gis mthong",
+      "gdug pa'i sbrul gyis 'o ma 'thungs pa bzhin",
+      "legs bshad bdud rtsis nyon mongs dug 'phel ba'i",
+      "log pa'i rgyun phyogs gzhol ba'i blo ngan rnams",
+      "legs bshad chu lon stong gis mi bzlog mod",
+      "gzur gnas blo ldan 'ga' yis 'di mthong na",
+      "yid la 'bab 'gyur snyam pas ngas 'di sbyar",
+      "de las byung ba'i dge bas 'gro ba rnams"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "text": "S05535E_SGROL_MA_PHYAG__TSAL_NYER_GCIG_GI_t_IKKA_RIN_PO_CHE_I_PHRENG_BA_DANG_SGROL_LJANG_SGRUB_THABS_The_String_of_Precious_Jewels--A_Commenta.txt",
+    "lines_included": [
+      1,
+      4
+    ],
+    "probability": 1.0,
+    "meter": 9,
+    "lines": [
+      "'phags pa dkon mchog gsum la phyag 'tshal lo",
+      "dus gsum sangs rgyas kun gyi 'phrin las ma",
+      "rgyal ba'i yum gyur bcom ldan sgrol ma la",
+      "lus ngag yid gsum gus pas phyag 'tshal lo"
+    ],
+    "num_exact_derge_matches": 1,
+    "probability_of_derge_quotation": 0.4722
+  },
+  {
+    "text": "S05535E_SGROL_MA_PHYAG__TSAL_NYER_GCIG_GI_t_IKKA_RIN_PO_CHE_I_PHRENG_BA_DANG_SGROL_LJANG_SGRUB_THABS_The_String_of_Precious_Jewels--A_Commenta.txt",
+    "lines_included": [
+      522,
+      525
+    ],
+    "probability": 0.875,
+    "meter": 9,
+    "lines": [
+      "gang sku rin chen rgyan gyis sbras pa ni",
+      "ma rgad ri la rgyu skar bkram pa bzhin",
+      "lta bas mi ngoms kun gyi yid 'phrog ma",
+      "lhag pa'i lha mo ut+pal bsnams la 'dud"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  },
+  {
+    "text": "S05535E_SGROL_MA_PHYAG__TSAL_NYER_GCIG_GI_t_IKKA_RIN_PO_CHE_I_PHRENG_BA_DANG_SGROL_LJANG_SGRUB_THABS_The_String_of_Precious_Jewels--A_Commenta.txt",
+    "lines_included": [
+      531,
+      536
+    ],
+    "probability": 0.833,
+    "meter": 9,
+    "lines": [
+      "de ltar lhag pa'i lha mo rje btsun ma",
+      "sgrub pa'i man ngag bshad pa'i dge ba des",
+      "bdag sogs ma lus sangs rgyas ma thob bar",
+      "rje btsun sgrol mas rjes su 'dzin par shog",
+      "ces rje btsun sgrub thabs mdor bsdus 'di",
+      "shAkya'i dge slong dge 'dun grub pa dpal bzang pos"
+    ],
+    "num_exact_derge_matches": 0,
+    "probability_of_derge_quotation": 0.0
+  }
+]

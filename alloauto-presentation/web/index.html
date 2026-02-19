@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Auto/Allo Classifier</title>
+  <script type="module">
+    // Using FastAPI backend instead of local model
+    async function loadModel() {
+      const btn = document.getElementById("classify-btn");
+      document.getElementById("status").innerText = "Ready — choose engine and click Classify";
+      btn.disabled = false;
+    }
+    // Fixed colors so output is always strictly red/blue alternating by label
+    function labelColor(label) {
+      return label === 'allo' ? 'rgb(255,0,0)' : 'rgb(0,0,255)';
+    }
+  // Merge adjacent UI items with the same label.
+  // Weighted average by token_count; falls back to counting words if token_count is missing.
+    function mergeConsecutiveSameLabelUI(items, sep = ' ') {
+      if (!items || !items.length) return [];
+      const out = [];
+
+      const initTok = items[0].token_count ?? (items[0].chunk?.trim().split(/\s+/).filter(Boolean).length || 1);
+      const initAlloSum = (items[0].allo_sum != null) ? items[0].allo_sum : (items[0].allo ?? 0) * initTok;
+      const initAutoSum = (items[0].auto_sum != null) ? items[0].auto_sum : (items[0].auto ?? 0) * initTok;
+
+      let cur = {
+        ...items[0],
+       originalCount: 1,
+        token_count: initTok,
+        allo_sum: initAlloSum,
+       auto_sum: initAutoSum,
+      };
+      cur.allo = cur.allo_sum / cur.token_count;
+      cur.auto = cur.auto_sum / cur.token_count;
+
+      for (let i = 1; i < items.length; i++) {
+        const r = items[i];
+        const t = r.token_count ?? (r.chunk?.trim().split(/\s+/).filter(Boolean).length || 1);
+        const alloS = (r.allo_sum != null) ? r.allo_sum : (r.allo ?? 0) * t;
+        const autoS = (r.auto_sum != null) ? r.auto_sum : (r.auto ?? 0) * t;
+
+        if (r.label === cur.label) {
+          cur.chunk = `${cur.chunk}${sep}${r.chunk}`;
+          cur.originalCount += 1;
+          cur.token_count += t;
+          cur.allo_sum += alloS;
+          cur.auto_sum += autoS;
+          cur.allo = cur.allo_sum / cur.token_count;
+          cur.auto = cur.auto_sum / cur.token_count;
+        } else {
+          out.push(cur);
+          cur = {
+           ...r,
+            originalCount: 1,
+            token_count: t,
+            allo_sum: alloS,
+            auto_sum: autoS,
+          };
+          cur.allo = cur.allo_sum / cur.token_count;
+          cur.auto = cur.auto_sum / cur.token_count;
+        }
+      }
+      out.push(cur);
+      return out;
+    }
+
+    // --- Implementation toggle helper ---
+function getSelectedImplementation() {
+  return document.getElementById("impl-select").value; // "ours" | "mike"
+}
+
+// --- Lazy-load Xenova transformers & Mike's local model (./model) ---
+let mike = { loaded: false, classifier: null, env: null, pipeline: null };
+async function ensureMikeLoaded() {
+  if (mike.loaded) return;
+  const mod = await import('https://cdn.jsdelivr.net/npm/@xenova/transformers@2.4.1');
+  mike.env = mod.env;
+  mike.pipeline = mod.pipeline;
+  mike.env.allowRemoteModels = false;   // only local files
+  mike.env.localModelPath = '.';        // relative to index.html
+  document.getElementById("status").innerText = "🔄 Loading baseline model…";
+  mike.classifier = await mike.pipeline('text-classification', './model', {
+    quantized: false,
+    revision: 'main',
+    local_files_only: true,
+  });
+  mike.loaded = true;
+  document.getElementById("status").innerText = "✅ Model is ready";
+}
+
+// --- Mike-style chunking: split on slashes (kept exactly like Mike) ---
+function splitChunksSlash(text) {
+  return text.split(/\s*\/+\s*/).map(s => s.trim()).filter(Boolean);
+}
+
+// --- Classify with Mike (in-browser) ---
+async function classifyMike(input) {
+  await ensureMikeLoaded();
+  const chunks = splitChunksSlash(input);
+  const results = [];
+  for (const chunk of chunks) {
+    try {
+      const tokens = await mike.classifier.tokenizer(chunk);
+      const output = await mike.classifier.model(tokens);
+      const logits = output.logits.data;
+      const [allo, auto] = softmax(Array.from(logits));
+      const label = (allo >= auto) ? 'allo' : 'auto';
+      results.push({
+        chunk,
+        allo,
+        auto,
+        label,
+        token_count: chunk.trim().split(/\s+/).filter(Boolean).length,
+      });
+    } catch (e) {
+      console.error('Mike classify error:', e);
+      results.push({ chunk, allo: 0.5, auto: 0.5, label: 'auto' });
+    }
+  }
+  return results;
+}
+
+// --- Classify with our FastAPI (server) ---
+async function classifyOurs(input) {
+  const API_BASE = `http://${location.hostname}:8002`;
+  const resp = await fetch(`${API_BASE}/classify-chunks`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text: input })
+  });
+  if (!resp.ok) throw new Error(await resp.text());
+  const data = await resp.json();
+  return data.results || [];
+}
+
+// --- One renderer for both engines (uses your mergeConsecutiveSameLabelUI) ---
+  function renderResults(items, { merge = true } = {}) {
+    const outputDiv = document.getElementById("output");
+    const heatmapDiv = document.getElementById("heatmap");
+    outputDiv.innerHTML = "";
+    heatmapDiv.innerHTML = "";
+
+    
+
+    const toRender = merge ? mergeConsecutiveSameLabelUI(items, ' ') : items;
+    toRender.forEach((r, i) => {
+      const color = labelColor(r.label);
+
+      const heatCell = document.createElement("a");
+      heatCell.href = `#chunk-${i}`;
+      heatCell.title = `${r.label.toUpperCase()} — Allo: ${Number(r.allo).toFixed(2)}, Auto: ${Number(r.auto).toFixed(2)}${r.token_count ? ` • tokens: ${r.token_count}` : ''}`;
+      heatCell.style = `background:${color}; width:10px; height:18px; display:inline-block; margin:1px; border-radius:2px;`;
+      heatmapDiv.appendChild(heatCell);
+
+      const div = document.createElement("div");
+      div.id = `chunk-${i}`;
+      div.style = `background:${color}; color:#fff; padding:10px; margin:6px; border-radius:4px;`;
+      div.innerHTML = `
+        <div><strong>Chunk ${i + 1}</strong> — ${r.label.toUpperCase()}: Allo: ${r.allo.toFixed(2)}, Auto: ${r.auto.toFixed(2)}${r.token_count ? ` • tokens: ${r.token_count}` : ''}</div>
+        <pre style="white-space:pre-wrap; color:#fff;">${r.chunk}</pre>
+      `;
+      outputDiv.appendChild(div);
+    });
+  }
+
+    
+
+    function softmax(arr) {
+      const max = Math.max(...arr);
+      const exps = arr.map(x => Math.exp(x - max));
+      const sum = exps.reduce((a, b) => a + b, 0);
+      return exps.map(x => x / sum);
+    }
+
+    const nextFrame = () => new Promise(r => requestAnimationFrame(r));
+
+    async function classifyInput() {
+      const btn = document.getElementById("classify-btn");
+      btn.disabled = true;
+      const input = document.getElementById("input").value;
+      try {
+        const impl = getSelectedImplementation(); // "ours" | "mike"
+        if (impl === 'mike') {
+          const results = await classifyMike(input);
+          renderResults(results, { merge: false });
+        } else {
+          const results = await classifyOurs(input);
+          renderResults(results, { merge: true });
+        }
+      } catch (err) {
+        console.error('Classify error:', err);
+        alert('Classification failed. See console for details.');
+      } finally {
+        btn.disabled = false;
+      }
+    }
+    window.addEventListener('load', loadModel);
+    window.classifyInput = classifyInput;
+  </script>
+
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
+    #heatmap { margin: 10px 0 20px 0; padding: 8px; background: #eee; border-radius: 4px; display: flex; flex-wrap: wrap; }
+    textarea { width: 100%; max-width: 100%; font-family: monospace; }
+    button { margin-top: 8px; padding: 6px 12px; font-size: 1em; }
+    #output { margin-top: 20px; }
+  </style>
+</head>
+
+<body>
+  <h2> Autochthonous vs Allochthonous Classifier</h2>
+  <p id="status">Loading model...</p>
+  <textarea id="input" rows="10" placeholder="Paste Wylie-transcribed text here..."></textarea><br>
+  <div id="controls" style="display:flex; gap:12px; align-items:center; margin:8px 0;">
+    <label for="impl-select"><strong>Engine:</strong></label>
+    <select id="impl-select">
+      <option value="ours" selected> ALTO </option>
+      <option value="mike"> Baseline </option>
+    </select>
+    <button id="classify-btn" onclick="classifyInput()">Classify</button>
+  </div>
+  <div id="progress-container"
+       style="height: 6px; background: #ccc; border-radius: 3px; margin-top: 10px; display: none;">
+    <div id="progress-bar" style="height: 100%; width: 0%; background: #3b82f6; border-radius: 3px;"></div>
+  </div>
+
+  <div id="heatmap"></div>
+  <div id="output"></div>
+</body>
+
+</html>
